@@ -1,0 +1,42 @@
+/* pages/book-detail/book-detail.wxss */
+.title {
+	background: #eee;
+	color: #999;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 25rpx;
+}
+.list {
+	border-bottom: 1px solid #D2D2D2;
+	padding-bottom: 8px;
+	font-size: 35rpx;
+	margin-top: 15px;
+}
+.lit-title {
+	text-align: justify;
+	width: 80px;
+	display: inline-block;
+	height: 20px;
+	vertical-align: top;
+	margin-right: 30px;
+}
+.lit-title::after{
+  width: 100%;
+  display: inline-block;
+  content: '';
+}
+.text {
+	color: #00aaee;
+	vertical-align: middle;
+}
+.submit-btn {
+	margin-top: 6%;
+	color: #fff;
+	background: #04BE02;
+}
+.list input {
+	display: inline-block;
+	height: 20px;
+	min-height: 20px;
+	vertical-align: bottom;
+}

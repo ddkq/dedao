@@ -1,0 +1,116 @@
+<!--index.wxml-->
+<!-- 轮播 -->
+<view class="index-body">
+  <view class="banner" bindtap="gotomagellan">
+    <swiper class="swiper_box" indicator-dots="{{indicatorDots}}" autoplay="autoplay" circular="circular" style="height: 380rpx;">
+      <block wx:for="{{bannerURL}}" wx:key='item.slide_pic'>
+        <swiper-item>
+            <image src="{{url}}{{item.slide_pic}}" class="slide-image" mode="widthFix"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="area container text-center" >
+    <view class="d-flex tab-list">
+      <view bindtap="gotomagellan">
+        <image src="../../imgs/index/tab-1.png" mode="widthFix"></image>
+      </view>
+      <view bindtap="gotocorrect">
+        <image src="../../imgs/index/tab-2.png" mode="widthFix"></image>
+      </view>
+      <view bindtap="gotojkm">
+        <image src="../../imgs/index/tab-3.png" mode="widthFix"></image>
+      </view>
+      <view bindtap="gotoCd">
+        <image src="../../imgs/index/tab-4.png" mode="widthFix"></image>
+      </view>
+    </view>
+
+
+    <view class="d-flex">
+
+      <view class="area-left" bindtap="gotoshuju">
+        <image src="../../imgs/index/area-1.jpg" mode="widthFix" ></image>
+      </view>
+
+      <view class="area-right">
+        <image src="../../imgs/index/area-2.jpg" mode="widthFix" bindtap="gotoshuju"></image>
+        <image src="../../imgs/index/area-3.jpg" mode="widthFix" style="margin-top:4px;" bindtap="gotoCd"></image>
+      </view>
+
+    </view>
+  </view>
+
+  <!-- 案例 -->
+  <view class="case container">
+    <text class="d-block us-title text-center">CASE</text>
+    <text class="d-block cn-title text-center">德道口腔·真实案例</text>
+    <view class="case-list"  bindtap="gotoCd">
+      <view wx:for="{{caseList}}" wx:for-index="index" wx:key="caseList">
+        <text class="case-title d-block"><text style="color:#ae8b61;">【案例】</text>{{item.post_title}}</text>
+        <image src="{{url}}{{item.smeta}}" mode="widthFix"></image>
+      </view>
+    </view>
+    <view class="check-more text-center"  bindtap="gotoCd">
+      <text>查看更多</text>
+    </view>
+  </view>
+
+  <!-- 新闻 -->
+  <view class="news container">
+    <text class="d-block us-title text-center">NEWS</text>
+    <text class="d-block cn-title text-center">德道口腔·新闻动态</text>
+    <view class="news-list">
+      <view wx:for="{{newsList}}" wx:for-index="index" wx:key="newsList" class="d-flex">
+        <image src="{{url}}{{item.smeta}}" mode="widthFix"></image>
+        <view class="news-text">
+          <text class="d-block news-title">{{item.post_title}}</text>
+          <text class="d-block news-excerpt">{{item.post_excerpt}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="check-more text-center">
+      <text>查看更多</text>
+    </view>
+  </view>
+
+    <!-- 项目 -->
+  <view class="porject container text-center">
+    <text class="d-block us-title">PORJECT</text>
+    <text class="d-block cn-title">德道口腔·爆款项目</text>
+    <view class="d-flex">
+      <view class="porject-left" bindtap="gotomagellan">
+        <image src="../../imgs/index/jky.jpg" mode="widthFix"></image>
+      </view>
+      <view class="porject-right">
+        <image src="../../imgs/index/jkz.jpg" mode="widthFix" bindtap="gotocorrect"></image>
+        <image src="../../imgs/index/jkm.jpg" mode="widthFix" bindtap="gotojkm"></image>
+      </view>
+    </view>
+  </view>
+
+ <!--  <view class="link-btn">
+    <navigator url='../mine'>跳转</navigator >
+  </view> -->
+  
+  <!-- 医院地址 -->
+  <view class="hospital-address" style="margin:0;" bindtap="gotoCd">
+    <swiper bindchange='changDot' autoplay="autoplay" circular="circular">
+      <block>
+        <swiper-item wx:for="{{hospitalAddressSlider}}" wx:for-index="index" wx:key="hospitalAddressSlider">
+          <image src="{{url}}{{item.slide_pic}}" mode="widthFix" mode="widthFix"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <view class="dots">
+      <block wx:for="{{hospitalAddressSlider}}" wx:key="hospitalAddressSlider">
+        <view class="dot {{index == swiperCurrent?'actives':''}}"></view>
+      </block>
+    </view>
+  </view>
+  
+  <!-- 商务通浮窗 -->
+  <view><button></button></view>
+</view>

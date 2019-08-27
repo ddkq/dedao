@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mine/mine",
+    "pages/booking/booking",
+    "pages/book-detail/book-detail",
+    "pages/eliao/eliao",
+    "pages/guanwang/guanwang",
+    "pages/myorder/myorder",
+    "pages/magellan/magellan",
+    "pages/correct/correct",
+    "pages/shuju/shuju",
+    "pages/jkm/jkm"
+
+
+
+  
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "成都德道口腔",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#f3f3f3"
+  },
+  "tabBar": {
+    "color": "#595959",
+    "selectedColor": "#bf2229",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "imgs/tab/index-icon.png",
+        "selectedIconPath": "imgs/tab/index-select-icon.png"
+      },
+      {
+        "pagePath": "pages/booking/booking",
+        "text": "预约",
+        "iconPath": "imgs/tab/booking-icon.png",
+        "selectedIconPath": "imgs/tab/booking-select-icon.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "imgs/tab/mine-icon.png",
+        "selectedIconPath": "imgs/tab/mine-select-icon.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

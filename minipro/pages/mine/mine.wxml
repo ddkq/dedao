@@ -1,0 +1,17 @@
+<!--pages/index/test.wxml-->
+<view class="mine-bcg">
+	<image class="bcg" src="../../imgs/mine/bcg.jpg"></image>
+  	<view class="userinfo">
+    	<!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button> -->
+    	<block>
+	      	<image bindtap="bindViewTap" class="userinfo-avatar" src="{{hasUserInfo ? userInfo.avatarUrl : '../../imgs/mine/headimg.png'}}" mode="cover"></image>
+	      	<text class="userinfo-nickname">{{hasUserInfo ? userInfo.nickName : '登录'}}</text>
+			<button open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="set-head-img"> 获取头像昵称 </button>
+    	</block>
+  	</view>
+</view>
+
+<view class="order">
+	<block><image src="../../imgs/mine/mine-order.png" class="mine-order" style="border-right: 2px solid #E8E8E8;     "bindtap="gotoMyorder"></image></block>
+	<block><image src="../../imgs/mine/more-order.png" class="more-order" bindtap="gotoMyorder"></image></block>
+</view>

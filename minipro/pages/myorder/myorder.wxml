@@ -1,0 +1,19 @@
+<!--pages/myorder/myorder.wxml-->
+
+
+<view style="margin-top: 0%;">
+	<view class="doctor" wx:for="{{doctorList}}" wx:key="inx" bindtap="goToDetail" data-data="{{item}}">
+		<view class="left">
+			<view class="time-icon"><image src="../../imgs/book/time.png"></image></view>
+			<view>
+				<view><text class="name">{{item.name}}</text><text class="job">{{item.job}}</text></view>
+				<view class="time"><text>{{item.time}}</text></view>
+				<view class="department"><text>{{item.category}}</text></view>
+			</view>
+		</view>
+		<view class="price">
+			<text class="num">预约成功</text>
+			<text class="arrow"></text>
+		</view>
+	</view>
+</view>

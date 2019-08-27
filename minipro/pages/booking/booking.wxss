@@ -1,0 +1,94 @@
+/* pages/booking/booking.wxss */
+.active-date {
+	font-size: 30rpx;
+	padding: 15px;
+}
+.day {
+	color: #ff0000;
+	margin-left: 20px;
+}
+.date-picker {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 15px;
+}
+.date-picker .picker {
+	width: 14.25%;
+	text-align: center;
+	font-size: 28rpx;
+	padding: 10px 0;
+	border-bottom: 1px solid #D2D2D2;
+	border-top: 1px solid #D2D2D2;
+}
+.date-picker .picker:not(:last-child) {
+	border-right: 1px solid #D2D2D2;
+}
+.active-date, .date-picker {
+	background: #eee;
+}
+.active {
+	background: #00AAEE;
+	color: #fff;
+}
+.time-icon {
+	margin-top: 25px;
+	margin-left: 10px;
+	margin-right: 20px;
+}
+.time-icon image {
+	width: 35px;
+	height: 35px;
+}
+.left {
+	display: flex;
+}
+.doctor {
+	display: flex;
+	margin: 0 10px;
+	padding: 15px 0;
+	border-bottom: 1px solid #D2D2D2;
+	justify-content: space-between;
+}
+.time {
+	margin-top: 7px;
+}
+.department text, .time, .job, .num {
+	font-size: 30rpx;
+}
+.job {
+	margin-left: 15px;
+	color: #999;
+}
+.department  {
+	margin-top: 7px;
+}
+.department text {
+	color: #fff;
+	background: #BF2229;
+	border-radius: 5px;
+	padding: 3px 12px;
+}
+.price {
+	margin-top: 30px;
+}
+.num {
+	color: #fff;
+	background: #00AAEE;
+	padding: 2px 8px;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+.arrow {
+	border-right: 2px solid #C9C9C9;
+	border-bottom: 2px solid #C9C9C9;
+	width: 10px;
+	height: 10px;
+	display:inline-block;
+	transform: rotate(-45deg);
+}
+.doctor-header {
+	position: fixed;
+	width: 100%;
+	z-index: 99;
+	top: 0;
+}
