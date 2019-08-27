@@ -1,0 +1,254 @@
+<admintpl file="header" />
+<style type="text/css">
+.pic-list li {
+	margin-bottom: 5px;
+}
+</style>
+
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('AdminDoctor/index')}">{:L('PORTAL_ADMINDO_INDEX')}</a></li>
+			<li><a href="{:U('AdminDoctor/add',array('term'=>empty($term['term_id'])?'':$term['term_id']))}" target="_self">{:L('PORTAL_ADMINDO_ADD')}</a></li>
+			<li class="active"><a href="#" target="_self">排班管理</a></li>
+		</ul>
+		<form action="{:U('AdminWorking/edit_post')}" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
+			<div class="row-fluid">
+				<table class="table table-bordered">
+					<tr id="meau">
+						<th width="80">科室</th>
+						<td>
+							<php>
+								$term_ids = explode(",",$post['term_id']);
+								foreach($term_ids as $i){
+									echo $terms[$i].',';
+								}
+							</php>
+						</td>
+						<input type="hidden" name="term_id" value="{$post.term_id}">
+					</tr>
+					<tr>
+						<th>医生名</th>
+						<td>
+							<input type="hidden" name="id" value="{$post.id}">
+							<span>{$post.name}</span>
+						</td>
+					</tr>
+					<tr>
+						<th>坐诊时间</th>
+						<php>
+							foreach($working as $vo){
+								if($vo == 11){
+									$s11 = 'checked="checked"';}if($vo == 12){
+										$s12 = 'checked="checked"';}if($vo == 13){
+											$s13 = 'checked="checked"';}
+								if($vo == 21){
+									$s21 = 'checked="checked"';}if($vo == 22){
+										$s22 = 'checked="checked"';}if($vo == 23){
+											$s23 = 'checked="checked"';}
+								if($vo == 31){
+									$s31 = 'checked="checked"';}if($vo == 32){
+										$s32 = 'checked="checked"';}if($vo == 33){
+											$s33 = 'checked="checked"';}
+								if($vo == 41){
+									$s41 = 'checked="checked"';}if($vo == 42){
+										$s42 = 'checked="checked"';}if($vo == 43){
+											$s43 = 'checked="checked"';}
+								if($vo == 51){
+									$s51 = 'checked="checked"';}if($vo == 52){
+										$s52 = 'checked="checked"';}if($vo == 53){
+											$s53 = 'checked="checked"';}
+								if($vo == 61){
+									$s61 = 'checked="checked"';}if($vo == 62){
+										$s62 = 'checked="checked"';}if($vo == 63){
+											$s63 = 'checked="checked"';}
+								if($vo == 71){
+									$s71 = 'checked="checked"';}if($vo == 72){
+										$s72 = 'checked="checked"';}if($vo == 73){
+											$s73 = 'checked="checked"';}
+							}
+						</php>
+						<td>
+							<table>
+								<tr><td></td><td>星期一</td><td>星期二</td><td>星期三</td><td>星期四</td><td>星期五</td><td>星期六</td><td>星期日</td></tr>
+								<tr>
+									<td>上午</td>
+									<td><input type="checkbox" name="time[]" value="11" {$s11}></td>
+									<td><input type="checkbox" name="time[]" value="21" {$s21}></td>
+									<td><input type="checkbox" name="time[]" value="31" {$s31}></td>
+									<td><input type="checkbox" name="time[]" value="41" {$s41}></td>
+									<td><input type="checkbox" name="time[]" value="51" {$s51}></td>
+									<td><input type="checkbox" name="time[]" value="61" {$s61}></td>
+									<td><input type="checkbox" name="time[]" value="71" {$s71}></td>
+								</tr>
+								<tr>
+									<td>中午</td>
+									<td><input type="checkbox" name="time[]" value="12" {$s12}></td>
+									<td><input type="checkbox" name="time[]" value="22" {$s22}></td>
+									<td><input type="checkbox" name="time[]" value="32" {$s32}></td>
+									<td><input type="checkbox" name="time[]" value="42" {$s42}></td>
+									<td><input type="checkbox" name="time[]" value="52" {$s52}></td>
+									<td><input type="checkbox" name="time[]" value="62" {$s62}></td>
+									<td><input type="checkbox" name="time[]" value="72" {$s72}></td>
+								</tr>
+								<tr>
+									<td>下午</td>
+									<td><input type="checkbox" name="time[]" value="13" {$s13}></td>
+									<td><input type="checkbox" name="time[]" value="23" {$s23}></td>
+									<td><input type="checkbox" name="time[]" value="33" {$s33}></td>
+									<td><input type="checkbox" name="time[]" value="43" {$s43}></td>
+									<td><input type="checkbox" name="time[]" value="53" {$s53}></td>
+									<td><input type="checkbox" name="time[]" value="63" {$s63}></td>
+									<td><input type="checkbox" name="time[]" value="73" {$s73}></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					
+				</table>
+			</div>
+			<div class="form-actions">
+				<button class="btn btn-primary js-ajax-submit" type="submit">提交</button>
+				<a class="btn" href="{:U('AdminWorking/index')}">返回</a>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+	
+	<script type="text/javascript">
+		$(function() {
+			//setInterval(function(){public_lock_renewal();}, 10000);
+			$(".js-ajax-close-btn").on('click', function(e) {
+				e.preventDefault();
+				Wind.use("artDialog", function() {
+					art.dialog({
+						id : "question",
+						icon : "question",
+						fixed : true,
+						lock : true,
+						background : "#CCCCCC",
+						opacity : 0,
+						content : "您确定需要关闭当前页面嘛？",
+						ok : function() {
+							setCookie("refersh_time", 1);
+							window.close();
+							return true;
+						}
+					});
+				});
+			});
+			/////---------------------
+			Wind.use('validate', 'ajaxForm', 'artDialog', function() {
+				//javascript
+
+				
+				var form = $('form.js-ajax-forms');
+				//ie处理placeholder提交问题
+				if ($.browser.msie) {
+					form.find('[placeholder]').each(function() {
+						var input = $(this);
+						if (input.val() == input.attr('placeholder')) {
+							input.val('');
+						}
+					});
+				}
+				//表单验证开始
+				form.validate({
+					//是否在获取焦点时验证
+					onfocusout : false,
+					//是否在敲击键盘时验证
+					onkeyup : false,
+					//当鼠标掉级时验证
+					onclick : false,
+					//验证错误
+					showErrors : function(errorMap, errorArr) {
+						//errorMap {'name':'错误信息'}
+						//errorArr [{'message':'错误信息',element:({})}]
+						try {
+							$(errorArr[0].element).focus();
+							art.dialog({
+								id : 'error',
+								icon : 'error',
+								lock : true,
+								fixed : true,
+								background : "#CCCCCC",
+								opacity : 0,
+								content : errorArr[0].message,
+								cancelVal : '确定',
+								cancel : function() {
+									$(errorArr[0].element).focus();
+								}
+							});
+						} catch (err) {
+						}
+					},
+					//验证规则
+					rules : {
+						'name' : {
+							required : 1
+						}
+					},
+					//验证未通过提示消息
+					messages : {
+						'name' : {
+							required : '请输入医生名'
+						}
+					},
+					//给未通过验证的元素加效果,闪烁等
+					highlight : false,
+					//是否在获取焦点时验证
+					onfocusout : false,
+					//验证通过，提交表单
+					submitHandler : function(forms) {
+						$(forms).ajaxSubmit({
+							url : form.attr('action'), //按钮上是否自定义提交地址(多按钮情况)
+							dataType : 'json',
+							beforeSubmit : function(arr, $form, options) {
+
+							},
+							success : function(data, statusText, xhr, $form) {
+								if (data.status) {
+									setCookie("refersh_time", 1);
+									//添加成功
+									Wind.use("artDialog", function() {
+										art.dialog({
+											id : "succeed",
+											icon : "succeed",
+											fixed : true,
+											lock : true,
+											background : "#CCCCCC",
+											opacity : 0,
+											content : data.info,
+											button : [ {
+												name : '继续编辑？',
+												callback : function() {
+													//reloadPage(window);
+													return true;
+												},
+												focus : true
+											}, {
+												name : '返回列表页',
+												callback : function() {
+													location = "{:U('AdminWorking/index')}";
+													return true;
+												}
+											} ]
+										});
+									});
+								} else {
+									isalert(data.info);
+								}
+							}
+						});
+					}
+				});
+			});
+			
+
+			////-------------------------
+		});
+	</script>
+</body>
+</html>

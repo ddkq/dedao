@@ -1,0 +1,89 @@
+
+.banner {
+	margin-top: 230px;
+}
+
+.text-indent{
+	text-indent: 2rem;
+}
+
+.yellow{
+	color: #ffeb11;
+}
+
+.content-1-text{
+	border: 1px solid #525494;
+}
+.content-1-text h4{
+	background: linear-gradient(#390974, #12156c); 
+}
+.content-1-text p{
+	line-height: 2rem;
+}
+.content-2{
+	background-image: url(imgs/content-2-bcg.jpg);
+}
+.content-2-text{
+	background-image: url(imgs/content-2-1.png);
+	background-size: cover ;
+	padding-top: 30rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 5rem;
+    line-height: 2rem;
+}
+
+.content-name{
+	background: url(imgs/name-bg.png);
+}
+
+.swt-btn{
+	font-size: 1.2rem;
+	color: #111653 !important;
+	background: linear-gradient(#fde50f, #edb601); 
+	border-radius: 2rem;
+}
+
+.name-lists{
+	background-color: #fff;
+	border-radius: 0.5rem;
+	width: 35%;
+}
+
+.name-lists p{
+	background: url(imgs/name-title.png) no-repeat;
+	background-size: cover;
+	width: 80%;
+}
+
+.name-lists .swiper-slide-active span{
+	color: #cf3d51;
+}
+
+
+
+.content-2, .content-3, .content-5, .last, .content-other {
+	background-size: cover ;
+}
+.content-3 {
+	background: url(imgs/content-3-bcg.jpg);
+}
+.content-5 {
+	background: url(imgs/content-5-bcg.jpg);
+}
+.content-other {
+	background: url(imgs/content-other-bcg.jpg);
+}
+.content-3-text, .content-4-text, .content-5-text {
+	font-size: 18px;
+}
+.last {
+	background: url(imgs/last-bcg.jpg);
+	position: fixed;
+	bottom: 0;
+	z-index: 10;
+	cursor: pointer;
+}
+.last a {
+	width: 80%;
+}

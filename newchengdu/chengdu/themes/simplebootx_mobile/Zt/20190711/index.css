@@ -1,0 +1,30 @@
+
+
+label{
+	font-size: 0.8rem;
+}
+
+.w-30{
+	width: 30%;
+}
+
+
+.submit-btn{
+	border-width: 3px;
+	border-color: rgb(255, 202, 51);
+	border-style: solid;
+	border-radius: 12px;
+	background-color: rgb(120, 16, 24);
+	color: #ffca33;
+	font-size: 1.4rem;
+}
+
+.gif-bg{
+	background: url('imgs/6.jpg');
+	background-size: contain;
+}
+
+.copy{
+	background: url('imgs/bg.jpg');
+	background-size: contain;
+}

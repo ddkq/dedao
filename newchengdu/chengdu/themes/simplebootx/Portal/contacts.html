@@ -1,0 +1,156 @@
+<!--联系我们-->
+<!DOCTYPE html>
+<html>
+	<tc_include file="Public:head" />
+	<link href="__TMPL__Public/css/page.css" rel="stylesheet" type="text/css">
+	<title>{$post_title}_{$site_name}</title>
+	<meta name="keywords" content="{$post_keywords}"/>
+	<meta name="description" content="{$post_excerpt}" />
+	</head>
+	<body>
+		<tc_include file="Public:new_header" />
+		
+		<div class="main_img">
+			<img src="__TMPL__Public/images/brand/banner.png"/>
+		</div>
+		<div class="brand_main clearfix">
+			<tc_include file="Public:brand_left" />
+			<div class="brand_right">
+				<div class="brand_path">当前位置：<a href="/">首页</a> &gt; {$post_title}</div>
+				<div class="contacts_main clearfix">
+					<div class="media box_01 tel">
+						<div class="media-left media-middle">
+							<i class="fa fa-phone"></i>
+						</div>
+						<div class="media-body">
+							<p class="title">电话</p>
+							<p>400-800-6161</p>
+							<p>工作时间：周一至周日</p>
+						</div>
+					</div>
+					<a class="media box_01 liaotian" onclick="openJesongChatByGroup(16524,20125);">
+						<div class="media-left media-middle">
+							<i class="fa fa-comments-o"></i>
+						</div>
+						<div class="media-body">
+							<p class="title">联系我们</p>
+							<p>地址:成都市青羊区金凤路19号附1号</p>
+						</div>
+					</a>
+				</div>
+				<div class="traffic_box">
+				    <div id="allmap" style="height:700px;width:855px;"></div>
+				    <div class="busBox">请输入您的位置：
+				   		<input type="text" class="mapStart">
+			            <select>
+			                <option value="0">最少时间</option>
+			                <option value="1">最少换乘</option>
+			                <option value="2">最少步行</option>
+			                <option value="3">不乘地铁</option>
+			            </select>
+			            <input type="button" id="result" value="查询"/>
+				    </div>
+				    <div id="r-result"></div>
+				</div>
+				<div class="brand_btns">
+					<ul class="clearfix">
+						<li>
+							<a onclick="openJesongChatByGroup(16524,20125);">
+								<div class="brand_statu1">
+									<i class="fa fa-microphone"></i>
+									<b>健康咨询</b>
+									<span>health inquiry</span>
+								</div>
+								<div class="brand_statu2">
+									<p>德道提供免费健康咨询服务，也可添加德道口腔公众号：成都德道口腔医院，了解护牙知识。</p>
+									<span>&gt;&gt;点击预约</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a onclick="openJesongChatByGroup(16524,20125);">
+								<div class="brand_statu1">
+									<i class="fa fa-user-md"></i>
+									<b>预约医生</b>
+									<span>make an appointment</span>
+								</div>
+								<div class="brand_statu2">
+									<p>可在我院免费预约，到院无需排队可享受VIP就诊。</p>
+									<span>&gt;&gt;点击预约</span>
+								</div>
+							</a>
+						</li>
+						<li class="last">
+							<a onclick="openJesongChatByGroup(16524,20125);">
+								<div class="brand_statu1">
+									<i class="fa fa-map-marker"></i>
+									<b>来院指引</b>
+									<span>Hospital guidance</span>
+								</div>
+								<div class="brand_statu2">
+									<p>德道口腔全国连锁机构，就近就医或选喜欢的机构，来院前可联系导医获取交通指南。</p>
+									<span>&gt;&gt;获取交通指南</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+	</body>
+	<tc_include file="Public:footer" />
+	<script type="text/javascript" src="__TMPL__Public/js/brand.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=NRSdUGWelRPGWYobbVE3bm3kq3KLMGpl"></script>
+	<script type="text/javascript">
+	    // 百度地图API功能
+	    var map = new BMap.Map("allmap");
+	    // 创建地址解析器实例
+	    var myGeo = new BMap.Geocoder();
+	    // 将地址解析结果显示在地图上,并调整地图视野
+	    var point  = new BMap.Point(104.016731,30.688926)
+	    map.centerAndZoom(point, 18);
+	    map.addOverlay(new BMap.Marker(point));
+	    //var myIcon = new BMap.Icon("/APP/Public/images/map-logo.png", new BMap.Size(80,49));
+	    var marker2 = new BMap.Marker(point,"成都市青羊区金凤路19号附1号德道口腔医院");  // 创建标注
+	    map.addOverlay(marker2);              // 将标注添加到地图中
+		map.addControl(new BMap.MapTypeControl({ anchor: BMAP_ANCHOR_TOP_RIGHT, offset: new BMap.Size(10, 10) }));  
+	    map.addControl(new BMap.NavigationControl());               // 添加平移缩放控件  
+	    map.addControl(new BMap.ScaleControl());                    // 添加比例尺控件  
+	    map.addControl(new BMap.OverviewMapControl());              //添加缩略地图控件  
+	    map.addControl(new BMap.OverviewMapControl({ anchor: BMAP_ANCHOR_BOTTOM_RIGHT, isOpen: 1 }));  
+		var sContent =  
+			"<h4 style='margin:0 0 5px 0;padding:0.2em 0'>成都市德道口腔医院</h4>" +  
+			"<p style='margin:0;line-height:1.5;font-size:13px;'>地址：成都市青羊区金凤路19号附1号德道口腔医院<br/>电话：400-800-6161/ 028-67696635</p>" +  
+			"</div>";  
+	    var infoWindow = new BMap.InfoWindow(sContent);  // 创建信息窗口对象  
+	    map.openInfoWindow(infoWindow, map.getCenter());      // 打开信息窗口 
+	
+	    var end = "成都市德道口腔医院";
+	    var routePolicy = [BMAP_TRANSIT_POLICY_LEAST_TIME,BMAP_TRANSIT_POLICY_LEAST_TRANSFER,BMAP_TRANSIT_POLICY_LEAST_WALKING,BMAP_TRANSIT_POLICY_AVOID_SUBWAYS];
+	    var transit = new BMap.TransitRoute(map, {
+	        renderOptions: {map: map},
+	        policy: 0
+	    });
+	    $(function(){
+	        $("#result").on("click",function(){
+	            var start=$(".mapStart").val();
+	            if(start.length == 0){
+	                alert("请输入您的位置");
+	            }
+	            map.clearOverlays();
+	            var transit = new BMap.TransitRoute(map, {
+	                renderOptions: {map: map, panel: "r-result"}
+	            });
+	            var i=$("#driving_way select").val();
+	            search(start,end,routePolicy[i]);
+	            function search(start,end,route){
+	                transit.setPolicy(route);
+	                transit.search(start,end);
+	            }
+	        });
+	    })
+	</script>
+</html>

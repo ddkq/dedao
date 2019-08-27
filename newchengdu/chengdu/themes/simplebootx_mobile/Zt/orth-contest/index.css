@@ -1,0 +1,79 @@
+.banner {
+	margin-top: 117px;
+}
+
+.text-decoration{
+	text-decoration:underline;
+}
+
+.text-line-height{
+	line-height: 1.8rem;
+}
+
+.font-8{
+	font-size: 0.8rem;
+}
+.rounded {
+    border-radius: 0.5rem!important;
+}
+
+
+form{
+	background-color: #fff; 
+}
+
+form h1{
+	font-size: 2.5rem;
+	color: rgb(152, 10, 34);
+	font-weight: bold;
+	text-align: center;
+	text-indent: 1.5rem;
+    letter-spacing: 1rem;
+}
+
+form font{
+    width: 30%;
+    background-color: #9e9e9e;
+    font-size: .8rem;
+    color: #fff;
+    text-align: center;
+}
+
+.active {
+    background-color: #eb0909 !important;
+    color: #fff !important;
+}
+
+.border-bottom{
+	border-style: dashed !important;
+}
+
+
+.btn{
+	background-image: -moz-linear-gradient( 90deg, rgb(249,235,134) 0%, rgb(252,241,187) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(249,235,134) 0%, rgb(252,241,187) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(249,235,134) 0%, rgb(252,241,187) 100%);
+	border-radius: 20px;
+	color: #820202 !important;
+	font-size: 1.1rem;
+}
+
+.submit-btn {
+	background-color: #980a22;
+	color: #fff !important;
+	border-radius: 20px;
+	font-size: 1.1rem;
+}
+
+.content-1 , .content-3{
+	background-color: #980a22;
+}
+
+.content-2 , .content-4{
+	background-color: #ba0f2c;
+}
+
+
+
+
+

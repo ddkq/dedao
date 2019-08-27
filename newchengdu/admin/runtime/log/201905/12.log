@@ -1,0 +1,54 @@
+---------------------------------------------------------------
+[ 2019-05-12T13:07:12+08:00 ] 106.14.168.238 GET /
+[ info ] api.dedaokq.com/ [运行时间：0.018494s][吞吐率：54.07req/s] [内存消耗：1,724.59kb] [文件加载：81]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'api.dedaokq.com',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D))',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/admin/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ../template/admin/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-12T14:12:03+08:00 ] 47.98.97.81 GET /
+[ info ] api.dedaokq.com/ [运行时间：0.018560s][吞吐率：53.88req/s] [内存消耗：1,724.60kb] [文件加载：81]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'api.dedaokq.com',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D))',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/admin/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ../template/admin/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File

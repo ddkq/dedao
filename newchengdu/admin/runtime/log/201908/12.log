@@ -1,0 +1,60 @@
+---------------------------------------------------------------
+[ 2019-08-12T21:45:48+08:00 ] 150.95.204.137 GET /admin/Login/captcha?0.7709421788053377
+[ info ] admin.dedaokq.com/admin/Login/captcha?0.7709421788053377 [运行时间：0.021326s][吞吐率：46.89req/s] [内存消耗：1,627.43kb] [文件加载：80]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'captcha',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8081/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  '0_7709421788053377' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->captcha[ /home/wwwroot/admin/application/admin/controller/Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-12T21:45:57+08:00 ] 59.42.87.186 GET /admin/Login/captcha?0.019625862643313896
+[ info ] admin.dedaokq.com/admin/Login/captcha?0.019625862643313896 [运行时间：0.020312s][吞吐率：49.23req/s] [内存消耗：1,629.24kb] [文件加载：80]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'captcha',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8081/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  '0_019625862643313896' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->captcha[ /home/wwwroot/admin/application/admin/controller/Login.php ]
+[ info ] [ LOG ] INIT File

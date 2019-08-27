@@ -1,0 +1,81 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Microsoft Yahei", "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 100%;
+    color:#000001;
+    
+}
+img {
+    border: 0 ;
+    padding:0;
+    margin:0;
+    
+    
+}
+ul, ol {
+    list-style: none outside none;
+}
+input, select, textarea {
+    outline: 0 none;
+}
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+
+.mt3{margin:0 auto; overflow: hidden;margin-top:3%;}
+.mt5{margin:0 auto; overflow: hidden;margin-top:5%;}
+.mt8{margin:0 auto; overflow: hidden; margin-top:8%;}
+.wrap img{display: block;width:100%;}
+.part_b{width:60%;margin:5% auto;display: block}
+
+
+/*part1*/
+.part1{margin-top: 5%}
+.part1 .p1_info{width:90%;margin:0 auto;}
+.part1 .p1_info img{margin-top: 5%}
+.part1 .p1_info .p1i3{width: 90%;text-align: center;margin:5% auto;}
+
+/*part2*/
+.part2 .p2_info{width:92%;margin:8% auto 0;}
+
+/*part3*/
+.part3 .p3_info{width:92%;margin:5% auto 0;}
+
+/*part4*/
+.p4_info {width:92%;margin:5% auto;}
+.p4_info ul li{width: 48%;margin-left:4%;margin-top: 5%;float: left}
+.p4_info ul li:nth-child(odd){margin-left:0 }
+
+/*part6*/
+.part6_bd{margin-top: 5%}
+
+/*part7*/
+.part7 .p7_info{width:92%;margin:5% auto;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

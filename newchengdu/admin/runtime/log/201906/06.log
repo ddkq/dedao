@@ -1,0 +1,2100 @@
+---------------------------------------------------------------
+[ 2019-06-06T05:27:40+08:00 ] 183.136.190.40 GET /
+[ info ] api.dedaokq.com/ [运行时间：0.019039s][吞吐率：52.52req/s] [内存消耗：1,730.12kb] [文件加载：81]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cache-control' => 'max-age=0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => '',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.153 Safari/537.36',
+  'host' => 'api.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/admin/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ../template/admin/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T09:00:05+08:00 ] 59.42.90.239 OPTIONS /admin/index/checkLogin
+[ info ] admin.dedaokq.com/admin/index/checkLogin [运行时间：0.018029s][吞吐率：55.47req/s] [内存消耗：1,552.66kb] [文件加载：80]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'checkLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'content-type',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->checkLogin[ /home/wwwroot/admin/application/admin/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T09:00:05+08:00 ] 59.42.90.239 GET /admin/Login/captcha?0.7974597885971497
+[ info ] admin.dedaokq.com/admin/Login/captcha?0.7974597885971497 [运行时间：0.019759s][吞吐率：50.61req/s] [内存消耗：1,622.95kb] [文件加载：80]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'captcha',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  '0_7974597885971497' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->captcha[ /home/wwwroot/admin/application/admin/controller/Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T09:00:05+08:00 ] 59.42.90.239 POST /admin/index/checkLogin
+[ info ] admin.dedaokq.com/admin/index/checkLogin [运行时间：0.017362s][吞吐率：57.60req/s] [内存消耗：1,691.77kb] [文件加载：82]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'checkLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '13',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'user_id' => 1,
+)
+[ info ] [ RUN ] app\admin\controller\Index->checkLogin[ /home/wwwroot/admin/application/admin/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]未定义数据库类型[/home/wwwroot/admin/thinkphp/library/think/Db.php:86]
+---------------------------------------------------------------
+[ 2019-06-06T09:00:29+08:00 ] 59.42.90.239 GET /admin/Login/captcha?0.33316559553876846
+[ info ] admin.dedaokq.com/admin/Login/captcha?0.33316559553876846 [运行时间：0.020260s][吞吐率：49.36req/s] [内存消耗：1,622.98kb] [文件加载：80]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'captcha',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  '0_33316559553876846' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->captcha[ /home/wwwroot/admin/application/admin/controller/Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T09:00:34+08:00 ] 59.42.90.239 OPTIONS /admin/Login/doLogin
+[ info ] admin.dedaokq.com/admin/Login/doLogin [运行时间：0.018001s][吞吐率：55.55req/s] [内存消耗：1,575.94kb] [文件加载：81]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'doLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'content-type',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->doLogin[ /home/wwwroot/admin/application/admin/controller/Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T09:00:34+08:00 ] 59.42.90.239 POST /admin/Login/doLogin
+[ info ] admin.dedaokq.com/admin/Login/doLogin [运行时间：0.040412s][吞吐率：24.75req/s] [内存消耗：2,517.53kb] [文件加载：91]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'doLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '67',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'captcha' => 'vpezf',
+  'db' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Login->doLogin[ /home/wwwroot/admin/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T09:00:35+08:00 ] 59.42.90.239 OPTIONS /admin/publics/getMenuBar
+[ info ] admin.dedaokq.com/admin/publics/getMenuBar [运行时间：0.017063s][吞吐率：58.61req/s] [内存消耗：1,507.25kb] [文件加载：78]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'getMenuBar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'content-type',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T09:00:35+08:00 ] 59.42.90.239 OPTIONS /announcement/Admin_announcement/index
+[ info ] admin.dedaokq.com/announcement/Admin_announcement/index [运行时间：0.015916s][吞吐率：62.83req/s] [内存消耗：1,508.21kb] [文件加载：78]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'announcement',
+    1 => 'Admin_announcement',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'content-type',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T09:00:35+08:00 ] 59.42.90.239 POST /admin/publics/getMenuBar
+[ info ] admin.dedaokq.com/admin/publics/getMenuBar [运行时间：0.029504s][吞吐率：33.89req/s] [内存消耗：2,811.62kb] [文件加载：96]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'getMenuBar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Publics->getMenuBar[ /home/wwwroot/admin/application/admin/controller/Publics.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-06-06T09:00:35+08:00 ] 59.42.90.239 POST /announcement/Admin_announcement/index
+[ info ] admin.dedaokq.com/announcement/Admin_announcement/index [运行时间：0.030269s][吞吐率：33.04req/s] [内存消耗：2,671.04kb] [文件加载：93]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'announcement',
+    1 => 'Admin_announcement',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\announcement\controller\AdminAnnouncement->index[ /home/wwwroot/admin/application/announcement/controller/AdminAnnouncement.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-06-06T09:00:47+08:00 ] 59.42.90.239 OPTIONS /admin/Nav_Cat/catList
+[ info ] admin.dedaokq.com/admin/Nav_Cat/catList [运行时间：0.017030s][吞吐率：58.72req/s] [内存消耗：1,516.14kb] [文件加载：78]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav_Cat',
+    2 => 'catList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'content-type',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T09:00:47+08:00 ] 59.42.90.239 OPTIONS /admin/Nav/index
+[ info ] admin.dedaokq.com/admin/Nav/index [运行时间：0.017838s][吞吐率：56.06req/s] [内存消耗：1,530.51kb] [文件加载：78]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'content-type',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T09:00:47+08:00 ] 59.42.90.239 POST /admin/Nav_Cat/catList
+[ info ] admin.dedaokq.com/admin/Nav_Cat/catList [运行时间：0.027125s][吞吐率：36.87req/s] [内存消耗：2,413.18kb] [文件加载：90]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav_Cat',
+    2 => 'catList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\NavCat->catList[ /home/wwwroot/admin/application/admin/controller/NavCat.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-06-06T09:00:47+08:00 ] 59.42.90.239 POST /admin/Nav/index
+[ info ] admin.dedaokq.com/admin/Nav/index [运行时间：0.026984s][吞吐率：37.06req/s] [内存消耗：2,501.40kb] [文件加载：91]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '51',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 1,
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Nav->index[ /home/wwwroot/admin/application/admin/controller/Nav.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-06-06T09:00:53+08:00 ] 59.42.90.239 OPTIONS /admin/Nav/index
+[ info ] admin.dedaokq.com/admin/Nav/index [运行时间：0.016478s][吞吐率：60.69req/s] [内存消耗：1,530.51kb] [文件加载：78]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'content-type',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T09:00:53+08:00 ] 59.42.90.239 POST /admin/Nav/index
+[ info ] admin.dedaokq.com/admin/Nav/index [运行时间：0.026048s][吞吐率：38.39req/s] [内存消耗：2,500.17kb] [文件加载：91]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '51',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 2,
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Nav->index[ /home/wwwroot/admin/application/admin/controller/Nav.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-06-06T09:00:55+08:00 ] 59.42.90.239 OPTIONS /admin/Nav/menu
+[ info ] admin.dedaokq.com/admin/Nav/menu [运行时间：0.016864s][吞吐率：59.30req/s] [内存消耗：1,530.49kb] [文件加载：78]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav',
+    2 => 'menu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'content-type',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T09:00:55+08:00 ] 59.42.90.239 POST /admin/Nav/menu
+[ info ] admin.dedaokq.com/admin/Nav/menu [运行时间：0.028068s][吞吐率：35.63req/s] [内存消耗：2,500.13kb] [文件加载：91]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav',
+    2 => 'menu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '51',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 2,
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Nav->menu[ /home/wwwroot/admin/application/admin/controller/Nav.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-06-06T09:00:57+08:00 ] 59.42.90.239 OPTIONS /admin/Nav/editPost
+[ info ] admin.dedaokq.com/admin/Nav/editPost [运行时间：0.016942s][吞吐率：59.02req/s] [内存消耗：1,530.53kb] [文件加载：78]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav',
+    2 => 'editPost',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'content-type',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T09:00:57+08:00 ] 59.42.90.239 POST /admin/Nav/editPost
+[ info ] admin.dedaokq.com/admin/Nav/editPost [运行时间：0.039199s][吞吐率：25.51req/s] [内存消耗：2,799.23kb] [文件加载：98]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav',
+    2 => 'editPost',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '129',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'cat_id' => 2,
+  'parent_id' => 0,
+  'name' => 'cxk',
+  'href' => 'cxkda',
+  'target' => '',
+  'status' => 1,
+  'id' => 467,
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Nav->editPost[ /home/wwwroot/admin/application/admin/controller/Nav.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-06-06T09:00:59+08:00 ] 59.42.90.239 OPTIONS /admin/Nav/index
+[ info ] admin.dedaokq.com/admin/Nav/index [运行时间：0.017075s][吞吐率：58.56req/s] [内存消耗：1,530.51kb] [文件加载：78]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'content-type',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T09:00:59+08:00 ] 59.42.90.239 POST /admin/Nav/index
+[ info ] admin.dedaokq.com/admin/Nav/index [运行时间：0.027023s][吞吐率：37.01req/s] [内存消耗：2,500.17kb] [文件加载：91]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '51',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 2,
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Nav->index[ /home/wwwroot/admin/application/admin/controller/Nav.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-06-06T09:13:18+08:00 ] 59.42.90.239 POST /admin/index/checkLogin
+[ info ] admin.dedaokq.com/admin/index/checkLogin [运行时间：0.019025s][吞吐率：52.56req/s] [内存消耗：1,692.07kb] [文件加载：82]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'checkLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '14',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'user_id' => 22,
+)
+[ info ] [ RUN ] app\admin\controller\Index->checkLogin[ /home/wwwroot/admin/application/admin/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]未定义数据库类型[/home/wwwroot/admin/thinkphp/library/think/Db.php:86]
+---------------------------------------------------------------
+[ 2019-06-06T09:13:18+08:00 ] 59.42.90.239 GET /admin/Login/captcha?0.5337023955423066
+[ info ] admin.dedaokq.com/admin/Login/captcha?0.5337023955423066 [运行时间：0.020059s][吞吐率：49.85req/s] [内存消耗：1,623.27kb] [文件加载：80]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'captcha',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  '0_5337023955423066' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->captcha[ /home/wwwroot/admin/application/admin/controller/Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T09:20:07+08:00 ] 59.42.90.239 OPTIONS /admin/Nav/menu
+[ info ] admin.dedaokq.com/admin/Nav/menu [运行时间：0.016256s][吞吐率：61.52req/s] [内存消耗：1,530.49kb] [文件加载：78]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav',
+    2 => 'menu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'content-type',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T09:20:07+08:00 ] 59.42.90.239 POST /admin/Nav/menu
+[ info ] admin.dedaokq.com/admin/Nav/menu [运行时间：0.026093s][吞吐率：38.32req/s] [内存消耗：2,500.13kb] [文件加载：91]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav',
+    2 => 'menu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '51',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 2,
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Nav->menu[ /home/wwwroot/admin/application/admin/controller/Nav.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-06-06T09:20:08+08:00 ] 59.42.90.239 OPTIONS /admin/Nav/editPost
+[ info ] admin.dedaokq.com/admin/Nav/editPost [运行时间：0.016411s][吞吐率：60.94req/s] [内存消耗：1,530.53kb] [文件加载：78]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav',
+    2 => 'editPost',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'content-type',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T09:20:08+08:00 ] 59.42.90.239 POST /admin/Nav/editPost
+[ info ] admin.dedaokq.com/admin/Nav/editPost [运行时间：0.045661s][吞吐率：21.90req/s] [内存消耗：2,799.23kb] [文件加载：98]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav',
+    2 => 'editPost',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '129',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'cat_id' => 2,
+  'parent_id' => 0,
+  'name' => 'cxk',
+  'href' => 'cxkda',
+  'target' => '',
+  'status' => 1,
+  'id' => 467,
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Nav->editPost[ /home/wwwroot/admin/application/admin/controller/Nav.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-06-06T09:20:09+08:00 ] 59.42.90.239 OPTIONS /admin/Nav/index
+[ info ] admin.dedaokq.com/admin/Nav/index [运行时间：0.017256s][吞吐率：57.95req/s] [内存消耗：1,530.51kb] [文件加载：78]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'content-type',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T09:20:09+08:00 ] 59.42.90.239 POST /admin/Nav/index
+[ info ] admin.dedaokq.com/admin/Nav/index [运行时间：0.025916s][吞吐率：38.59req/s] [内存消耗：2,500.17kb] [文件加载：91]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '51',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 2,
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Nav->index[ /home/wwwroot/admin/application/admin/controller/Nav.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-06-06T09:39:55+08:00 ] 59.42.90.239 OPTIONS /admin/Nav/menu
+[ info ] admin.dedaokq.com/admin/Nav/menu [运行时间：0.017188s][吞吐率：58.18req/s] [内存消耗：1,530.49kb] [文件加载：78]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav',
+    2 => 'menu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'content-type',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T09:39:55+08:00 ] 59.42.90.239 POST /admin/Nav/menu
+[ info ] admin.dedaokq.com/admin/Nav/menu [运行时间：0.026290s][吞吐率：38.04req/s] [内存消耗：2,500.13kb] [文件加载：91]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav',
+    2 => 'menu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '51',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 2,
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Nav->menu[ /home/wwwroot/admin/application/admin/controller/Nav.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-06-06T09:39:57+08:00 ] 59.42.90.239 POST /admin/Nav/menu
+[ info ] admin.dedaokq.com/admin/Nav/menu [运行时间：0.026805s][吞吐率：37.31req/s] [内存消耗：2,500.13kb] [文件加载：91]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav',
+    2 => 'menu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '51',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 2,
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Nav->menu[ /home/wwwroot/admin/application/admin/controller/Nav.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-06-06T11:07:11+08:00 ] 59.42.90.239 GET /
+[ info ] admin.dedaokq.com/ [运行时间：0.018816s][吞吐率：53.15req/s] [内存消耗：1,730.70kb] [文件加载：81]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/admin/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ../template/admin/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T11:07:14+08:00 ] 59.42.90.239 POST /admin/index/checkLogin
+[ info ] admin.dedaokq.com/admin/index/checkLogin [运行时间：0.025916s][吞吐率：38.59req/s] [内存消耗：2,423.41kb] [文件加载：90]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'checkLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '13',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'user_id' => 1,
+)
+[ info ] [ RUN ] app\admin\controller\Index->checkLogin[ /home/wwwroot/admin/application/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-06-06T11:07:15+08:00 ] 59.42.90.239 GET /admin/Login/captcha?0.337722736349771
+[ info ] admin.dedaokq.com/admin/Login/captcha?0.337722736349771 [运行时间：0.018876s][吞吐率：52.98req/s] [内存消耗：1,622.95kb] [文件加载：80]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'captcha',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  '0_337722736349771' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->captcha[ /home/wwwroot/admin/application/admin/controller/Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T11:07:36+08:00 ] 59.42.90.239 POST /admin/Login/doLogin
+[ info ] admin.dedaokq.com/admin/Login/doLogin [运行时间：0.033926s][吞吐率：29.48req/s] [内存消耗：2,440.01kb] [文件加载：88]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'doLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '67',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'captcha' => '75him',
+  'db' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Login->doLogin[ /home/wwwroot/admin/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T11:07:36+08:00 ] 59.42.90.239 POST /admin/publics/getMenuBar
+[ info ] admin.dedaokq.com/admin/publics/getMenuBar [运行时间：0.029808s][吞吐率：33.55req/s] [内存消耗：2,812.10kb] [文件加载：96]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'getMenuBar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'dedaologin_expire_time=1559790456',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Publics->getMenuBar[ /home/wwwroot/admin/application/admin/controller/Publics.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-06-06T11:07:36+08:00 ] 59.42.90.239 POST /announcement/Admin_announcement/index
+[ info ] admin.dedaokq.com/announcement/Admin_announcement/index [运行时间：0.030242s][吞吐率：33.07req/s] [内存消耗：2,671.52kb] [文件加载：93]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'announcement',
+    1 => 'Admin_announcement',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'dedaologin_expire_time=1559790456',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\announcement\controller\AdminAnnouncement->index[ /home/wwwroot/admin/application/announcement/controller/AdminAnnouncement.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-06-06T13:34:54+08:00 ] 202.104.32.178 HEAD /
+[ info ] img.dedaokq.com/ [运行时间：0.018716s][吞吐率：53.43req/s] [内存消耗：1,726.09kb] [文件加载：81]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'img.dedaokq.com',
+  'accept' => '*/*',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/admin/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ../template/admin/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T14:46:16+08:00 ] 59.42.90.239 OPTIONS /admin/Nav/menu
+[ info ] admin.dedaokq.com/admin/Nav/menu [运行时间：0.017166s][吞吐率：58.26req/s] [内存消耗：1,530.49kb] [文件加载：78]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav',
+    2 => 'menu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'content-type',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T14:46:16+08:00 ] 59.42.90.239 POST /admin/Nav/menu
+[ info ] admin.dedaokq.com/admin/Nav/menu [运行时间：0.016427s][吞吐率：60.88req/s] [内存消耗：1,530.98kb] [文件加载：78]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav',
+    2 => 'menu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '51',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 2,
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T14:46:19+08:00 ] 59.42.90.239 OPTIONS /admin/index/checkLogin
+[ info ] admin.dedaokq.com/admin/index/checkLogin [运行时间：0.017716s][吞吐率：56.45req/s] [内存消耗：1,552.66kb] [文件加载：80]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'checkLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'content-type',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->checkLogin[ /home/wwwroot/admin/application/admin/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T14:46:19+08:00 ] 59.42.90.239 GET /admin/Login/captcha?0.14353888926359026
+[ info ] admin.dedaokq.com/admin/Login/captcha?0.14353888926359026 [运行时间：0.019848s][吞吐率：50.38req/s] [内存消耗：1,622.98kb] [文件加载：80]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'captcha',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  '0_14353888926359026' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->captcha[ /home/wwwroot/admin/application/admin/controller/Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T14:46:19+08:00 ] 59.42.90.239 POST /admin/index/checkLogin
+[ info ] admin.dedaokq.com/admin/index/checkLogin [运行时间：0.018088s][吞吐率：55.29req/s] [内存消耗：1,691.77kb] [文件加载：82]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'checkLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '13',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'user_id' => 1,
+)
+[ info ] [ RUN ] app\admin\controller\Index->checkLogin[ /home/wwwroot/admin/application/admin/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]未定义数据库类型[/home/wwwroot/admin/thinkphp/library/think/Db.php:86]
+---------------------------------------------------------------
+[ 2019-06-06T14:46:34+08:00 ] 59.42.90.239 OPTIONS /admin/Login/doLogin
+[ info ] admin.dedaokq.com/admin/Login/doLogin [运行时间：0.017285s][吞吐率：57.85req/s] [内存消耗：1,575.94kb] [文件加载：81]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'doLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'content-type',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->doLogin[ /home/wwwroot/admin/application/admin/controller/Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T14:46:34+08:00 ] 59.42.90.239 POST /admin/Login/doLogin
+[ info ] admin.dedaokq.com/admin/Login/doLogin [运行时间：0.039654s][吞吐率：25.22req/s] [内存消耗：2,517.53kb] [文件加载：91]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'doLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '67',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'captcha' => 'ruiyh',
+  'db' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Login->doLogin[ /home/wwwroot/admin/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T14:46:34+08:00 ] 59.42.90.239 OPTIONS /admin/publics/getMenuBar
+[ info ] admin.dedaokq.com/admin/publics/getMenuBar [运行时间：0.016155s][吞吐率：61.90req/s] [内存消耗：1,507.25kb] [文件加载：78]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'getMenuBar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'content-type',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T14:46:34+08:00 ] 59.42.90.239 OPTIONS /admin/Nav_Cat/catList
+[ info ] admin.dedaokq.com/admin/Nav_Cat/catList [运行时间：0.023778s][吞吐率：42.06req/s] [内存消耗：1,516.14kb] [文件加载：78]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav_Cat',
+    2 => 'catList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'content-type',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T14:46:34+08:00 ] 59.42.90.239 OPTIONS /admin/Nav/index
+[ info ] admin.dedaokq.com/admin/Nav/index [运行时间：0.023273s][吞吐率：42.97req/s] [内存消耗：1,530.51kb] [文件加载：78]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'content-type',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T14:46:34+08:00 ] 59.42.90.239 POST /admin/Nav/index
+[ info ] admin.dedaokq.com/admin/Nav/index [运行时间：0.027432s][吞吐率：36.45req/s] [内存消耗：2,501.40kb] [文件加载：91]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '51',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 1,
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Nav->index[ /home/wwwroot/admin/application/admin/controller/Nav.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-06-06T14:46:34+08:00 ] 59.42.90.239 POST /admin/Nav_Cat/catList
+[ info ] admin.dedaokq.com/admin/Nav_Cat/catList [运行时间：0.035258s][吞吐率：28.36req/s] [内存消耗：2,413.18kb] [文件加载：90]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav_Cat',
+    2 => 'catList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\NavCat->catList[ /home/wwwroot/admin/application/admin/controller/NavCat.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-06-06T14:46:34+08:00 ] 59.42.90.239 POST /admin/publics/getMenuBar
+[ info ] admin.dedaokq.com/admin/publics/getMenuBar [运行时间：0.040003s][吞吐率：25.00req/s] [内存消耗：2,811.62kb] [文件加载：96]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'getMenuBar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Publics->getMenuBar[ /home/wwwroot/admin/application/admin/controller/Publics.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-06-06T14:46:36+08:00 ] 59.42.90.239 POST /admin/Nav/index
+[ info ] admin.dedaokq.com/admin/Nav/index [运行时间：0.027290s][吞吐率：36.64req/s] [内存消耗：2,500.17kb] [文件加载：91]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '51',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 2,
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Nav->index[ /home/wwwroot/admin/application/admin/controller/Nav.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-06-06T14:46:46+08:00 ] 59.42.90.239 OPTIONS /admin/Nav/menu
+[ info ] admin.dedaokq.com/admin/Nav/menu [运行时间：0.017068s][吞吐率：58.59req/s] [内存消耗：1,530.49kb] [文件加载：78]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav',
+    2 => 'menu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'content-type',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T14:46:46+08:00 ] 59.42.90.239 POST /admin/Nav/menu
+[ info ] admin.dedaokq.com/admin/Nav/menu [运行时间：0.026507s][吞吐率：37.73req/s] [内存消耗：2,500.13kb] [文件加载：91]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Nav',
+    2 => 'menu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '51',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 2,
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Nav->menu[ /home/wwwroot/admin/application/admin/controller/Nav.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-06-06T15:53:29+08:00 ] 59.42.90.239 POST /api/Setting/getSiteInfo
+[ info ] api.dedaokq.com/api/Setting/getSiteInfo [运行时间：0.017798s][吞吐率：56.19req/s] [内存消耗：1,567.63kb] [文件加载：82]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Setting',
+    2 => 'getSiteInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://m.szddkq.com/page/about?tdsourcetag=s_pcqq_aiomsg',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 SE 2.X MetaSr 1.0',
+  'origin' => 'http://m.szddkq.com',
+  'accept' => '*/*',
+  'content-length' => '7',
+  'connection' => 'keep-alive',
+  'host' => 'api.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'db_id' => '2',
+)
+[ info ] [ RUN ] app\api\controller\Setting->getSiteInfo[ /home/wwwroot/admin/application/api/controller/Setting.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T15:54:05+08:00 ] 59.42.90.239 POST /api/Setting/getSiteInfo
+[ info ] api.dedaokq.com/api/Setting/getSiteInfo [运行时间：0.018169s][吞吐率：55.04req/s] [内存消耗：1,567.60kb] [文件加载：82]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Setting',
+    2 => 'getSiteInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://m.szddkq.com/page/jky?tdsourcetag=s_pcqq_aiomsg',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 SE 2.X MetaSr 1.0',
+  'origin' => 'http://m.szddkq.com',
+  'accept' => '*/*',
+  'content-length' => '7',
+  'connection' => 'keep-alive',
+  'host' => 'api.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'db_id' => '2',
+)
+[ info ] [ RUN ] app\api\controller\Setting->getSiteInfo[ /home/wwwroot/admin/application/api/controller/Setting.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T15:56:37+08:00 ] 59.42.90.239 POST /api/Setting/getSiteInfo
+[ info ] api.dedaokq.com/api/Setting/getSiteInfo [运行时间：0.017751s][吞吐率：56.33req/s] [内存消耗：1,567.63kb] [文件加载：82]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Setting',
+    2 => 'getSiteInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://m.szddkq.com/page/experience?tdsourcetag=s_pcqq_aiomsg',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 SE 2.X MetaSr 1.0',
+  'origin' => 'http://m.szddkq.com',
+  'accept' => '*/*',
+  'content-length' => '7',
+  'connection' => 'keep-alive',
+  'host' => 'api.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'db_id' => '2',
+)
+[ info ] [ RUN ] app\api\controller\Setting->getSiteInfo[ /home/wwwroot/admin/application/api/controller/Setting.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T16:41:55+08:00 ] 58.248.108.207 HEAD /
+[ info ] img.dedaokq.com/ [运行时间：0.019390s][吞吐率：51.57req/s] [内存消耗：1,726.09kb] [文件加载：81]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'img.dedaokq.com',
+  'accept' => '*/*',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/admin/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ../template/admin/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-06-06T23:36:24+08:00 ] 202.104.32.178 HEAD /
+[ info ] img.dedaokq.com/ [运行时间：0.018593s][吞吐率：53.78req/s] [内存消耗：1,726.09kb] [文件加载：81]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'img.dedaokq.com',
+  'accept' => '*/*',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/admin/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ../template/admin/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File

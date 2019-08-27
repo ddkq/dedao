@@ -1,0 +1,800 @@
+---------------------------------------------------------------
+[ 2019-07-29T06:13:52+08:00 ] 101.132.164.213 GET /
+[ info ] admin.dedaokq.com/ [运行时间：0.019485s][吞吐率：51.32req/s] [内存消耗：1,727.16kb] [文件加载：81]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'admin.dedaokq.com',
+  'user-agent' => 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/admin/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ../template/admin/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T09:50:07+08:00 ] 103.28.148.202 GET /wp-includes/wlwmanifest.xml
+[ info ] api.dedaokq.com/wp-includes/wlwmanifest.xml [运行时间：0.017239s][吞吐率：58.01req/s] [内存消耗：1,506.22kb] [文件加载：77]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wp-includes',
+    1 => 'wlwmanifest.xml',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  1 => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  0 => 'Accept-Language: en-US,en;q=0.5',
+  'accept' => '*/*',
+  'host' => 'api.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T09:50:23+08:00 ] 50.87.249.87 GET /wp/wp-includes/wlwmanifest.xml
+[ info ] api.dedaokq.com/wp/wp-includes/wlwmanifest.xml [运行时间：0.017888s][吞吐率：55.90req/s] [内存消耗：1,506.27kb] [文件加载：77]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wp',
+    1 => 'wp-includes',
+    2 => 'wlwmanifest.xml',
+  ),
+)
+[ info ] [ HEADER ] array (
+  1 => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  0 => 'Accept-Language: en-US,en;q=0.5',
+  'accept' => '*/*',
+  'host' => 'api.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T09:50:30+08:00 ] 94.237.66.41 GET /wordpress/wp-includes/wlwmanifest.xml
+[ info ] api.dedaokq.com/wordpress/wp-includes/wlwmanifest.xml [运行时间：0.016577s][吞吐率：60.32req/s] [内存消耗：1,506.33kb] [文件加载：77]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wordpress',
+    1 => 'wp-includes',
+    2 => 'wlwmanifest.xml',
+  ),
+)
+[ info ] [ HEADER ] array (
+  1 => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  0 => 'Accept-Language: en-US,en;q=0.5',
+  'accept' => '*/*',
+  'host' => 'api.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T09:50:46+08:00 ] 162.241.131.46 GET /blog/wp-includes/wlwmanifest.xml
+[ info ] api.dedaokq.com/blog/wp-includes/wlwmanifest.xml [运行时间：0.017162s][吞吐率：58.27req/s] [内存消耗：1,506.29kb] [文件加载：77]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'blog',
+    1 => 'wp-includes',
+    2 => 'wlwmanifest.xml',
+  ),
+)
+[ info ] [ HEADER ] array (
+  1 => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  0 => 'Accept-Language: en-US,en;q=0.5',
+  'accept' => '*/*',
+  'host' => 'api.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T09:51:02+08:00 ] 184.168.152.182 GET /site/wp-includes/wlwmanifest.xml
+[ info ] api.dedaokq.com/site/wp-includes/wlwmanifest.xml [运行时间：0.018246s][吞吐率：54.81req/s] [内存消耗：1,506.29kb] [文件加载：77]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'site',
+    1 => 'wp-includes',
+    2 => 'wlwmanifest.xml',
+  ),
+)
+[ info ] [ HEADER ] array (
+  1 => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  0 => 'Accept-Language: en-US,en;q=0.5',
+  'accept' => '*/*',
+  'host' => 'api.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T09:51:17+08:00 ] 162.144.27.166 GET /old/wp-includes/wlwmanifest.xml
+[ info ] api.dedaokq.com/old/wp-includes/wlwmanifest.xml [运行时间：0.017997s][吞吐率：55.56req/s] [内存消耗：1,506.28kb] [文件加载：77]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'old',
+    1 => 'wp-includes',
+    2 => 'wlwmanifest.xml',
+  ),
+)
+[ info ] [ HEADER ] array (
+  1 => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  0 => 'Accept-Language: en-US,en;q=0.5',
+  'accept' => '*/*',
+  'host' => 'api.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T09:51:24+08:00 ] 160.153.147.142 GET /test/wp-includes/wlwmanifest.xml
+[ info ] api.dedaokq.com/test/wp-includes/wlwmanifest.xml [运行时间：0.016751s][吞吐率：59.70req/s] [内存消耗：1,506.29kb] [文件加载：77]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => 'wp-includes',
+    2 => 'wlwmanifest.xml',
+  ),
+)
+[ info ] [ HEADER ] array (
+  1 => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  0 => 'Accept-Language: en-US,en;q=0.5',
+  'accept' => '*/*',
+  'host' => 'api.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T09:52:27+08:00 ] 89.46.107.118 GET /en/wp-includes/wlwmanifest.xml
+[ info ] api.dedaokq.com/en/wp-includes/wlwmanifest.xml [运行时间：0.016769s][吞吐率：59.63req/s] [内存消耗：1,506.27kb] [文件加载：77]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'en',
+    1 => 'wp-includes',
+    2 => 'wlwmanifest.xml',
+  ),
+)
+[ info ] [ HEADER ] array (
+  1 => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  0 => 'Accept-Language: en-US,en;q=0.5',
+  'accept' => '*/*',
+  'host' => 'api.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T09:52:43+08:00 ] 104.238.120.71 GET /demo/wp-includes/wlwmanifest.xml
+[ info ] api.dedaokq.com/demo/wp-includes/wlwmanifest.xml [运行时间：0.017539s][吞吐率：57.02req/s] [内存消耗：1,506.29kb] [文件加载：77]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'demo',
+    1 => 'wp-includes',
+    2 => 'wlwmanifest.xml',
+  ),
+)
+[ info ] [ HEADER ] array (
+  1 => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  0 => 'Accept-Language: en-US,en;q=0.5',
+  'accept' => '*/*',
+  'host' => 'api.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T09:52:59+08:00 ] 192.169.214.83 GET /web/wp-includes/wlwmanifest.xml
+[ info ] api.dedaokq.com/web/wp-includes/wlwmanifest.xml [运行时间：0.017356s][吞吐率：57.62req/s] [内存消耗：1,506.28kb] [文件加载：77]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'web',
+    1 => 'wp-includes',
+    2 => 'wlwmanifest.xml',
+  ),
+)
+[ info ] [ HEADER ] array (
+  1 => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  0 => 'Accept-Language: en-US,en;q=0.5',
+  'accept' => '*/*',
+  'host' => 'api.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T09:53:15+08:00 ] 198.71.238.30 GET /dev/wp-includes/wlwmanifest.xml
+[ info ] api.dedaokq.com/dev/wp-includes/wlwmanifest.xml [运行时间：0.016639s][吞吐率：60.10req/s] [内存消耗：1,506.28kb] [文件加载：77]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'dev',
+    1 => 'wp-includes',
+    2 => 'wlwmanifest.xml',
+  ),
+)
+[ info ] [ HEADER ] array (
+  1 => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  0 => 'Accept-Language: en-US,en;q=0.5',
+  'accept' => '*/*',
+  'host' => 'api.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T09:53:31+08:00 ] 66.165.234.34 GET /home/wp-includes/wlwmanifest.xml
+[ info ] api.dedaokq.com/home/wp-includes/wlwmanifest.xml [运行时间：0.017805s][吞吐率：56.16req/s] [内存消耗：1,506.29kb] [文件加载：77]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'wp-includes',
+    2 => 'wlwmanifest.xml',
+  ),
+)
+[ info ] [ HEADER ] array (
+  1 => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  0 => 'Accept-Language: en-US,en;q=0.5',
+  'accept' => '*/*',
+  'host' => 'api.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T09:53:47+08:00 ] 209.58.160.128 GET /cms/wp-includes/wlwmanifest.xml
+[ info ] api.dedaokq.com/cms/wp-includes/wlwmanifest.xml [运行时间：0.017232s][吞吐率：58.03req/s] [内存消耗：1,506.28kb] [文件加载：77]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'cms',
+    1 => 'wp-includes',
+    2 => 'wlwmanifest.xml',
+  ),
+)
+[ info ] [ HEADER ] array (
+  1 => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  0 => 'Accept-Language: en-US,en;q=0.5',
+  'accept' => '*/*',
+  'host' => 'api.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T09:55:18+08:00 ] 51.255.162.75 GET /news/wp-includes/wlwmanifest.xml
+[ info ] api.dedaokq.com/news/wp-includes/wlwmanifest.xml [运行时间：0.017480s][吞吐率：57.21req/s] [内存消耗：1,506.29kb] [文件加载：77]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'news',
+    1 => 'wp-includes',
+    2 => 'wlwmanifest.xml',
+  ),
+)
+[ info ] [ HEADER ] array (
+  1 => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  0 => 'Accept-Language: en-US,en;q=0.5',
+  'accept' => '*/*',
+  'host' => 'api.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T09:55:33+08:00 ] 31.31.77.14 GET /shop/wp-includes/wlwmanifest.xml
+[ info ] api.dedaokq.com/shop/wp-includes/wlwmanifest.xml [运行时间：0.016467s][吞吐率：60.73req/s] [内存消耗：1,506.29kb] [文件加载：77]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'shop',
+    1 => 'wp-includes',
+    2 => 'wlwmanifest.xml',
+  ),
+)
+[ info ] [ HEADER ] array (
+  1 => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  0 => 'Accept-Language: en-US,en;q=0.5',
+  'accept' => '*/*',
+  'host' => 'api.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T09:55:50+08:00 ] 160.153.154.30 GET /main/wp-includes/wlwmanifest.xml
+[ info ] api.dedaokq.com/main/wp-includes/wlwmanifest.xml [运行时间：0.016023s][吞吐率：62.41req/s] [内存消耗：1,506.29kb] [文件加载：77]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'main',
+    1 => 'wp-includes',
+    2 => 'wlwmanifest.xml',
+  ),
+)
+[ info ] [ HEADER ] array (
+  1 => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  0 => 'Accept-Language: en-US,en;q=0.5',
+  'accept' => '*/*',
+  'host' => 'api.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T09:56:06+08:00 ] 50.87.249.87 GET /newsite/wp-includes/wlwmanifest.xml
+[ info ] api.dedaokq.com/newsite/wp-includes/wlwmanifest.xml [运行时间：0.017876s][吞吐率：55.94req/s] [内存消耗：1,506.29kb] [文件加载：77]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'newsite',
+    1 => 'wp-includes',
+    2 => 'wlwmanifest.xml',
+  ),
+)
+[ info ] [ HEADER ] array (
+  1 => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  0 => 'Accept-Language: en-US,en;q=0.5',
+  'accept' => '*/*',
+  'host' => 'api.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T09:56:38+08:00 ] 188.93.231.242 GET /v2/wp-includes/wlwmanifest.xml
+[ info ] api.dedaokq.com/v2/wp-includes/wlwmanifest.xml [运行时间：0.016943s][吞吐率：59.02req/s] [内存消耗：1,506.27kb] [文件加载：77]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'v2',
+    1 => 'wp-includes',
+    2 => 'wlwmanifest.xml',
+  ),
+)
+[ info ] [ HEADER ] array (
+  1 => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  0 => 'Accept-Language: en-US,en;q=0.5',
+  'accept' => '*/*',
+  'host' => 'api.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T09:56:53+08:00 ] 87.117.247.143 GET /oldsite/wp-includes/wlwmanifest.xml
+[ info ] api.dedaokq.com/oldsite/wp-includes/wlwmanifest.xml [运行时间：0.017175s][吞吐率：58.22req/s] [内存消耗：1,506.29kb] [文件加载：77]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'oldsite',
+    1 => 'wp-includes',
+    2 => 'wlwmanifest.xml',
+  ),
+)
+[ info ] [ HEADER ] array (
+  1 => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  0 => 'Accept-Language: en-US,en;q=0.5',
+  'accept' => '*/*',
+  'host' => 'api.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T09:57:08+08:00 ] 66.147.244.132 GET /website/wp-includes/wlwmanifest.xml
+[ info ] api.dedaokq.com/website/wp-includes/wlwmanifest.xml [运行时间：0.018042s][吞吐率：55.43req/s] [内存消耗：1,506.29kb] [文件加载：77]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'website',
+    1 => 'wp-includes',
+    2 => 'wlwmanifest.xml',
+  ),
+)
+[ info ] [ HEADER ] array (
+  1 => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  0 => 'Accept-Language: en-US,en;q=0.5',
+  'accept' => '*/*',
+  'host' => 'api.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T09:57:13+08:00 ] 69.195.124.115 GET /portal/wp-includes/wlwmanifest.xml
+[ info ] api.dedaokq.com/portal/wp-includes/wlwmanifest.xml [运行时间：0.017148s][吞吐率：58.32req/s] [内存消耗：1,506.29kb] [文件加载：77]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'wp-includes',
+    2 => 'wlwmanifest.xml',
+  ),
+)
+[ info ] [ HEADER ] array (
+  1 => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  0 => 'Accept-Language: en-US,en;q=0.5',
+  'accept' => '*/*',
+  'host' => 'api.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T09:57:19+08:00 ] 89.46.104.177 GET /2018/wp-includes/wlwmanifest.xml
+[ info ] api.dedaokq.com/2018/wp-includes/wlwmanifest.xml [运行时间：0.016724s][吞吐率：59.79req/s] [内存消耗：1,506.29kb] [文件加载：77]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '2018',
+    1 => 'wp-includes',
+    2 => 'wlwmanifest.xml',
+  ),
+)
+[ info ] [ HEADER ] array (
+  1 => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  0 => 'Accept-Language: en-US,en;q=0.5',
+  'accept' => '*/*',
+  'host' => 'api.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T09:57:34+08:00 ] 91.224.199.122 GET /2019/wp-includes/wlwmanifest.xml
+[ info ] api.dedaokq.com/2019/wp-includes/wlwmanifest.xml [运行时间：0.016754s][吞吐率：59.69req/s] [内存消耗：1,506.29kb] [文件加载：77]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '2019',
+    1 => 'wp-includes',
+    2 => 'wlwmanifest.xml',
+  ),
+)
+[ info ] [ HEADER ] array (
+  1 => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  0 => 'Accept-Language: en-US,en;q=0.5',
+  'accept' => '*/*',
+  'host' => 'api.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T09:57:50+08:00 ] 184.168.193.205 GET /v1/wp-includes/wlwmanifest.xml
+[ info ] api.dedaokq.com/v1/wp-includes/wlwmanifest.xml [运行时间：0.017571s][吞吐率：56.91req/s] [内存消耗：1,506.27kb] [文件加载：77]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'v1',
+    1 => 'wp-includes',
+    2 => 'wlwmanifest.xml',
+  ),
+)
+[ info ] [ HEADER ] array (
+  1 => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  0 => 'Accept-Language: en-US,en;q=0.5',
+  'accept' => '*/*',
+  'host' => 'api.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T09:58:05+08:00 ] 162.144.252.210 GET /1/wp-includes/wlwmanifest.xml
+[ info ] api.dedaokq.com/1/wp-includes/wlwmanifest.xml [运行时间：0.017605s][吞吐率：56.80req/s] [内存消耗：1,506.23kb] [文件加载：77]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '1',
+    1 => 'wp-includes',
+    2 => 'wlwmanifest.xml',
+  ),
+)
+[ info ] [ HEADER ] array (
+  1 => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  0 => 'Accept-Language: en-US,en;q=0.5',
+  'accept' => '*/*',
+  'host' => 'api.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T09:59:04+08:00 ] 163.177.13.2 HEAD /
+[ info ] api.dedaokq.com/ [运行时间：0.018489s][吞吐率：54.09req/s] [内存消耗：1,725.87kb] [文件加载：81]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'api.dedaokq.com',
+  'accept' => '*/*',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/admin/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ../template/admin/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T09:59:04+08:00 ] 85.187.139.238 GET /wp2/wp-includes/wlwmanifest.xml
+[ info ] api.dedaokq.com/wp2/wp-includes/wlwmanifest.xml [运行时间：0.017337s][吞吐率：57.68req/s] [内存消耗：1,506.28kb] [文件加载：77]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wp2',
+    1 => 'wp-includes',
+    2 => 'wlwmanifest.xml',
+  ),
+)
+[ info ] [ HEADER ] array (
+  1 => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  0 => 'Accept-Language: en-US,en;q=0.5',
+  'accept' => '*/*',
+  'host' => 'api.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T09:59:21+08:00 ] 160.153.156.130 GET /blogs/wp-includes/wlwmanifest.xml
+[ info ] api.dedaokq.com/blogs/wp-includes/wlwmanifest.xml [运行时间：0.016657s][吞吐率：60.03req/s] [内存消耗：1,506.29kb] [文件加载：77]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'blogs',
+    1 => 'wp-includes',
+    2 => 'wlwmanifest.xml',
+  ),
+)
+[ info ] [ HEADER ] array (
+  1 => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  0 => 'Accept-Language: en-US,en;q=0.5',
+  'accept' => '*/*',
+  'host' => 'api.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T10:03:44+08:00 ] 163.177.13.2 HEAD /
+[ info ] api.dedaokq.com/ [运行时间：0.018827s][吞吐率：53.12req/s] [内存消耗：1,725.87kb] [文件加载：81]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'api.dedaokq.com',
+  'accept' => '*/*',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/admin/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ../template/admin/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T10:07:46+08:00 ] 163.177.13.2 HEAD /
+[ info ] api.dedaokq.com/ [运行时间：0.019044s][吞吐率：52.51req/s] [内存消耗：1,725.87kb] [文件加载：81]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'api.dedaokq.com',
+  'accept' => '*/*',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/admin/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ../template/admin/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T10:08:16+08:00 ] 163.177.13.2 HEAD /
+[ info ] api.dedaokq.com/ [运行时间：0.018576s][吞吐率：53.83req/s] [内存消耗：1,725.87kb] [文件加载：81]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'api.dedaokq.com',
+  'accept' => '*/*',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/admin/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ../template/admin/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-29T10:19:57+08:00 ] 163.177.13.2 HEAD /
+[ info ] api.dedaokq.com/ [运行时间：0.019046s][吞吐率：52.50req/s] [内存消耗：1,725.87kb] [文件加载：81]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'api.dedaokq.com',
+  'accept' => '*/*',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/admin/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ../template/admin/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File

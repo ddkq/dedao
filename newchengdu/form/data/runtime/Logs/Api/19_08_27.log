@@ -1,0 +1,40 @@
+[ 2019-08-27T11:51:54+08:00 ] 59.42.90.126 /Api/registeradmin/delete/id/51.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_register` [ RunTime:0.0004s ]
+SQL: UPDATE `cmf_register` SET `status`='0' WHERE `id` = 51 [ RunTime:0.0034s ]
+
+[ 2019-08-27T11:51:56+08:00 ] 59.42.90.126 /Api/registeradmin/delete/id/53.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_register` [ RunTime:0.0004s ]
+SQL: UPDATE `cmf_register` SET `status`='0' WHERE `id` = 53 [ RunTime:0.0037s ]
+
+[ 2019-08-27T11:51:59+08:00 ] 59.42.90.126 /Api/registeradmin/delete/id/54.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_register` [ RunTime:0.0004s ]
+SQL: UPDATE `cmf_register` SET `status`='0' WHERE `id` = 54 [ RunTime:0.0056s ]
+
+[ 2019-08-27T11:52:06+08:00 ] 59.42.90.126 /Api/registeradmin/delete/id/48.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_register` [ RunTime:0.0003s ]
+SQL: UPDATE `cmf_register` SET `status`='0' WHERE `id` = 48 [ RunTime:0.0043s ]
+

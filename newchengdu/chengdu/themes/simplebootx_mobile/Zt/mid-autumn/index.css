@@ -1,0 +1,77 @@
+body {
+	margin: 0;
+	background-color: #001022;
+}
+img {
+	max-width: 100%;
+	vertical-align: middle;
+	display: inline-block;
+}
+.swiper-slide {
+	position: relative;
+}
+.banner-next img {
+    position: absolute;
+    transition: all 0.5s;
+}
+.banner-next {
+    z-index: 99;
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.banner-next {
+    position: relative;
+    display: block;
+    width: 26px;
+    height: 70px;
+}
+.banner-next .mouse {
+    position: unset;
+    animation: bounceY 2s infinite;
+}
+.banner-next .arrows-1 {
+    transform: rotate(90deg);
+    left: 10px;
+    top: 50px;
+    animation: fade 2s infinite;
+}
+.banner-next .arrows-2 {
+    transform: rotate(90deg);
+    left: 9px;
+    top: 53px;
+    animation: fade 2s infinite 1s;
+}
+@-webkit-keyframes bounceY{
+	0%,100%{-webkit-transform:translateY(0);transform:translateY(0);}
+	50%{-webkit-transform:translateY(-15px);transform:translateY(-15px);}
+}
+@-moz-keyframes bounceY{
+	0%,100%{-moz-transform:translateY(0);transform:translateY(0);}
+	50%{-moz-transform:translateY(-15px);transform:translateY(-15px);}
+}
+@-o-keyframes bounceY{
+	0%,100%{-o-transform:translateY(0);transform:translateY(0);}
+	50%{-o-transform:translateY(-15px);transform:translateY(-15px);}
+}
+@keyframes bounceY{
+	0%,100%{transform:translateY(0);}
+	50%{transform:translateY(-15px);}
+}
+@-webkit-keyframes fade{
+	0%,100%{opacity:0;}
+	50%{opacity:1;}
+}
+@-moz-keyframes fade{
+	0%,100%{opacity:0;}
+	50%{opacity:1;}
+}
+@-o-keyframes fade{
+	0%,100%{opacity:0;}
+	50%{opacity:1;}
+}
+@keyframes fade{
+	0%,100%{opacity:0;}
+	50%{opacity:1;}
+}

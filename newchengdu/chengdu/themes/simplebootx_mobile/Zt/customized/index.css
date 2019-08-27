@@ -1,0 +1,67 @@
+a {
+	color: #333;
+}
+ul {
+	margin: 0;
+}
+i {
+	display: inline-block;
+}
+.banner {
+	margin-top: 120px;
+}
+.title {
+	font-family: 'FZLTDHK';
+	color: #c30d24;
+	background-color: #e6e6e6;
+}
+.red {
+	color: #ff0020;
+}
+.w-30 {
+	width: 30%;
+}
+.content-form, form input {
+	background-color: #FEDE47;
+}
+form input {
+	border: 1px solid #99852A;
+}
+.outnumber:after, .outnumber:before {
+	content: '';
+	display: inline-block;
+	width: 50%;
+	background-color: #fff;
+	position: absolute;
+	height: 1px;
+    top: 50%;
+}
+.outnumber:before {
+    left: -32%;
+}
+.outnumber:after {
+	right: -32%;
+}
+.content-form {
+	overflow: hidden;
+}
+.submit-btn {
+	background-color: #FF0000;
+	border-radius: .5rem;
+}
+.swt-btn {
+	bottom: 4.06rem;
+	left: 4.06rem;
+	animation: scale 2.5s linear infinite;
+}
+@keyframes scale {
+	0% {transform: scale(1);}
+	50% {transform: scale(1.25);}
+	100% {transform: scale(1);}
+}
+.copy {
+	background-color: #4F0101 !important;
+}
+.copy p, .copy p a {
+	color: #fff !important;
+}

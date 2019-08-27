@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+	<tc_include file="Public:head" />
+	<title>德道隐形纠正_{$site_name}</title>
+</head>
+<style>
+	*html, _html {
+		background-image: url(about:blank);
+		background-attachment: fixed;
+	}
+	body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td, img {
+		border: medium none;
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		background-color: #fff;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		font-size: 100%;
+	}
+	em {
+		font-style: normal;
+	}
+	ul, ol {
+		list-style: none;
+	}
+	a {
+		text-decoration: none;
+		color: #333;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+	img {
+		border: 0px;
+		vertical-align: middle;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	.clearfix:before, .clearfix:after {
+		content: "";
+		display: table;
+	}
+	.clearfix:after {
+		clear: both;
+		overflow: hidden;
+	}
+	.clearfix {
+		zoom: 1;
+	}
+	.scroll_top {
+		overflow: hidden;
+		zoom: 1;
+		position: relative
+	}
+	.clr {
+		clear: both;
+		height: 0px;
+		overflow: hidden;
+	}
+	.pubW {
+		width: 1190px;
+	}
+	.center {
+		margin: 0 auto;
+	}
+	.float_left {
+		float: left;
+		display: inline;
+	}
+	.float_right {
+		float: right;
+		display: inline;
+	}
+	.fl {
+		float: left;
+		display: inline;
+	}
+	.fr {
+		float: right;
+		display: inline;
+	}
+	.bgff {
+		background: #fff;
+	}
+	.bgf3 {
+		background: #f2f2f2;
+	}
+	.top {
+		height: 67px;box-sizing:content-box;-moz-box-sizing: content-box;-webkit-box-sizing: content-box;
+		background: #fff;
+		padding-top: 23px;
+	}
+	.top div h1 a, .top div span, .server .phone, .server span, .server input.inputbtn {
+		background: url(/comjs/images/common_icon.png) no-repeat;
+	}
+	.top div h1 {
+		width: 318px;
+		height: 40px;
+		float: left;
+		display: inline;
+	}
+	.top div h1 a {
+		background-position: 0 -400px;
+		width: 318px;
+		height: 40px;
+		display: block;
+	}
+	.topNav{ margin-top:18px;}
+	.topNav li {float:left;height:26px;line-height:26px; /*background:url(../newImg/navBg.jpg) no-repeat right center;*/}
+	.topNav li:last-child{ background:none;}
+	.topNav li a{display:block;padding:0 12px;font-size:18px;color:#494949;text-decoration:none;}
+	/*.topNav li:first-child a {color:#006577;}*/
+	.topNav a:hover{ background-color:#3d3f4b; color:#fff; text-decoration:none;}
+	.top .server {
+		width: 230px;
+		float: right;
+		display: inline;
+		margin-top: 0;
+	}
+	.server p.call .phone {
+		background-position: -634px -21px;
+		width: 17px;
+		height: 17px;
+	}
+	.server p span {
+		color: #272727;
+		font-size: 14px;
+		display: inline-block;
+	}
+	.server p strong {
+		font-size: 16px;
+	}
+	.server p.bd {
+		border: 1px solid #272727;box-sizing:content-box;-moz-box-sizing: content-box;-webkit-box-sizing: content-box;
+		border-radius: 3px;
+		height: 23px;
+		margin-top: 5px;
+	}
+	.server input.inputtext {
+		width: 217px;box-sizing:content-box;-moz-box-sizing: content-box;-webkit-box-sizing: content-box;
+	}
+	.server input.inputtext {
+		border: 0 none;background:#fff;
+		color: #BABABA;
+		float: left;
+		height: 23px;
+		line-height: 23px;
+		padding-left: 5px;
+		width: 109px;
+	}
+	.server input.inputbtn {
+		background-position: -754px -12px;
+		border: 0 none;
+		cursor: pointer;
+		float: right;
+		height: 23px;
+		width: 39px;
+	}
+	.server input.inputbtn:hover {
+		background-position: -754px -35px;
+	}
+	.pop_btn_up {
+		display: block;
+		width: 97px;
+		height: 15px;
+		background: url(/comjs/images/common_icon.png) no-repeat -662px -294px;
+		float: right;
+		margin-top: 27px;
+		margin-left: 25px;
+		display: inline;
+	}
+	.pop_btn_down {
+		background-position: -662px -267px;
+	}
+	.pop_box {
+		width: 100%;
+		height: 150px;
+		background: url(/comjs/images/pop_banner.jpg) no-repeat center top;
+		position: relative;
+	}
+	.pop_box a {
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+	.close_pop {
+		width: 43px;
+		height: 43px;
+		background: url(/comjs/images/common_icon.png) no-repeat -781px -211px;
+		position: absolute;
+		top: 50%;
+		margin-top: -22px;
+		right: 100px;
+		cursor: pointer;
+	}
+</style>
+<link rel="stylesheet" href="__TMPL__Zt/ddyxjz/css/Kd_Common.css">
+
+<body>
+	<tc_include file="Public:new_header" />
+	<div class="banner">
+		<ul>
+			<li class="bg1">
+				<div class="wrap"><a onclick="openJesongChatByGroup(16524,20125);" class="iBlock ico ljzx"></a></div>
+			</li>
+			<li class="bg2">
+				<div class="wrap"><a onclick="openJesongChatByGroup(16524,20125);" class="iBlock ico ljzx"></a></div>
+			</li>
+		</ul>
+		<div class="hd"> <a class="prev ico"></a> <a class="next ico"></a> </div>
+    </div>
+  		
+	<div class="container1">
+  		<div class="box box1">
+    		<div class="hd">
+      			<h2 class="iBlock ico"></h2>
+      			<em></em> 
+      		</div>
+    		<div class="bd">
+      			<div class="col-box fl">
+        			<dl class="clearfix">
+          				<dt><img src="__TMPL__Zt/ddyxjz/imgs/p2.jpg" width="126" height="54"></dt>
+          				<dd>
+            				<h6>美观度</h6>
+            				<p>透明轻薄,外观上几乎看不到牙套</p>
+          				</dd>
+        			</dl>
+        			<dl class="clearfix">
+          				<dt><img src="__TMPL__Zt/ddyxjz/imgs/p14.jpg" width="126" height="54"></dt>
+          				<dd>
+            				<h6>舒适度</h6>
+            				<p>几乎感觉不到牙套存在</p>
+          				</dd>
+        			</dl>
+        			<dl class="clearfix">
+          				<dt><img src="__TMPL__Zt/ddyxjz/imgs/p3.jpg" width="126" height="54"></dt>
+          				<dd>
+            				<h6>清洁度</h6>
+            				<p>自行摘带,容易清洁</p>
+          				</dd>
+        			</dl>
+        			<dl class="clearfix">
+          				<dt><img src="__TMPL__Zt/ddyxjz/imgs/p4.jpg" width="126" height="54"></dt>
+          				<dd>
+            				<h6>简便度</h6>
+            				<p>1-2月就诊一次</p>
+          				</dd>
+        			</dl>
+        			<dl class="clearfix">
+          				<dt><img src="__TMPL__Zt/ddyxjz/imgs/p5.jpg" width="126" height="54"></dt>
+          				<dd>
+            				<h6>预知效果</h6>
+            				<p>提前预知效果</p>
+          				</dd>
+        			</dl>
+        			<dl class="clearfix">
+          				<dt><img src="__TMPL__Zt/ddyxjz/imgs/p6.jpg" width="126" height="54"></dt>
+          				<dd>
+           	 				<h6>适应年龄</h6>
+            				<p>无年龄限制</p>
+          				</dd>
+        			</dl>
+        			<dl class="clearfix">
+          				<dt><img src="__TMPL__Zt/ddyxjz/imgs/p7.jpg" width="126" height="54"></dt>
+          				<dd>
+            				<h6>拔牙率</h6>
+            				<p>比较低</p>
+          				</dd>
+        			</dl>
+      			</div>
+      		<div class="col-box fr">
+        		<dl class="clearfix">
+          			<dt><img src="__TMPL__Zt/ddyxjz/imgs/p1.jpg" width="126" height="54"></dt>
+          			<dd>
+            			<h6>美观度</h6>
+            			<p>钢丝牙套暴露 影响美观</p>
+          			</dd>
+        		</dl>
+        		<dl class="clearfix">
+          			<dt><img src="__TMPL__Zt/ddyxjz/imgs/p8.jpg" width="126" height="54"></dt>
+         	 		<dd>
+            			<h6>舒适度</h6>
+            			<p>金属钢丝刮伤口腔</p>
+          			</dd>
+        		</dl>
+        		<dl class="clearfix">
+          			<dt><img src="__TMPL__Zt/ddyxjz/imgs/p9.jpg" width="126" height="54"></dt>
+          			<dd>
+            			<h6>清洁度</h6>
+            			<p>托槽容易塞住食物,不宜清洁</p>
+          			</dd>
+        		</dl>
+        		<dl class="clearfix">
+          			<dt><img src="__TMPL__Zt/ddyxjz/imgs/p10.jpg" width="126" height="54"></dt>
+          			<dd>
+            			<h6>简便度</h6>
+            			<p>1-2周就诊一次</p>
+          			</dd>
+        		</dl>
+        		<dl class="clearfix">
+          			<dt><img src="__TMPL__Zt/ddyxjz/imgs/p11.jpg" width="126" height="54"></dt>
+          			<dd>
+            			<h6>预知效果</h6>
+            			<p>不可预知</p>
+          			</dd>
+        		</dl>
+        		<dl class="clearfix">
+          			<dt><img src="__TMPL__Zt/ddyxjz/imgs/p12.jpg" width="126" height="54"></dt>
+          			<dd>
+            			<h6>适应年龄</h6>
+            			<p>14-26岁</p>
+          			</dd>
+        		</dl>
+        		<dl class="clearfix">
+          			<dt><img src="__TMPL__Zt/ddyxjz/imgs/p13.jpg" width="126" height="54"></dt>
+          			<dd>
+            			<h6>拔牙率</h6>
+            			<p>比较高</p>
+          			</dd>
+        		</dl>
+      		</div>
+    	</div>
+    	<p class="aLink"><a onclick="openJesongChatByGroup(16524,20125);" class="iBlock ico ljzx"></a></p>
+  	</div>
+  	<div class="box box2 boxbg">
+    	<div class="hd">
+      		<h2 class="iBlock ico"></h2>
+      		<em></em> 
+      	</div>
+    	<div class="bd wrap">
+     		<div class="video clearfix">
+        		<div class="videoPlay fl">
+                	<img src="__TMPL__Zt/ddyxjz/imgs/pic.jpg">
+          			<p><br>德道隐形矫正是通过3D模拟牙齿的移动与治疗，辅以精细内窥镜，使用量身定制几乎无法察觉的隐形矫治器，来矫正牙齿的方式。在治疗前可提前观摩正牙效果的矫正方法。</p>
+        		</div>
+        		<div class="pic fr"> <img src="__TMPL__Zt/ddyxjz/imgs/p16.jpg" width="529" height="194"> <img src="__TMPL__Zt/ddyxjz/imgs/p17.jpg" width="529" height="194"> </div>
+      		</div>
+      		<dl class="listPic clearfix">
+        		<dd class="n1 col"> <em class="ico"></em>
+          			<div class="covered second">
+            			<div class="handle" style="left: 100px; top: 85px;"><span class="left icon-chevron-left"></span><span class="right icon-chevron-right"></span></div>
+            			<div class="changeable" style="height: 160px; width: 100px; border-right: 1px dashed rgb(255, 255, 255);"></div>
+          			</div>
+          			<p>牙齿拥挤</p>
+        		</dd>
+        		<dd class="n2"> <em class="ico"></em>
+          			<div class="covered second">
+            			<div class="handle" style="left: 100px; top: 85px;"><span class="left icon-chevron-left"></span><span class="right icon-chevron-right"></span></div>
+            			<div class="changeable" style="height: 160px; width: 100px; border-right: 1px dashed rgb(255, 255, 255);"></div>
+          			</div>
+          			<p>牙缝大</p>
+        		</dd>
+        		<dd class="n3"> <em class="ico"></em>
+          			<div class="covered second">
+            			<div class="handle" style="left: 100px; top: 85px;"><span class="left icon-chevron-left"></span><span class="right icon-chevron-right"></span></div>
+            			<div class="changeable" style="height: 160px; width: 100px; border-right: 1px dashed rgb(255, 255, 255);"></div>
+          			</div>
+          			<p>牙不齐</p>
+        		</dd>
+        		<dd class="n4 col"> <em class="ico"></em>
+          			<div class="covered second">
+            			<div class="handle" style="left: 100px; top: 85px;"><span class="left icon-chevron-left"</span><span class="right icon-chevron-right"></span></div>
+            			<div class="changeable" style="height: 160px; width: 100px; border-right: 1px dashed rgb(255, 255, 255);"></div>
+          			</div>
+          			<p>覆合</p>
+        		</dd>
+        		<dd class="n5"> <em class="ico"></em>
+          			<div class="covered second">
+            			<div class="handle" style="left: 100px; top: 85px;"><span class="left icon-chevron-left"></span><span class="right icon-chevron-right"></span></div>
+            			<div class="changeable" style="height: 160px; width: 100px; border-right: 1px dashed rgb(255, 255, 255);"></div>
+          			</div>
+          			<p>反颌</p>
+        		</dd>
+        		<dt> 德道口腔医院，坚持在口腔正畸医学设计中，融入牙颌面部骨骼的美学黄金律，不止改变牙齿，更能矫正脸型。
+          			<p class="aLink"><a onclick="openJesongChatByGroup(16524,20125);" class="iBlock ico ljzx"></a></p>
+        		</dt>
+      		</dl>
+    	</div>
+    	<p class="colBg"></p>
+  	</div>
+  	<div class="box box3">
+    	<div class="hd">
+      		<h2 class="iBlock ico"></h2>
+      		<em></em> 
+      	</div>
+    	<div class="bd wrap clearfix">
+      		<p class="midPic"></p>
+      		<dl class="n1 clearfix">
+        		<dt class="fl"><img src="__TMPL__Zt/ddyxjz/imgs/p23.jpg" width="265" height="196"></dt>
+        		<dd class="fr"><em class="ico iBlock"></em>
+          			<p>采集口内信息 构建模型</p>
+        		</dd>
+      		</dl>
+      		<dl class="n2 clearfix">
+        		<dt class="fr"><img src="__TMPL__Zt/ddyxjz/imgs/p24.jpg" width="265" height="196"></dt>
+        		<dd class="fl"><em class="ico iBlock"></em>
+          			<p>制定三维治疗方案 提前预知效果</p>
+        		</dd>
+      		</dl>
+      		<dl class="n3 clearfix">
+        		<dt class="fl"><img src="__TMPL__Zt/ddyxjz/imgs/p25.jpg" width="265" height="196"></dt>
+        		<dd class="fr"><em class="ico iBlock"></em>
+          			<p>定制隐形矫治器 佩戴牙套</p>
+        		</dd>
+      		</dl>
+      		<dl class="n4 clearfix">
+        		<dt class="fr"><img src="__TMPL__Zt/ddyxjz/imgs/p26.jpg" width="265" height="196"></dt>
+        		<dd class="fl"><em class="ico iBlock"></em>
+          			<p>每两周更换矫治器 矫正牙齿</p>
+        		</dd>
+      		</dl>
+    	</div>
+    	<p class="aLink"><a onclick="openJesongChatByGroup(16524,20125);" class="iBlock ico ljzx"></a></p>
+  	</div>
+  	<div class="box box4 boxbg">
+    	<div class="hd">
+      		<h2 class="iBlock ico"></h2>
+      		<em></em> </div>
+    		<div class="bd wrap clearfix">
+	      		<dl class="n1 noMg">
+	        		<dt><img src="__TMPL__Zt/ddyxjz/imgs/p27.jpg" width="262" height="285"><em class="ico iBlock"></em></dt>
+	        		<dd>
+	          			<h6>舒适的矫正--可自行摘戴正畸</h6>
+	          			<p>突破传统正畸所造成的口腔内强烈异物感和不适，隐形美观，可自行摘戴的矫正。</p>
+	        		</dd>
+	      		</dl>
+      			<dl class="n2">
+        			<dt><img src="__TMPL__Zt/ddyxjz/imgs/p28.jpg" width="262" height="285"><em class="ico iBlock"></em></dt>
+        			<dd>
+          				<h6>准确的正畸--精度准确</h6>
+          				<p>德道隐形矫正运用先进的三维数字成像，原始建模，准确精细。</p>
+        			</dd>
+      			</dl>
+      			<dl class="n3">
+        			<dt><img src="__TMPL__Zt/ddyxjz/imgs/p29.jpg" width="262" height="285"><em class="ico iBlock"></em></dt>
+        			<dd>
+          				<h6>灵活的方案设计--预知效果及时调整</h6>
+          				<p>模拟预判矫治效果，跟踪矫治情况调整矫治方案，对矫治过程进行全程、准确的控制。</p>
+        			</dd>
+      			</dl>
+      			<dl class="n4">
+        			<dt><img src="__TMPL__Zt/ddyxjz/imgs/p30.jpg" width="262" height="285"><em class="ico iBlock"></em></dt>
+        			<dd>
+          				<h6>有效的矫治过程--恒定轻力防止牙齿松动</h6>
+          				<p>每一个小阶段对应一个不同的矫治器，只发生一个微小的位移。</p>
+        			</dd>
+      			</dl>
+    		</div>
+    	<p class="colBg"></p>
+  	</div>
+  	<div class="box box5">
+    	<div class="hd">
+      		<h2 class="iBlock ico"></h2>
+      		<em></em> 
+      	</div>
+    	<div class="bd wrap">
+      		<div class="shows">
+        			<ul class="clearfix">
+          				<li><img src="__TMPL__Zt/ddyxjz/imgs/p31.jpg" width="389" height="230"></li>
+          				<li><img src="__TMPL__Zt/ddyxjz/imgs/p32.jpg" width="389" height="230"></li>
+          				<li><img src="__TMPL__Zt/ddyxjz/imgs/p37.jpg" width="389" height="230"></li>
+          				<li><img src="__TMPL__Zt/ddyxjz/imgs/p38.jpg" width="389" height="230"></li>
+        			</ul>
+      		</div>
+      		<a class="prev ico"></a> <a class="next ico"></a>
+      	</div>
+		<p class="aLink"> 
+			<a onclick="openJesongChatByGroup(16524,20125);" class="iBlock ico ljzx"></a> 
+			<a onclick="openJesongChatByGroup(16524,20125);" class="iBlock ico sqfqfk"></a> 
+		</p>
+  	</div>
+  	<div class="box box6">
+    	<div class="bd">
+      		<div class="doctor">
+		        <div class="intro clearfix">
+		          <div class="pic fl"><img src="__TMPL__Zt/ddyxjz/imgs/doctor_1.png" width="612" height="730" style="left:89px; top:1px" /></div>
+		          <div class="txt fr">
+		            <h6> 张文彪<em>博士</em> <a onclick="openJesongChatByGroup(16524,20125);" class="iBlock">立即咨询</a> </h6>
+		            <p>中华口腔医学会正畸专委会会员<br/>INSIGNIA首批认证医师
+		            </p>
+		            <img src="__TMPL__Zt/ddyxjz/imgs/p33.jpg" width="392" height="243" /> </div>
+		        </div>
+		        <div class="intro clearfix">
+		          <div class="pic fl"><img src="__TMPL__Zt/ddyxjz/imgs/doctor_2.png" width="612" height="730" style="left:89px; top:1px" /></div>
+		          <div class="txt fr">
+		            <h6> 周卫明<em>主治医师</em> <a onclick="openJesongChatByGroup(16524,20125);" class="iBlock">立即咨询</a> </h6>
+		            <p>师从全国著名正畸专家李兰超主任<br>中华口腔医学会正畸专委会会员<br>隐适美中国认证医师<br>INSIGNIA首批认证医师</p>
+		            <img src="__TMPL__Zt/ddyxjz/imgs/p34.jpg" width="392" height="243" /> </div>
+		        </div>
+		    </div>
+    	</div>
+    	<div class="hd"> <a class="prev ico"></a> <a class="next ico"></a> </div>
+  	</div>
+	<tc_include file="Public:footer"/>
+</body>
+<script src="js/jsapi.js"></script>
+<script src="js/coveringBad.js"></script>
+<script type="text/javascript">
+	jQuery(".banner").slide({mainCell:"ul",effect:"leftLoop",autoPlay:true,interTime:5000});
+	jQuery(".box5 .bd").slide({mainCell:".shows ul",autoPlay:true,effect:"leftLoop",vis:2});
+	jQuery(".box6").slide({mainCell:".bd .doctor",autoPlay:true,effect:"fold",interTime:5000});
+	$(".box4 dl").hover(function(){
+		$(this).addClass("on");
+	},function(){
+		$(this).removeClass("on");
+	})
+	$('.second').coveringBad({
+		marginY : 20 ,
+		marginX : 20 ,
+		setX  : 100,
+		setY  : 85 ,
+		direction   : "horizontal"
+	});
+</script> 
+</html>

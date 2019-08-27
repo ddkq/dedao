@@ -1,0 +1,1345 @@
+---------------------------------------------------------------
+[ 2019-03-25T09:09:17+08:00 ] 59.42.89.127 POST /admin/index/checkLogin
+[ info ] admin.dedaokq.com/admin/index/checkLogin [运行时间：0.025556s][吞吐率：39.13req/s] [内存消耗：2,448.20kb] [文件加载：87]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'checkLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '20',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->checkLogin[ /home/wwwroot/admin/application/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000444s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000268s ]
+---------------------------------------------------------------
+[ 2019-03-25T09:09:17+08:00 ] 59.42.89.127 GET /admin/Login/captcha?0.7206313528128956
+[ info ] admin.dedaokq.com/admin/Login/captcha?0.7206313528128956 [运行时间：0.026047s][吞吐率：38.39req/s] [内存消耗：2,456.09kb] [文件加载：87]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'captcha',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  '0_7206313528128956' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->captcha[ /home/wwwroot/admin/application/admin/controller/Login.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000343s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000218s ]
+---------------------------------------------------------------
+[ 2019-03-25T10:04:30+08:00 ] 59.42.89.127 POST /admin/Login/doLogin
+[ info ] admin.dedaokq.com/admin/Login/doLogin [运行时间：0.026340s][吞吐率：37.97req/s] [内存消耗：2,464.45kb] [文件加载：89]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'doLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '67',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'captcha' => 'nfl2n',
+  'db' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->doLogin[ /home/wwwroot/admin/application/admin/controller/Login.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000422s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000245s ]
+---------------------------------------------------------------
+[ 2019-03-25T10:04:30+08:00 ] 59.42.89.127 GET /admin/Login/captcha?0.7680599472586442
+[ info ] admin.dedaokq.com/admin/Login/captcha?0.7680599472586442 [运行时间：0.026536s][吞吐率：37.68req/s] [内存消耗：2,456.09kb] [文件加载：87]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'captcha',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  '0_7680599472586442' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->captcha[ /home/wwwroot/admin/application/admin/controller/Login.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000397s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000623s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000228s ]
+---------------------------------------------------------------
+[ 2019-03-25T10:04:34+08:00 ] 59.42.89.127 POST /admin/Login/doLogin
+[ info ] admin.dedaokq.com/admin/Login/doLogin [运行时间：0.040865s][吞吐率：24.47req/s] [内存消耗：2,596.65kb] [文件加载：92]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'doLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '67',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'captcha' => 'asvch',
+  'db' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->doLogin[ /home/wwwroot/admin/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000440s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000228s ]
+---------------------------------------------------------------
+[ 2019-03-25T10:04:34+08:00 ] 59.42.89.127 POST /admin/publics/getMenuBar
+[ info ] admin.dedaokq.com/admin/publics/getMenuBar [运行时间：0.036126s][吞吐率：27.68req/s] [内存消耗：2,831.80kb] [文件加载：97]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'getMenuBar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'dedaologin_expire_time=1553479474',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Publics->getMenuBar[ /home/wwwroot/admin/application/admin/controller/Publics.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000445s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000923s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000318s ]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-03-25T10:04:34+08:00 ] 59.42.89.127 POST /protal/Admin_Article/index
+[ info ] admin.dedaokq.com/protal/Admin_Article/index [运行时间：0.057316s][吞吐率：17.45req/s] [内存消耗：2,917.67kb] [文件加载：98]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'protal',
+    1 => 'Admin_Article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'dedaologin_expire_time=1553479474',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\protal\controller\AdminArticle->index[ /home/wwwroot/admin/application/protal/controller/AdminArticle.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000362s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_article` [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_portal_article` `a` INNER JOIN `cmf_user` `u` ON `a`.`user_id`=`u`.`id` INNER JOIN `cmf_portal_relationships` `r` ON `a`.`id`=`r`.`article_id` INNER JOIN `cmf_portal_category` `c` ON `r`.`category_id`=`c`.`id` WHERE  `r`.`status` = 1  AND `a`.`delete_time` = 0 LIMIT 1 [ RunTime:0.003855s ]
+[ sql ] [ SQL ] SELECT `a`.*,`r`.`list_order`,r.id as rid,c.id as category_id,c.name as category_name,c.path as parents,u.user_login as author FROM `cmf_portal_article` `a` INNER JOIN `cmf_user` `u` ON `a`.`user_id`=`u`.`id` INNER JOIN `cmf_portal_relationships` `r` ON `a`.`id`=`r`.`article_id` INNER JOIN `cmf_portal_category` `c` ON `r`.`category_id`=`c`.`id` WHERE  `r`.`status` = 1  AND `a`.`delete_time` = 0 ORDER BY `published_time` DESC LIMIT 0,10 [ RunTime:0.015482s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000249s ]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-03-25T10:04:34+08:00 ] 59.42.89.127 POST /protal/Admin_Category/CategoryTree
+[ info ] admin.dedaokq.com/protal/Admin_Category/CategoryTree [运行时间：0.083975s][吞吐率：11.91req/s] [内存消耗：2,926.85kb] [文件加载：95]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'protal',
+    1 => 'Admin_Category',
+    2 => 'CategoryTree',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'dedaologin_expire_time=1553479474',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\protal\controller\AdminCategory->categoryTree[ /home/wwwroot/admin/application/protal/controller/AdminCategory.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000355s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category` [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT `id`,id as value,`parent_id`,name as label FROM `cmf_portal_category` WHERE  `delete_time` = 0 ORDER BY `list_order` ASC [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000288s ]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-03-25T10:53:39+08:00 ] 59.42.89.127 GET /
+[ info ] admin.dedaokq.com/ [运行时间：0.019035s][吞吐率：52.54req/s] [内存消耗：1,730.33kb] [文件加载：81]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'JESONG_USER_ID=01000000016524047778345044099684; Hm_lvt_4cacc15b117be8562b33d04284b6d5d7=1550109198,1550126672,1550477784,1550544101',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.96 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'purpose' => 'prefetch',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/admin/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ../template/admin/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-25T10:53:40+08:00 ] 59.42.89.127 GET /admin/Login/captcha?0.08678833458613844
+[ info ] admin.dedaokq.com/admin/Login/captcha?0.08678833458613844 [运行时间：0.027517s][吞吐率：36.34req/s] [内存消耗：2,456.92kb] [文件加载：87]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'captcha',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'JESONG_USER_ID=01000000016524047778345044099684; Hm_lvt_4cacc15b117be8562b33d04284b6d5d7=1550109198,1550126672,1550477784,1550544101',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.96 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  '0_08678833458613844' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->captcha[ /home/wwwroot/admin/application/admin/controller/Login.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000413s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000231s ]
+---------------------------------------------------------------
+[ 2019-03-25T10:53:48+08:00 ] 59.42.89.127 POST /admin/Login/doLogin
+[ info ] admin.dedaokq.com/admin/Login/doLogin [运行时间：0.046931s][吞吐率：21.31req/s] [内存消耗：2,597.45kb] [文件加载：92]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'doLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'JESONG_USER_ID=01000000016524047778345044099684; Hm_lvt_4cacc15b117be8562b33d04284b6d5d7=1550109198,1550126672,1550477784,1550544101',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.96 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '68',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin2',
+  'password' => '123456',
+  'captcha' => 'edh3c',
+  'db' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->doLogin[ /home/wwwroot/admin/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000426s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000239s ]
+---------------------------------------------------------------
+[ 2019-03-25T10:53:48+08:00 ] 59.42.89.127 POST /admin/publics/getMenuBar
+[ info ] admin.dedaokq.com/admin/publics/getMenuBar [运行时间：0.031680s][吞吐率：31.57req/s] [内存消耗：2,907.56kb] [文件加载：99]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'getMenuBar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'JESONG_USER_ID=01000000016524047778345044099684; Hm_lvt_4cacc15b117be8562b33d04284b6d5d7=1550109198,1550126672,1550477784,1550544101; dedaologin_expire_time=1553482428',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.96 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'ac8d88445edf2a63bfeeac1b973869f3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Publics->getMenuBar[ /home/wwwroot/admin/application/admin/controller/Publics.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000312s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = 'ac8d88445edf2a63bfeeac1b973869f3' LIMIT 1 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = 'ac8d88445edf2a63bfeeac1b973869f3' LIMIT 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = 'ac8d88445edf2a63bfeeac1b973869f3' LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = 'ac8d88445edf2a63bfeeac1b973869f3' LIMIT 1 [ RunTime:0.000298s ]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-03-25T10:53:48+08:00 ] 59.42.89.127 POST /announcement/Admin_announcement/index
+[ info ] admin.dedaokq.com/announcement/Admin_announcement/index [运行时间：0.031158s][吞吐率：32.09req/s] [内存消耗：2,770.74kb] [文件加载：96]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'announcement',
+    1 => 'Admin_announcement',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'JESONG_USER_ID=01000000016524047778345044099684; Hm_lvt_4cacc15b117be8562b33d04284b6d5d7=1550109198,1550126672,1550477784,1550544101; dedaologin_expire_time=1553482428',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.96 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'ac8d88445edf2a63bfeeac1b973869f3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\announcement\controller\AdminAnnouncement->index[ /home/wwwroot/admin/application/announcement/controller/AdminAnnouncement.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000293s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = 'ac8d88445edf2a63bfeeac1b973869f3' LIMIT 1 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = 'ac8d88445edf2a63bfeeac1b973869f3' LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = 'ac8d88445edf2a63bfeeac1b973869f3' LIMIT 1 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = 'ac8d88445edf2a63bfeeac1b973869f3' LIMIT 1 [ RunTime:0.000223s ]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-03-25T10:53:52+08:00 ] 59.42.89.127 POST /admin/Mailer/getMailer
+[ info ] admin.dedaokq.com/admin/Mailer/getMailer [运行时间：0.029505s][吞吐率：33.89req/s] [内存消耗：2,574.66kb] [文件加载：96]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Mailer',
+    2 => 'getMailer',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'JESONG_USER_ID=01000000016524047778345044099684; Hm_lvt_4cacc15b117be8562b33d04284b6d5d7=1550109198,1550126672,1550477784,1550544101; dedaologin_expire_time=1553482428',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.96 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'ac8d88445edf2a63bfeeac1b973869f3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Mailer->getMailer[ /home/wwwroot/admin/application/admin/controller/Mailer.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000416s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = 'ac8d88445edf2a63bfeeac1b973869f3' LIMIT 1 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = 'ac8d88445edf2a63bfeeac1b973869f3' LIMIT 1 [ RunTime:0.000239s ]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-03-25T10:53:55+08:00 ] 59.42.89.127 POST /announcement/Admin_announcement/index
+[ info ] admin.dedaokq.com/announcement/Admin_announcement/index [运行时间：0.031667s][吞吐率：31.58req/s] [内存消耗：2,770.74kb] [文件加载：96]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'announcement',
+    1 => 'Admin_announcement',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'JESONG_USER_ID=01000000016524047778345044099684; Hm_lvt_4cacc15b117be8562b33d04284b6d5d7=1550109198,1550126672,1550477784,1550544101; dedaologin_expire_time=1553482428',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.96 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'ac8d88445edf2a63bfeeac1b973869f3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\announcement\controller\AdminAnnouncement->index[ /home/wwwroot/admin/application/announcement/controller/AdminAnnouncement.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000426s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = 'ac8d88445edf2a63bfeeac1b973869f3' LIMIT 1 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = 'ac8d88445edf2a63bfeeac1b973869f3' LIMIT 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = 'ac8d88445edf2a63bfeeac1b973869f3' LIMIT 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = 'ac8d88445edf2a63bfeeac1b973869f3' LIMIT 1 [ RunTime:0.000267s ]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-03-25T10:54:05+08:00 ] 59.42.89.127 POST /announcement/Admin_announcement/editPost
+[ info ] admin.dedaokq.com/announcement/Admin_announcement/editPost [运行时间：0.036714s][吞吐率：27.24req/s] [内存消耗：2,859.42kb] [文件加载：100]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'announcement',
+    1 => 'Admin_announcement',
+    2 => 'editPost',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'JESONG_USER_ID=01000000016524047778345044099684; Hm_lvt_4cacc15b117be8562b33d04284b6d5d7=1550109198,1550126672,1550477784,1550544101; dedaologin_expire_time=1553482428',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.96 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '64',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 1,
+  'content' => '',
+  'token' => 'ac8d88445edf2a63bfeeac1b973869f3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\announcement\controller\AdminAnnouncement->editPost[ /home/wwwroot/admin/application/announcement/controller/AdminAnnouncement.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000440s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = 'ac8d88445edf2a63bfeeac1b973869f3' LIMIT 1 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = 'ac8d88445edf2a63bfeeac1b973869f3' LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = 'ac8d88445edf2a63bfeeac1b973869f3' LIMIT 1 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_announcement` [ RunTime:0.000475s ]
+[ sql ] [ SQL ] UPDATE `cmf_announcement`  SET `content`='',`update_time`=1553482445  WHERE  `id` = 1 [ RunTime:0.003110s ]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-03-25T10:54:06+08:00 ] 59.42.89.127 POST /announcement/Admin_announcement/index
+[ info ] admin.dedaokq.com/announcement/Admin_announcement/index [运行时间：0.030997s][吞吐率：32.26req/s] [内存消耗：2,770.66kb] [文件加载：96]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'announcement',
+    1 => 'Admin_announcement',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'JESONG_USER_ID=01000000016524047778345044099684; Hm_lvt_4cacc15b117be8562b33d04284b6d5d7=1550109198,1550126672,1550477784,1550544101; dedaologin_expire_time=1553482428',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.96 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'ac8d88445edf2a63bfeeac1b973869f3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\announcement\controller\AdminAnnouncement->index[ /home/wwwroot/admin/application/announcement/controller/AdminAnnouncement.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000450s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = 'ac8d88445edf2a63bfeeac1b973869f3' LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = 'ac8d88445edf2a63bfeeac1b973869f3' LIMIT 1 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = 'ac8d88445edf2a63bfeeac1b973869f3' LIMIT 1 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = 'ac8d88445edf2a63bfeeac1b973869f3' LIMIT 1 [ RunTime:0.000247s ]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-03-25T10:54:07+08:00 ] 59.42.89.127 POST /announcement/Admin_announcement/index
+[ info ] admin.dedaokq.com/announcement/Admin_announcement/index [运行时间：0.031336s][吞吐率：31.91req/s] [内存消耗：2,770.66kb] [文件加载：96]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'announcement',
+    1 => 'Admin_announcement',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'JESONG_USER_ID=01000000016524047778345044099684; Hm_lvt_4cacc15b117be8562b33d04284b6d5d7=1550109198,1550126672,1550477784,1550544101; dedaologin_expire_time=1553482428',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.96 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'ac8d88445edf2a63bfeeac1b973869f3',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\announcement\controller\AdminAnnouncement->index[ /home/wwwroot/admin/application/announcement/controller/AdminAnnouncement.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000416s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = 'ac8d88445edf2a63bfeeac1b973869f3' LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = 'ac8d88445edf2a63bfeeac1b973869f3' LIMIT 1 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = 'ac8d88445edf2a63bfeeac1b973869f3' LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = 'ac8d88445edf2a63bfeeac1b973869f3' LIMIT 1 [ RunTime:0.000268s ]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-03-25T14:06:14+08:00 ] 59.42.89.127 POST /form/Admin_Form/index
+[ info ] admin.dedaokq.com/form/Admin_Form/index [运行时间：0.025286s][吞吐率：39.55req/s] [内存消耗：2,354.05kb] [文件加载：85]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'form',
+    1 => 'Admin_Form',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000431s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000723s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000281s ]
+---------------------------------------------------------------
+[ 2019-03-25T14:06:15+08:00 ] 59.42.89.127 GET /
+[ info ] admin.dedaokq.com/ [运行时间：0.018830s][吞吐率：53.11req/s] [内存消耗：1,730.02kb] [文件加载：81]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/admin/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ../template/admin/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-25T14:06:18+08:00 ] 59.42.89.127 GET /
+[ info ] admin.dedaokq.com/ [运行时间：0.018798s][吞吐率：53.20req/s] [内存消耗：1,730.02kb] [文件加载：81]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/admin/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ../template/admin/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-25T14:06:18+08:00 ] 59.42.89.127 POST /admin/index/checkLogin
+[ info ] admin.dedaokq.com/admin/index/checkLogin [运行时间：0.026046s][吞吐率：38.39req/s] [内存消耗：2,448.21kb] [文件加载：87]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'checkLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '20',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->checkLogin[ /home/wwwroot/admin/application/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000413s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000736s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000286s ]
+---------------------------------------------------------------
+[ 2019-03-25T14:06:18+08:00 ] 59.42.89.127 GET /admin/Login/captcha?0.9300120782746424
+[ info ] admin.dedaokq.com/admin/Login/captcha?0.9300120782746424 [运行时间：0.025044s][吞吐率：39.93req/s] [内存消耗：2,456.09kb] [文件加载：87]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'captcha',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  '0_9300120782746424' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->captcha[ /home/wwwroot/admin/application/admin/controller/Login.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000370s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000192s ]
+---------------------------------------------------------------
+[ 2019-03-25T14:06:32+08:00 ] 59.42.89.127 POST /admin/Login/doLogin
+[ info ] admin.dedaokq.com/admin/Login/doLogin [运行时间：0.040505s][吞吐率：24.69req/s] [内存消耗：2,596.65kb] [文件加载：92]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'doLogin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '67',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'captcha' => 'k8687',
+  'db' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->doLogin[ /home/wwwroot/admin/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000421s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000707s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000276s ]
+---------------------------------------------------------------
+[ 2019-03-25T14:06:33+08:00 ] 59.42.89.127 POST /admin/publics/getMenuBar
+[ info ] admin.dedaokq.com/admin/publics/getMenuBar [运行时间：0.029513s][吞吐率：33.88req/s] [内存消耗：2,831.80kb] [文件加载：97]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'publics',
+    2 => 'getMenuBar',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'dedaologin_expire_time=1553493992',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Publics->getMenuBar[ /home/wwwroot/admin/application/admin/controller/Publics.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000381s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000273s ]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-03-25T14:06:33+08:00 ] 59.42.89.127 POST /form/Admin_Form/index
+[ info ] admin.dedaokq.com/form/Admin_Form/index [运行时间：0.033810s][吞吐率：29.58req/s] [内存消耗：2,862.56kb] [文件加载：98]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'form',
+    1 => 'Admin_Form',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'dedaologin_expire_time=1553493992',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\form\controller\AdminForm->index[ /home/wwwroot/admin/application/form/controller/AdminForm.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000310s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_form` [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_form` WHERE  `delete_time` = 0 LIMIT 1 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_form` WHERE  `delete_time` = 0 ORDER BY `create_time` DESC LIMIT 0,10 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000183s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000180s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000174s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000184s ]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-03-25T14:07:30+08:00 ] 59.42.89.127 POST /questionnaire/Admin_Questionnaire/index
+[ info ] admin.dedaokq.com/questionnaire/Admin_Questionnaire/index [运行时间：0.033474s][吞吐率：29.87req/s] [内存消耗：2,904.59kb] [文件加载：98]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'questionnaire',
+    1 => 'Admin_Questionnaire',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'dedaologin_expire_time=1553493992',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\questionnaire\controller\AdminQuestionnaire->index[ /home/wwwroot/admin/application/questionnaire/controller/AdminQuestionnaire.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000471s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_questionnaire` [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_questionnaire` WHERE  `delete_time` = 0 LIMIT 1 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_questionnaire` WHERE  `delete_time` = 0 ORDER BY `create_time` DESC LIMIT 0,10 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000213s ]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-03-25T14:07:34+08:00 ] 59.42.89.127 POST /award/Admin_Award/site
+[ info ] admin.dedaokq.com/award/Admin_Award/site [运行时间：0.031013s][吞吐率：32.24req/s] [内存消耗：2,758.05kb] [文件加载：94]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'award',
+    1 => 'Admin_Award',
+    2 => 'site',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'dedaologin_expire_time=1553493992',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\award\controller\AdminAward->site[ /home/wwwroot/admin/application/award/controller/AdminAward.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000424s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000264s ]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-03-25T14:22:17+08:00 ] 59.42.89.127 POST /admin/Login/loginOut
+[ info ] admin.dedaokq.com/admin/Login/loginOut [运行时间：0.031811s][吞吐率：31.44req/s] [内存消耗：2,432.34kb] [文件加载：88]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'loginOut',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'JESONG_USER_ID=01000000016524047778345044099684; Hm_lvt_4cacc15b117be8562b33d04284b6d5d7=1550109198,1550126672,1550477784,1550544101',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.96 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '9',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 22,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->loginOut[ /home/wwwroot/admin/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000405s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000237s ]
+---------------------------------------------------------------
+[ 2019-03-25T14:22:17+08:00 ] 59.42.89.127 GET /admin/Login/captcha?0.5970866568179771
+[ info ] admin.dedaokq.com/admin/Login/captcha?0.5970866568179771 [运行时间：0.025564s][吞吐率：39.12req/s] [内存消耗：2,456.89kb] [文件加载：87]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'captcha',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'JESONG_USER_ID=01000000016524047778345044099684; Hm_lvt_4cacc15b117be8562b33d04284b6d5d7=1550109198,1550126672,1550477784,1550544101',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.96 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  '0_5970866568179771' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->captcha[ /home/wwwroot/admin/application/admin/controller/Login.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000309s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_user_token` WHERE  `token` IS NULL LIMIT 1 [ RunTime:0.000209s ]

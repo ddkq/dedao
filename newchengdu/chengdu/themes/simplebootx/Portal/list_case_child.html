@@ -1,0 +1,76 @@
+<!--真实案例-->
+<!DOCTYPE html>
+<html>
+	<tc_include file="Public:head" />
+	<link href="__TMPL__Public/css/article.css" rel="stylesheet" type="text/css">
+	<title>{$seo_title}</title>
+	<meta name="keywords" content="{$seo_keywords}"/>
+	<meta name="description" content="{$seo_description}" />
+	</head>
+	<body>
+		<tc_include file="Public:new_header" />
+		
+		<div class="main_img">
+			<img src="__TMPL__Public/images/case_banner.jpg" />
+		</div>
+		
+		<ol class="breadcrumb">
+			<i class="fa fa-home"></i>
+			<li>您所在的位置</li>
+			<li><a href="/">首页</a></li>
+			<volist name="breadcrumb" id="vo">
+				<li><a href="/list/{$vo.term_id}.html">{$vo.name}</a></li>
+			</volist>
+			<li class="active">{$name}</li>
+		</ol>
+		
+		<div class="main_content clearfix">
+			<div class="case_box">
+				<h3 class="term_title">爱牙案例</h3>
+				<ul class="term_list clearfix">
+					<php>$child = sp_get_child_terms(108);</php>
+					<volist name="child" id="vo">
+						<php>$on = $term_id==$vo[term_id]?'class="on"':''</php>
+						<li {$on}><a href="/list/{$vo.term_id}.html">{$vo.name}</a></li>
+					</volist>
+				</ul>
+				<div class="bd">
+					<ul class="main_list">
+						<volist name="list['posts']" id="vo">
+							<php>
+								$extend = json_decode($vo['post_extend'],true);
+								$smeta=json_decode($vo['smeta'],true);
+							</php>
+							<li>
+								<div class="list_recommend">
+									<a href="{:get_article_url($vo[tid],$vo[link_type],$vo[post_url])}" target="_blank">
+										<img src="{$smeta.thumb}" alt="">
+									</a>
+									<div class="info">
+										<a href="{:get_article_url($vo[tid],$vo[link_type],$vo[post_url])}" target="_blank" ><h4 class="media_heading">{$vo.post_title}</h4></a>
+										<div>
+											<p>年龄：{$extend[post_extend2]}</p>
+											<p><b>术前症状：</b>{$extend['post_extend3']}</p>
+											<p><b>治疗方法：</b>{$extend['post_extend4']}</p>	
+										</div>
+										<div class="swt">
+											<a onclick="openJesongChatByGroup(16524,20125);"><i class="fa fa-commenting-o"></i>在线咨询</a>
+											<a onclick="openJesongChatByGroup(16524,20125);"><i class="fa fa-user"></i>定制方案</a>
+										</div>
+									</div>	
+								</div>
+							</li>
+						</volist>
+					</ul>
+					<ul class="pages">{$list['page']}</ul>
+				</div>	
+			</div>
+			
+		</div>
+	</body>
+
+	<tc_include file="Public:footer" />
+	<script>
+		jQuery(".case").slide({mainCell:".bd",effect:"leftLoop",autoPlay:true});
+	</script>
+</html>

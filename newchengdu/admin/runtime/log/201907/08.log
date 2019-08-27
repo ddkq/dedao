@@ -1,0 +1,545 @@
+---------------------------------------------------------------
+[ 2019-07-08T09:39:32+08:00 ] 59.42.91.36 POST /api/Setting/getSiteInfo
+[ info ] api.dedaokq.com/api/Setting/getSiteInfo [运行时间：0.035214s][吞吐率：28.40req/s] [内存消耗：1,567.59kb] [文件加载：82]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Setting',
+    2 => 'getSiteInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://new.cdddkqyy.com/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'origin' => 'http://new.cdddkqyy.com',
+  'accept' => '*/*',
+  'content-length' => '7',
+  'connection' => 'keep-alive',
+  'host' => 'api.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'db_id' => '1',
+)
+[ info ] [ RUN ] app\api\controller\Setting->getSiteInfo[ /home/wwwroot/admin/application/api/controller/Setting.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-08T09:39:32+08:00 ] 59.42.91.36 POST /api/Link/getLinkData
+[ info ] api.dedaokq.com/api/Link/getLinkData [运行时间：0.049947s][吞吐率：20.02req/s] [内存消耗：2,317.45kb] [文件加载：85]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Link',
+    2 => 'getLinkData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://new.cdddkqyy.com/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'origin' => 'http://new.cdddkqyy.com',
+  'accept' => '*/*',
+  'content-length' => '7',
+  'connection' => 'keep-alive',
+  'host' => 'api.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'db_id' => '1',
+)
+[ info ] [ RUN ] app\api\controller\Link->getLinkData[ /home/wwwroot/admin/application/api/controller/Link.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-08T09:39:32+08:00 ] 59.42.91.36 POST /protal/Lists/getCategoryPostLists
+[ info ] api.dedaokq.com/protal/Lists/getCategoryPostLists [运行时间：0.053815s][吞吐率：18.58req/s] [内存消耗：2,625.59kb] [文件加载：88]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'protal',
+    1 => 'Lists',
+    2 => 'getCategoryPostLists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://new.cdddkqyy.com/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'origin' => 'http://new.cdddkqyy.com',
+  'accept' => '*/*',
+  'content-length' => '48',
+  'connection' => 'keep-alive',
+  'host' => 'api.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'db_id' => '1',
+  'category_id' => '108',
+  'is_recommended' => '1',
+  'limit' => '4',
+)
+[ info ] [ RUN ] app\protal\controller\Lists->getCategoryPostLists[ /home/wwwroot/admin/application/protal/controller/Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-08T09:39:32+08:00 ] 59.42.91.36 POST /api/Slide/getSlidedata
+[ info ] api.dedaokq.com/api/Slide/getSlidedata [运行时间：0.048338s][吞吐率：20.69req/s] [内存消耗：2,322.70kb] [文件加载：85]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Slide',
+    2 => 'getSlidedata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://new.cdddkqyy.com/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'origin' => 'http://new.cdddkqyy.com',
+  'accept' => '*/*',
+  'content-length' => '17',
+  'connection' => 'keep-alive',
+  'host' => 'api.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'db_id' => '1',
+  'cat_id' => '28',
+)
+[ info ] [ RUN ] app\api\controller\Slide->getSlidedata[ /home/wwwroot/admin/application/api/controller/Slide.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-08T09:39:32+08:00 ] 59.42.91.36 POST /api/nav/getNavData
+[ info ] api.dedaokq.com/api/nav/getNavData [运行时间：0.043519s][吞吐率：22.98req/s] [内存消耗：2,388.39kb] [文件加载：86]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'nav',
+    2 => 'getNavData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://new.cdddkqyy.com/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'origin' => 'http://new.cdddkqyy.com',
+  'accept' => '*/*',
+  'content-length' => '16',
+  'connection' => 'keep-alive',
+  'host' => 'api.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'db_id' => '1',
+  'cat_id' => '1',
+)
+[ info ] [ RUN ] app\api\controller\Nav->getNavData[ /home/wwwroot/admin/application/api/controller/Nav.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-08T09:39:32+08:00 ] 59.42.91.36 POST /api/Slide/getSlidedata
+[ info ] api.dedaokq.com/api/Slide/getSlidedata [运行时间：0.066054s][吞吐率：15.14req/s] [内存消耗：2,324.18kb] [文件加载：85]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Slide',
+    2 => 'getSlidedata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://new.cdddkqyy.com/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'origin' => 'http://new.cdddkqyy.com',
+  'accept' => '*/*',
+  'content-length' => '16',
+  'connection' => 'keep-alive',
+  'host' => 'api.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'db_id' => '1',
+  'cat_id' => '4',
+)
+[ info ] [ RUN ] app\api\controller\Slide->getSlidedata[ /home/wwwroot/admin/application/api/controller/Slide.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-08T09:39:32+08:00 ] 59.42.91.36 POST /department/Department/getDoctorList
+[ info ] api.dedaokq.com/department/Department/getDoctorList [运行时间：0.040075s][吞吐率：24.95req/s] [内存消耗：2,614.34kb] [文件加载：88]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'department',
+    1 => 'Department',
+    2 => 'getDoctorList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://new.cdddkqyy.com/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'origin' => 'http://new.cdddkqyy.com',
+  'accept' => '*/*',
+  'content-length' => '40',
+  'connection' => 'keep-alive',
+  'host' => 'api.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'db_id' => '1',
+  'department_id' => '7',
+  'is_recommended' => '1',
+)
+[ info ] [ RUN ] app\department\controller\Department->getDoctorList[ /home/wwwroot/admin/application/department/controller/Department.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-08T09:39:32+08:00 ] 59.42.91.36 POST /api/Slide/getSlidedata
+[ info ] api.dedaokq.com/api/Slide/getSlidedata [运行时间：0.032777s][吞吐率：30.51req/s] [内存消耗：2,325.59kb] [文件加载：85]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Slide',
+    2 => 'getSlidedata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://new.cdddkqyy.com/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'origin' => 'http://new.cdddkqyy.com',
+  'accept' => '*/*',
+  'content-length' => '17',
+  'connection' => 'keep-alive',
+  'host' => 'api.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'db_id' => '1',
+  'cat_id' => '29',
+)
+[ info ] [ RUN ] app\api\controller\Slide->getSlidedata[ /home/wwwroot/admin/application/api/controller/Slide.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-08T09:39:32+08:00 ] 59.42.91.36 POST /protal/Lists/getCategoryPostLists
+[ info ] api.dedaokq.com/protal/Lists/getCategoryPostLists [运行时间：0.039866s][吞吐率：25.08req/s] [内存消耗：2,625.15kb] [文件加载：88]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'protal',
+    1 => 'Lists',
+    2 => 'getCategoryPostLists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://new.cdddkqyy.com/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'origin' => 'http://new.cdddkqyy.com',
+  'accept' => '*/*',
+  'content-length' => '40',
+  'connection' => 'keep-alive',
+  'host' => 'api.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'db_id' => '1',
+  'category_id' => '145',
+  'is_top' => '1',
+  'limit' => '2',
+)
+[ info ] [ RUN ] app\protal\controller\Lists->getCategoryPostLists[ /home/wwwroot/admin/application/protal/controller/Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-08T09:39:32+08:00 ] 59.42.91.36 POST /protal/Lists/getCategoryPostLists
+[ info ] api.dedaokq.com/protal/Lists/getCategoryPostLists [运行时间：0.034930s][吞吐率：28.63req/s] [内存消耗：2,629.78kb] [文件加载：88]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'protal',
+    1 => 'Lists',
+    2 => 'getCategoryPostLists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://new.cdddkqyy.com/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'origin' => 'http://new.cdddkqyy.com',
+  'accept' => '*/*',
+  'content-length' => '48',
+  'connection' => 'keep-alive',
+  'host' => 'api.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'db_id' => '1',
+  'category_id' => '145',
+  'is_recommended' => '1',
+  'limit' => '4',
+)
+[ info ] [ RUN ] app\protal\controller\Lists->getCategoryPostLists[ /home/wwwroot/admin/application/protal/controller/Lists.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-08T09:39:33+08:00 ] 59.42.91.36 POST /api/index/indexItems
+[ info ] api.dedaokq.com/api/index/indexItems [运行时间：0.079334s][吞吐率：12.60req/s] [内存消耗：2,731.36kb] [文件加载：91]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'index',
+    2 => 'indexItems',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://new.cdddkqyy.com/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'origin' => 'http://new.cdddkqyy.com',
+  'accept' => '*/*',
+  'content-length' => '7',
+  'connection' => 'keep-alive',
+  'host' => 'api.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'db_id' => '1',
+)
+[ info ] [ RUN ] app\api\controller\Index->indexItems[ /home/wwwroot/admin/application/api/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-08T09:39:35+08:00 ] 59.42.91.36 POST /api/nav/getNavData
+[ info ] api.dedaokq.com/api/nav/getNavData [运行时间：0.037500s][吞吐率：26.67req/s] [内存消耗：2,388.44kb] [文件加载：86]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'nav',
+    2 => 'getNavData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://new.cdddkqyy.com/page/doctor-list',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'origin' => 'http://new.cdddkqyy.com',
+  'accept' => '*/*',
+  'content-length' => '16',
+  'connection' => 'keep-alive',
+  'host' => 'api.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'db_id' => '1',
+  'cat_id' => '1',
+)
+[ info ] [ RUN ] app\api\controller\Nav->getNavData[ /home/wwwroot/admin/application/api/controller/Nav.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-08T09:39:35+08:00 ] 59.42.91.36 POST /api/Setting/getSiteInfo
+[ info ] api.dedaokq.com/api/Setting/getSiteInfo [运行时间：0.041241s][吞吐率：24.25req/s] [内存消耗：1,567.65kb] [文件加载：82]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Setting',
+    2 => 'getSiteInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://new.cdddkqyy.com/page/doctor-list',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'origin' => 'http://new.cdddkqyy.com',
+  'accept' => '*/*',
+  'content-length' => '7',
+  'connection' => 'keep-alive',
+  'host' => 'api.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'db_id' => '1',
+)
+[ info ] [ RUN ] app\api\controller\Setting->getSiteInfo[ /home/wwwroot/admin/application/api/controller/Setting.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-08T09:39:35+08:00 ] 59.42.91.36 POST /department/Department/getDepartmentItem
+[ info ] api.dedaokq.com/department/Department/getDepartmentItem [运行时间：0.040462s][吞吐率：24.71req/s] [内存消耗：2,592.06kb] [文件加载：88]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'department',
+    1 => 'Department',
+    2 => 'getDepartmentItem',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://new.cdddkqyy.com/page/doctor-list',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'origin' => 'http://new.cdddkqyy.com',
+  'accept' => '*/*',
+  'content-length' => '7',
+  'connection' => 'keep-alive',
+  'host' => 'api.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'db_id' => '1',
+)
+[ info ] [ RUN ] app\department\controller\Department->getDepartmentItem[ /home/wwwroot/admin/application/department/controller/Department.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-08T09:39:35+08:00 ] 59.42.91.36 POST /department/Department/getDoctorList
+[ info ] api.dedaokq.com/department/Department/getDoctorList [运行时间：0.036162s][吞吐率：27.65req/s] [内存消耗：2,614.27kb] [文件加载：88]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'department',
+    1 => 'Department',
+    2 => 'getDoctorList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://new.cdddkqyy.com/page/doctor-list',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'origin' => 'http://new.cdddkqyy.com',
+  'accept' => '*/*',
+  'content-length' => '23',
+  'connection' => 'keep-alive',
+  'host' => 'api.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'db_id' => '1',
+  'department_id' => '7',
+)
+[ info ] [ RUN ] app\department\controller\Department->getDoctorList[ /home/wwwroot/admin/application/department/controller/Department.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-08T09:39:35+08:00 ] 59.42.91.36 POST /api/Link/getLinkData
+[ info ] api.dedaokq.com/api/Link/getLinkData [运行时间：0.053097s][吞吐率：18.83req/s] [内存消耗：2,317.50kb] [文件加载：85]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Link',
+    2 => 'getLinkData',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://new.cdddkqyy.com/page/doctor-list',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'origin' => 'http://new.cdddkqyy.com',
+  'accept' => '*/*',
+  'content-length' => '7',
+  'connection' => 'keep-alive',
+  'host' => 'api.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'db_id' => '1',
+)
+[ info ] [ RUN ] app\api\controller\Link->getLinkData[ /home/wwwroot/admin/application/api/controller/Link.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-08T09:39:35+08:00 ] 59.42.91.36 POST /api/Slide/getSlidedata
+[ info ] api.dedaokq.com/api/Slide/getSlidedata [运行时间：0.046773s][吞吐率：21.38req/s] [内存消耗：2,322.75kb] [文件加载：85]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'Slide',
+    2 => 'getSlidedata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://new.cdddkqyy.com/page/doctor-list',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'origin' => 'http://new.cdddkqyy.com',
+  'accept' => '*/*',
+  'content-length' => '17',
+  'connection' => 'keep-alive',
+  'host' => 'api.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'db_id' => '1',
+  'cat_id' => '28',
+)
+[ info ] [ RUN ] app\api\controller\Slide->getSlidedata[ /home/wwwroot/admin/application/api/controller/Slide.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File

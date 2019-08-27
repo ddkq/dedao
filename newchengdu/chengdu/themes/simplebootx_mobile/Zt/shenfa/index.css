@@ -1,0 +1,93 @@
+.banner {
+	margin-top: 120px;
+}
+.hrs{
+	border:1px dashed #FFFFFF;
+}
+.red{
+	color: #a4414d;
+}
+.brown{
+	color: #cfa78f;
+}
+.yellow{
+	background: #e09638;
+}
+.absolute-bottom{
+	margin-bottom: -35px;
+}
+.w-60{
+	width: 60%;
+}
+.w-90{
+	width: 90%;
+}
+.w-80{
+	width: 80%;
+}
+.w-40{
+	width: 40%;
+}
+.w-85{
+	width: 85%;
+}
+.f-8{
+	font-size: .9rem;
+}
+.bg1{
+	background: #fff2ea;
+}
+.bg2{
+	background: #a5404e;
+}
+.text-indent{
+	text-indent: 30px;
+}
+.swiper-pagination-bullet-active{
+	background:#cfa78f ;
+}
+.MyClass{
+	width: 180px;
+	height: 16px;
+	left: 50%;
+	margin-left: -90px;
+}
+.MyClass>span{
+	width: 16px;
+	height: 16px;
+ margin-left: 20px;
+}
+.hr2{
+	width: 51px;
+	height: 3px;
+	background-color: #a56540;
+}
+.doctor-btn1{
+	background-color: #a4414d;
+}
+
+.swiper-slide-active{
+ background-color: #a56540;
+}
+.content-7-bcg{
+	background: url(imgs/content-7-bg.jpg) no-repeat center;
+	background-size: 100% 100%;
+}
+.swiper_btn{
+	left: 0;
+	top: 25%;
+	z-index: 99;
+}
+.swiper_btn1{
+	right: 0;
+	top: 25%;
+	z-index: 99;
+}
+.content-4 .swiper-slide-active{
+	background:initial;
+	color: #000000;
+} 
+.gallery-top .swiper-slide-active{
+	background:initial;
+	color: #000000;
+}

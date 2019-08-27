@@ -1,0 +1,45 @@
+<div class="fixed-left">
+	<div>
+		<a onclick="openJesongChatByGroup(16524,20125);"><img src="__TMPL__Public/images/activity1.png" alt=""></a>
+		<i class="fa fa-close fixed-close"></i>
+	</div>
+</div>
+<div class="fixed-right">
+	<div>
+		<a onclick="openJesongChatByGroup(16524,20125);"><img src="__TMPL__Public/images/activity2.gif" alt=""></a>
+		<i class="fa fa-close fixed-close"></i>
+	</div>
+</div>
+
+<div id="new_swt">
+	<a href="javascript:void(0)" target="_self" class="swt-close"></a>
+	<div class="swtslide swiper-container">
+		<div class="swiper-wrapper">
+			<volist name="ad_slides" id="vo">
+				<li class="swiper-slide"><a href="{$vo.slide_url}" target="_blank"><img src="{:sp_get_asset_upload_path($vo['slide_pic'])}" /></a></li>	
+			</volist>
+		</div>
+		<div class="swiper-pagination swiper-pagination-progressbar" id="swtslide-pagination3">
+			<span class="swiper-pagination-progressbar-fill"></span>
+		</div>
+	</div>
+	<div class="swt_mid">
+		<p class="mb-0"><img src="__TMPL__Public/images/swt/phone.png"/></p>
+		<a class="inputc" onclick="openJesongChatByGroup(16524,20125);"></a>
+		<a class="swtfs" onclick="openJesongChatByGroup(16524,20125);">发送</a>
+	</div>
+</div>
+
+<tc_include file="Public:scripts" />
+<script>
+	$(function() {
+		$('.fixed-close').on('click', function() {
+			$(this).parent().parent('div').fadeOut();
+			setTimeout(function() {
+				$('.fixed-left').css('display', 'block');
+				$('.fixed-right').css('display', 'block');
+			}, 20000)
+		})
+
+	})
+</script>

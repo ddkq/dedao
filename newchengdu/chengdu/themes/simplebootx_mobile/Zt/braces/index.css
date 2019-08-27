@@ -1,0 +1,172 @@
+
+ol, ul {
+	list-style: none;
+	padding: 0;
+}
+a {
+	display: inline-block;
+}
+i {
+	display: inline-block;
+	font-family: normal;
+}
+img {
+	max-width: 100%;
+    vertical-align: middle;
+}
+section {
+	position: relative;
+}
+.flex {
+    display: flex;
+}
+.red {
+    color: #ff0000;
+}
+.red-btn{
+	display: block;
+	background: #c00;
+	color: #fff;
+	text-align: center;
+	height: 3rem;
+	line-height: 3rem;
+	border-radius: 5px;
+}
+
+.index-situation {
+	padding: 0 1.5rem;
+	margin: 1rem 0;
+}
+.index-situation .must {
+    color: #808080;
+    margin: 1rem 0;
+}
+.index-situation .must:after {
+    content: ' *';
+    color: #f85959;
+}
+.index-situation .checkbox-box {
+	line-height: 1.5;
+}
+.index-situation .checkbox-box .checkbox-item {
+    margin-right: 0.4rem;
+    margin-bottom: 0.3rem;
+    display: inline-block;
+}
+.index-situation .checkbox-box .checkbox-item span {
+	font-size: 1rem;
+}
+.index-situation .situation-input-text {
+	position: relative;
+	margin-top: 1rem;
+}
+.index-situation .situation-input-text input {
+    height: 2.75rem;
+    width: 100%;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: .95rem;
+    display: block;
+    outline: none;
+    box-sizing: border-box;
+}
+.index-situation .situation-input-text .input-clear {
+    display: none;
+    position: absolute;
+    top: 40%;
+    right: 1rem;
+    width: 1rem;
+    height: 1rem;
+    margin-top: -0.213rem;
+    border-radius: 50%;
+    background-color: #ccc;
+    transform: rotate(45deg);
+}
+.index-situation .situation-input-text .input-clear:before, .index-situation .situation-input-text .input-clear:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+}
+.index-situation .situation-input-text .input-clear:before {
+    width: 70%;
+    height: 0.1rem;
+}
+.index-situation .situation-input-text .input-clear:after {
+    width: 0.1rem;
+    height: 70%;
+}
+.index-situation .situation-btn a {
+	background: #CC0000;
+	color: #fff;
+	text-align: center;
+	display: block;
+	border-radius: 5px;
+	padding: .75rem 0;
+	font-size: 1.2rem;
+	margin-top: 1rem;
+}
+
+.text-indent{
+	text-indent: 2em;
+}
+
+
+.tab-ios {
+	top: -3px;
+	transform: translateY(-100%);
+	left: 0;
+	right: 0;
+	transition: all ease 0.5s;
+	z-index: 9999;
+}
+
+.tab-ios .tab-ios-box {
+	box-shadow: 0 0 8px #666;
+	border-radius: 10px;
+	margin: 0 auto;
+	z-index: 999;
+	width: 97%;
+	overflow: hidden;
+}
+
+.tab-ios .tab-wx {
+	padding: 0.5% 2% 0.5% 2%;
+	display: flex;
+	justify-content: space-between;
+	font-size: 14px;
+	line-height: 30px;
+	background: rgba(255, 255, 255, 1);
+}
+
+.tab-ios .tab-wx span i {
+	width: 14.8%;
+	margin-right: 3px;
+}
+
+.tab-ios .tab-wx span i img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+.tab-ios .bot-wx {
+	padding: 1% 3%;
+	font-size: 14px;
+	background: rgba(255, 255, 255, 0.9);
+	color: #333;
+}
+
+.tab-ios .swiper-container {
+	height: 21px;
+}
+
+.open {
+	top: 0.5rem;
+	transform: translateY(0);
+}

@@ -1,0 +1,137 @@
+@import "swiper.min.css";
+@import "xkz.css";
+
+ul, li, dl, dt, dd, ol{list-style-type: none; margin: 0; padding: 0}
+
+h1, h2, h3, h4, h5, h6, form, input, textarea, label, table, tr, td, p, header, article, footer, nav, section, aside, menu{margin: 0; padding: 0; font-weight: normal}
+
+header, article, footer, nav, section, aside, menu, video, audio{display: block}
+
+table{border-collapse: collapse; border-spacing: 0}
+
+img{border: none}
+
+input, textarea, button{-webkit-appearance: none; margin: 0; padding: 0; border: none; outline: none}
+
+textarea{resize: none}
+
+/*:not(input), :not(textarea){-webkit-user-select: none; -webkit-tap-highlight-color: transparent; -webkit-touch-callout: none; -webkit-text-size-adjust: none}*/
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{font-size: 16px; color: #ccc}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder{color: #ccc}
+
+input::-webkit-input-speech-button{display: none}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button, input[type="number"]{-webkit-appearance: none !important; margin: 0}
+
+/*
+
+::-webkit-scrollbar{width: 3px; height: 3px; background-color: #f5f5f5}
+
+*/
+
+input, textarea, select, button{font-family: Helvetica, 'Microsoft Yahei'}
+
+html *{outline: 0; -webkit-text-size-adjust: none;/* -webkit-tap-highlight-color: transparent;*/ box-sizing: border-box}
+
+body{min-width: 320px; max-width: 640px; margin: 0 auto; padding: 0; font-size: 12px; font-family: Helvetica, 'Microsoft Yahei'; color: #333; -webkit-text-size-adjust: 100% !important; background: #fff}
+
+a{text-decoration: none; outline: none; color: #333}
+
+.ellipsis{white-space: nowrap; overflow: hidden; text-overflow: ellipsis}
+
+.text-justify{text-align: justify; text-justify: inter-ideograph}
+
+.fl{float: left}
+
+.fr{float: right}
+
+.cl{clear: both; font-size: 0; line-height: 0; height: 0; width: 100%; overflow: hidden}
+
+.cfix:after{display: block; clear: both; visibility: hidden; font-size: 0; line-height: 0; content: ""; height: 0}
+
+.cfix{*zoom: 1}
+
+.b{max-width: 100%; height: auto; vertical-align: top}
+
+.w600{width: 93.75%;margin-left:auto;margin-right: auto;}
+
+/**===通用顶部==**/
+
+.public-header{position: relative;height: 0.8rem;background: #232323;}
+
+.public-header .logo img{display: block;width:3.7rem; height: auto; margin: 0 auto;}
+
+.public-menu-link{position: absolute; left: 0.15rem; top: 0.15rem; width: 0.5rem;height: 0.5rem;}
+
+.public-mess-link{position: absolute; right: 0.15rem; top: 0.15rem; width: 0.5rem;height: 0.5rem;}
+
+.public-menu-link img,.public-mess-link img{display: block;width: 100%;}
+
+
+
+/**===通用焦点图==**/
+
+.public-focus{position: relative;}
+
+.public-focus .hd{position: absolute;left: 0;right:0;bottom: 0.1rem;font-size: 0; text-align: center;}
+
+.public-focus .hd li{display: inline-block;width:10px;height:10px;margin: 0 3px; -webkit-border-radius: 50%; border-radius: 50%; overflow: hidden; background: #fff; vertical-align: top; opacity: 0.9;}
+
+.public-focus .hd li.on{background: #4cbbb4;}
+
+
+
+.index-focus{ height: 4rem;overflow: hidden;}
+
+
+
+/**===通用底部==**/
+
+.fixed{display: none;}
+
+.public-footer img{display: block;width: 100%;}
+
+
+/**底部通用品牌资讯**/
+
+.index-block{padding:0 3.125%;margin: 0 0 0.3rem 0;}
+
+.index-block .ihd{font-size: 0.28rem; line-height: 1; color: #333 !important;}
+
+.index-block .ihd img{height: 1rem; width: auto; margin: 0 0.1rem 0 0; vertical-align: middle;}
+
+
+
+.news img{display: block;width: 100%;}
+
+.news .hd{margin: 0.2rem 0;}
+
+.news .hd ul{display: flex;}
+
+.news .hd li{flex-basis: 25%; padding: .35rem 0; font-size: .85rem; line-height: 1; text-align: center; border-left: 1px solid #fff; background: #e1e1e1;}
+
+.news .hd li:nth-child(1){border: none;}
+
+.news .hd li.on{color: #fff; background: #4cbbb4;}
+
+.news .bd{padding:3% 2%; height: 6.5rem; overflow: hidden; background: #f5f5f5;}
+
+.news .bd p{height:0.52rem;padding:0;line-height:0.52rem;text-align:center; font-size:0.2rem; color:#444;}
+
+.news .bd p{height:0.52rem;padding:0;line-height:0.52rem;text-align:center; font-size:0.2rem; color:#444;}
+
+.liansuo li{width:8rem;margin:0 0.25rem 0 0;}
+
+.rongyu li{width:2.87rem;margin:0 0.03rem 0 0;}
+
+.tici li{width:2.87rem;margin:0 0.03rem 0 0;}
+
+.huanjing li{width:2.87rem;margin:0 0.03rem 0 0;}
+
+
+
+
+
+

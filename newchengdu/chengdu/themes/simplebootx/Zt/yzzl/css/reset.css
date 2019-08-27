@@ -1,0 +1,59 @@
+@charset "utf-8";
+/*
+ * basic
+ */
+
+/* 带有换行的连续性盒子 */
+.fz{font-size:0;}
+
+.f22{font-size:22px;}
+
+/* 14px字体 */
+.f14{font-size:14px;}
+
+/* 16px字体 */
+.f16{font-size:16px;}
+
+/* br属性 */
+br{display:inline;line-height:20px;}
+
+/* 溢出部分隐藏 */
+.of{overflow:hidden;}
+
+/* 左右浮动 */
+.fl,.FL{float:left;}
+.fr,.FR{float:right;}
+
+/* 左右浮动后清除浮动 */
+.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.clearfix{*zoom:1;}
+
+/* 加粗 */
+.b{font-weight:bold;}  /* 加粗 */
+
+/* 斜体 */
+.i{font-style:italic;} 
+
+/* 下划线 */
+.u,a.detail:hover{text-decoration:underline;} 
+
+/* 删除线 */
+.o{text-decoration:overline;}
+
+/*大写英文字符*/ 
+.upc{text-transform:uppercase;} 
+
+/* 带有图片Box */
+.img,.img img{display:block;overflow:hidden;}
+
+/* 空白背景 */
+.spacer{background:url("spacer.gif") repeat 0 0;display:block;}
+
+/* 过渡 */
+.tt{transition:all 0.2s ease-in-out;-webkit-transition:all 0.2s ease-in-out;}
+
+/* 隐藏商桥 */
+#qiao-wrap,#LR_Flash,#LRdiv0,#LRdiv1{display:none!important;width:0;height:0;overflow:hidden;visibility:hidden;}
+
+/* 广告提示 */
+.adrCue{position: absolute;top: 0;right: 0;left: auto !important;z-index: 10;width: 40px;height: 40px;background: url("arrow-tr.png") no-repeat;overflow: hidden;}

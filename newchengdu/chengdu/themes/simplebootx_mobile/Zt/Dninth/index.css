@@ -1,0 +1,148 @@
+a {
+	color: #333;
+}
+ul {
+	margin: 0;
+}
+i {
+	display: inline-block;
+}
+.banner {
+	margin-top: 120px;
+}
+.title {
+	font-family: 'FZLTDHK';
+	color: #f7dc2a;
+	background-color: #c12a17;
+}
+.title span{
+	font-size: 1.6rem !important;
+}
+.red {
+	color: #ff0020;
+}
+.yel{
+	color: #f7dc2a !important;
+}
+.w-30 {
+	width: 30%;
+}
+.font-9{
+	font-size: 0.9rem;
+}
+.content-form, form input {
+	background-color: #fef8d7;
+}
+form input {
+	border: 1px solid #99852A;
+}
+.content-form {
+	overflow: hidden;
+}
+.submit-btn {
+	background-image: -moz-linear-gradient( 90deg, rgb(177,16,23) 1%, rgb(223,44,22) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(177,16,23) 1%, rgb(223,44,22) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(177,16,23) 1%, rgb(223,44,22) 100%);
+	border-radius: 30px;
+	font-size: 1.5rem;
+}
+
+.content-box-3,.content-box-3 h3{
+	background: url(imgs/3.jpg);
+}
+.content-box-3 h3{
+	color: #812b05;
+}
+.content-box-3 h3 b{
+	background: #812b05;
+	color: #ffc30e;
+}
+.content-box-3 h3:before{
+	position: absolute;
+	content: '';
+	background: #812b05;
+	height: 2px;
+	width: 30%;
+	left: 0;
+    top: 1rem;
+}
+.content-box-3 h3:after{
+	position: absolute;
+	content: '';
+	background: #812b05;
+	height: 2px;
+	width: 22%;
+	right: 0;
+    top: 3.5rem;
+}
+
+.list div{
+	border: 2px solid #812b05;
+	background: rgba(0,0,0,0);
+}
+.list div h4{
+	background: #812b05;
+	font-size: 1.35rem;
+}
+
+.content-box-4 h3{
+	background-image: -moz-linear-gradient( 90deg, rgb(177,16,23) 1%, rgb(223,44,22) 100%);
+	background-image: -webkit-linear-gradient( 90deg, rgb(177,16,23) 1%, rgb(223,44,22) 100%);
+	background-image: -ms-linear-gradient( 90deg, rgb(177,16,23) 1%, rgb(223,44,22) 100%);
+}
+.content-box-4 h3:before{
+	position: absolute;
+	content: '';
+	background: #fff;
+	height: 2px;
+	width: 30%;
+	left: 0;
+    top: 50%;
+}
+.content-box-4 h3:after{
+	position: absolute;
+	content: '';
+	background: #fff;
+	height: 2px;
+	width: 30%;
+	right: 0;
+	top: 50%;
+}
+.cricle{
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	display: block;
+	background: #fff;
+}
+.content-box-4 .left{
+	top: 47%;
+	left: 30%;
+}
+.content-box-4 .right{
+	top: 47%;
+	right: 30%;
+}
+.content-box-3 .cricle{
+	background: #812b05;
+}
+.content-box-3 .left{
+	top: 0.9rem;
+	left: 30%;
+}
+.content-box-3 .right{
+	top: 3.4rem;
+	right: 22%;
+}
+input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #000;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #000;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #000;
+}
+input::-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #000;
+}

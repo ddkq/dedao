@@ -1,0 +1,201 @@
+---------------------------------------------------------------
+[ 2019-03-11T17:58:20+08:00 ] 59.42.91.135 POST /department/Admin_doctor/index
+[ info ] admin.dedaokq.com/department/Admin_doctor/index [运行时间：0.037715s][吞吐率：26.51req/s] [内存消耗：2,902.88kb] [文件加载：98]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'department',
+    1 => 'Admin_doctor',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'dedaologin_expire_time=1552289094',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\department\controller\AdminDoctor->index[ /home/wwwroot/admin/application/department/controller/AdminDoctor.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000456s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_doctor` [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cmf_doctor` `a` INNER JOIN `cmf_department_relationships` `r` ON `a`.`id`=`r`.`doctor_id` INNER JOIN `cmf_user` `u` ON `a`.`doctor_author`=`u`.`id` INNER JOIN `cmf_department` `d` ON `r`.`department_id`=`d`.`id` WHERE  `r`.`status` = 1 LIMIT 1 [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SELECT `a`.*,`r`.`list_order`,r.id as rid,d.id as department_id,d.name as department,u.user_login as doctor_author FROM `cmf_doctor` `a` INNER JOIN `cmf_department_relationships` `r` ON `a`.`id`=`r`.`doctor_id` INNER JOIN `cmf_user` `u` ON `a`.`doctor_author`=`u`.`id` INNER JOIN `cmf_department` `d` ON `r`.`department_id`=`d`.`id` WHERE  `r`.`status` = 1 ORDER BY `r`.`list_order` LIMIT 0,10 [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000212s ]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-03-11T17:58:20+08:00 ] 59.42.91.135 POST /Department/Admin_Department/index
+[ info ] admin.dedaokq.com/Department/Admin_Department/index [运行时间：0.036320s][吞吐率：27.53req/s] [内存消耗：2,906.59kb] [文件加载：96]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Department',
+    1 => 'Admin_Department',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'dedaologin_expire_time=1552289094',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://admin.dedaokq.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://admin.dedaokq.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'keep-alive',
+  'host' => 'admin.dedaokq.com',
+)
+[ info ] [ PARAM ] array (
+  'token' => '63d40157e4d416e3ad76d9bf01311776',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\department\controller\AdminDepartment->index[ /home/wwwroot/admin/application/department/controller/AdminDepartment.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000334s ] mysql:host=127.0.0.1;dbname=new_chengdu;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_user_token` [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_department` [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`parent_id`,`path`,`description`,`seo_title`,`seo_keywords`,`seo_description`,`list_order`,`status`,`list_tpl`,`one_tpl` FROM `cmf_department` WHERE  `delete_time` = 0 ORDER BY `list_order` [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000226s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `cmf_user_token` WHERE  `token` = '63d40157e4d416e3ad76d9bf01311776' LIMIT 1 [ RunTime:0.000239s ]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+[ error ] [8]unserialize(): Error at offset 0 of 1 bytes[/home/wwwroot/admin/extend/redis/Redis.php:78]
+---------------------------------------------------------------
+[ 2019-03-11T18:35:50+08:00 ] 47.92.133.31 GET /
+[ info ] admin.dedaokq.com/ [运行时间：0.019393s][吞吐率：51.57req/s] [内存消耗：1,724.26kb] [文件加载：81]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'admin.dedaokq.com',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D))',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/admin/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ../template/admin/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-11T19:16:45+08:00 ] 47.100.126.89 GET /
+[ info ] admin.dedaokq.com/ [运行时间：0.018127s][吞吐率：55.17req/s] [内存消耗：1,724.26kb] [文件加载：81]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'admin.dedaokq.com',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D))',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/admin/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ../template/admin/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-11T20:10:03+08:00 ] 47.101.204.188 GET /
+[ info ] admin.dedaokq.com/ [运行时间：0.018886s][吞吐率：52.95req/s] [内存消耗：1,724.26kb] [文件加载：81]
+[ info ] [ LANG ] /home/wwwroot/admin/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'host' => 'admin.dedaokq.com',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D))',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /home/wwwroot/admin/application/index/controller/Index.php ]
+[ info ] [ VIEW ] ../template/admin/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File

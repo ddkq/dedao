@@ -1,0 +1,300 @@
+@font-face{
+	font-family:Dji-Demi;
+	src: url("Dji-Demi.ttf");
+}
+@font-face{
+	font-family:HYRunYuan-65W;
+	src: url("HYRunYuan-65W.ttf");
+}
+@font-face{
+	font-family:PingFang;
+	src: url("PingFang.otf");
+}
+h1, h2, h3, h4, h5, div, span, p, a {
+	font-family: 'Dji-Demi', '汉仪润圆' !important;
+}
+.w-49{
+	width: 49%;
+}
+a {
+	text-decoration: none;
+	color: #333;
+}
+a:hover {
+	text-decoration: none;
+	color: #333;
+}
+h1 *{
+	font-family: HYRunYuan-65W !important;
+	font-size: 1.8rem;
+}
+h2{
+	font-size: 1.3rem;
+}
+.red {
+	color: #cc1515;
+}
+.unshow {
+	display: none;
+}
+.banner{
+	margin-top: 7.4rem;
+}
+.content-title h1 i{
+	content: '';
+	background: url(imgs/index-icon.png);
+	width: 25px;
+	height: 30px;
+	background-size: cover;
+}
+.content-title h1 i:last-child {
+	background-position: 85px 0;
+}
+.content-title h3:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 3.5rem;
+    height: .5rem;
+    background: #F6DBDB;
+    bottom: .65rem;
+}
+.content-title h3 span {
+	z-index: 3;
+	font-size: 1.4rem;
+	font-family: Dji-Demi;
+}
+.content-box-1 {
+	background: url(imgs/content-1-bcg.jpg);
+}
+.content-box-3 {
+	background: url(imgs/content-3-bcg.jpg);
+}
+.content-box-1, .content-box-3 {
+	background-size: cover;
+}
+.content-box-1 .content-1-text {
+	color: #555;
+    line-height: 1.9;
+    font-size: 0.9rem;
+}
+.content-box-1 .content{
+	width: 80%;
+	margin: 0 auto;
+}
+.swt-btn {
+	background: #CC1515;
+	width: 16.3rem;
+	padding: .94rem 0;
+	display: inline-block;
+  	box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.1),0px 6px 12px 0px rgba(0, 0, 0, 0.1);
+  	border-radius: 2rem;
+}
+.content-box-2 {
+	background: #FBF2F2;
+}
+.content-box-2 .content{
+	background: url(imgs/content-2-bcg.jpg) no-repeat ;
+	background-color: #af0f0f;
+	background-size: contain;
+	color: #fff;
+}
+.content-box-2 .content *{
+	font-family: PingFang !important;
+}
+.content-box-2 .content h3{
+	font-size: 1.2rem;
+}
+.content-box-2 .content h3:after{
+	content: '';
+	width: 2rem;
+	height: 2px;
+	background: #bf3f3f;
+	display: block;
+	margin-top: 1rem;
+}
+.content-box-2 .content p{
+	line-height: 1.8;
+}
+.arrow {
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0.5rem;
+}
+.arrow-right .arrow {
+    transform: rotate(225deg);
+}
+.arrow-left .arrow {
+    transform: rotate(45deg);
+}
+.arrow-left, .arrow-right {
+    height: 40px;
+    width: 40px;
+  	background-color: rgba(0, 0, 0, 0.5);
+}
+.arrow-left .arrow {
+	margin: auto 1rem;
+}
+.arrow-left {
+  	background-color: rgba(0, 0, 0, 0.5);
+}
+.swiper-container-horizontal>.swiper-pagination-bullets{
+	bottom: 4.4rem;
+}
+.swiper-pagination-bullet{
+	width: 0.7rem;
+	height: 0.7rem;
+	background: #fff;
+	opacity: 1;
+}
+.swiper-pagination-bullet-active{
+	background: #af0f0f;
+}
+
+.content-box-3{
+	background: #f9eded;
+}
+.content-box-3 .doctor .swiper-slide{
+	background-size: 120%;
+    background-position-x: -80%;
+    background-repeat:no-repeat
+}
+.content-box-3 .doctor .doctor1{
+	background-image: url(imgs/content-3-doctor-1.png);
+}
+.content-box-3 .doctor .doctor2{
+	background-image: url(imgs/content-3-doctor-2.png);
+}
+.content-box-3 .doctor .doctor3{
+	background-image: url(imgs/content-3-doctor-3.png);
+}
+.content-box-3 .doctor .doctor4{
+	background-image: url(imgs/content-3-doctor-4.png);
+}
+.content-box-3 .doctor .doctor5{
+	background-image: url(imgs/content-3-doctor-5.png);
+}
+.content-box-3 .doctor .doctor6{
+	background-image: url(imgs/content-3-doctor-6.png);
+}
+
+
+
+
+.content-box-3 .job:after {
+    content: '';
+    background: #CC1515;
+    height: 2px;
+    width: 3.5rem;
+    display: block;
+    margin-top: 13%;
+}
+.content-box-3 .swt-btn {
+	width: 11.3rem;
+}
+.content-box-3 .doctor-msg-right h4 {
+	font-size: 1.9rem;
+}
+.content-box-3 .doctor-tab {
+	bottom: 3%;
+	z-index: 5;
+}
+.content-box-3 .doctor-tab>div>div {
+	background: #fff;
+  	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1),0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  	cursor: pointer;
+}
+.content-box-3 .doctor-tab p {
+	color: #999;
+	font-size: .875rem;
+}
+.content-box-3 .doctor-tab .doctor-tab-active {
+	background: #AF0F0F;
+	color: #fff;
+}
+.content-box-3 .doctor-tab .doctor-tab-active p {
+	color: #fff;
+}
+.doctor h1, .doctor h3 {
+    margin-bottom: 8%;
+}
+
+.doctor .swiper-slide .col-md-4{
+	padding-bottom: 5rem;
+}
+
+
+.content-banner-btn {
+    z-index: 2;
+    bottom: 48%;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+.content-box-3 .job:after {
+    content: '';
+    background: #CC1515;
+    height: 2px;
+    width: 3.5rem;
+    display: block;
+    margin-top: 1rem;
+}
+.content-box-3 .swt-btn {
+	width: 11.3rem;
+}
+.content-box-3 .doctor-msg-right h4 {
+	font-size: 1.9rem;
+}
+
+
+
+.content-footer {
+	background: #333;
+}
+.content-footer .footer-logo, .content-footer .footer-qr-code {
+	border-bottom: 1px solid #404040;
+}
+.content-footer .footer-qr-code {
+	border-top: 1px solid #404040;
+}
+.content-footer .qr-code-box {
+	border-radius: 10px;
+    margin: auto;
+    overflow: hidden;
+}
+.footer-icon {
+	background: url(../jkz/imgs/sz-index-icon.png);
+    background-size: 367px;
+    display: inline-block;
+}
+.content-footer .phone .footer-icon {
+    width: 21px;
+    height: 20px;
+    background-position: -60px -162px;
+    vertical-align: middle;
+    bottom: 3px;
+}
+.content-footer .phone {
+    font-size: 1.5rem;
+    font-family: '微软雅黑';
+    color: #fff;
+}
+.content-footer .footer-text {
+	color: #ccc;
+}
+.content-footer .footer-list-line {
+	border-left: 1px solid #939393;
+	border-right: 1px solid #939393;
+	width: 35%;
+}
+.copy {
+	display: none;
+}

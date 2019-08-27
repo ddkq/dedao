@@ -1,0 +1,41 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('articlecat/index')}">{:L('ADMIN_ARTICLECAT_INDEX1')}</a></li>
+			<li class="active"><a href="{:U('articlecat/add')}">{:L('ADMIN_ARTICLECAT_ADD')}</a></li>
+			<li><a href="{:U('EQrelationship/index')}">{:L('ADMIN_EQRELATIONSHIP')}</a></li>
+			<li><a href="{:U('EArelationship/index')}">{:L('ADMIN_EARELATIONSHIP')}</a></li>
+			<li><a href="{:U('EErelationship/index')}">{:L('ADMIN_EERELATIONSHIP')}</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('articlecat/edit_post')}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">{:L('NAME')}</label>
+					<div class="controls">
+						<input type="text" name="cat_name" value="{$cat_name}">
+						<span class="form-required">*</span>
+						<input type="hidden" name="cid" value="{$cid}">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">{:L('CATEGORY')}</label>
+					<div class="controls">
+						<select name="cat_value">
+							<foreach name="ap" item="vo">
+								<option value="{$vo.cid}" <php>echo $status = $cat_value == $vo['cid'] ? 'selected="selected"' : '';</php>>{$vo.cat_name}</option>
+							</foreach>
+						</select>
+					</div>
+				</div>
+			</fieldset>
+			<div class="form-actions">
+				<button class="btn btn-primary js-ajax-submit" type="submit">{:L('SAVE')}</button>
+				<a class="btn" href="{:U('articlecat/index')}">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

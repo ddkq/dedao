@@ -1,0 +1,101 @@
+<header class="header">
+	<div class="header-bcg">
+		<div class="content-width">
+			<div class="flex header-content">
+				<div class="header-left">
+					<i class="header-icon map-marker"></i>
+					<span>德道口腔连锁：</span>
+					<span class="chengdu">成都</span>
+					<i class="vertical"></i>
+					<span class="shenzhen">深圳</span>
+					<i class="vertical"></i>
+					<span class="shanghai">上海</span>
+					<i class="vertical"></i>
+					<span class="guangzhou">广州</span>
+				</div>
+				<div class="header-right flex">
+					<div class="time">
+						<i class="header-icon"></i>
+						<span>门诊时间: 09:00-18:00</span>
+					</div>
+					<i class="vertical"></i>
+					<div class="phone-num">
+						<i class="header-icon"></i>
+						<span>健康热线: 400-800-6161 / 028-67696635</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="content-width">
+		<div class="header-logo flex">
+			<div>
+				<a href="/"><img src="__TMPL__Public/images/new-logo.png" alt=""></a>
+				<div class="header-title"><img src="__TMPL__Public/images/header-title.gif" alt=""></div>
+			</div>
+			<div class="flex">
+				<div class="header-logo-first flex align-items-center">
+					<i class="header-icon"></i>
+					<span>成都即刻用<br/>种植牙研究院</span>
+				</div>
+				<i class="vertical"></i>
+				<div class="header-logo-second flex align-items-center">
+					<i class="header-icon"></i>
+					<span>麦哲伦<br/>数字化中心</span>
+				</div>
+				<i class="vertical"></i>
+				<div class="header-logo-third flex align-items-center">
+					<i class="header-icon"></i>
+					<span>市医保<br/>定点单位</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+	<div class="header-nav">
+		<div class="content-width">
+			<ul class="flex header-nav-list mb-0">
+				<li>
+					<div class="header-nav-active"><a href="/">网站首页</a></div>
+				</li>
+				<li>
+					<div><a href="/about.html">德道品牌</a></div>
+				</li>
+				<li>
+					<div><a href="#">种牙项目</a></div>
+				</li>
+				<li>
+					<div><a onclick="openJesongChatByGroup(16524,20125);">种牙案例</a></div>
+				</li>
+				<li>
+					<div><a href="/department/7.html">种牙专家</a></div>
+				</li>
+				<li>
+					<div><a href="/list/105.html">种牙设备</a></div>
+				</li>
+				<li>
+					<div><a href="/zt/correct">牙齿矫正</a></div>
+				</li>
+				<li>
+					<div><a onclick="openJesongChatByGroup(16524,20125);">牙齿修复</a></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>
+<script src="__TMPL__Public/js/moveline.js"></script>
+<script>
+	$('.header-nav-list').moveline({color: '#c11820', position: 'inner', height: 100+'%'});
+
+	$('.header-nav-list li').on('mouseenter', function() {
+		$(this).children().addClass('header-nav-active');
+		$(this).siblings().children().removeClass('header-nav-active');
+	})
+	$('.header-nav-list li').on('mouseleave', function() {
+		$('.header-nav-list li').children().removeClass('header-nav-active');
+		$('.header-nav-list li').eq(0).children().addClass('header-nav-active');
+	})
+</script>

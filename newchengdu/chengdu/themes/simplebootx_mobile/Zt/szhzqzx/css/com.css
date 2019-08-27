@@ -1,0 +1,10 @@
+﻿@charset "utf-8";
+img{border:0;margin:0;padding:0;}body{color:#000;-webkit-text-size-adjust:none;font:normal 14px/150% FZZDXJW,Microsoft Yahei,helvetica,arial;text-align:left;}header,section,footer{display:block;margin:0;padding:0}a{text-decoration:none}.clear{display:block;height:0;overflow:hidden;clear:both}.clearfix:after{content:'\20';display:block;height:0;clear:both}.clearfix{*zoom:1}.noBg{background:none !important;}.noBd{border:none !important;}.noPd{padding:0 !important;}.noMg{margin:0 !important;}.fl{float:left}.fr{float:right}
+
+#qqtwo{ width:100%; overflow:hidden; background-color:#13979A}
+#qqtwo ul{ width:100%;}
+#qqtwo ul li{ float:left; width:20%; display:inline-block; text-align:center; height:35px; line-height:35px;font-size: 1.2rem;}
+#qqtwo ul li a{ color:#fff; font-size:14px;}
+
+#qqthree img{ margin:20px auto;}
+#qqthree p{ text-align:center; color:#999999; line-height:25px;}

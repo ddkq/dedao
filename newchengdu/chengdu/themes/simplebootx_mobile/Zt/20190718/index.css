@@ -1,0 +1,30 @@
+
+form font{
+    width: 30%;
+    background-color: #e0e0e0;
+    font-size: .9rem;
+    color: #000;
+    text-align: center;
+}
+
+.active {
+    background-color: #d10101 !important;
+    color: #fff !important;
+}
+
+.bg-blue{
+	background: url('imgs/bg.jpg');
+	background-size: contain;
+}
+
+video{
+    max-width: 640px;
+}
+
+.submit-btn {
+	border-radius: 8px;
+	background-color: #e60012;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	font-size: 1.3rem;
+}

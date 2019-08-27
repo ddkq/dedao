@@ -1,0 +1,1103 @@
+[ 2019-08-24T10:46:27+08:00 ] 59.42.88.106 /Tables/AdminTables/determine/id/7181.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0003s ]
+SQL: UPDATE `cmf_tables_data` SET `status`='1' WHERE ( id=7181 ) [ RunTime:0.0028s ]
+
+[ 2019-08-24T10:56:06+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0002s ]
+
+[ 2019-08-24T10:56:10+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 13 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T10:56:14+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 18 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T11:27:05+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 13 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T13:02:04+08:00 ] 59.42.88.106 /tables/adminTablesOptions/data_index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T13:02:36+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0001s ]
+
+[ 2019-08-24T13:02:41+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 13 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T13:02:45+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0002s ]
+
+[ 2019-08-24T13:02:47+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 18 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T13:02:52+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0002s ]
+
+[ 2019-08-24T13:02:54+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000949s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 16 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T13:03:04+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/copy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 13 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T13:03:13+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/copy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 18 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T13:03:35+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0002s ]
+
+[ 2019-08-24T13:04:00+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/add_post.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: INSERT INTO `cmf_tables_options` (`name`,`type`,`content`) VALUES ('您的性别','0','[{\"id\":\"1\",\"name\":\"\\u7537\"},{\"id\":\"2\",\"name\":\"\\u5973\"}]') [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: url /home/wwwroot/form/application/Common/Controller/AppframeController.class.php 第 24 行.
+NOTIC: [8] Undefined index: status /home/wwwroot/form/application/Common/Controller/AppframeController.class.php 第 25 行.
+
+[ 2019-08-24T13:04:07+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000960s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0001s ]
+
+[ 2019-08-24T13:04:10+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/copy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 19 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T13:04:12+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/add_post.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000879s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: INSERT INTO `cmf_tables_options` (`name`,`type`,`content`) VALUES ('您的性别','0','[{\"id\":\"1\",\"name\":\"\\u7537\"},{\"id\":\"2\",\"name\":\"\\u5973\"}]') [ RunTime:0.0031s ]
+NOTIC: [8] Undefined index: url /home/wwwroot/form/application/Common/Controller/AppframeController.class.php 第 24 行.
+NOTIC: [8] Undefined index: status /home/wwwroot/form/application/Common/Controller/AppframeController.class.php 第 25 行.
+
+[ 2019-08-24T13:05:38+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0002s ]
+
+[ 2019-08-24T13:05:49+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 19 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-08-24T13:05:54+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 16 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T13:06:19+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/copy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 16 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T13:06:57+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/add_post.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: INSERT INTO `cmf_tables_options` (`name`,`type`,`content`) VALUES ('看板年龄','0','[{\"id\":\"1\",\"name\":\"35-45\\u5c81\"},{\"id\":\"2\",\"name\":\"45-55\\u5c81\"},{\"id\":\"3\",\"name\":\"55-65\\u5c81\"},{\"id\":\"4\",\"name\":\"65\\u5c81\\u4ee5\\u4e0a\"}]') [ RunTime:0.0032s ]
+NOTIC: [8] Undefined index: url /home/wwwroot/form/application/Common/Controller/AppframeController.class.php 第 24 行.
+NOTIC: [8] Undefined index: status /home/wwwroot/form/application/Common/Controller/AppframeController.class.php 第 25 行.
+
+[ 2019-08-24T13:07:10+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0002s ]
+
+[ 2019-08-24T13:07:16+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 21 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T13:07:40+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0001s ]
+
+[ 2019-08-24T13:07:43+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/copy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000983s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 13 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-08-24T13:07:58+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/copy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 13 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T13:09:26+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/add_post.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: INSERT INTO `cmf_tables_options` (`name`,`type`,`content`) VALUES ('看板缺牙征集','0','[{\"id\":\"1\",\"name\":\"\\u5355\\u9897\\u7259\\u7f3a\\u5931\"},{\"id\":\"2\",\"name\":\"\\u591a\\u9897\\u7259\\u7f3a\\u5931\"},{\"id\":\"3\",\"name\":\"\\u534a\\u53e3\\u7259\\u7f3a\\u5931\"},{\"id\":\"4\",\"name\":\"\\u5168\\u53e3\\u7259\\u7f3a\\u5931\"},{\"id\":\"5\",\"name\":\"\\u70e4\\u74f7\\u7259\\u5931\\u8d25\"},{\"id\":\"6\",\"name\":\"\\u5176\\u4ed6\\u7259\\u9f7f\\u60c5\\u51b5\"},{\"id\":\"7\",\"name\":\"\"},{\"id\":\"8\",\"name\":\"\"}]') [ RunTime:0.0026s ]
+NOTIC: [8] Undefined index: url /home/wwwroot/form/application/Common/Controller/AppframeController.class.php 第 24 行.
+NOTIC: [8] Undefined index: status /home/wwwroot/form/application/Common/Controller/AppframeController.class.php 第 25 行.
+
+[ 2019-08-24T13:09:33+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000934s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 13 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T13:09:38+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0002s ]
+
+[ 2019-08-24T13:09:47+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 22 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T13:09:51+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 22 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T13:09:55+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 22 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T13:10:10+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0002s ]
+
+[ 2019-08-24T13:10:17+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 22 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T13:10:21+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0002s ]
+
+[ 2019-08-24T13:10:26+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 21 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T13:10:28+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0001s ]
+
+[ 2019-08-24T13:10:32+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 19 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T16:03:06+08:00 ] 59.42.88.106 /Tables/AdminTables/view_data_delete/id/7373.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0003s ]
+SQL: DELETE FROM `cmf_tables_data` WHERE ( id = 7373 ) [ RunTime:0.0026s ]
+
+[ 2019-08-24T16:03:08+08:00 ] 59.42.88.106 /Tables/AdminTables/view_data_delete/id/7372.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0003s ]
+SQL: DELETE FROM `cmf_tables_data` WHERE ( id = 7372 ) [ RunTime:0.0036s ]
+
+[ 2019-08-24T16:03:13+08:00 ] 59.42.88.106 /Tables/AdminTables/view_data_delete/id/7371.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000972s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0002s ]
+SQL: DELETE FROM `cmf_tables_data` WHERE ( id = 7371 ) [ RunTime:0.0031s ]
+
+[ 2019-08-24T16:03:15+08:00 ] 59.42.88.106 /Tables/AdminTables/view_data_delete/id/7370.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000971s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0002s ]
+SQL: DELETE FROM `cmf_tables_data` WHERE ( id = 7370 ) [ RunTime:0.0035s ]
+
+[ 2019-08-24T16:03:17+08:00 ] 59.42.88.106 /Tables/AdminTables/view_data_delete/id/7369.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0003s ]
+SQL: DELETE FROM `cmf_tables_data` WHERE ( id = 7369 ) [ RunTime:0.0027s ]
+
+[ 2019-08-24T16:03:22+08:00 ] 59.42.88.106 /Tables/AdminTables/view_data_delete/id/7368.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0002s ]
+SQL: DELETE FROM `cmf_tables_data` WHERE ( id = 7368 ) [ RunTime:0.0040s ]
+
+[ 2019-08-24T16:13:45+08:00 ] 59.42.88.106 /Tables/AdminTables/view_data_delete/id/7375.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0002s ]
+SQL: DELETE FROM `cmf_tables_data` WHERE ( id = 7375 ) [ RunTime:0.0028s ]
+
+[ 2019-08-24T16:13:48+08:00 ] 59.42.88.106 /Tables/AdminTables/view_data_delete/id/7374.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0003s ]
+SQL: DELETE FROM `cmf_tables_data` WHERE ( id = 7374 ) [ RunTime:0.0041s ]
+
+[ 2019-08-24T16:13:58+08:00 ] 59.42.88.106 /tables/adminTablesOptions/data_index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000922s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 19 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 21 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 22 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T16:44:59+08:00 ] 59.42.88.106 /Tables/AdminTables/determine/id/7380.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0003s ]
+SQL: UPDATE `cmf_tables_data` SET `status`='1' WHERE ( id=7380 ) [ RunTime:0.0034s ]
+
+[ 2019-08-24T16:45:02+08:00 ] 59.42.88.106 /Tables/AdminTables/view_data_delete/id/7380.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000951s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0002s ]
+SQL: DELETE FROM `cmf_tables_data` WHERE ( id = 7380 ) [ RunTime:0.0044s ]
+
+[ 2019-08-24T16:45:10+08:00 ] 59.42.88.106 /Tables/AdminTables/view_data_delete/id/7378.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0002s ]
+SQL: DELETE FROM `cmf_tables_data` WHERE ( id = 7378 ) [ RunTime:0.0030s ]
+
+[ 2019-08-24T16:45:13+08:00 ] 59.42.88.106 /Tables/AdminTables/view_data_delete/id/7377.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0003s ]
+SQL: DELETE FROM `cmf_tables_data` WHERE ( id = 7377 ) [ RunTime:0.0069s ]
+
+[ 2019-08-24T16:45:15+08:00 ] 59.42.88.106 /Tables/AdminTables/view_data_delete/id/7376.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0003s ]
+SQL: DELETE FROM `cmf_tables_data` WHERE ( id = 7376 ) [ RunTime:0.0029s ]
+
+[ 2019-08-24T16:45:17+08:00 ] 59.42.88.106 /Tables/AdminTables/view_data_delete/id/7367.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0003s ]
+SQL: DELETE FROM `cmf_tables_data` WHERE ( id = 7367 ) [ RunTime:0.0040s ]
+
+[ 2019-08-24T16:45:26+08:00 ] 59.42.88.106 /tables/adminTablesOptions/data_index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 19 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 21 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 22 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T16:45:37+08:00 ] 59.42.88.106 /Tables/AdminTables/delete/id/63.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0003s ]
+SQL: UPDATE `cmf_tables` SET `status`='0' WHERE ( id = 63 ) [ RunTime:0.0033s ]
+
+[ 2019-08-24T16:46:34+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0001s ]
+
+[ 2019-08-24T16:46:43+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/copy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 21 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T16:46:54+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/add_post.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000932s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: INSERT INTO `cmf_tables_options` (`name`,`type`,`content`) VALUES ('看板年龄','0','[{\"id\":\"1\",\"name\":\"35-45\\u5c81\"},{\"id\":\"2\",\"name\":\"45-55\\u5c81\"},{\"id\":\"3\",\"name\":\"55-65\\u5c81\"},{\"id\":\"4\",\"name\":\"65\\u5c81\\u4ee5\\u4e0a\"}]') [ RunTime:0.0053s ]
+NOTIC: [8] Undefined index: url /home/wwwroot/form/application/Common/Controller/AppframeController.class.php 第 24 行.
+NOTIC: [8] Undefined index: status /home/wwwroot/form/application/Common/Controller/AppframeController.class.php 第 25 行.
+
+[ 2019-08-24T16:47:14+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0001s ]
+
+[ 2019-08-24T16:47:20+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/copy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 22 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T16:49:24+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/add_post.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: INSERT INTO `cmf_tables_options` (`name`,`type`,`content`) VALUES ('看板牙齿情况0824','0','[{\"id\":\"1\",\"name\":\"\\u7259\\u9f7f\\u677e\\u52a8\"},{\"id\":\"2\",\"name\":\"\\u5355\\u9897\\u7f3a\\u7259\"},{\"id\":\"3\",\"name\":\"\\u591a\\u9897\\u7f3a\\u7259\"},{\"id\":\"4\",\"name\":\"\\u534a\\u53e3\\u7f3a\\u7259\"},{\"id\":\"5\",\"name\":\"\\u5168\\u53e3\\u7f3a\\u7259\"},{\"id\":\"6\",\"name\":\"\\u5176\\u4ed6\\u60c5\\u51b5\"},{\"id\":\"7\",\"name\":\"\"},{\"id\":\"8\",\"name\":\"\"}]') [ RunTime:0.0129s ]
+NOTIC: [8] Undefined index: url /home/wwwroot/form/application/Common/Controller/AppframeController.class.php 第 24 行.
+NOTIC: [8] Undefined index: status /home/wwwroot/form/application/Common/Controller/AppframeController.class.php 第 25 行.
+
+[ 2019-08-24T16:51:32+08:00 ] 59.42.88.106 /Tables/AdminTables/view_data_delete/id/7381.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0003s ]
+SQL: DELETE FROM `cmf_tables_data` WHERE ( id = 7381 ) [ RunTime:0.0026s ]
+
+[ 2019-08-24T16:51:51+08:00 ] 59.42.88.106 /tables/adminTablesOptions/data_index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T16:52:53+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0001s ]
+
+[ 2019-08-24T16:53:17+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0002s ]
+
+[ 2019-08-24T16:53:51+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 19 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T16:53:59+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 23 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T16:54:13+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 21 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-08-24T16:54:44+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0001s ]
+
+[ 2019-08-24T16:54:57+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0001s ]
+
+[ 2019-08-24T16:55:07+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 20 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T16:55:18+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0001s ]
+
+[ 2019-08-24T16:55:20+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/copy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000900s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 20 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T16:55:30+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/add_post.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: INSERT INTO `cmf_tables_options` (`name`,`type`,`content`) VALUES ('看板性别0824','0','[{\"id\":\"1\",\"name\":\"\\u7537\"},{\"id\":\"2\",\"name\":\"\\u5973\"}]') [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: url /home/wwwroot/form/application/Common/Controller/AppframeController.class.php 第 24 行.
+NOTIC: [8] Undefined index: status /home/wwwroot/form/application/Common/Controller/AppframeController.class.php 第 25 行.
+
+[ 2019-08-24T16:55:55+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0001s ]
+
+[ 2019-08-24T16:56:01+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 25 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T16:56:11+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0001s ]
+
+[ 2019-08-24T16:56:16+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/copy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 22 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T16:56:21+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/add_post.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: INSERT INTO `cmf_tables_options` (`name`,`type`,`content`) VALUES ('看板缺牙征集0824','0','[{\"id\":\"1\",\"name\":\"\\u5355\\u9897\\u7259\\u7f3a\\u5931\"},{\"id\":\"2\",\"name\":\"\\u591a\\u9897\\u7259\\u7f3a\\u5931\"},{\"id\":\"3\",\"name\":\"\\u534a\\u53e3\\u7259\\u7f3a\\u5931\"},{\"id\":\"4\",\"name\":\"\\u5168\\u53e3\\u7259\\u7f3a\\u5931\"},{\"id\":\"5\",\"name\":\"\\u70e4\\u74f7\\u7259\\u5931\\u8d25\"},{\"id\":\"6\",\"name\":\"\\u5176\\u4ed6\\u7259\\u9f7f\\u60c5\\u51b5\"},{\"id\":\"7\",\"name\":\"\"},{\"id\":\"8\",\"name\":\"\"}]') [ RunTime:0.0073s ]
+NOTIC: [8] Undefined index: url /home/wwwroot/form/application/Common/Controller/AppframeController.class.php 第 24 行.
+NOTIC: [8] Undefined index: status /home/wwwroot/form/application/Common/Controller/AppframeController.class.php 第 25 行.
+
+[ 2019-08-24T16:56:29+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 24 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T16:57:06+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000949s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0002s ]
+
+[ 2019-08-24T16:57:10+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/copy.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 23 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T16:57:16+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/add_post.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000960s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: INSERT INTO `cmf_tables_options` (`name`,`type`,`content`) VALUES ('看板年龄0824','0','[{\"id\":\"1\",\"name\":\"35-45\\u5c81\"},{\"id\":\"2\",\"name\":\"45-55\\u5c81\"},{\"id\":\"3\",\"name\":\"55-65\\u5c81\"},{\"id\":\"4\",\"name\":\"65\\u5c81\\u4ee5\\u4e0a\"}]') [ RunTime:0.0038s ]
+NOTIC: [8] Undefined index: url /home/wwwroot/form/application/Common/Controller/AppframeController.class.php 第 24 行.
+NOTIC: [8] Undefined index: status /home/wwwroot/form/application/Common/Controller/AppframeController.class.php 第 25 行.
+
+[ 2019-08-24T16:57:29+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0002s ]
+
+[ 2019-08-24T16:57:33+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000962s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 27 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T16:58:09+08:00 ] 59.42.88.106 /Tables/AdminTables/delete/id/64.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000907s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0002s ]
+SQL: UPDATE `cmf_tables` SET `status`='0' WHERE ( id = 64 ) [ RunTime:0.0035s ]
+
+[ 2019-08-24T16:58:40+08:00 ] 59.42.88.106 /Tables/AdminTables/view_data_delete/id/7382.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000309s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0002s ]
+SQL: DELETE FROM `cmf_tables_data` WHERE ( id = 7382 ) [ RunTime:0.0027s ]
+
+[ 2019-08-24T16:59:21+08:00 ] 59.42.88.106 /tables/adminTablesOptions/data_index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 25 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 27 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 24 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T17:00:10+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0001s ]
+
+[ 2019-08-24T17:00:34+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 27 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T17:00:45+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0002s ]
+
+[ 2019-08-24T17:00:52+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 24 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T17:02:08+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0001s ]
+
+[ 2019-08-24T17:02:13+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 27 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T17:02:19+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0002s ]
+
+[ 2019-08-24T17:02:23+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 26 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-08-24T17:03:26+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0001s ]
+
+[ 2019-08-24T17:03:30+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 27 ) LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2019-08-24T17:03:35+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( type = 0 )  [ RunTime:0.0001s ]
+
+[ 2019-08-24T17:03:40+08:00 ] 59.42.88.106 /Tables/AdminTablesOptions/view.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT `content` FROM `cmf_tables_options` WHERE ( id = 24 ) LIMIT 1   [ RunTime:0.0001s ]
+

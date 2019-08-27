@@ -1,0 +1,124 @@
+.banner {
+	margin-top: 205px;
+}
+.bg1{
+	background: #fcf2e7;
+}
+.bg2{
+	background: #a4414d;
+}
+.red{
+	color: #a4414d;
+}
+.brown{
+	color: #a56540;
+}
+.h-8{
+	height: 8rem;
+}
+.yellow{
+	background: #e09638;
+}
+.f-14{
+	font-weight: 900;
+	font-size: 3.5rem !important;
+}
+.f-18{
+	font-size: 1.8rem;
+}
+.content-1-border{
+	border: 1px solid #ffedd7;
+}
+.w-85{
+	width: 85% !important;
+}
+.w-90{
+	width: 90% !important;
+}
+.w-110{
+	width: 110% !important;
+}
+.w-130{
+	width: 130% !important;
+}
+.content-1-img1{
+	margin-top:-0.5rem;
+	margin-left:-4.5rem ;
+}
+.content-1-img4{
+	margin-bottom:-0.5rem;
+	margin-right:-0.5rem ;
+}
+.f-12{
+	font-size: 1.2rem;
+}
+.f-15{
+	font-size: 1.4rem;
+}
+.text-indent{
+	text-indent: 40px !important;
+}
+.content-3-border{
+	border-bottom:1px dashed #000000 ;
+}
+.content-3-btn{
+	top: -2.5rem;
+	right: 20%;
+}
+.active-doctor {
+	background: #a56540;
+}
+
+.content-6-bcg{
+	background: url(imgs/content-6-bg.png);
+	background-size:100% 100% ;
+}
+.doctor-btn1{
+	background: #a4414d;
+}
+.swiper-slide-active{
+	background: #a56540;
+	color: #FFFFFF;
+}
+.content-4 .swiper-slide-active{
+	background:initial;
+	color: #000000;
+} 
+.gallery-top .swiper-slide-active{
+	background:initial;
+	color: #000000;
+}
+.white-space{
+	white-space: nowrap;
+}
+.content-6-top{
+	top: -10rem;
+}
+.swiper_btn{
+	width: 47px ;
+	height: 49px ;
+	left: -2rem;
+	top: 30%;
+}
+.swiper_btn1{
+	width: 47px;
+	height: 49px;
+	right: 1%;
+	top: 30%;
+}
+.swiper_btn,.swiper_btn1>img{
+	width: 47px;
+	height: 49px;
+}
+.swiper-button-prev{
+	background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23a56540'%2F%3E%3C%2Fsvg%3E") !important;
+    width: 43px;
+	height: 83px;
+	font-size: 130px;
+}
+.swiper-button-next{
+	background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23a56540'%2F%3E%3C%2Fsvg%3E") !important;
+	width: 43px;
+	height: 83px ;
+	font-size: 130px ;
+}

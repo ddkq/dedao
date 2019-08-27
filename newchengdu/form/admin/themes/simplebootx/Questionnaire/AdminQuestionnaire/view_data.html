@@ -1,0 +1,76 @@
+<admintpl file="header" />
+</head>
+<style>
+	.table {
+		margin-top: 20px;
+		margin-bottom: 0;
+	}
+</style>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('AdminQuestionnaire/index')}" target="_self">问卷管理</a></li>
+			<li class="active"><a href="javascript:;">数据查看</a></li>
+		</ul>
+		<h4>{$post.title}</h4>
+		<volist name="content" key="k" id="vo">
+			<h5>{$vo.name}</h5>
+			<if condition="$vo[type] eq 1">
+				<p>
+					<volist name="vo['children']" key="k1" id="vo1">
+						<php>
+							foreach ($data_content as $k2 => $vo2) {
+								if($k == intval($vo2->name) and $k1 == intval($vo2->value)+1){
+									echo "<p><input type='radio' checked='checked'>$vo1[name]</p>";
+								}else if($k == intval($vo2->name)){
+									echo "<p><input type='radio'>$vo1[name]</p>";
+								}
+							}
+						</php>
+					</volist>	
+				</p>
+			<elseif condition="$vo[type] eq 2"/>
+				<p>
+					<volist name="vo['children']" key="k1" id="vo1">
+						<php>
+							foreach ($data_content as $k2 => $vo2) {
+								if($k == intval($vo2->name) and $k1 == intval($vo2->value)+1){
+									//echo "<p><input type='checkbox' checked='checked'>$vo1[name]</p>";
+									$checked[$vo2->name.$vo2->value] = "checked='checked'";
+								}else{
+									$checked[$vo2->name.$vo2->value] = "";
+								}
+							}
+							$kk = $k.$k1-1;
+						</php>
+						<p><input type='checkbox' {$checked[intval($kk)]}>{$vo1[name]}</p>
+					</volist>	
+				</p>
+				
+			</if>
+		</volist>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script>
+		function refersh_window() {
+			var refersh_time = getCookie('refersh_time');
+			if (refersh_time == 1) {
+				window.location = "{:U('AdminQuestionnaire/index',$formget)}";
+			}
+		}
+		setInterval(function() {
+			refersh_window();
+		}, 2000);
+		
+	</script>
+</body>
+</html>

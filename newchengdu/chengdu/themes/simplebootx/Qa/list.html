@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<tc_include file="Public:head" />
+	<link href="__TMPL__Public/css/article.css" rel="stylesheet" type="text/css">
+	<title>{$name}_{$site_name}</title>
+	<meta name="keywords" content="{$seo_keywords}"/>
+	<meta name="description" content="{$seo_description}" />
+	</head>
+	<body>
+		<tc_include file="Public:new_header" />
+		
+		<div class="pdbanner">
+			<div class="hd">
+				<ul>
+					<volist name="ad" id="vo" key="k" >
+						<li>{$k}</li>
+					</volist>
+				</ul>
+			</div>
+			<div class="bd">
+				<ul>
+					<volist name="ad" id="vo">
+						<li><a href="{$vo.slide_url}" target="_blank"><img src="{:sp_get_asset_upload_path($vo['slide_pic'])}" /></a></li>	
+					</volist>
+				</ul>
+			</div>
+		</div>
+		
+		<ol class="breadcrumb">
+			<i class="fa fa-home"></i>
+			<li>您所在的位置</li>
+			<li><a href="/">首页</a></li>
+			<volist name="breadcrumb" id="vo">
+				<li><a href="/qa/list/{$vo.term_id}.html">{$vo.name}</a></li>
+			</volist>
+		</ol>
+		
+		<div class="main_content clearfix">
+			<div class="qa_LEFT">
+				<div class="slide_nav fl">
+					<a class="all" href="/qa/list/28.html">全部问题</a>
+					<ul>
+						<volist name="allterm" id="vo">
+						<li>
+							<a href="javascript:void(0);" <php>echo $on = $parent == $vo[term_id] ? 'class="on"' : '';</php>>{$vo.name}</a>
+							<php>$child = sp_get_question_child_terms($vo[term_id]);</php>
+							<dl <php>echo $on = $parent == $vo[term_id] ? 'style="display:block"' : '';</php>>
+								<volist name="child" id="vo1">
+									<php> $status = $cat_id == $vo1['term_id'] ? 'class="current"' : '';</php>
+									<dd><a href="/qa/list/{$vo1.term_id}.html" {$status}>{$vo1.name}</a></dd>
+								</volist>
+							</dl>
+						</li>
+						</volist>	
+					</ul>
+				</div>
+			</div>
+			<div class="qa_RIGHT">
+				<h3 class="term_title">{$name}</h3>
+				<ul class="term_list clearfix">
+					<volist name="childterm" id="vo">
+						<php>$on = $term_id==$vo[term_id]?'class="on"':''</php>
+						<li {$on}><a href="/qa/list/{$vo.term_id}.html">{$vo.name}</a></li>
+					</volist>
+				</ul>
+				
+				<div class="questions_list">
+					<div class="hd">			
+						<ul>
+							<li>新问题</li>
+							<li>零回答</li>
+							<li>已解决</li>
+						</ul>
+					</div>
+					<div class="bd">
+						<ul>
+							<volist name="allquestion[posts]" id="vo">
+								<li>
+									<a class="col-md-8" href="/qa/{$vo.id}.html" target="_blank">{$vo.title}</a>
+									<span class="col-md-2 col-md-offset-2">{$vo.answer_num}个回答 </span>
+								</li>
+							</volist>
+							<ul class="pages">{$allquestion['page']}</ul>
+						</ul>
+						<ul>
+							<volist name="zeroquestion[posts]" id="vo">
+								<li>
+									<a class="col-md-8" href="/qa/{$vo.id}.html" target="_blank">{$vo.title}</a>
+									<span class="col-md-2 col-md-offset-2">{$vo.answer_num}个回答 </span>
+								</li>
+							</volist>
+							<ul class="pages">{$allquestion['page']}</ul>
+						</ul>				
+						<ul>
+							<volist name="solvequestion[posts]" id="vo">
+								<li>
+									<a class="col-md-8" href="/qa/{$vo.id}.html" target="_blank">{$vo.title}</a>
+									<span class="col-md-2 col-md-offset-2">{$vo.answer_num}个回答 </span>
+								</li>
+							</volist>
+							<ul class="pages">{$solvequestion['page']}</ul>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<tc_include file="Public:footer"/>
+	<script>
+		jQuery(".pdbanner").slide({mainCell:".bd ul",autoPlay:true});
+		jQuery(".questions_list").slide({trigger:"click"});
+		
+		$(function(){
+		    $(".slide_nav li a").click(function() {
+		        if($(this).attr("href").indexOf("javascript")>-1){
+		            $(".slide_nav li>dl").not($(this).next()).slideUp('fast');
+		            if($(this).hasClass("on")){
+		                $(this).removeClass("on");
+		                $(this).next("dl").stop(true,true).slideUp();
+		            }else{
+		                $(this).addClass("on").parent("li").siblings("li").find("a").removeClass("on");
+		                $(this).next("dl").stop(true,true).slideDown();
+		            }
+		        }
+		     });
+			$(".slide_nav>li>a:last").css("border","none");
+			var Height1=$(".slide_nav").outerHeight(true) ;
+		});
+	</script>
+</html>	

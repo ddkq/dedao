@@ -1,0 +1,65 @@
+.bg{
+	background: #daddde;
+}
+.banner {
+	margin-top: 120px;
+}
+.active {
+	background-color: #d10101 !important;
+	color: #fff !important;
+}
+form font{
+	width: 30%;
+	background-color: #e0e0e0;
+	font-size: .9rem;
+	color: #000;
+	text-align: center;
+}
+
+.submit-btn {
+	font-size: 1.2rem;
+	border-radius: 10px;
+	background-color: #d10101;
+	padding-left: 4rem;
+	padding-right: 4rem;
+}
+.swiper-pagination{
+	width: 110px !important;
+	left: 50%;
+	margin-left:-55px ;
+}
+.swiper-pagination>span{
+	margin-left: 10px;
+}
+.swiper-pagination-bullet{
+	width: 10px !important;
+	height: 10px !important;
+}
+.fixed-btn{
+	max-width: 640px;
+	margin: 0 auto;
+	background: #e60012;
+	padding: 3.3rem;
+}
+.fixed-btn2 {
+	width: 23%;
+    bottom: 2%;
+    left: 6%;
+    animation: btn1 3s ease infinite;
+}
+.fixed-btn3 {
+    bottom: 15%;
+    width: 70%;
+    right: 2%;
+    animation: btn 3s ease infinite;
+}
+@keyframes btn {
+	0% {bottom: 15%;}
+	50% {bottom: 25%;}
+	100% {bottom: 15%;}
+}
+@keyframes btn1 {
+	0% {bottom: 2%;}
+	50% {bottom: 6%;}
+	100% {bottom: 2%;}
+}
