@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+	<tc_include file="Public:head" />
+	<link rel="stylesheet" href="__TMPL__Zt/szhzqzx/css/index.css" type="text/css">
+	<link rel='stylesheet' href='__TMPL__Zt/szhzqzx/css/xkz.css'>
+	<title>数字化正崎中心_{$site_name}</title>
+</head>
+<body>
+	<tc_include file="Public:header" />
+	<div class="wrap">
+		<div id="pubBanner" class="pub_width pubBanner clearfix">
+			<div class="hd" style="display: none;">
+				<ul>
+					<li class="">1</li>
+					<li class="on">2</li>
+				</ul>
+			</div>
+			<div class="bd">
+				<ul class="clearfix">
+					<li>
+						<a href="javascript:void(0)" target="_blank" onclick="javascript:openJesongChatByGroup(16524,20125);">
+							<img src="__TMPL__Zt/szhzqzx/imgs/banner.jpg" class="b">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="pk">
+			<h3>愿你被温柔对待</h3>
+			<strong>少一些生活的坎坷</strong>
+			<img src="__TMPL__Zt/szhzqzx/imgs/p_01.jpg" class="b">
+			<img src="__TMPL__Zt/szhzqzx/imgs/p_02.jpg" class="b">
+		</div>
+		<a onclick="javascript:openJesongChatByGroup(16524,20125);" href="javascript:void(0)" target="_blank">
+			<img src="__TMPL__Zt/szhzqzx/imgs/z.jpg" class="b">
+		</a>
+		<div class="yc">
+			<img src="__TMPL__Zt/szhzqzx/imgs/c_01.jpg" class="b">
+			<img src="__TMPL__Zt/szhzqzx/imgs/c_02.jpg" class="b">
+			<a onclick="javascript:openJesongChatByGroup(16524,20125);" href="javascript:void(0)" target="_blank">
+				<img src="__TMPL__Zt/szhzqzx/imgs/zx2.jpg" class="zx">
+			</a>
+			<img src="__TMPL__Zt/szhzqzx/imgs/c_03.jpg" class="b">
+			<img src="__TMPL__Zt/szhzqzx/imgs/c_04.jpg" class="b">
+			<a onclick="javascript:openJesongChatByGroup(16524,20125);" href="javascript:void(0)" target="_blank">
+				<img src="__TMPL__Zt/szhzqzx/imgs/zx3.jpg" class="zx">
+			</a>
+			<img src="__TMPL__Zt/szhzqzx/imgs/c_07.jpg" class="b">
+			<a onclick="javascript:openJesongChatByGroup(16524,20125);" href="javascript:void(0)" target="_blank">
+				<img src="__TMPL__Zt/szhzqzx/imgs/c_08.jpg" class="b">
+			</a>
+			<a onclick="javascript:openJesongChatByGroup(16524,20125);" href="javascript:void(0)" target="_blank">
+				<img src="__TMPL__Zt/szhzqzx/imgs/c_09.jpg" class="b">
+			</a>
+			<a onclick="javascript:openJesongChatByGroup(16524,20125);" href="javascript:void(0)" target="_blank">
+				<img src="__TMPL__Zt/szhzqzx/imgs/zx4.jpg" class="zx">
+			</a>
+			<img src="__TMPL__Zt/szhzqzx/imgs/c_10.jpg" class="b">
+		</div>
+		<img src="__TMPL__Zt/szhzqzx/imgs/b.jpg" class="b">
+		<div class="sfq">
+			<h2 class="acc_trigger active">
+				<a onclick="javascript:openJesongChatByGroup(16524,20125);" target="_blank">
+					<span>1</span>隐适美全隐形矫正
+				</a>
+			</h2>
+			<div class="acc_container" style="display: block;">
+				<div class="block">
+					<a onclick="javascript:openJesongChatByGroup(16524,20125);" href="javascript:void(0)">
+						<img src="__TMPL__Zt/szhzqzx/imgs/1.jpg" class="b">
+					</a>
+				</div>
+			</div>
+			<h2 class="acc_trigger">
+				<a onclick="javascript:openJesongChatByGroup(16524,20125);" target="_blank">
+					<span>2</span>德道无托槽全隐形矫正
+				</a>
+			</h2>
+			<div class="acc_container" style="display: none;">
+				<div class="block">
+					<a onclick="javascript:openJesongChatByGroup(16524,20125);" href="javascript:void(0)" target="_blank">
+						<img src="__TMPL__Zt/szhzqzx/imgs/2.jpg" class="b">
+					</a>
+				</div>
+			</div>
+			<h2 class="acc_trigger">
+				<a onclick="javascript:openJesongChatByGroup(16524,20125);" target="_blank">
+					<span>3</span>美国3M智能自锁正畸
+				</a>
+			</h2>
+			<div class="acc_container" style="display: none;">
+				<div class="block">
+					<a onclick="javascript:openJesongChatByGroup(16524,20125);" href="javascript:void(0)">
+						<img src="__TMPL__Zt/szhzqzx/imgs/3.jpg" class="b">
+					</a>
+				</div>
+			</div>
+			<h2 class="acc_trigger">
+				<a onclick="javascript:openJesongChatByGroup(16524,20125);" target="_blank">
+					<span>4</span>德道半晶隐形正畸
+				</a>
+			</h2>
+			<div class="acc_container" style="display: none;">
+				<div class="block">
+					<a onclick="javascript:openJesongChatByGroup(16524,20125);" href="javascript:void(0)" target="_blank">
+						<img src="__TMPL__Zt/szhzqzx/imgs/4.jpg" class="b">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="hg"></div>
+		<div class="my">
+			<img src="__TMPL__Zt/szhzqzx/imgs/z_01.jpg" class="b">
+			<div class="hg"></div>
+			<div class="fz">
+				<p>你只管戴好牙套,我帮你排齐牙齿</p>
+				<div class="wx"></div>
+			</div>
+			<img src="__TMPL__Zt/szhzqzx/imgs/z_04.jpg" class="b">
+			<img src="__TMPL__Zt/szhzqzx/imgs/z_05.jpg" class="b">
+			<img src="__TMPL__Zt/szhzqzx/imgs/z_06.jpg" class="b">
+			<img src="__TMPL__Zt/szhzqzx/imgs/z_07.jpg" class="b">
+			<img src="__TMPL__Zt/szhzqzx/imgs/z_08.jpg" class="b">
+			<div class="hg"></div>
+			<div class="fz">
+				<div class="wx">每一次复诊&amp;检查德道都会提前来电</div>
+			</div>
+			<div class="hg"></div>
+			<div class="tit">
+				<a onclick="javascript:openJesongChatByGroup(16524,20125);"  target="_blank">
+					<img class="b" src="__TMPL__Zt/szhzqzx/imgs/wpzj.gif" alt="">
+				</a>
+			</div>
+			<div class="xkz">
+	   		 	<div class="tit">
+	   		 		<a href="javascript:;" onclick="javascript:openJesongChatByGroup(16524,20125);" target="_blank">
+	   		 			<img src="__TMPL__Zt/szhzqzx/imgs/qq17.jpg" class="b">
+	   		 		</a>
+	   		 	</div>
+	    		<div class="bd">
+	        		<div class="row1">
+						<ul>
+							<li>
+		            			<a href="/department/7.html">
+		            				<img class="b" src="__TMPL__Zt/szhzqzx/imgs/zj_doc.jpg">
+									<div class="xkz-info">
+		            					<p class="title">智能口腔专家团</p>
+		            					<p class="intro">德道智能口腔专家团汇聚一批国际资质认证的矫正医师，拥有丰富的临床经验，他们将医学与美学完美融合，实现在矫正牙齿的同时，重塑美丽笑线和脸型</p>
+		            				</div>
+		            			</a>
+							</li>
+							<ul></ul>
+		        		</ul>
+		        	</div>
+			        <div class="cfix xkz-btn">
+			            <ul class="cfix">
+			                <li class="xkz-btn1"><a onclick="javascript:openJesongChatByGroup(16524,20125);" >病情诊断</a></li>
+			                <li class="xkz-btn3"><a onclick="javascript:openJesongChatByGroup(16524,20125);" >特诊名医通道</a></li>
+			                <li class="xkz-btn2"><a onclick="javascript:openJesongChatByGroup(16524,20125);" >咨询预约</a></li>
+			            </ul>
+			        </div>
+	    		</div>
+			</div>
+			<img src="__TMPL__Zt/szhzqzx/imgs/z_12.jpg" class="b">
+			<a onclick="javascript:openJesongChatByGroup(16524,20125);" href="javascript:void(0)"target="_blank">
+				<img src="__TMPL__Zt/szhzqzx/imgs/z_13.jpg" class="b">
+			</a>
+			<div class="hg"></div>
+			<div class="fzz">
+				<p>你只管戴好牙套,我帮你排齐牙齿</p>
+				<div class="wx"></div>
+			</div>
+			<div class="hg"></div>
+			
+		</div>
+		
+
+		<link rel="stylesheet" href="__TMPL__Zt/extraction/css/comm.css" type="text/css">
+		<div style="height:0.2rem"></div>
+		<div class="index-block dongtai">
+	    <div class="ihd"><img src="__TMPL__Zt/extraction/imgs/ihd5.png" alt="">德道口腔连锁·品牌资讯</div>
+	    <div class="news">
+	    	<div class="hd">
+	    		<ul>
+	    			<li class="on">全国连锁</li>
+	    			<li>高端环境</li>
+	    			<li>服务质量</li>
+	    			<li>先进设备</li>
+	    		</ul>
+	    	</div>
+	    	<div class="bd">
+	    		<div class="swiper-container liansuo" id="liansuo">
+	    			<ul class="swiper-wrapper">
+	    				<li class="swiper-slide">
+	    					<img class="b" src="__TMPL__Zt/extraction/imgs/road_img01.jpg" alt="">
+	    				</li>
+	    				<li class="swiper-slide">
+	    					<img class="b" src="__TMPL__Zt/extraction/imgs/road_img02.jpg" alt="">
+	    				</li>
+	    				<li class="swiper-slide">
+	    					<img class="b" src="__TMPL__Zt/extraction/imgs/road_img03.jpg" alt="">
+	    				</li>
+	    			</ul>
+	    		</div>
+	    		<div class="swiper-container rongyu" id="rongyu">
+	    			<ul class="swiper-wrapper">
+	    				<li class="swiper-slide w">
+	    					<img class="b" src="__TMPL__Zt/extraction/imgs/road_img04.jpg" alt="">
+	    				</li>
+	    				<li class="swiper-slide w">
+	    					<img class="b" src="__TMPL__Zt/extraction/imgs/road_img05.jpg" alt="">
+	    				</li>
+	    				<li class="swiper-slide">
+	    					<img class="b" src="__TMPL__Zt/extraction/imgs/road_img06.jpg" alt="">
+	    				</li>
+	    			</ul>
+	    		</div>
+	    		<div class="swiper-container tici" id="tici">
+	    			<ul class="swiper-wrapper">
+	    				<li class="swiper-slide">
+	    					<img class="b" src="__TMPL__Zt/extraction/imgs/road_img07.jpg" alt="">
+	    				</li>
+	    				<li class="swiper-slide">
+	    					<img class="b" src="__TMPL__Zt/extraction/imgs/road_img08.jpg" alt="">
+	    				</li>
+	    				<li class="swiper-slide">
+	    					<img class="b" src="__TMPL__Zt/extraction/imgs/road_img09.jpg" alt="">
+	    				</li>
+	    			</ul>
+	    		</div>
+	    		<div class="swiper-container huanjing" id="huanjing">
+	    			<ul class="swiper-wrapper">
+	    				<li class="swiper-slide">
+	    					<img class="b" src="__TMPL__Zt/extraction/imgs/road_img10.jpg" alt="">
+	    				</li>
+	    				<li class="swiper-slide">
+	    					<img class="b" src="__TMPL__Zt/extraction/imgs/road_img11.jpg" alt="">
+	    				</li>
+	    				<li class="swiper-slide">
+	    					<img class="b" src="__TMPL__Zt/extraction/imgs/road_img12.jpg" alt="">
+	    				</li>
+	    			</ul>
+	    		</div>
+	    	</div>
+	    </div>
+	</div>
+	<tc_include file="Public:footer" />
+</body>
+<script src="__TMPL__Public/js/swiper.min.js"></script>
+<script type="text/javascript">
+	
+	TouchSlide({ slideCell:'#pubBanner',titCell:'.hd ul',mainCell:'.bd ul',autoPage:true,effect:'leftLoop',autoPlay:true,interTime:8000});
+	
+	$(document).ready(function(){
+		$('.acc_container').hide(); 
+		$('.acc_trigger:first').addClass('active').next().show();  
+		$('.acc_trigger').click(function(){
+			if( $(this).next().is(':hidden') ) { 
+				$('.acc_trigger').removeClass('active').next().slideUp(); 
+				$(this).toggleClass('active').next().slideDown();
+			}
+			return false;
+		});
+	});
+</script>
+<script>
+	$(function(){
+	    new Swiper('.liansuo',{
+	        slidesPerView: 'auto',
+	        loop:true
+	    });
+	    new Swiper('.rongyu',{
+	        slidesPerView: 'auto',
+	        loop:true
+	    });
+	    new Swiper('.tici',{
+	        slidesPerView: 'auto',
+	        loop:true
+	    });
+	    new Swiper('.huanjing',{
+	        slidesPerView: 'auto',
+	        loop:true
+	    });
+	
+	    $("#rongyu,#tici,#huanjing").hide();
+	    $(".news .hd li").each(function(index) {
+	        $(this).click(function(){
+	            $(this).addClass("on").siblings().removeClass("on");
+	            $(".news .bd div").eq(index).show().siblings().hide();
+	        });
+	    });
+	});
+	$(function(){
+	if($('.yh .swiper-slide').length>1){
+	    new Swiper('.yh',{
+	        loop : true,
+	        autoplay : 8000,
+	        pagination: '.swiper-pagination',
+	        paginationClickable: true
+	    })
+	};
+	new Swiper('.yh-container', {
+	    slidesPerView: 'auto',
+	    paginationClickable: true,
+	    loop:true})
+	})
+</script>
+</html>

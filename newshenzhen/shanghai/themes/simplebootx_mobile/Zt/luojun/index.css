@@ -1,0 +1,51 @@
+a:hover {
+	text-decoration: none;
+}
+.banner {
+	margin-top: 110px;
+}
+.text-indent {
+	text-indent: 2rem;
+}
+.content-text {
+	font-size: .9rem;
+}
+.content-1 .content-text {
+	color: #070707;
+}
+.content-2 {
+	background: #254D7F;
+}
+.content-2 .num, .content-4 .num {
+	background: #fff;
+	color: #254d7f;
+}
+.content-list li {
+	border-radius: 6rem;
+	border: 1px solid #fff;
+	width: 32%;
+	font-size: .9rem;
+}
+.content-3 {
+	background: url(imgs/content3-bg.jpg);
+}
+.active {
+	background: #286FC6 !important;
+	border-color: #286FC6 !important;
+}
+.doctor-name {
+	font-size: 3rem;
+	border-right: 2px solid #1B1B1B;
+}
+.swt-btn {
+	border-radius: .3rem;
+	background: #286FC6;
+	width: 45%;
+	font-size: .9rem;
+}
+.content-4 {
+	background: #254D7F;
+}
+.content-5 .swt-btn {
+	width: 58%;
+}

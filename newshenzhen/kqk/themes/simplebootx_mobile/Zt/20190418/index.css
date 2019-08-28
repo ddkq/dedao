@@ -1,0 +1,39 @@
+.banner {
+	margin-top: 120px;
+}
+.red {
+	color: #ff0000;
+}
+
+.w-31{
+	width: 32%;
+}
+.w-90{
+	width: 92%;
+}
+.grey{
+	color: #999999;
+}
+.font-8{
+	font-size: 0.8rem;;
+}
+.font-11{
+	font-size: 1.1rem;;
+}
+
+input[type="text"]{
+	border: 1px solid #c1d3f7;
+	border-radius: 20px;
+}
+
+.submit-btn {
+	bottom: -3%;
+    left: 30%;
+    width: 42%;
+}
+
+.form-bg{
+	background: url(imgs/form-bg.jpg) no-repeat;
+	background-size: 100% 102%;
+	color: #1b5bc7;
+}

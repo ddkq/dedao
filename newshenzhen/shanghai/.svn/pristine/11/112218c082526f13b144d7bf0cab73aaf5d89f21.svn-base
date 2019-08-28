@@ -1,0 +1,15 @@
+[ 2019-02-12T18:15:32+08:00 ] 192.168.1.188 /tables/tables/add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0000s ]
+NOTIC: [8] A session had already been started - ignoring session_start() C:\wamp\www\chengdu\application\Tables\Controller\TablesController.class.php 第 17 行.
+NOTIC: [8] Undefined index: code C:\wamp\www\chengdu\application\Tables\Controller\TablesController.class.php 第 23 行.
+NOTIC: [8] Use of undefined constant REMOTE_ADDR - assumed 'REMOTE_ADDR' C:\wamp\www\chengdu\application\Tables\Controller\TablesController.class.php 第 31 行.
+SQL: INSERT INTO `cmf_tables_data` (`tables_id`,`content`,`ip`,`page`,`createtime`) VALUES ('53','{\"symptom\":\"\\u7f3a\\u7259\",\"name\":\"\\u800c\\u6211\\u5374\",\"phone\":\"15818898047\"}','192.168.1.188','http://test.cdddkqyy.com/zt/20190212','2019-02-12 18:15:32') [ RunTime:0.0156s ]
+SQL: UPDATE `cmf_tables` SET `data_num`=data_num+1 WHERE ( id = 53 ) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: url C:\wamp\www\chengdu\application\Common\Controller\AppframeController.class.php 第 24 行.
+NOTIC: [8] Undefined index: status C:\wamp\www\chengdu\application\Common\Controller\AppframeController.class.php 第 25 行.
+

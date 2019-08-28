@@ -1,0 +1,64 @@
+<!-- 首页 -->
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>深圳德道口腔门诊部_深圳牙科医院_口腔医生在线咨询_深圳德道口腔医院</title>
+	<meta name="keywords" content="深圳德道口腔门诊部,深圳口腔医院,深圳牙科医院排名,深圳牙科,深圳牙科咨询">
+	<meta name="description" content="深圳德道口腔医院专注牙齿修复,种植牙,烤瓷牙,牙齿矫正,口腔正畸,牙齿美白,儿童齿科,口腔保健等齿科项目，并提供口腔医学医生在线咨询服务。咨询预约电话:400-800-6161。">
+	<link rel="stylesheet" href="/static/css/bootstrap4.min.css">
+	<link rel="stylesheet" href="/static/css/swiper.min.css">
+	<link rel="stylesheet" href="/static/css/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/static/css/base.css">
+	<link rel="stylesheet" href="/static/css/index.css">
+	<script src="/static/js/jquery-2.1.1.min.js"></script>
+	<script src="/static/js/swiper.min.js"></script>
+	<script src="http://swt.szddkqyy.com/JS/LsJS.aspx?siteid=MTI57225838&lng=cn"></script>
+</head>
+
+<body>
+	<header class="d-flex justify-content-between pt-3 pl-5 pb-2 border-bottom"></header>
+	<div class="swiper-container banner">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="position-relative">
+					<img class="mt-2" src="/static/imgs/index/banner1.jpg"/>
+					<a href="/page/jky" class="banner1-btn position-absolute"><img src="/static/imgs/index/banner1-btn.png" alt=""></a>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="position-relative">
+					<img class="mt-2" src="/static/imgs/index/banner2.jpg"/>
+					<a href="/page/team" class="banner2-btn position-absolute"><img src="/static/imgs/index/banner2-btn.png" alt=""></a>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="position-relative">
+					<img class="mt-2"  src="/static/imgs/index/banner3.gif"/>
+					<a href="/page/experience" class="banner3-btn position-absolute"><img src="/static/imgs/index/banner3-btn.png" alt=""></a>
+				</div>
+			</div>
+			<div class="swiper-slide"><a href="/page/yga"><img class="mt-2" src="/static/imgs/index/banner4.jpg"/></a></div>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+	
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+	        direction: 'vertical',
+	        slidesPerView: 1,
+	        spaceBetween: 30,
+	        speed: 500,
+	        effect: 'fade',
+	        mousewheel: true,
+	       	pagination: {
+		    	el: '.swiper-pagination',
+		    	clickable : true
+		  	},
+	    });
+	    
+	    $('header').load("/static/header.html");
+	</script>
+</body>
+</html>

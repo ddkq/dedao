@@ -1,0 +1,33 @@
+[ 2019-07-15T08:40:33+08:00 ] 59.42.90.114 /Admin/public/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001190s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'owner' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '13' AND `status` = 1  [ RunTime:0.0004s ]
+SQL: UPDATE `cmf_users` SET `user_login`='owner',`user_pass`='###cf0a908a9cfd56cfd3e8eeb8fda5a8a3',`user_truename`='',`user_nicename`='',`user_email`='ss@q.com',`user_url`='',`avatar`='',`sex`='0',`birthday`='2000-01-01',`signature`='',`last_login_ip`='59.42.90.114',`last_login_time`='2019-07-15 08:40:33',`create_time`='2018-07-12 09:38:26',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`wechat`='' WHERE `id` = '13' [ RunTime:0.0026s ]
+
+[ 2019-07-15T09:48:02+08:00 ] 59.42.90.114 /Admin/public/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001174s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'owner' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '13' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: UPDATE `cmf_users` SET `user_login`='owner',`user_pass`='###cf0a908a9cfd56cfd3e8eeb8fda5a8a3',`user_truename`='',`user_nicename`='',`user_email`='ss@q.com',`user_url`='',`avatar`='',`sex`='0',`birthday`='2000-01-01',`signature`='',`last_login_ip`='59.42.90.114',`last_login_time`='2019-07-15 09:48:02',`create_time`='2018-07-12 09:38:26',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`wechat`='' WHERE `id` = '13' [ RunTime:0.0027s ]
+
+[ 2019-07-15T12:39:26+08:00 ] 59.42.90.114 /Admin/public/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'owner' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '13' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `cmf_users` SET `user_login`='owner',`user_pass`='###cf0a908a9cfd56cfd3e8eeb8fda5a8a3',`user_truename`='',`user_nicename`='',`user_email`='ss@q.com',`user_url`='',`avatar`='',`sex`='0',`birthday`='2000-01-01',`signature`='',`last_login_ip`='59.42.90.114',`last_login_time`='2019-07-15 12:39:26',`create_time`='2018-07-12 09:38:26',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`wechat`='' WHERE `id` = '13' [ RunTime:0.0030s ]
+

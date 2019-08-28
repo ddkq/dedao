@@ -1,0 +1,247 @@
+.banner {
+	margin-top: 230px;
+}
+a:hover {
+	text-decoration: none;
+}
+section * {
+	font-family: '思源黑体 CN' !important;
+}
+.fa {
+	font-family: 'FontAwesome' !important;
+}
+.content-title span {
+	font-family: '微软雅黑' !important;
+}
+.content-title p {
+	font-size: 28px;
+	color: #333;
+}
+.content-title:after {
+	content: '';
+	position: absolute;
+	height: 2px;
+	width: 50%;
+	background: #C0262D;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.content-1 p, .content-1 p {
+	color: #333;
+	line-height: 1.8;
+}
+.font-24 {
+	font-size: 24px;
+}
+.red, .content-title span {
+	color: #c0262e;
+}
+.content-1-img-list-title {
+	background-color: #fff;
+	top: -7%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 45%;
+}
+.content-1-img-list {
+	border: 1px dashed rgb(192, 38, 45);
+  	border-radius: 10px;
+}
+.swt-btn, .doctor-detail {
+  	background-color: rgb(192, 38, 46);
+  	border-radius: 30px;
+  	font-size: 20px;
+}
+.content-3 .swt-btn {
+	width: 35%;
+}
+.content-4 .content-title:after {
+	display: none;
+}
+.content-4-bcg {
+	background: url(imgs/content-4-bcg.jpg);
+}
+.content-6 {
+	background: url(imgs/content-6-bcg.jpg);
+}
+.w-430px {
+	background: url(imgs/content-7-bcg.jpg);
+}
+.content-4-bcg, .content-6, .w-430px {
+	background-size: cover;
+}
+.doctor-name, .right-text h1 {
+	font-size: 3rem;
+}
+.content-4 .swt-btn, .doctor-detail {
+	width: 55%;
+}
+.doctor-name:after, .right-text h1:after {
+	content: '';
+	width: 18%;
+	height: 2px;
+	background: #C0262D;
+	position: absolute;
+	bottom: 0;
+}
+.doctor-name:after {
+	left: 0;
+}
+.right-text h1:after {
+	right: 0;
+}
+.doctor-detail {
+	background: #333;
+}
+.left-text>div, .right-text>div {
+	top: 10%;
+	z-index: 5;
+}
+.left-text>div {
+	width: 340px;
+}
+.right-text>div:first-child {
+	right: 0;
+}
+.right-text>div {
+	width: 415px;
+}
+.left-text>div, .right-text>div {
+	transition: all 1s ease;
+}
+.right-text>div {
+	transition: all .75s ease;
+}
+.left-text>div:nth-child(2) {
+	left: 100%;
+}
+.right-text>div:nth-child(2) {
+	right: -100%;
+}
+.left-text>div:nth-child(3) {
+	left: 200%;
+}
+.right-text>div:nth-child(3) {
+	right: -200%;
+}
+.left-text>div:last-child {
+	left: 300%;
+}
+.right-text>div:last-child {
+	right: -300%;
+}
+.right-text p, .left-text p {
+	font-size: 21px;
+	color: #333;
+}
+.left-text p {
+	font-size: 18px;
+}
+.doctor-tab {
+	bottom: 5%;
+	z-index: 5;
+	width: 2040px;
+	transition: all 1s ease;
+}
+.doctor-tab>div {
+	background: #fff;
+	width: 495px;
+	cursor: pointer;
+}
+.active-doctor h3, .active-doctor p {
+	color: #fff;
+}
+.doctor-tab>.active-doctor {
+	background: #C0262E;
+}
+.opacity-0 {
+	opacity: 0;
+}
+.text-indent {
+	text-indent: 2rem;
+}
+.gif {
+	border: 2px solid #C0262E;
+	border-bottom: 7px solid #C0262E;
+}
+.content-5-text {
+	background: #C0262E;
+}
+.content-5-text p {
+	font-size: 17px;
+	line-height: 1.8;
+}
+.content-6 h2 {
+	border-bottom: 1px solid #fff;
+}
+.content-6 h2 p {
+	font-size: 21px;
+}
+.content-6 .swt-btn {
+	background: rgba(0, 0, 0, 0);
+	border: 1px solid #fff;
+    width: 30%;
+}
+.w-30 {
+	width: 30%;
+}
+.w-32 {
+	width: 32%;
+}
+.w-430px {
+	width: 430px;
+}
+.w-30, .w-32 {
+	background: #C0262E;
+}
+.w-430px h4 {
+	border: 2px solid #fff;
+ 	border-radius: 10px;
+ 	height: 80px;
+ 	color: #fff;
+ 	cursor: pointer;
+}
+.active h4 {
+	background: #fff;
+	color: #C0262E;
+}
+.arrow-right, .arrow-left {
+	height: 60px;
+    width: 60px;
+    z-index: 99;
+    border-radius: 50%;
+    background-color: rgba( 0, 0, 0, 0.302 );
+    cursor: pointer;
+}
+.arrow {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 20px;
+    transition: all .2s linear;
+}
+.arrow-right .arrow {
+    transform: rotate(225deg);
+}
+.arrow-left .arrow {
+    transform: rotate(45deg);
+    right: 0;
+}
+.arrow-right, .arrow-left {
+	bottom: 12%;
+}
+.arrow-right {
+	right: 0;
+}
+
+.footer .footer_right .tel {
+	margin-top: 0;
+}

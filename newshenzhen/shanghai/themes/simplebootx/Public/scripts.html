@@ -1,0 +1,129 @@
+<script type="text/javascript" src="__TMPL__Public/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="__TMPL__Public/js/jquery.SuperSlide.2.1.1.js"></script>
+
+<script>
+	
+	$(function() {
+	
+		$('.first-nav>li.sick-nav').on('mouseenter', function() {
+			$('.second-nav').slideDown(250);
+			$('.third-nav').removeClass('nav-line');
+			$(this).find('.arrow-icon').css('display','block');
+			$(this).find('.arrow-line').css('display','block');
+		})
+		$('.first-nav>li.sick-nav').on('mouseleave', function() {
+			$('.second-nav').slideUp(250);
+			$('.third-nav').addClass('nav-line');
+			$(this).find('.arrow-icon').css('display','none');
+			$(this).find('.arrow-line').css('display','none');
+		})
+		$('.second-nav>li').on('mouseenter', function() {
+			$(this).children('a').addClass('second-nav-active');
+			$(this).children('.third-nav').removeClass('unshow');
+			$(this).siblings().children('a').removeClass('second-nav-active');
+			$(this).siblings().children('.third-nav').addClass('unshow');
+		})
+		$('.second-nav>li').on('mouseleave', function() {
+			$('.second-nav>li').siblings().children('a').removeClass('second-nav-active');
+			$('.second-nav>li').siblings().children('.third-nav').addClass('unshow');
+			$('.second-nav>li:first-child>a').addClass('second-nav-active');
+			$('.second-nav>li:first-child>.third-nav').removeClass('unshow');
+		})
+		
+		$('.first-nav>li.brand-nav').on('mouseenter', function() {
+			$('.second-nav2').slideDown(100);
+			$('.third-nav').removeClass('nav-line');
+			$(this).find('.arrow-icon').css('display','block');
+			$(this).find('.arrow-line').css('display','block');
+		})
+		$('.first-nav>li.brand-nav').on('mouseleave', function() {
+			$('.second-nav2').slideUp(100);
+			$('.third-nav').addClass('nav-line');
+			$(this).find('.arrow-icon').css('display','none');
+			$(this).find('.arrow-line').css('display','none');
+		})
+		
+		var swtslide = new Swiper('.swtslide',{
+			pagination: {
+			    el: '#swtslide-pagination3',
+			    type: 'progressbar',
+			},
+			loop : false,
+			autoplay: {
+			    delay: 3000,
+		  	},
+		  	observer: true, 
+        	observerParents: true,
+		  	simulateTouch : false,
+		})
+		
+		setTimeout(function() {
+			$('#new_swt').css('visibility', 'visible');
+		}, 5000)
+
+		function time() {
+			var ref = setTimeout(function(){
+				$('#new_swt').css('visibility', 'visible');
+			}, 15000);
+		}
+			
+		$('.swt-close').click(function(){
+			$('#new_swt').css('visibility', 'hidden');
+			time();
+		});
+	})
+    
+    
+	
+	
+	jQuery(".ad_tech").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"left",autoPlay:true,vis:4,prevCell:'.prev1',nextCell:'.next1'});
+	jQuery("#nav1").slide({ type:"menu", titCell:".nLi", targetCell:".sub",effect:"slideDown",delayTime:300,triggerTime:0,returnDefault:true});
+	jQuery(".header_nav").slide({ type:"menu", titCell:".nLi", targetCell:".sub",effect:"slideDown",delayTime:300,triggerTime:0,returnDefault:true});
+	jQuery(".banner_top ul").slide({ type:"menu", titCell:".nLi", targetCell:".sub",effect:"slideDown",delayTime:300,triggerTime:0,returnDefault:true});
+	$('.fix_main').find('.btn').click(function(){
+		if($(this).find('i').hasClass('fa-reorder')){
+			$(this).find('i').removeClass('fa-reorder').addClass('fa-times');
+		}else{
+			$(this).find('i').removeClass('fa-times').addClass('fa-reorder');
+		}
+	});
+	var rn = Math.floor(Math.random()*(100-41)+40);
+	$('#radNum').text(rn);
+	
+	jQuery(".right_advBox").slide({mainCell:".bd ul",autoPlay:true});
+	jQuery(".right_doctorBox").slide({mainCell:".bd ul",autoPlay:true});
+	jQuery(".right_caseBox").slide({mainCell:".bd ul",autoPlay:true});
+	jQuery(".right_hotsBox").slide({mainCell:".bd ul",autoPlay:true});
+	//跟踪地址
+	var alinks = document.getElementsByTagName('a');
+	var localhref = window.location.href.split('#');
+	if (localhref.length >1&& localhref[1] != '') {
+	    for (var index in alinks) {
+	        if (typeof(alinks[index].href)=='string' && alinks[index].href.substr(0, 10).toLowerCase() != 'javascript' && alinks[index].href.substr(0, 3).toLowerCase() != 'tel') {
+	            if (alinks[index].href.indexOf("#") == -1) {
+	                alinks[index].href = alinks[index].href + '#' + localhref[1];
+	            } else {
+	                alinks[index].href = alinks[index].href + '&' + localhref[1];
+	            }
+	        }
+	    }
+	}
+	
+	//商务通
+	function swtClick(){
+		 window.open('http://swt.szddkqyy.com/LR/chatwin.aspx?id=MTI57225838');
+	}
+	
+	//百度统计代码
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?322d32dd7cecca6b5c9dd7460b3edf07";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	
+	
+	
+	
+</script>

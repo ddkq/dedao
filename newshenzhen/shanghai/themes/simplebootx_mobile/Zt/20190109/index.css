@@ -1,0 +1,42 @@
+.banner {
+	margin-top: 120px;
+}
+.red {
+	color: #ff0000;
+}
+
+.w-31{
+	width: 31%;
+}
+
+
+.submit-btn {
+	border-radius: 15px;
+	background-color: #ff0000;
+	padding-left: 4rem;
+	padding-right: 4rem;
+}
+
+.icon {
+    width: 36px;
+    height: 33px;
+	background: url(imgs/icon.png);
+	vertical-align: middle;
+}
+
+
+.swi-btn{
+	border: 1px dashed #ff0000;
+}
+
+.swiper-pagination-bullet{
+	margin: 0 0.2rem;
+	width: 12px;
+	height: 12px;
+	background: #d9d9d9;
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+	background: #000000;
+}

@@ -1,0 +1,16 @@
+.content {padding-bottom: 80px;}
+.job-name {flex-wrap: wrap;margin-bottom: 20px;}
+.job-name li {margin-right: 20px;cursor: pointer;margin-bottom: 5px;color: #666;}
+.zwtit {height: 42px;background-color: #f0f0f0;}
+.zwtit p {line-height: 42px;font-size: 1rem;color: #000;padding-left: 10px;color: #c11920;}
+.zwinfo {height: 42px;border-bottom: 1px dashed #E3E5E2;}
+.zwinfo ul li {float: left;font-size: 14px;line-height: 42px;color: #222;text-align: left;    width: 50%;}
+.zwinfo ul li.hrdd {width: 600px;}
+.zwinfo ul li.hrxz {width: 315px;}
+.zwbox {width: 915px;margin: 15px 0 0 0;}
+.zwbox .mx {color: #222;line-height: 22px;font-size: 14px;}
+.zwbox ul {margin-bottom: 20px;}
+.zwbox li {padding-left: 9px;background: url(../image/li.png) 0 center no-repeat;line-height: 22px;color: #606060;font-size: 14px;}
+.sqzw {display: block;background: url(../image/but2.png) no-repeat;width: 103px;height: 38px;padding-bottom: 2px;line-height: 36px;font-size: 15px;font-weight: bold;text-align: center;color: #eee;border: none;cursor: pointer;float: left;}
+.sqzw2 {display: block;background: url(../image/but1.png) no-repeat;width: 103px;height: 38px;padding-bottom: 2px;line-height: 36px;font-size: 15px;font-weight: bold;text-align: center;color: #eee;border: none;cursor: pointer;margin-left: 10px;float: left;}
+.sqzw2 a {color: #eee;}

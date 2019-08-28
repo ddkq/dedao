@@ -1,0 +1,679 @@
+<admintpl file="header" />
+<script type="text/html" id="photos-item-wrapper">
+	<li id="savedimage{id}">
+		<input id="photo-{id}" type="hidden" name="photos_url[]" value="{filepath}"> 
+		<img id="photo-{id}-preview" src="{url}" style="height:56px;width: 56px;" onclick="image_preview_dialog(this.src);">
+		<a href="javascript:(function(){$('#savedimage{id}').remove();})();">移除</a>
+	</li>
+</script>
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('AdminEx/index')}">{:L('PORTAL_ADMINEX_INDEX')}</a></li>
+			<li><a href="{:U('AdminEx/add',array('term'=>empty($term['term_id'])?'':$term['term_id']))}" target="_self">{:L('PORTAL_ADMINEX_ADD')}</a></li>
+			<li class="active"><a href="#">{:L('PORTAL_ADMINEX_EDIT')}</a></li>
+		</ul>
+		<form class="form-horizontal js-ajax-form" action="{:U('AdminEx/edit_post')}" method="post">
+			<input type="hidden" name="id" value="{$post.id}">
+			<div class="row-fluid">
+				<div class="span9">
+					<div class="table table-bordered table-style" id="lefttable">
+						<div class="section title">
+							<p>
+								<span>标题</span>
+								<input type="text" style="width:400px;" name="title" value="{$post.title}" id="title" placeholder="请输入标题"/>
+								<input type="text" style="width:300px;" name="subtitle" value="{$post.subtitle}" id="title" placeholder="请输入副标题"/>
+							</p>
+							<p>
+								<span>手机标题</span>
+								<input type="text" style="width:400px;" name="mtitle" value="{$post.mtitle}" id="title" placeholder="请输入手机标题"/>	
+							</p>
+							<p>
+								<span>关键词</span>
+								<input type="text" style="width:400px;" name="keyword" value="{$post.keyword}" placeholder="请输入关键词"/>	
+							</p>
+							<p>
+								<span>分类</span>
+								<select style="max-height: 100px;" name="term_id">
+									{$taxonomys}
+								</select>
+							</p>
+						</div>
+						<div class="section">
+							<p>简介</p>
+							<div>
+								<php>$excerpt = json_decode($post[excerpt],true);</php>
+								<script type="text/plain" id="excerpt" name="excerpt[post]">{$excerpt[post]}</script>
+								<div class="but">
+									<a class="addbut" href="javascript:open_content_layer_small('添加经验引用',$('#url1'));" style="float: left;">添加经验引用</a>
+									<a class="addbut" href="javascript:open_content_layer_small('添加视频',$('#url2'));" style="float: left;">添加视频</a>
+								</div>
+
+								<div id="url1" class="addurl" style="display: none;">
+									<p>请输入经验链接</p>
+									<input type="text" name="excerpt[url1]" value="{$excerpt[url1]}">
+								</div>
+								<div id="url2" class="addurl" style="display: none;">
+									<p>请输入视频链接</p>
+									<input type="text" name="excerpt[url2]" value="{$excerpt[url2]}">
+								</div>
+								<ul id="excerpt_photos" class="move_photos">
+									<if condition="empty($excerpt[photo])">
+										从右侧图片拖动到此处
+									<else />
+										<volist name="excerpt[photo]" id="vo">
+											<li id="savedimage">
+												<input type="hidden" name="" value="{$vo}"> 
+												<img src="{:sp_get_image_preview_url($vo)}" style="height:56px;width: 56px;" onclick="image_preview_dialog(this.src);"/>
+												<a href="javascript:void(0);" onclick="f_delphoto(this);">移除</a>
+											</li>
+										</volist>
+									</if>
+								</ul>
+							</div>
+						</div>
+						<div class="section">
+							<p>工具/原料</p>
+							<div class="tool">
+								<php>$tool = json_decode($post[tool]);</php>
+								<volist name="tool" id="vo">
+									<dd>
+										<i class="fa fa-circle" style="color: #3399cc;"></i>
+										<input type="text" style="width:300px;" name="tool[]" value="{$vo}" placeholder="请输入工具材料"/>
+										<button type="button" class="btn btn-default" onclick="f_deltool(this);"><i class="fa fa-close"></i></button>	
+									</dd>	
+								</volist>
+								<button type="button" class="btn btn-default" onclick="f_addtool(this);" style="margin-left: 50px;">+添加工具/原料</button>
+							</div>
+						</div>
+						<php>$step = json_decode($post[step],true);</php>
+						<volist name="step" id="vo">
+						<div id="allstep" class="section">
+							<p>
+								<input type="text" name="step[0][name]" value="{$vo.name}" style="width: 460px;" class="stepname">
+								<input type="text" name="step[0][sname]" value="{$vo.sname}" style="width: 100px;" class="stepsname">
+								<button type="button" class="btn btn-default" onclick="f_delastep(this);"><i class="fa fa-close"></i></button>
+							</p>
+							<div id="nstep0" class="step" style="position: relative;">
+								<php>$count = count($vo)-2;</php>
+								<volist name="vo" key="k" id="vo1" offset="2" length='$count'>
+									<dd>
+										<span id="stepnum"></span>
+										<button type="button" onclick="f_content(this)">编辑详细内容</button>
+										<textarea name="step[0][1][content]" placeholder="请输入步骤方法" style="display: none;">{$vo1.content}</textarea>
+										<div class="li-btn">
+											<a id="nomove" onclick="f_addstep(this);"><i class="fa fa-plus"></i></a>	
+											<a id="nomove" onclick="f_delstep(this);"><i class="fa fa-close"></i></a>
+											<a id="nomove" onclick="f_urlstep(this);"><i class="fa fa-external-link"></i></a>
+											<a onclick="f_movestep(this);"><i class="fa fa-arrows"></i></a>	
+										</div>
+										<div class="surl" style="display: none;">
+											<p>经验引用:<input type="text" class="url1" name="step[0][1][url1]" value="{$vo1.url1}"></p>
+											<p>视频地址:<input type="text" class="url2" name="step[0][1][url2]" value="{$vo1.url2}"></p>
+										</div>
+										<ul id="sphoto" class="move_photos">
+											<if condition="empty($vo1[photo])">
+												从右侧图片拖动到此处
+											<else />
+												<volist name="vo1[photo]" id="vo2">
+													<li id="savedimage">
+														<input type="hidden" name="" value="{$vo2}"> 
+														<img src="{:sp_get_image_preview_url($vo2)}" style="height:56px;width: 56px;" onclick="image_preview_dialog(this.src);"/>
+														<a href="javascript:void(0);" onclick="f_delphoto(this);">移除</a>
+													</li>
+												</volist>
+											</if>
+										</ul>
+									</dd>	
+								</volist>
+							</div>
+						</div>
+						</volist>
+						<div id="addallstep">
+							<button type="button" class="btn btn-default" onclick="btnstep(this);">+添加新步骤栏目</button>
+						</div>
+						<div class="section">
+							<p>注意事项</p>
+							<php>$attention = json_decode($post[attention],true);</php>
+							<div class="attention">
+								<volist name="attention" id="vo">
+									<dd>
+										<i class="fa fa-circle" style="color: #3399cc;"></i>
+										<textarea style="width: 500px; height: 60px;" name="attention[]" placeholder="请输入注意事项">{$vo}</textarea>
+										<button type="button" class="btn btn-default" onclick="f_delatt(this);"><i class="fa fa-close"></i></button>	
+									</dd>	
+								</volist>
+							</div>
+							<p><button type="button" class="btn btn-default" onclick="f_addatt();">+添加注意事项</button></p>
+						</div>
+						
+					</div>
+				</div>
+				<div class="span3" style="position: relative;">
+					<div class="table-style" style="position: fixed; background: #fff;min-width: 250px;">
+						<div class="section" style="min-height: 300px;">
+							<p>图库</p>
+							<ul id="photos" class="photos pic-list unstyled"></ul>
+							<a href="javascript:upload_multi_image('图片上传','#photos','photos-item-wrapper');" class="btn btn-small">选择图片</a>
+						</div>
+						
+					</div>
+					<div class="table-style" id="ex_console" style="background: #f2feff;display: none;">
+						<div class="section">
+							<p><b>发布时间</b></p>
+							<p><input type="text" name="createtime" value="{$post.createtime}" class="js-datetime" style="width: 160px;"></p>
+						</div>
+						<div><p><b>文章设置</b></p></div>
+						<div class="section">
+							<p><b>状态</b></p>
+						<php>
+							$status_yes=$post['post_status']==1?"checked":"";
+							$status_no=$post['post_status']==0?"checked":"";
+							$istop_yes=$post['istop']==1?"checked":"";
+							$istop_no=$post['istop']==0?"checked":"";
+							$recommended_yes=$post['recommended']==1?"checked":"";
+							$recommended_no=$post['recommended']==0?"checked":""; 
+						</php>
+							<p>
+								<label class="radio"><input type="radio" name="post_status" value="1" {$status_yes}>审核通过</label>
+								<label class="radio"><input type="radio" name="post_status" value="0" {$status_no}>待审核</label>
+							</p>
+							<p>
+								<label class="radio"><input type="radio" name="istop" value="1" {$istop_yes}>置顶</label>
+								<select name="istop_type" style="display: none;">
+									<option value="0" selected="selected">默认</option>
+									<foreach name="istop_type" item="vo">
+										<option value="{$vo.cid}" <php>echo $status = $post[istop_type]==$vo[cid]?'selected="selected"':'';</php>>{$vo.cat_name}</option>
+									</foreach>
+								</select>
+								<label class="radio"><input type="radio" name="istop" value="0" {$istop_no}>未置顶</label>
+							</p>
+							<p>
+								<label class="radio"><input type="radio" name="recommended" value="1" {$recommended_yes}>推荐</label>
+								<select name="recommended_type" style="display: none;">
+									<option value="0" selected="selected">默认</option>
+									<foreach name="recommended_type" item="vo">
+										<option value="{$vo.cid}"<php>echo $status = $post[recommended_type]==$vo[cid]?'selected="selected"':'';</php>>{$vo.cat_name}</option>
+									</foreach>
+								</select>
+								<label class="radio"><input type="radio" name="recommended" value="0" {$recommended_no}>未推荐</label>
+							</p>
+						</div>
+						<div class="section">
+							<p><b>经验类型</b></p>
+							<p>
+								<select style="max-height: 100px;" name="select">
+									<option value="0" selected="selected">默认</option>
+									<foreach name="select_type" item="vo">
+										<option value="{$vo.cid}"<php>echo $status = $post[select]==$vo[cid]?'selected="selected"':'';</php>>{$vo.cat_name}</option>
+									</foreach>
+								</select>
+							</p>
+						</div>
+						<div class="section">
+							<div>
+								<button type="button" class="btn btn-primary btn-lg" onclick="open_content_layer('扩展属性',$('#kzModal'))" ;>扩展属性</button>
+								<div id="kzModal" style="display: none;">
+									<php>$extend = json_decode($post[post_extend],true);</php>
+									<empty name="extemd">
+										<p>
+											<label>扩展1</label>
+											<input type="text" name="post_extend1" value=""  placeholder="扩展1">
+										</p>
+										<p>
+											<label>扩展2</label>
+											<input type="text" name="post_extend2" value=""  placeholder="扩展2">
+										</p>
+										<p>
+											<label>扩展3</label>
+											<input type="text" name="post_extend3" value=""  placeholder="扩展2">
+										</p>
+										<p>
+											<label>扩展4</label>
+											<input type="text" name="post_extend4" value=""  placeholder="扩展2">
+										</p>
+										<p>
+											<label>扩展5</label>
+											<textarea name="post_extend5" rows="1" cols="6"></textarea>
+										</p>
+										<p>
+											<label>扩展6</label>
+											<textarea name="post_extend6" rows="1" cols="6"></textarea>
+										</p>
+										<p>
+											<label>扩展7</label>
+											<textarea name="post_extend7" rows="1" cols="6"></textarea>
+										</p>
+										<p>
+											<label>扩展8</label>
+											<textarea name="post_extend8" rows="1" cols="6"></textarea>
+										</p>
+									<else/>
+										<volist name="extend" id="vo" key="k" offset="0" length='4'>
+											<p>
+												<label>扩展{$k}</label>
+												<input type="text" name="post_extend{$k}" id="source" value="{$vo}" placeholder="扩展{$k}">
+											</p>
+										</volist>
+										<volist name="extend" id="vo" key="k" offset="4" length='4'>
+											<p>
+												<label>扩展{$k+4}</label>
+												<textarea name="post_extend{$k+4}" rows="1" cols="6">{$vo}</textarea>
+											</p>
+										</volist>
+									</empty>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<p><b>页面兼容</b></p>
+							<p>
+								<php> 
+									$status1 = $post[compatible] == 0 ? 'selected=selected' : '';
+									$status2 = $post[compatible] == 1 ? 'selected=selected' : '';
+									$status3 = $post[compatible] == 2 ? 'selected=selected' : '';
+								</php>
+								<select style="min-width: 200px;" name="compatible">
+									<option value="0" {$status1}>默认兼容</option>
+									<option value="1" {$status2}>PC端</option>
+									<option value="2" {$status3}>手机端</option>
+								</select>
+							</p>
+						</div>
+						<div class="section">
+							<p><b>pc模版</b></p>
+							<p>
+								<php>
+									$tpl_list=sp_admin_get_tpl_file_list();
+									unset($tpl_list['page']);
+								</php> 
+								<select style="min-width: 200px;" name="smeta[template]">
+									<option value="">默认</option>
+									<foreach name="tpl_list" item="vo">
+										<php>$template_selected=$smeta['template']==$vo?"selected":"";</php>
+										<option value="{$vo}"{$template_selected}>{$vo}{:C("TMPL_TEMPLATE_SUFFIX")}</option>
+									</foreach>
+								</select>
+							</p>
+						</div>
+						<div class="section">
+							<p><b>手机模版</b></p>
+							<p>
+								<php>
+									$tpl_list=sp_admin_get_tpl_file_list();
+									unset($tpl_list['page']);
+								</php> 
+								<select style="min-width: 200px;" name="smeta[template_phone]">
+									<option value="">默认</option>
+									<foreach name="tpl_list" item="vo">
+										<php>$template_selected=$smeta['template_phone']==$vo?"selected":"";</php>
+										<option value="{$vo}"{$template_selected}>{$vo}{:C("TMPL_TEMPLATE_SUFFIX")}</option>
+									</foreach>
+								</select>
+							</p>
+						</div>
+			            <div class="section">
+							<p><b>pc端缩略图</b></p>
+							<p>
+								<div style="text-align: center;">
+									<input type="hidden" name="smeta[thumb]" id="thumb" value="{$smeta.thumb|default=''}">
+									<a href="javascript:upload_one_image('图片上传','#thumb');">
+										<if condition="empty($smeta['thumb'])">
+											<img src="__TMPL__Public/assets/images/default-thumbnail.png" id="thumb-preview" width="135" style="cursor: hand"/>
+										<else />
+											<img src="{:sp_get_image_preview_url($smeta['thumb'])}" id="thumb-preview" width="135" style="cursor: hand"/>
+										</if>
+									</a>
+									<input type="button" class="btn btn-small" onclick="$('#thumb-preview').attr('src','__TMPL__Public/assets/images/default-thumbnail.png');$('#thumb').val('');return false;" value="取消图片">
+								</div>
+							</p>
+						</div>
+						<div class="section">
+							<p><b>手机端缩略图</b></p>
+							<p>
+								<div style="text-align: center;">
+									<input type="hidden" name="smeta[thumb_phone]" id="thumb1" value="{$smeta.thumb_phone|default=''}">
+									<a href="javascript:upload_one_image('图片上传','#thumb1');">
+										<if condition="empty($smeta['thumb'])">
+											<img src="__TMPL__Public/assets/images/default-thumbnail.png" id="thumb1-preview" width="135" style="cursor: hand"/>
+										<else />
+											<img src="{:sp_get_image_preview_url($smeta['thumb_phone'])}" id="thumb1-preview" width="135" style="cursor: hand"/>
+										</if>
+									</a>
+									<input type="button" class="btn btn-small" onclick="$('#thumb1-preview').attr('src','__TMPL__Public/assets/images/default-thumbnail.png');$('#thumb').val('');return false;" value="取消图片">
+								</div>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-actions">
+				<button class="btn btn-primary js-ajax-submit" type="submit">提交</button>
+				<a class="btn" href="{:U('AdminEx/index')}">返回</a>
+				<button type="button" class="btn btn-primary btn-lg" onclick="open_content_layer('文章其他属性配置',$('#ex_console'))" ;>文章其他属性配置</button>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+	<script src="__PUBLIC__/js/jquery-ui/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="__PUBLIC__/js/jquery-ui/jquery-ui.min.css">
+	<script type="text/javascript">
+		//编辑器路径定义
+		var editorURL = GV.DIMAUB;
+	</script>	
+	<script type="text/javascript" src="__PUBLIC__/js/ueditor/ueditor.config.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/ueditor/ueditor.all.min.js"></script>	
+	<script src="__PUBLIC__/js/layer/layer.js"></script>
+	<link rel="stylesheet" href="__PUBLIC__/js/layer/skin/layer.css">	
+		
+		
+	<script>
+		var tool = "<dd><i class='fa fa-circle' style='color: #3399cc;'></i><input type='text' name='tool[]' placeholder='请输入工具材料'/><button type='button' class='btn btn-default' onclick='f_deltool(this);'><i class='fa fa-close'></i></button></dd>";
+		var step = "<dd>";
+		step += "<span id='stepnum'></span>";
+		step += "<button type='button' onclick='f_content(this)'>编辑详细内容</button>";
+		step += "<textarea style='display: none;'></textarea>";
+		step += "<div class='li-btn'>";
+		step += "<a id='nomove' onclick='f_addstep(this);'><i class='fa fa-plus'></i></a>";
+		step += "<a id='nomove' onclick='f_delstep(this);'><i class='fa fa-close'></i></a>";
+		step += "<a id='nomove' onclick='f_urlstep(this);'><i class='fa fa-external-link'></i></a>";
+		step += "<a onclick='f_movestep(this);'><i class='fa fa-arrows'></i></a>";
+		step += "</div>";
+		step += "<div class='surl' style='display: none;'>";
+		step += "<p>经验引用:<input type='text' class='url1'></p>";
+		step += "<p>视频地址:<input type='text' class='url2'></p>";
+		step += "</div>";
+		step += "<ul id='sphoto' class='move_photos'>从右侧图片拖动到此处</ul>";
+		step += "</dd>";
+		
+		var attention = "<dd><i class='fa fa-circle' style='color: #3399cc;'></i><textarea style='width: 500px; height: 60px;' name='attention[]' placeholder='请输入注意事项'></textarea><button type='button' class='btn btn-default' onclick='f_delatt(this);'><i class='fa fa-close'></i></button></dd>";
+		
+		
+		
+		
+		$(function(){
+			f_astep();
+			stepmove(0);
+			photomove();
+			changename();
+			var ue = UE.getEditor('excerpt');
+			
+			Wind.use('validate', 'ajaxForm', 'artDialog', function() {
+				//javascript
+				var form = $('form.js-ajax-forms');
+				
+				//ie处理placeholder提交问题
+				if ($.browser.msie) {
+					form.find('[placeholder]').each(function() {
+						var input = $(this);
+						if (input.val() == input.attr('placeholder')) {
+							input.val('');
+						}
+					});
+				}
+
+				var formloading = false;
+				//表单验证开始
+				form.validate({
+					//是否在获取焦点时验证
+					onfocusout : false,
+					//是否在敲击键盘时验证
+					onkeyup : false,
+					//当鼠标掉级时验证
+					onclick : false,
+					//验证错误
+					showErrors : function(errorMap, errorArr) {
+						//errorMap {'name':'错误信息'}
+						//errorArr [{'message':'错误信息',element:({})}]
+						try {
+							$(errorArr[0].element).focus();
+							art.dialog({
+								id : 'error',
+								icon : 'error',
+								lock : true,
+								fixed : true,
+								background : "#CCCCCC",
+								opacity : 0,
+								content : errorArr[0].message,
+								cancelVal : '确定',
+								cancel : function() {
+									$(errorArr[0].element).focus();
+								}
+							});
+						} catch (err) {
+						}
+					},
+					//验证规则
+					rules : {
+						'title' : {
+							required : 1
+						}
+					},
+					//验证未通过提示消息
+					messages : {
+						'title' : {
+							required : '请输入标题'
+						}
+					},
+					//给未通过验证的元素加效果,闪烁等
+					highlight : false,
+					//是否在获取焦点时验证
+					onfocusout : false,
+					//验证通过，提交表单
+					submitHandler : function(forms) {
+						if (formloading)
+							return;
+						$(forms).ajaxSubmit({
+							url : form.attr('action'), //按钮上是否自定义提交地址(多按钮情况)
+							dataType : 'json',
+							beforeSubmit : function(arr, $form, options) {
+								formloading = true;
+							},
+							success : function(data, statusText, xhr, $form) {
+								formloading = false;
+								if (data.status) {
+									setCookie("refersh_time", 1);
+									//添加成功
+									Wind.use("artDialog", function() {
+										art.dialog({
+											id : "succeed",
+											icon : "succeed",
+											fixed : true,
+											lock : true,
+											background : "#CCCCCC",
+											opacity : 0,
+											content : data.info,
+											button : [ {
+												name : '继续添加？',
+												callback : function() {
+													reloadPage(window);
+													return true;
+												},
+												focus : true
+											}, {
+												name : '返回列表页',
+												callback : function() {
+													location = "{:U('AdminEx/index')}";
+													return true;
+												}
+											} ]
+										});
+									});
+								} else {
+									isalert(data.info);
+								}
+							}
+						});
+					}
+				});
+			});
+			
+			var istop=$('input:radio[name="istop"]:checked').val();
+			if(istop==1){
+				$('select[name="istop_type"]').css('display','block');
+			}
+			$('input:radio[name="istop"]').click(function(){
+	            var val=$('input:radio[name="istop"]:checked').val();
+	            if(val==1){
+	            	$('select[name="istop_type"]').css('display','block');
+	            }
+	            else{
+	                $('select[name="istop_type"]').css('display','none');
+	            }
+	        });
+	        var recommended=$('input:radio[name="recommended"]:checked').val();
+	        if(recommended==1){
+            	$('select[name="recommended_type"]').css('display','block');
+            }
+	        $('input:radio[name="recommended"]').click(function(){
+	            var val=$('input:radio[name="recommended"]:checked').val();
+	            if(val==1){
+	            	$('select[name="recommended_type"]').css('display','block');
+	            }
+	            else{
+	                $('select[name="recommended_type"]').css('display','none');
+	            }
+	        });
+			
+			
+		});
+		
+
+		function f_addtool(e){
+			$(e).before(tool);
+		}
+		
+		function f_deltool(e){
+			var count = $('.tool').children('dd').length;
+			if(count>1){
+				$(e).parent('dd').remove();
+			}
+			
+		}
+		
+		
+		function f_addatt(){
+			$('.attention').append(attention);
+		}
+		
+		function f_delatt(e){
+			$(e).parent('dd').remove();
+		}
+
+		function f_addstep(e){
+			$(e).parents('dd').after(step);
+			f_astep();
+		}
+		
+		function f_delstep(e){
+			$(e).parents('dd').remove();
+			f_astep();
+		}
+		
+		function f_urlstep(e){
+			surl = $(e).parent('.li-btn').nextAll('.surl');
+			open_content_layer_small('添加经验引用/视频地址',surl);
+		}
+		
+		function btnstep(e){
+			var count = $('#lefttable').children('#allstep').length;
+			var astep = "<div id='allstep'>";
+			astep += "<p><input type='text' value='步骤方法' style='width: 460px;' class='stepname'><input type='text' value='短标题' style='width: 100px;' class='stepsname'><button type='button' class='btn btn-default' onclick='f_delastep(this);'><i class='fa fa-close'></i></button></p>";
+			astep += "<div class='step' id='nstep"+count+"'>";
+			astep += step;
+			astep += step;
+			astep += "</div>";
+			astep += "</div>";
+			
+			$(e).parent('#addallstep').before(astep);
+			f_astep();
+			stepmove(count);
+			photomove();
+		}
+		
+		function f_delastep(e){
+			var count = $('#lefttable').children('#allstep').length;
+			if(count>1){
+				$(e).parents('#allstep').remove();	
+			}
+		}
+		
+		function f_delphoto(e){
+			$(e).parent('#savedimage').remove();
+		}
+		
+		function f_astep(){
+			$.each($("#lefttable #allstep"),function(i){
+				$(this).find('p .stepname').attr('name','step['+i+'][name]');
+				$(this).find('p .stepsname').attr('name','step['+i+'][sname]');
+				$(this).find('.step').find('dd').each(function(j){
+					$(this).find('#stepnum').html(j+1);
+					$(this).find('textarea').attr('name','step['+i+']['+j+'][content]');
+					$(this).find('.surl .url1').attr('name','step['+i+']['+j+'][url1]');
+					$(this).find('.surl .url2').attr('name','step['+i+']['+j+'][url2]');
+					$(this).find('#sphoto li :input').each(function(){
+						$(this).attr('name','step['+i+']['+j+'][photo][]');
+					});
+				});
+				
+			});
+		}
+		
+		function fstep(e){
+			$(e).parents('.step').find('dd').each(function(i){
+				$(this).find('#stepnum').html(i+1);
+			});
+		}
+		
+		function stepmove(n){
+			 $( ".step" ).sortable({
+			 	stop: function(){
+			 		f_astep();
+			 	}
+			 });
+		}
+		
+		function photomove(){
+			$( ".photos,#excerpt_photos,#sphoto" ).sortable({
+				connectWith: ".move_photos" ,
+				stop: function(){
+					changename();
+				}
+			});
+		}
+		
+		function changename(){
+			$('#excerpt_photos').find('li :input').each(function(){
+				$(this).attr('name','excerpt[photo][]');
+			});
+			f_astep();
+		}
+		
+		function f_content(e){
+		    layer.open({
+			  	type: 2, 
+			  	title:'编辑详细内容',
+			  	btn: ['确定'],
+        		area: ['80%', '80%'],
+        		shade: 0,
+			  	content: '/public/editer/index.html',
+			  	success: function(layero, index){
+				    var body = layer.getChildFrame('#editor', index);
+			  		var txt = $(e).next('textarea').val();
+				    body.val(txt);
+				},
+			  	yes: function(index, layero){
+			  		var body = layer.getChildFrame('body', index);
+			  		//console.log(body.contents().find('.edui-editor-iframeholder iframe').contents().find('body').html());
+			  		var txt = body.contents().find('.edui-editor-iframeholder iframe').contents().find('body').html();
+			  		$(e).next('textarea').val(txt);
+			  		layer.close(index);
+			  	}
+			});
+		}
+		
+
+	</script>
+</body>
+</html>

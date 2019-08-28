@@ -1,0 +1,12 @@
+[ 2019-07-16T16:52:33+08:00 ] 59.42.89.247 /Tables/AdminTables/view_data_delete/id/6333.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001216s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0003s ]
+SQL: DELETE FROM `cmf_tables_data` WHERE ( id = 6333 ) [ RunTime:0.0032s ]
+

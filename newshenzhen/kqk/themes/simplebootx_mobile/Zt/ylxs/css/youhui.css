@@ -1,0 +1,15 @@
+/**===通用优惠滚动==**/
+@import "swiper.min.css";
+.pub-discount{padding:2%;margin-bottom: 0.3rem; background: #f1f1f1;padding-bottom: 4%}
+.pub-discount .pub-discount-hd{position: relative;padding:.5rem 3%;margin-bottom: 0.1rem; background: url("/static/images/youhui/yh_hot.png") 0 0.02rem no-repeat; background-size: 0.36rem 0.42rem;}
+.pub-discount .pub-discount-hd h3{font-size: 1rem;color: #333;line-height: 1;}
+.pub-discount .pub-discount-hd a{position: absolute; right: 3%; top:25%; padding-top: 0.1rem; line-height:1;font-size: 0.7rem;color: #333;}
+.yh-container{margin: .75rem auto 0 auto;}
+.yh-container ul{margin:0;padding: 0;width: 100%;}
+.yh-container li{float: left; width: 35%;margin: 0 5% 0 0;padding: 0;}
+.yh-container li .yh-pic img{display: block;width: 100%;height: auto;}
+.yh-container .yh-title{font-size: .8rem;line-height: 2; color: #333;}
+.yh-container .yh-con{font-size: 0.8rem;font-weight: bold;line-height: 1; color: #333;}
+.yh-container .yh-con b{display: inline-block;padding: 1px 3px;margin: 0 3px 0 0; line-height:1;font-size: 0.2rem;font-weight:normal;color: #fff;background: #fda233; border-radius: 3px; vertical-align: top;}
+#discount .yh .swiper-pagination{font-size: 0; line-height: 0; bottom: 5px;}
+#discount .yh .swiper-pagination-bullet-active{background:#24b8bc}

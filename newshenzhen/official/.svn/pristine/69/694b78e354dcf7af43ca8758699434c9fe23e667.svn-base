@@ -1,0 +1,23 @@
+.content {padding-bottom: 80px;}
+.job-name {flex-wrap: wrap;margin-bottom: 40px;}
+.job-name li {margin-right: 20px;cursor: pointer;margin-bottom: 5px;color: #666;}
+.zwtit {height: 42px;background-color: #f0f0f0;text-align: center;}
+.zwtit p {line-height: 42px;font-size: 1rem;color: #000;padding-left: 10px;color: #c11920;}
+.zwinfo {height: 42px;border-bottom: 1px dashed #E3E5E2;}
+.zwinfo ul li {float: left;font-size: 14px;line-height: 42px;color: #222;text-align: left;    width: 50%;}
+.zwinfo ul li.hrdd {width: 600px;}
+.zwinfo ul li.hrxz {width: 315px;}
+.zwbox {width: 915px;margin: 15px 0 0 0;}
+.zwbox .mx {color: #222;line-height: 22px;font-size: 14px;}
+.zwbox ul {margin-bottom: 20px;}
+.zwbox li p{padding-left: 9px;background: url(../images/li.png) 0 center no-repeat;line-height: 22px;color: #606060;font-size: 14px;}
+.sqzw {display: block;background: url(../images/but2.png) no-repeat;width: 103px;height: 38px;padding-bottom: 2px;line-height: 36px;font-size: 15px;font-weight: bold;text-align: center;color: #eee;border: none;cursor: pointer;float: left;}
+.sqzw2 {display: block;background: url(../images/but1.png) no-repeat;width: 103px;height: 38px;padding-bottom: 2px;line-height: 36px;font-size: 15px;font-weight: bold;text-align: center;color: #eee;border: none;cursor: pointer;margin-left: 10px;float: left;}
+.sqzw2 a {color: #eee;}
+.sqzw .sqzw2 {cursor: pointer;}
+
+.msg {position: absolute;width: 550px;height: 350px;left: 0;right: 0;margin: auto;z-index: 5;background-color: #fff;text-align: center;padding: 125px 25px;font-size: 14px;border-radius: 5px;display: none;transition: none;}
+.red {color: #c11920;margin: 35px 0;}
+.close {display: inline-block; width: 20px;height: 3px; background: #333;line-height: 0;font-size:0;vertical-align: middle;-webkit-transform: rotate(45deg);position: absolute;top: 15px;right: 10px;cursor: pointer;}
+.close:after{content:'/';display:block;width: 20px;height: 3px; background: #333;-webkit-transform: rotate(-90deg);}
+.black-bcg2 {background: rgba(0,0,0,.5);width: 100%;position: absolute;top: 0;display: none;transition: none;}

@@ -1,0 +1,19 @@
+<div class="header d-flex justify-content-between">
+	<div class="home d-flex align-items-center">
+		<a href="/"></a>
+	</div>
+	<div class="logo d-flex align-items-center">
+		<a href="/">
+			<img src="__TMPL__Public/images/article_logo.png" alt="">
+		</a>
+	</div>
+	<p class="header_phone d-flex align-items-center"><a href="tel:028-67696635"><i class="header-icon-phone"></i></a></p>
+</div>
+<nav class="header-nav position-fixed">
+	<ul class="d-flex justify-content-between">
+		<li><a href="/about.html" target="_blank">关于德道</a></li>
+		<li class="porject-nav"><a href="/list/62.html">牙科项目</a></li>
+		<li><a href="#" target="_blank">真人案例</a></li>
+		<li><a onclick="javascript:openJesongChatByGroup(16524,20125);">医保定点</a></li>
+	</ul>
+</nav>

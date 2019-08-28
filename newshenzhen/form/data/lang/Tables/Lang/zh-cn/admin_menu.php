@@ -1,0 +1,11 @@
+<?php
+return array (
+  'TABLES_ADMINTABLES_ADD' => '创建表单',
+  'TABLES_ADMINTABLES_COPY' => '复制表单',
+  'TABLES_ADMINTABLES_DEFAULT' => '表单管理',
+  'TABLES_ADMINTABLES_DELETE' => '删除表单',
+  'TABLES_ADMINTABLES_EDIT' => '修改表单',
+  'TABLES_ADMINTABLES_INDEX' => '表单管理',
+  'TABLES_ADMINTABLES_VIEW' => '查看数据',
+  'TABLES_ADMINTABLES_VIEW_DATA' => '数据管理',
+);

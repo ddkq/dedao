@@ -1,0 +1,42 @@
+[ 2019-08-22T09:44:36+08:00 ] 59.42.88.176 /Tables/AdminTables/determine/id/6836.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001317s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=20 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '20' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0003s ]
+SQL: UPDATE `cmf_tables_data` SET `status`='1' WHERE ( id=6836 ) [ RunTime:0.0030s ]
+
+[ 2019-08-22T09:46:01+08:00 ] 59.42.88.176 /Tables/AdminTables/determine/id/6835.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001194s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=20 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '20' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0003s ]
+SQL: UPDATE `cmf_tables_data` SET `status`='1' WHERE ( id=6835 ) [ RunTime:0.0071s ]
+
+[ 2019-08-22T09:46:03+08:00 ] 59.42.88.176 /Tables/AdminTables/determine/id/6834.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001228s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=20 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '20' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0003s ]
+SQL: UPDATE `cmf_tables_data` SET `status`='1' WHERE ( id=6834 ) [ RunTime:0.0045s ]
+

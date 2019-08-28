@@ -1,0 +1,513 @@
+<admintpl file="header" />
+<script type="text/html" id="photos-item-wrapper">
+	<li id="savedimage{id}">
+		<input id="photo-{id}" type="hidden" name="photos_url[]" value="{filepath}"> 
+		<img id="photo-{id}-preview" src="{url}" style="height:56px;width: 56px;" onclick="image_preview_dialog(this.src);">
+		<a href="javascript:(function(){$('#savedimage{id}').remove();})();">移除</a>
+	</li>
+</script>
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('AdminEx/index')}">{:L('PORTAL_ADMINEX_INDEX')}</a></li>
+			<li class="active"><a href="{:U('AdminEx/add',array('term'=>empty($term['term_id'])?'':$term['term_id']))}" target="_self">{:L('PORTAL_ADMINEX_ADD')}</a></li>
+		</ul>
+		<form class="form-horizontal js-ajax-form" action="{:U('AdminEx/add_post')}" method="post">
+			<div class="row-fluid">
+				<div class="span9">
+					<div class="table table-bordered table-style" id="lefttable">
+						<div class="section title">
+							<p>
+								<span>标题</span>
+								<input type="text" style="width:400px;" name="title" id="title" placeholder="请输入标题"/>
+								<input type="text" style="width:300px;" name="subtitle" id="title" placeholder="请输入副标题"/>
+							</p>
+							<p>
+								<span>手机标题</span>
+								<input type="text" style="width:400px;" name="mtitle" id="title" placeholder="请输入手机标题"/>	
+							</p>
+							<p>
+								<span>关键词</span>
+								<input type="text" style="width:400px;" name="keyword" placeholder="请输入关键词"/>	
+							</p>
+							<p>
+								<span>分类</span>
+								<select style="max-height: 100px;" name="term_id">
+									{$taxonomys}
+								</select>
+							</p>
+						</div>
+						<div class="section">
+							<p>简介</p>
+							<div>
+								<script type="text/plain" id="excerpt" name="excerpt[post]"></script>
+								<div class="but">
+									<a class="addbut" href="javascript:open_content_layer_small('添加经验引用',$('#url1'));" style="float: left;">添加经验引用</a>
+									<a class="addbut" href="javascript:open_content_layer_small('添加视频',$('#url2'));" style="float: left;">添加视频</a>
+								</div>
+								<div id="url1" class="addurl" style="display: none;">
+									<p>请输入经验链接</p>
+									<input type="text" name="excerpt[url1]">
+								</div>
+								<div id="url2" class="addurl"  style="display: none;">
+									<p>请输入视频链接</p>
+									<input type="text" name="excerpt[url2]">
+								</div>
+								<ul id="excerpt_photos" class="move_photos">从右侧图片拖动到此处</ul>
+							</div>
+						</div>
+						<div class="section">
+							<p>工具/原料</p>
+							<div class="tool">
+								<dd>
+									<i class="fa fa-circle" style="color: #3399cc;"></i>
+									<input type="text" name="tool[]" placeholder="请输入工具材料"/>
+									<button type="button" class="btn btn-default" onclick="f_deltool(this);"><i class="fa fa-close"></i></button>	
+								</dd>
+								<dd>
+									<i class="fa fa-circle" style="color: #3399cc;"></i>
+									<input type="text" name="tool[]" placeholder="请输入工具材料"/>
+									<button type="button" class="btn btn-default" onclick="f_deltool(this);"><i class="fa fa-close"></i></button>	
+								</dd>
+								<button type="button" class="btn btn-default addbut" onclick="f_addtool(this);" style="margin-left: 50px;">+添加工具/原料</button>
+							</div>
+						</div>
+						<div id="allstep" class="section">
+							<p>
+								<input type="text" name="step[0][name]" value="步骤方法" style="width: 460px;" class="stepname">
+								<input type="text" name="step[0][sname]" value="短标题" style="width: 100px;" class="stepsname">
+								<button type="button" class="btn btn-default" onclick="f_delastep(this);"><i class="fa fa-close"></i></button>
+							</p>
+							<div id="nstep0" class="step" style="position: relative;">
+								<dd>
+									<span id="stepnum"></span>
+									<button type="button" onclick="f_content(this)">编辑详细内容</button>
+									<textarea name="step[0][0][content]" style="display: none;"></textarea>
+									<div class="li-btn">
+										<a id="nomove" onclick="f_addstep(this);"><i class="fa fa-plus"></i></a>	
+										<a id="nomove" onclick="f_delstep(this);"><i class="fa fa-close"></i></a>
+										<a id="nomove" onclick="f_urlstep(this);"><i class="fa fa-external-link"></i></a>
+										<a onclick="f_movestep(this);"><i class="fa fa-arrows"></i></a>	
+									</div>
+									<div class="surl" style="display: none;">
+										<p>经验引用:<input type="text" class="url1" name="step[0][0][url1]"></p>
+										<p>视频地址:<input type="text" class="url2" name="step[0][0][url2]"></p>
+									</div>
+									<ul id="sphoto" class="move_photos">从右侧图片拖动到此处</ul>
+								</dd>
+								<dd>
+									<span id="stepnum"></span>
+									<button type="button" onclick="f_content(this)">编辑详细内容</button>
+									<textarea name="step[0][1][content]" style="display: none;"></textarea>
+									<div class="li-btn">
+										<a id="nomove" onclick="f_addstep(this);"><i class="fa fa-plus"></i></a>	
+										<a id="nomove" onclick="f_delstep(this);"><i class="fa fa-close"></i></a>
+										<a id="nomove" onclick="f_urlstep(this);"><i class="fa fa-external-link"></i></a>
+										<a onclick="f_movestep(this);"><i class="fa fa-arrows"></i></a>	
+									</div>
+									<div class="surl" style="display: none;">
+										<p>经验引用:<input type="text" name="step[0][1][url1]"></p>
+										<p>视频地址:<input type="text" name="step[0][1][url2]"></p>
+									</div>
+									<ul id="sphoto" class="move_photos">从右侧图片拖动到此处</ul>
+								</dd>
+							</div>
+						</div>
+						<div id="addallstep">
+							<a class="btn" onclick="btnstep(this);">+添加新步骤栏目</a>
+						</div>
+						<div class="section">
+							<p>注意事项</p>
+							<div class="attention">
+								<dd>
+									<span><i class="fa fa-circle" style="color: #3399cc;"></i></span>
+									<textarea style="width: 500px; height: 60px;" name="attention[]" placeholder="请输入注意事项"></textarea>
+									<button type="button" class="btn btn-default" onclick="f_delatt(this);"><i class="fa fa-close"></i></button>	
+								</dd>
+							</div>
+							<p><a class="btn btn-default" onclick="f_addatt();">+添加注意事项</a></p>
+						</div>
+						
+					</div>
+				</div>
+				<div class="span3" style="position: relative;">
+					<div class="table-style" style="position: fixed; background: #fff;min-width: 250px;">
+						<div class="section" style="min-height: 300px;">
+							<p>图库</p>
+							<ul id="photos" class="photos pic-list unstyled"></ul>
+							<a href="javascript:upload_multi_image('图片上传','#photos','photos-item-wrapper');" class="btn btn-small">选择图片</a>
+						</div>
+					</div>
+					<div class="table-style" id="ex_console" style="background: #f2feff;display: none;z-index: 1600;">
+						<div class="section">
+							<p><b>发布时间</b></p>
+							<p><input type="text" name="createtime" value="{:date('Y-m-d H:i:s',time())}" class="js-datetime" style="width: 160px;"></p>
+						</div>
+						<div><p><b>文章设置</b></p></div>
+						<div class="section">
+							<p><b>状态</b></p>
+							<p>
+								<label class="radio"><input type="radio" name="post_status" value="1" checked>审核通过</label>
+								<label class="radio"><input type="radio" name="post_status" value="0">待审核</label>
+							</p>
+							<p>
+								<label class="radio"><input type="radio" name="istop" value="1">置顶</label>
+								<select name="istop_type" style="display: none;">
+									<option value="0" selected="selected">默认</option>
+									<foreach name="istop_type" item="vo">
+										<option value="{$vo.cid}">{$vo.cat_name}</option>
+									</foreach>
+								</select>
+								<label class="radio"><input type="radio" name="istop" value="0" checked>未置顶</label>
+							</p>
+							<p>
+								<label class="radio"><input type="radio" name="recommended" value="1">推荐</label>
+								<select name="recommended_type" style="display: none;">
+									<option value="0" selected="selected">请选择</option>
+									<foreach name="recommended_type" item="vo">
+										<option value="{$vo.cid}">{$vo.cat_name}</option>
+									</foreach>
+								</select>
+								<label class="radio"><input type="radio" name="recommended" value="0" checked>未推荐</label>
+							</p>
+						</div>
+						
+						<div class="section">
+							<p><b>经验类型</b></p>
+							<p>
+								<select style="max-height: 100px;" name="select">
+									<option value="0" selected="selected">默认</option>
+									<foreach name="select_type" item="vo">
+										<option value="{$vo.cid}">{$vo.cat_name}</option>
+									</foreach>
+								</select>
+							</p>
+						</div>
+
+						<div class="section">
+							<div>
+								<p><b>扩展属性</b></p>
+								<div id="kzModal">
+									<p>
+										<label>扩展1</label>
+										<input type="text" name="post_extend1" value=""  placeholder="扩展1">
+									</p>
+									<p>
+										<label>扩展2</label>
+										<input type="text" name="post_extend2" value=""  placeholder="扩展2">
+									</p>
+									<p>
+										<label>扩展3</label>
+										<input type="text" name="post_extend3" value=""  placeholder="扩展2">
+									</p>
+									<p>
+										<label>扩展4</label>
+										<input type="text" name="post_extend4" value=""  placeholder="扩展2">
+									</p>
+									<p>
+										<label>扩展5</label>
+										<textarea name="post_extend5" rows="1" cols="6"></textarea>
+									</p>
+									<p>
+										<label>扩展6</label>
+										<textarea name="post_extend6" rows="1" cols="6"></textarea>
+									</p>
+									<p>
+										<label>扩展7</label>
+										<textarea name="post_extend7" rows="1" cols="6"></textarea>
+									</p>
+									<p>
+										<label>扩展8</label>
+										<textarea name="post_extend8" rows="1" cols="6"></textarea>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="section">
+							<p><b>页面兼容</b></p>
+							<p>
+								<select style="min-width: 200px;" name="compatible">
+									<option value="0">默认兼容</option>
+									<option value="1">PC端</option>
+									<option value="2">手机端</option>
+								</select>
+							</p>
+						</div>
+
+						<div class="section">
+							<p><b>pc模版</b></p>
+							<p>
+								<php>
+									$tpl_list=sp_admin_get_tpl_file_list();
+									unset($tpl_list['page']);
+								</php> 
+								<select style="min-width: 200px;" name="smeta[template]">
+									<option value="">默认</option>
+									<foreach name="tpl_list" item="vo">
+									<option value="{$vo}">{$vo}{:C("TMPL_TEMPLATE_SUFFIX")}</option>
+									</foreach>
+								</select>
+							</p>
+						</div>
+						<div>
+							
+						</div>
+						<div class="section">
+							<p><b>手机模版</b></p>
+							<p>
+								<php>
+									$tpl_list=sp_admin_get_tpl_file_list();
+									unset($tpl_list['page']);
+								</php> 
+								<select style="min-width: 200px;" name="smeta[template_phone]">
+									<option value="">默认</option>
+									<foreach name="tpl_list" item="vo">
+									<option value="{$vo}">{$vo}{:C("TMPL_TEMPLATE_SUFFIX")}</option>
+									</foreach>
+								</select>
+							</p>
+						</div>
+						
+			            <div class="section">
+							<p><b>pc端缩略图</b></p>
+							<p>
+								<div style="text-align: center;">
+									<input type="hidden" name="smeta[thumb]" id="thumb" value="">
+									<a href="javascript:upload_one_image('图片上传','#thumb');">
+										<img src="__TMPL__Public/assets/images/default-thumbnail.png" id="thumb-preview" width="135" style="cursor: hand" />
+									</a>
+									<input type="button" class="btn btn-small" onclick="$('#thumb-preview').attr('src','__TMPL__Public/assets/images/default-thumbnail.png');$('#thumb').val('');return false;" value="取消图片">
+								</div>
+							</p>
+						</div>
+						<div class="section">
+							<p><b>手机端缩略图</b></p>
+							<p>
+								<div style="text-align: center;">
+									<input type="hidden" name="smeta[thumb_phone]" id="thumb1" value="">
+									<a href="javascript:upload_one_image('图片上传1','#thumb1');">
+										<img src="__TMPL__Public/assets/images/default-thumbnail.png" id="thumb1-preview" width="135" style="cursor: hand" />
+									</a>
+									<input type="button" class="btn btn-small" onclick="$('#thumb1-preview').attr('src','__TMPL__Public/assets/images/default-thumbnail.png');$('#thumb').val('');return false;" value="取消图片">
+								</div>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-actions">
+				<button class="btn btn-primary js-ajax-submit" type="submit">提交</button>
+				<a class="btn" href="{:U('AdminEx/index')}">返回</a>
+				<button type="button" class="btn btn-primary btn-lg" onclick="open_content_layer('文章其他属性配置',$('#ex_console'))" ;>文章其他属性配置</button>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+	<script src="__PUBLIC__/js/jquery-ui/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="__PUBLIC__/js/jquery-ui/jquery-ui.min.css">
+	<script type="text/javascript">
+		//编辑器路径定义
+		var editorURL = GV.DIMAUB;
+	</script>	
+	<script type="text/javascript" src="__PUBLIC__/js/ueditor/ueditor.config.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/ueditor/ueditor.all.min.js"></script>	
+	<script src="__PUBLIC__/js/layer/layer.js"></script>
+	<link rel="stylesheet" href="__PUBLIC__/js/layer/skin/layer.css">
+	
+	
+	
+	<script>
+		var tool = "<dd><i class='fa fa-circle' style='color: #3399cc;'></i><input type='text' name='tool[]' placeholder='请输入工具材料'/><button type='button' class='btn btn-default' onclick='f_deltool(this);'><i class='fa fa-close'></i></button></dd>";
+		var step = "<dd>";
+		step += "<span id='stepnum'></span>";
+		step += "<button type='button' onclick='f_content(this)'>编辑详细内容</button>";
+		step += "<textarea style='display: none;'></textarea>";
+		step += "<div class='li-btn'>";
+		step += "<a id='nomove' onclick='f_addstep(this);'><i class='fa fa-plus'></i></a>";
+		step += "<a id='nomove' onclick='f_delstep(this);'><i class='fa fa-close'></i></a>";
+		step += "<a id='nomove' onclick='f_urlstep(this);'><i class='fa fa-external-link'></i></a>";
+		step += "<a onclick='f_movestep(this);'><i class='fa fa-arrows'></i></a>";
+		step += "</div>";
+		step += "<div class='surl' style='display: none;'>";
+		step += "<p>经验引用:<input type='text' class='url1'></p>";
+		step += "<p>视频地址:<input type='text' class='url2'></p>";
+		step += "</div>";
+		step += "<ul id='sphoto' class='move_photos'>从右侧图片拖动到此处</ul>";
+		step += "</dd>";
+		
+		var attention = "<dd><span><i class='fa fa-circle' style='color: #3399cc;'></i></span><textarea style='width: 500px; height: 60px;' name='attention[]' placeholder='请输入注意事项'></textarea><button type='button' class='btn btn-default' onclick='f_delatt(this);'><i class='fa fa-close'></i></button></dd>";
+		
+		
+		
+		
+		$(function(){
+			f_astep();
+			stepmove(0);
+			photomove();
+			
+			var ue = UE.getEditor('excerpt');
+			$('input:radio[name="istop"]').click(function(){
+	            var val=$('input:radio[name="istop"]:checked').val();
+	            if(val==1){
+	            	$('select[name="istop_type"]').css('display','block');
+	            }
+	            else{
+	                $('select[name="istop_type"]').css('display','none');
+	            }
+	        });
+	        $('input:radio[name="recommended"]').click(function(){
+	            var val=$('input:radio[name="recommended"]:checked').val();
+	            if(val==1){
+	            	$('select[name="recommended_type"]').css('display','block');
+	            }
+	            else{
+	                $('select[name="recommended_type"]').css('display','none');
+	            }
+	        });
+			
+			$('textarea').blur(function(){
+				var str = $(this).val();
+				str = str.replace(/\r/ig, "").replace(/\n/ig, "<br/>"); 
+				//alert(str);
+				$(this).val(str);
+			});
+			
+		});
+		
+
+		function f_addtool(e){
+			$(e).before(tool);
+		}
+		
+		function f_deltool(e){
+			var count = $('.tool').children('dd').length;
+			if(count>1){
+				$(e).parent('dd').remove();
+			}
+			
+		}
+		
+		
+		function f_addatt(){
+			$('.attention').append(attention);
+		}
+		
+		function f_delatt(e){
+			$(e).parent('dd').remove();
+		}
+
+		function f_addstep(e){
+			$(e).parents('dd').after(step);
+			f_astep();
+		}
+		
+		function f_delstep(e){
+			$(e).parents('dd').remove();
+			f_astep();
+		}
+		
+		function f_urlstep(e){
+			surl = $(e).parent('.li-btn').nextAll('.surl');
+			open_content_layer_small('添加经验引用/视频地址',surl);
+		}
+		
+		function btnstep(e){
+			var count = $('#lefttable').children('#allstep').length;
+			var astep = "<div id='allstep'>";
+			astep += "<p><input type='text' value='步骤方法' style='width: 460px;' class='stepname'><input type='text' value='短标题' style='width: 100px;' class='stepsname'><button type='button' class='btn btn-default' onclick='f_delastep(this);'><i class='fa fa-close'></i></button></p>";
+			astep += "<div class='step' id='nstep"+count+"'>";
+			astep += step;
+			astep += step;
+			astep += "</div>";
+			astep += "</div>";
+			
+			$(e).parent('#addallstep').before(astep);
+			f_astep();
+			stepmove(count);
+			photomove();
+		}
+		
+		function f_delastep(e){
+			var count = $('#lefttable').children('#allstep').length;
+			if(count>1){
+				$(e).parents('#allstep').remove();	
+			}
+		}
+		
+		
+		
+		function f_astep(){
+			$.each($("#lefttable #allstep"),function(i){
+				$(this).find('p .stepname').attr('name','step['+i+'][name]');
+				$(this).find('p .stepsname').attr('name','step['+i+'][sname]');
+				$(this).find('.step').find('dd').each(function(j){
+					$(this).find('#stepnum').html(j+1);
+					$(this).find('textarea').attr('name','step['+i+']['+j+'][content]');
+					$(this).find('.surl .url1').attr('name','step['+i+']['+j+'][url1]');
+					$(this).find('.surl .url2').attr('name','step['+i+']['+j+'][url2]');
+					$(this).find('#sphoto li :input').each(function(){
+						$(this).attr('name','step['+i+']['+j+'][photo][]');
+					});
+				});
+				
+			});
+		}
+		
+		function fstep(e){
+			$(e).parents('.step').find('dd').each(function(i){
+				$(this).find('#stepnum').html(i+1);
+			});
+		}
+		
+		function stepmove(n){
+			 $( ".step" ).sortable({
+			 	stop: function(){
+			 		f_astep();
+			 	}
+			 });
+		}
+		
+		function photomove(){
+			$( ".photos,#excerpt_photos,#sphoto" ).sortable({
+				connectWith: ".move_photos" ,
+				stop: function(){
+					changename();
+				}
+			});
+		}
+		
+		function changename(){
+			$('#excerpt_photos').find('li :input').each(function(){
+				$(this).attr('name','excerpt[photo][]');
+			});
+			f_astep();
+		}
+		
+		function f_content(e){
+		    layer.open({
+			  	type: 2, 
+			  	title:'编辑详细内容',
+			  	btn: ['确定'],
+        		area: ['80%', '80%'],
+        		shade: 0,
+			  	content: '/public/editer/index.html',
+			  	success: function(layero, index){
+				    var body = layer.getChildFrame('#editor', index);
+			  		var txt = $(e).next('textarea').val();
+				    body.val(txt);
+				},
+			  	yes: function(index, layero){
+			  		var body = layer.getChildFrame('body', index);
+			  		//console.log(body.contents().find('.edui-editor-iframeholder iframe').contents().find('body').html());
+			  		var txt = body.contents().find('.edui-editor-iframeholder iframe').contents().find('body').html();
+			  		$(e).next('textarea').val(txt);
+			  		layer.close(index);
+			  	}
+			});
+		}
+		
+
+	</script>
+</body>
+</html>

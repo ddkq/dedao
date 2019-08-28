@@ -1,0 +1,145 @@
+a:hover {
+	text-decoration: none;
+}
+.text-indent {
+	text-indent: 2rem;
+}
+.activity-img {
+	width: 20%;
+	bottom: -28px;
+}
+.content-1 {
+	background: url(imgs/bcg1.jpg);
+}
+.content-2 {
+	background: #EFE8DF;
+}
+.title div:before, .title div:after {
+	content: '';
+    width: 74px;
+    height: 30px;
+	display: inline-block;
+}
+.title div:before {
+	background: url(imgs/before.png);
+	margin-right: 15px;
+}
+.title div:after {
+	background: url(imgs/after.png);
+	margin-left: 15px;
+}
+.title span {
+	color: #da1414;
+}
+.content-1 .content-text {
+	line-height: 2.1;
+}
+.content-1 .content-text b {
+	font-size: 18px;
+}
+form h4 {
+	color: #977348;
+}
+form input {
+  	border-radius: 10px;
+  	background-color: rgb(232, 232, 232);
+  	border: 0;
+  	padding: 15px 0;
+}
+form {
+	background: #fff;
+  	box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.17);
+  	margin: auto;
+}
+.input-line div {
+	width: 45%;
+}
+.submit-btn, .swt-btn {
+  	border-style: solid;
+  	border-width: 4px;
+  	border-color: rgb(255, 255, 255);
+  	border-radius: 10px;
+  	background-color: rgb(191, 34, 41);
+  	box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.25);
+  	font-size: 19px;
+}
+.swt-btn {
+	font-size: 23px;
+}
+.swt-btn span {
+	color: #ffe467;
+}
+.content-2:after, .content-3:after {
+	content: '';
+	border-width: 40px;
+	border-style: solid;
+	border-color: #EFE8DF transparent transparent transparent;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -80px;
+    width: 55px;
+    margin: auto;
+}
+.content-3:after {
+	border-color: #fff transparent transparent transparent;
+}
+#certify {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+#certify .swiper-container {
+    padding: 100px 0;
+}
+#certify .swiper-slide {
+    width: 50%;
+    background: #fff;
+    box-shadow: 0 8px 30px #ddd;
+}
+.arrow-left {
+    right: 105%;
+}
+.arrow-right {
+    left: 105%;
+}
+.arrow-left .arrow {
+    transform: rotate(45deg);
+    right: 0%;
+}
+.arrow-right .arrow {
+    transform: rotate(225deg);
+}
+.arrow {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 20px;
+    transition: all .2s linear;
+}
+.arrow-right, .arrow-left {
+    cursor: pointer;
+}
+.arrow-left, .arrow-right {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 40%;
+    z-index: 99;
+    border-radius: 50%;
+    background-color: rgba( 0, 0, 0, 0.302 );
+}
+.arrow-left:hover, .arrow-right:hover {
+    background-color: #C11820;
+}
+.banner {
+	margin-top: 202px;
+}
+.title-2 {
+  font-size: 19px;
+}

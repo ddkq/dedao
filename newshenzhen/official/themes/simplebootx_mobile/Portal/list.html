@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{$name}_{$site_name}</title>
+	<meta name="keywords" content="{$seo_keywords}"/>
+	<meta name="description" content="{$seo_description}" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<link rel="shortcut icon" href="/public/images/favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/css/article.css" />
+	<link rel="stylesheet" href="__TMPL__Public/css/swiper.min.css">
+	<link rel="stylesheet" href="__TMPL__Public/css/base2.css">
+
+	<script type="application/javascript" src="__TMPL__Public/js/jquery-2.1.1.min.js"></script>
+	<script src="__TMPL__Public/js/swiper.min.js"></script>
+</head>
+<body>
+
+	<tc_include file="Public:nav" />
+
+	<section>
+		<div class="banner">
+			<div class="bcg">
+				<h4 class="banner-title">医本为德，科技为道</h4>
+				<span class="line"></span>
+				<p class="banner-subtitle">为口腔医疗产业升级而来</p>
+			</div>
+		</div>
+	</section>
+	
+	<section class="content content-width clear">
+		
+		<section>
+			<div class="tab-bar-container">
+	          	<div id="tabBar" class="tab-bar">
+		            <h4><span>{$name}</span></h4>
+		            <ul style="display: none;">
+		            	<volist name="terms" id="vo">
+							<if condition="$vo[term_id] eq $cat_id">
+								<li class="active"><a href="/list/{$vo.term_id}.html">{$vo.name}</a></li>	
+							<else/>
+								<li class=""><a href="/list/{$vo.term_id}.html">{$vo.name}</a></li>
+							</if>	
+						</volist>
+		            </ul>
+	          	</div>
+	        </div>
+		</section>
+		
+		<section>
+			<ul>
+				<volist name="list['posts']" id="vo">
+					<li class="onenews">
+						<a href="{:get_article_url($vo[tid],$vo[link_type],$vo[post_murl])}">
+							<php>$smeta = json_decode($vo['smeta'],true);</php>
+							<img src="{$smeta.thumb}">
+							<div class="infomation">
+								<p class="tag"><strong>{$vo.name}</strong></p>
+								<h3>{$vo.post_title}</h3>
+								<p class="news-time">{:date('Y-m-d',$vo['post_modified'])}</p>
+								<div class="">
+									<p>{$vo[post_excerpt]}</p>
+								</div>
+							</div>	
+						</a>
+					</li>	
+				</volist>
+			</ul>
+		</section>
+	</section>
+	<tc_include file="Public:footer" />
+</body>
+<script>
+	$("#tabBar h4").click(function(){
+	  $("#tabBar ul").slideToggle('normal');
+	  $("#tabBar").toggleClass("show");
+	});
+
+</script>
+</html>

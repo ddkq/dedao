@@ -1,0 +1,99 @@
+<div class="header">
+	<div class="logo"><a href="/"><img src="__TMPL__Public/images/logo.png" alt=""></a></div>
+	<p class="submenu"><i class="fa fa-icon"></i></p>
+	<nav class="menu_box">
+		<div class="menu-head">
+			<span class="menu-head-close"><i class="fa fa-icon"></i></span>
+			<h1>德道口腔品牌连锁</h1>
+		</div>
+		<div>
+			<p></p>
+		</div>
+		<div id="leftTabBox">
+			<div class="hd">
+				<ul class="menu-tabs">
+					<li class="on"><a href="javascript:void(0);">找项目</a></li>
+					<li><a href="javascript:void(0);">找医生</a></li>
+				</ul>	
+			</div>
+			<div class="tab-content bd">
+				<div class="menu-tab-con clearfix active">
+					<ul class="menu-tab-left col-xs-4">
+						<volist name="nav" id="vo" key="k">
+							<if condition="$k eq 1">
+								<li class="active"><a href="{$vo.href}" data-toggle="tab">{$vo.label}</a></li>	
+							<else />
+								<li><a href="{$vo.href}" data-toggle="tab">{$vo.label}</a></li>
+							</if>
+						</volist>
+					</ul>
+					<div class="menu-tab-right tab-content col-xs-8">
+						<volist name="nav" id="vo" key="k">
+							<if condition="$k eq 1">
+								<div class="menu-pro fade tab-pane active in" id="menu-pro-{$k-1}">
+									<volist name="vo[child]" id="vo1">
+										<dl>
+											<dt>{$vo1.label}</dt>
+											<dd>
+												<ul>
+													<volist name="vo1[child]" id="vo2">
+														<li><a href="{$vo2.href}" target="{$vo2.target}">{$vo2.label}</a></li>	
+													</volist>
+												</ul>
+											</dd>
+										</dl>	
+									</volist>
+								</div>
+							<else />
+								<div class="menu-pro fade tab-pane" id="menu-pro-{$k-1}">
+									<volist name="vo[child]" id="vo1">
+										<dl>
+											<dt>{$vo1.label}</dt>
+											<dd>
+												<ul>
+													<volist name="vo1[child]" id="vo2">
+														<li><a href="{$vo2.href}" target="{$vo2.target}">{$vo2.label}</a></li>	
+													</volist>
+												</ul>
+											</dd>
+										</dl>	
+									</volist>
+								</div>
+							</if>
+						</volist>	
+					</div>
+				</div>
+				<div class="menu-tab-con clearfix">
+					<ul class="menu-tab-left col-xs-4 department_list">
+						<li class="active"><a class="getdoctor" href="#menu-doc-0" data-toggle="tab" data-did="8">种植中心</a></li>
+						<li><a class="getdoctor" href="#menu-doc-0" data-toggle="tab" data-did="9">正畸中心</a></li>
+						<li><a class="getdoctor" href="#menu-doc-0" data-toggle="tab" data-did="10">美学修复</a></li>
+						<li><a class="getdoctor" href="#menu-doc-0" data-toggle="tab" data-did="11">牙周治疗</a></li> 
+						<li><a class="getdoctor" href="#menu-doc-0" data-toggle="tab" data-did="12">儿童齿科</a></li>
+						<li><a class="getdoctor" href="#menu-doc-0" data-toggle="tab" data-did="13">博导专家</a></li>
+					</ul>				
+					<div class="menu-tab-right tab-content col-xs-8 tab_doctor">
+						<php>$doctor1 = sp_get_doctor_bydepartment(8);</php>
+						<div class="menu-doc fade in tab-pane active" id="menu-doc-0">
+							<ul>
+								<volist name="doctor1" id="vo">
+									<li>
+										<a href="/doctor/{$vo.doctor_id}.html">
+											<php>$smeta = json_decode($vo['smeta'],true);</php>
+											<div class="zj-pic"><img src="{$smeta[thumb_phone]}"></div>
+											<p class="zj-name">{$vo.name}</p>
+											<p class="zj-zhichen">{$vo.duties}</p>
+										</a>
+									</li>	
+								</volist>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>	
+	<p class="header_phone"><a href="tel:"><i class="fa fa-phone"></i></a></p>
+</div>
+
+<div style="height: 66px;"></div>

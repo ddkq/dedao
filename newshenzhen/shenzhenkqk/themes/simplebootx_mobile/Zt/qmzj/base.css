@@ -1,0 +1,84 @@
+body {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+.index-situation {
+	padding: 0 1.5rem;
+	margin: 1rem 0;
+}
+.index-situation .must {
+    color: #808080;
+    margin: 1rem 0;
+}
+.index-situation .must:after {
+    content: ' *';
+    color: #f85959;
+}
+.index-situation .checkbox-box {
+	line-height: 1.5;
+}
+.index-situation .checkbox-box .checkbox-item {
+    margin-right: 0.4rem;
+    margin-bottom: 0.3rem;
+    display: inline-block;
+}
+.index-situation .checkbox-box .checkbox-item span {
+	font-size: 1rem;
+}
+.index-situation .situation-input-text {
+	position: relative;
+	margin-top: 1rem;
+}
+.index-situation .situation-input-text input {
+    height: 2.75rem;
+    width: 100%;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: .95rem;
+    display: block;
+    outline: none;
+    box-sizing: border-box;
+}
+.index-situation .situation-input-text .input-clear {
+    display: none;
+    position: absolute;
+    top: 40%;
+    right: 1rem;
+    width: 1rem;
+    height: 1rem;
+    margin-top: -0.213rem;
+    border-radius: 50%;
+    background-color: #ccc;
+    transform: rotate(45deg);
+}
+.index-situation .situation-input-text .input-clear:before, .index-situation .situation-input-text .input-clear:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+}
+.index-situation .situation-input-text .input-clear:before {
+    width: 70%;
+    height: 0.1rem;
+}
+.index-situation .situation-input-text .input-clear:after {
+    width: 0.1rem;
+    height: 70%;
+}
+.index-situation .situation-btn a {
+	background: #CC0000;
+	color: #fff;
+	text-align: center;
+	display: block;
+	border-radius: 5px;
+	padding: .75rem 0;
+	font-size: 1.2rem;
+	margin-top: 1rem;
+}

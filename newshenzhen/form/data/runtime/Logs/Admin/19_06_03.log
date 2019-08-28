@@ -1,0 +1,22 @@
+[ 2019-06-03T09:47:33+08:00 ] 59.42.88.251 /Admin/public/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001161s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'owner' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '13' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: UPDATE `cmf_users` SET `user_login`='owner',`user_pass`='###cf0a908a9cfd56cfd3e8eeb8fda5a8a3',`user_truename`='',`user_nicename`='',`user_email`='ss@q.com',`user_url`='',`avatar`='',`sex`='0',`birthday`='2000-01-01',`signature`='',`last_login_ip`='59.42.88.251',`last_login_time`='2019-06-03 09:47:33',`create_time`='2018-07-12 09:38:26',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`wechat`='' WHERE `id` = '13' [ RunTime:0.0023s ]
+
+[ 2019-06-03T17:22:29+08:00 ] 59.42.88.251 /Admin/public/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001232s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###b6c7e65d115dcba6c57374e0699e03ed',`user_truename`='admin',`user_nicename`='admin',`user_email`='1@1.com',`user_url`='http://baidu.com',`avatar`='5982c2a769e2d.jpg',`sex`='0',`birthday`='2000-01-01',`signature`='个性签名',`last_login_ip`='59.42.88.251',`last_login_time`='2019-06-03 17:22:29',`create_time`='2017-02-11 09:06:51',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='1111111',`wechat`='' WHERE `id` = '1' [ RunTime:0.0033s ]
+

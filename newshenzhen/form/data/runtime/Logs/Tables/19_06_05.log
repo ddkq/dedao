@@ -1,0 +1,34 @@
+[ 2019-06-05T09:24:27+08:00 ] 42.236.10.93 /tables/admintables/view_data/menuid/387.html
+ERR: 无法加载控制器:Admintables
+
+[ 2019-06-05T09:24:44+08:00 ] 42.236.10.84 /tables/admintables/view_data/menuid/387.html
+ERR: 无法加载控制器:Admintables
+
+[ 2019-06-05T11:11:31+08:00 ] 59.42.88.50 /Tables/AdminTables/view_data_delete/id/5511.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '13' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0003s ]
+SQL: DELETE FROM `cmf_tables_data` WHERE ( id = 5511 ) [ RunTime:0.0024s ]
+
+[ 2019-06-05T11:48:06+08:00 ] 59.42.88.50 /Tables/AdminTables/view_data_delete/id/5512.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '13' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0003s ]
+SQL: DELETE FROM `cmf_tables_data` WHERE ( id = 5512 ) [ RunTime:0.0022s ]
+

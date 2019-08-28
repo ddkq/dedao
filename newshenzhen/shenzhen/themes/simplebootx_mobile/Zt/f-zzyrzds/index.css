@@ -1,0 +1,55 @@
+ol, ul {
+	list-style: none;
+	padding: 0;
+}
+img {
+	max-width: 100%;
+    vertical-align: middle;
+}
+.red{
+	color: #ff0000;
+}
+.gley{
+	color: #a1a1a1;
+}
+.yel{
+	color: #f2d527;
+}
+.banner{
+	margin-top: 7.4rem;
+}
+.font-8{
+	font-size: 0.8rem;
+}
+
+.content-box-1 h4{
+	background: #bc0b0b;
+}
+.submit-btn{
+	background-color: rgb(204, 6, 6);
+	border-radius: 30px;
+}
+.title{
+	color: #052386;
+}
+
+.content-box-4{
+	background: linear-gradient(#173595, #072174);
+}
+.content-box-4 .title{
+	background: url(images/content4-bg.jpg);
+	background-size: cover;
+}
+.content-box-4 .text{
+	background: #fff;
+}
+.content-box-4 .text h6{
+	color: #052386;
+}
+
+.swt-btn{
+	background: rgba(255, 255, 255, 0) ;
+	border: 2px solid #f2d527;
+	color: #f2d527;
+	border-radius: 30px;
+}

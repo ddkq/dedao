@@ -1,0 +1,88 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="{:U('AdminOrder/index')}">{:L('PORTAL_ADMINORDER_INDEX')}</a></li>
+		</ul>
+		<form class="well form-search" method="post" action="{:U('AdminOrder/index')}">
+			订单状态： 
+			<select class="select_2" name="order_status">
+				<option value='0'>无效</option>
+				<option value='1'>待付款</option>
+				<option value='2'>待发货</option>
+				<option value='3'>配送中</option>
+				<option value='4'>已完成</option>
+			</select> &nbsp;&nbsp;
+			时间：
+			<input type="text" name="start_time" class="js-date" value="{$formget.start_time|default=''}" style="width: 80px;" autocomplete="off">-
+			<input type="text" class="js-date" name="end_time" value="{$formget.end_time}" style="width: 80px;" autocomplete="off"> &nbsp; &nbsp;
+			关键字： 
+			<input type="text" name="keyword" style="width: 200px;" value="{$formget.keyword}" placeholder="请输入关键字...">
+			<input type="submit" class="btn btn-primary" value="搜索" />
+		</form>
+		<form class="js-ajax-form" action="" method="post">
+			<table class="table table-hover table-bordered table-list">
+				<thead>
+					<tr>
+						<th width="15"><label><input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x"></label></th>
+						<th width="300">{:L('ORDERSM')}</th>
+						<th width="50">{:L('ADDTIME')}</th>
+						<th width="50">{:L('CONSIGNEE')}</th>
+						<th width="50">{:L('PRICE')}</th>
+						<th width="50">{:L('AMOUNT')}</th>
+						<th width="50">{:L('STATUS')}</th>
+						<th width="70">{:L('ACTIONS')}</th>
+					</tr>
+				</thead>
+				<foreach name="posts" item="vo">
+				<tr>
+					<td><input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="ids[]" value="{$vo.good_id}" title="ID:{$vo.good_id}"></td>
+					<td>{$vo.order_sn}</td>
+					<td>{$vo.add_time}</td>
+					<td>{$vo.consignee}</td>
+					<td>{$vo.goods_amount}</td>
+					<td>{$vo.order_amount}</td>
+					<php>$status=array("0"=>"无效","1"=>"待付款","2"=>"待发货","3"=>"配送中","4"=>"已完成");</php>
+					<td>{$status[$vo['order_status']]}</td>
+					<td>
+						<a href="{:U('AdminOrder/check',array('id'=>$vo['order_id']))}">查看</a>
+						<if condition="$vo[order_status] eq 0">
+						| <a href="{:U('AdminOrder/delete',array('id'=>$vo['order_id']))}" class="js-ajax-delete">{:L('DELETE')}</a></td>
+						</if>
+				</tr>
+				</foreach>
+				<tfoot>
+					<tr>
+						<th width="15"><label><input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x"></label></th>
+						<th width="300">{:L('ORDERSM')}</th>
+						<th width="50">{:L('ADDTIME')}</th>
+						<th width="50">{:L('CONSIGNEE')}</th>
+						<th width="50">{:L('PRICE')}</th>
+						<th width="50">{:L('AMOUNT')}</th>
+						<th width="50">{:L('STATUS')}</th>
+						<th width="70">{:L('ACTIONS')}</th>
+					</tr>
+				</tfoot>
+			</table>
+			<div class="pagination">{$Page}</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script>
+		function refersh_window() {
+			var refersh_time = getCookie('refersh_time');
+			if (refersh_time == 1) {
+				window.location = "{:U('AdminOrder/index',$formget)}";
+			}
+		}
+		setInterval(function() {
+			refersh_window();
+		}, 2000);
+		$(function() {
+			setCookie("refersh_time", 0);
+			
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于德道</title>
+	<link rel="shortcut icon" href="/public/images/favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/css/contact.css" />
+	<link rel="stylesheet" href="__TMPL__Public/css/swiper.min.css">
+	<link rel="stylesheet" href="__TMPL__Public/css/base2.css">
+
+	<script type="application/javascript" src="__TMPL__Public/js/jquery-2.1.1.min.js"></script>
+	<script src="__TMPL__Public/js/swiper.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="black-bcg"></div>
+		<tc_include file="Public:nav" />
+	</header>
+
+	<section>
+		<div class="banner"><div class="bcg"></div></div>
+	</section>
+	
+	<section class="content content-width clear">
+		<ul class="left-nav">
+			<li><a href="about.html">关于我们</a></li>
+			<li><a href="javascript:;">公司动态</a></li>
+			<li><a href="javascript:;">工作在德道</a></li>
+			<li><a href="/contact.html" class="active">联系我们</a></li>
+			<li><a href="/job/2.html">加入我们</a></li>
+		</ul>
+		<div class="right-content">
+			<section>
+				<h2 class="title">联系我们</h2>
+				<div class="contact-info">
+					<div>
+						<span>
+							<span><i class="icons about-email"></i>business@megvii.com</span>
+							<span><i class="icons about-phone"></i>400-800-6161<span>（周一至周五 10:00 - 18:30）</span></span>
+						</span>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="contact-item-wrap">
+					<div class="contact-item-title info">德道深圳总部：</div>
+					<div class="contact-item-desc">深圳市南山区南山街道桂庙路5号9楼整层</div>
+					<div id="map1" style="width: 100%; height: 300px;"></div>
+				</div>
+				<div class="contact-item-wrap">
+					<div class="contact-item-title info">成都市德道口腔医院：</div>
+					<div class="contact-item-desc">成都市青羊区金凤路19号附1号德道口腔医院</div>
+					<div id="map2" style="width: 100%; height: 300px;"></div>
+				</div>
+				<div class="contact-item-wrap">
+					<div class="contact-item-title info">旷视南京分部：</div>
+					<div class="contact-item-desc">南京市栖霞区经济开发区兴智路兴智科技园A栋</div>
+					<div id="map2" style="width: 100%; height: 300px;"></div>
+				</div>
+			</section>
+		</div>
+	</section>
+	<tc_include file="Public:footer" />
+</body>
+<script>
+	$(window).scroll(function() {
+		if($(window).scrollTop() >= 300) {
+			$('.left-nav').addClass('fixed')
+		}
+		else {
+			$('.left-nav').removeClass('fixed')
+		}
+	})
+
+	$(function(){
+		var map = new BMap.Map("map1");
+		var point  = new BMap.Point(113.933129,22.528875)
+		map.centerAndZoom(point, 19);
+		map.addOverlay(new BMap.Marker(point));
+		
+		var map1 = new BMap.Map("map2");
+		var point1  = new BMap.Point(104.016731,30.688926)
+		map1.centerAndZoom(point, 19);
+		map1.addOverlay(new BMap.Marker(point1));
+		
+		var map2 = new BMap.Map("map3");
+		var point2  = new BMap.Point(104.016731,30.688926)
+		map2.centerAndZoom(point, 19);
+		map2.addOverlay(new BMap.Marker(point2));
+		
+	});
+
+
+</script>
+</html>

@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+/*
+* header
+*/
+
+.topBar{ position:fixed; border-bottom:1px solid #1c0030; z-index:99}
+
+.bannerbg{height:564px; width:100%; background:url(../imgs/banner01.jpg) no-repeat center #013682;margin-top: 200px;}
+.banner{ width:980px; margin:0 auto; position: relative;height:564px;}
+.banner p{ position:absolute; font-size:12px; line-height:22px; font-family:"微软雅黑", Tahoma ; left:135px; bottom:10px; text-indent:2em;}
+.banner .zx{ display:block; width: 170px; height: 90px; border-radius:50%; text-indent:-9999px; transition:all 0.3s ease-in-out; text-align:center; top: 435px; right: 398px; position:absolute; font-size:14px; color:#FFF;}
+.banner .z2{top: 435px; right: 226px;}
+
+.banner .logo{ width:330px; height:100px; display:block; position:absolute; top:0px; left:-29px; text-indent:-9999px;}
+.banner p{ position:absolute; left:18px; bottom:58px; color:#f4ebc7; font-size:16px; text-shadow:0 1px 1px #000}
+
+/*
+* container
+*/
+
+.container2{width:100%;padding:0px 0 20px 0; }
+
+.bgColor{ background-color:#e7fcff; }
+.itemTie{position:relative; margin: 10px 0 20px 0px; border-bottom:1px solid #cedee0; padding-bottom:10px;}
+.item{width:980px; margin:0 auto;overflow:hidden; position:relative; padding:10px 0;}
+.item h2{ color:#936740; font-size:30px; margin-bottom: 10px; position:relative; border-bottom:1px solid #e5e5e5; padding-bottom:20px;}
+.item h2 strong{ color:#c66d03; font-size:32px; font-weight:bold}
+.item h2 em{color:#793c01; font-size: 24px; position:relative; top:-2px; border-radius:50%; width: 55px; height: 55px; line-height: 55px;text-align: center;border:2px solid #793c01;display: inline-block;}
+.itemTie h1{ font-size:30px; color:#1a7ace;line-height:30px; padding-top:10px; font-weight:bold;}
+.itemTie b{ font-size: 12px; text-transform:uppercase; color:#bcd0d8;}
+.itemTie a{ background-color:#013783; color:#FFF; position:absolute; transition:all 0.3s ease-in-out; font-size:20px; right:10px; top:20px; line-height:40px; border-radius:6px; display:block; width:120px; text-align:center}
+.itemTie a:hover{ background-color:#2692B9;}
+.itemTie i{ width: 70px; height: 69px; background-position: 0px 0px; display:inline; float:left;}
+.itemTie strong{ color:#ff2525; display:inline-block; margin-left:50px; font-size:24px; position: absolute; top: 10px; left: 200px;}
+.itemTie strong b{ display:block}
+/*f1Box*/
+.f1Box{ padding-bottom:45px; background:url(../imgs/pic02.jpg) no-repeat right 43px;}
+.f1Box dl{ width:540px;}
+.f1Box dl dt{ font-size:16px; display:inline-block; border-bottom:1px solid #389fd4; padding-top: 30px; height: 105px; width: 536px; line-height: 30px;}
+.f1Box dl dt i{ width:90px; height:100px; float:left; display:inline; margin-right:10px; background-position:0px -39px;}
+.f1Box dl dd{ padding:30px 0 10px; font-size:14px; text-indent:2em; position:relative;}
+.f1Box dl dd p{ background:url(../imgs/img.png) no-repeat 0px -330px;}
+.f1Box dl dd p{ font-size:14px; line-height:30px;}
+.f1Box dl dd a{ border-radius:8px; background-color:#237491; text-align:center; color:#FFF; display:block; width:120px; text-indent:0; line-height:30px; margin:30px 0 0 0; font-size:15px;}
+
+
+/* f2Box */
+.f2Box table{ width:980px;}
+.f2Box table{ border:1px solid #e4e4e4; border-collapse:collapse; width:980px; background-color:#ff8f8f}
+.f2Box table,.f2Box table tr td,.f2Box table tr th{ border:1px solid #e4e4e4; line-height:34px; text-align:center; font-size:16px;}
+.f2Box table .t1 td{ background-color:#50aad8; color:#FFF; line-height:22px; width:20px; padding:0 30px; font-size:16px; font-weight:bold;vertical-align: middle;}
+.f2Box table tr.on td,.f2Box table tr.on th,.f2Box table tr.on em{ color:#FFF;  background-color:#013783}
+.f2Box table .t2{ background-color:#ff8f8f;}
+.f2Box table .t3{ background-color:#fbd97f;}
+.f2Box table .t4{ background-color:#c1e4f8;}
+.f2Box table .t5{ background-color:#80dada;}
+.f2Box table tr.on td strong{ color:#fff000}
+.f2Box table td strong{ font-weight:bold; font-size:16px;}
+.f2Box table .t2 td strong{ color:#f6ff00;}
+.f2Box table .t3 td strong{ color:#ff0018;}
+.f2Box table .t4 td strong{ color:#000;}
+.f2Box table .t5 td strong{ color:#1a7ace;}
+.f2Box table tr .lft{ text-align: left; padding:10px; width:650px;}
+
+/* f3Box */
+.item .rt01{ width: 90px; height: 100px; display:block; float:right; background-position: -123px 0px; top:5px; position:absolute; right:10px;}
+.item aside{ padding:20px 10px 35px; background-color:#eefcfe; border:1px dashed #d5e3e5; position:relative}
+.item aside h5{ color:#ff2525; font-size:20px; font-weight:bold; margin-bottom:10px}
+.f3Box { background:url(../imgs/pic03.jpg) no-repeat right top}
+.f3Box aside{ width:600px; padding:20px 10px 35px; background-color:#eefcfe; border:1px dashed #d5e3e5; position:relative}
+.f3Box aside h5{ color:#ff2525; font-size:20px; font-weight:bold; margin-bottom:10px}
+.f3Box dl{ width:635px; padding:20px 0 10px; display:inline-block }
+.f3Box dl dt{ width:50px; float:left}
+.f3Box dl dt a{ color:#FFF; background-color:#1a7ace; padding-top:10px; font-size:16px; line-height:20px; text-align:center; width:30px; display:block; height:100px; margin:30px 0 0 20px;}
+.f3Box dl dd{ background:url(../imgs/pic05.jpg) no-repeat right top; width:570px; height:255px; float:right;position:relative}
+.f3Box dl dd p{ width:280px; position:absolute; left:0px; bottom:0px;}
+.f3Box dl dd a{ width:100px; background-color:#50aad8; color:#FFF; position:absolute; right: 67px; bottom: -15px; text-align: center;}
+
+
+/* f4Box */
+.f4Box h3{ text-align:center; padding:15px 0 20px; color:#2692B9; font-weight:bold; margin:0 60px; font-size:30px; border-bottom:1px solid #c9dddd}
+.f4Box dl dt{ width:360px; float:left;}
+.f4Box dl dt a{ color:#FFF; background-color:#50aad8; font-size:16px; line-height:32px;text-align:center; width:120px; display:block;margin:0 auto;}
+.f4Box dl dd span{ background:url(../imgs/sBg.png) no-repeat center top; width:216px; padding:10px; height:210px; margin:40px 20px 0 10px; display:inline-block; position:relative}
+.f4Box dl dd strong{ font-weight:bold; text-align:center; display:block; color:#1a7ace; font-size:16px; margin:5px 0}
+.f4Box dl dd span a{ color:#FFF; background-color:#fd7273; font-size:16px; font-weight:bold; border-radius:5px; line-height:32px;text-align:center; width:120px; display:block;margin:60px auto 0;}
+.f4Box dl dd span a:hover{ background-color:#1a7ace}
+.f4Box dl dd span i{ width: 52px; height: 52px; line-height:52px; color:#FFF; font-size:30px;text-align:center; background-position: 0px -114px; display:block; position:absolute; left: -26px; top: -20px;}
+.f4Box .p1{ background-color:#5cb0da; padding:10px 10px 20px; color:#FFF}
+.f4Box .p1 img{float:left; display:inline-block;margin-right:15px;}
+.f4Box .p1 strong{ color:#fffc00; font-size:18px; font-weight:bold; border-bottom:1px dashed #aed8ed; padding:20px 0 10px; text-align:left; margin:0 20px 10px 10px}
+.f4Box .p1 em{ background-color:#e4007f; padding:2px 5px; border-radius:10px; color:#fffc00; font-weight:bold}
+.f4Box .p1 a:hover em{ background-color:#1a7ace}
+/*f6Box*/
+.f5Box{ background:url(../imgs/pic09.jpg) no-repeat right top; padding-bottom:90px;}
+.f5Box aside{ width:600px;}
+.f5Box ul{ width:630px; height:130px; margin:45px 0 0 0; display:inline-block; position:relative; border-bottom:1px solid #dee6e9;border-top:1px solid #dee6e9}
+.f5Box ul li{ position:absolute; top:15px; left:0px}
+.f5Box ul li a,.f5Box .zx{ color:#FFF; background-color:#50aad8; width:60px; font-size:16px; text-align:center; display:block; margin-top:10px;}
+.f5Box ul li.L2{ left:auto; right:25px; top:15px;}
+.f5Box ul li.L3{top:145px;}
+.f5Box ul li.L4{ left:auto; right:10px; top:145px;}
+.f5Box ul img{ position:absolute; z-index:2; left: 179px; top: -21px;_left:-280px; _top:-166px;}
+.f5Box .zx{ width:100px; line-height:30px; position:absolute; right:105px; bottom:0;}
+.f5Box ul li a:hover,.f5Box .zx:hover{ background-color:#2692B9}
+
+.f6Box{ position: relative}
+.f6Box a{ width: 145px; height: 45px; text-indent:-9999px; position:absolute; display:block; bottom: 145px; left: 398px;}
+
+.f7Box{ width:840px; margin:0 auto; position:relative}
+.f7Box dl{ width:420px; float:left; display:inline;}
+.f7Box .hd{ position: absolute; right: -65px; top: -45px;}
+.f7Box .hd ul li{ width:10px; height:10px; background-color: #bcd0d8; text-indent:-9999px; float:left; display:inline; margin:0 3px;}
+.f7Box .hd ul li.on{ background-color:#237491}
+.f7Box dl dt{ width:180px; float:left;}
+.f7Box dl dt .pic{ display:inline-block;}
+.f7Box dl dt .pic img{ border:1px solid #e3f6fd; width:180px; height:auto}
+.f7Box dl dt .on img,.f7Box dl dt .pic img:hover{ border:1px solid #65A3AB;}
+.f7Box dl a.yy{ background:#237491; width:45%; line-height:32px; margin-top:15px; text-align:center; color:#FFF; float:left; transition:all 0.3s ease-in-out}
+.f7Box dl a.yy1{ float:right}
+.f7Box dl a.yy:hover{ background-color:#50aad8}
+.f7Box dl dd{ width: 200px; padding:0 25px 0 15px; float:right;_padding:0 20px 0 10px;}
+.f7Box dl dd h3,.f7Box dl dd h3 a{ font-weight:bold; color:#237491; font-size:16px;}
+.f7Box dl dd h3 a:hover{ color:#ff6000}
+.f7Box dl dd h5{ color:#237491; font-size:12px;}
+.f7Box dl dd strong{ font-weight:bold;color:#237491; font-size:12px;}
+.f7Box dl dd p{ font-size:12px;}
+.f7Box dl dd p a{ color:#ff0061; font-size:12px;}
+.f7Box span{ width: 51px; height: 59px; display:block; position:absolute; top:75px; left: -80px; cursor:pointer; transition:all 0.3s ease-in-out; background-position: -75px -114px; border-radius: 8px;}
+.f7Box span.next{ background-position:-157px -114px; left:auto; right:-75px;}
+.f7Box span:hover{ opacity:0.8; box-shadow: 1px 1px 1px #B4B3B3;}
+.f7Box span.next:hover{box-shadow: -1px 1px 1px #B4B3B3;}
+
+
+.f8Box{ padding:20px 0}
+.f8Box strong a{ font-weight:bold; text-align:center; font-size:16px; color:#237491; display:block; margin-top:-2px;}
+.f8Box  p{ margin:0 20px; padding-bottom:5px; margin-bottom:5px;border-bottom:1px dashed #bfbfbf; line-height:23px;}
+.f8Box ul{ background-color:#f7f8f8; padding-bottom:20px; border:1px solid #e8e8e8; width:314px; float:left; display:inline; margin-right:15px;}
+.f8Box ul li{ background:url(../imgs/img.png) no-repeat 15px -181px; padding-left:40px; line-height:26px;}
+.f8Box ul h3{ background-color:#e7fcff; color:#1a7ace; font-size:28px; padding:5px 5px 5px 20px; line-height: 26px; margin-bottom:20px;border-bottom:1px solid #e8e8e8;}
+.f8Box ul h3 b{ display:block; color:#bbd9e1; text-transform:uppercase; font-size:12px;}
+.f8Box ul strong{ font-size:24px; font-weight:bold; color:#b7c951; display:block; text-align:center;}
+.f8Box ul.u3 .s1{ text-align:center; display:block; height:47px;}
+.f8Box ul.u3 .s1 img{ display:inline-block}
+.f8Box ul.u3{ margin:0px; background:url(../imgs/yBg.jpg) no-repeat right bottom; height:288px;}
+.f8Box ul.u3 strong{ margin:-5px 0 10px 0 ;}
+.f8Box ul.u3 .s2{ width:180px; height:50px; border:1px dashed #bfbfbf; display:block; padding:10px; margin:10px 0 0 20px;}
+.f8Box ul.u3 .s2 em{ color:#ff0000; font-size:36px; height:33px; *line-height:36px; display:block; font-weight:bold;}
+.f8Box ul.u3 a{ background-color:#ffd200; color:#ff0000; font-size:16px;transition:all 0.3s ease-in-out; display:block; width:120px; text-align:center;line-height:30px; margin:15px 0 0 20px; border-radius:8px;}
+.f8Box ul.u3 a:hover{ background-color:#1a7ace; color:#FFF}
+
+.rightNav{ background:url(../imgs/yaNavBg.png) no-repeat center top; width:120px;_width:140px; height:435px;position: fixed;_position:absolute;_bottom:auto;
+_top:expression(eval(document.documentElement.scrollTop + 200));right: 50%; top:25%; margin-right: -650px; z-index:10; _overflow:hidden}
+.rightNav ul{ padding:61px 0 0; _padding-top:10px;}
+.rightNav li{ color:#FFF; font-size:18px; text-align:center; font-weight:bold; line-height:30px; height:30px; padding-bottom:12px;*padding-bottom:10px;background:url(../imgs/nav_line01.png) no-repeat left bottom;}
+.rightNav ul li a,.rightNav li a{ display:block; background-color:#00aeff; transition:all 0.3s ease-in-out;line-height:32px;color:#FFF; *width:120px; cursor:pointer; font-size:18px;}
+.rightNav a.current,.rightNav a:hover{background-color:#ffe400; color:#0e4883}
+.rightNav ul li.last{ background:none; margin-top:-10px;_margin-top:0px;}
+.rightNav li.first{ position:relative; top:61px;}
+
+
+
+
+@media screen and (min-width:768px) and (max-width:1300px){
+	.item,.f4Box .hd,.f5Box .bd{ width:950px;}
+	.f1Box dl dt{ width:507px}
+	.f2Box table{ width:950px;}
+	.f2Box table tr .lft{ width:600px;}
+	.qitem{ margin:5px 8px 15px}
+	.f7Box{ width:820px;}
+	.f7Box dl dt{ width:170px;}
+	.f7Box dl dt .pic img{ width:170px; height:auto}
+	.f7Box dl dd{ padding:0 25px 0 15px;}
+	.f7Box dl{ width:420px;}
+	.f8Box ul{ width:304px;}
+	.rightNav{ margin-right:-606px; margin-top:-60px;}
+	.leftswt1{ left:-30px;}
+	
+	
+}

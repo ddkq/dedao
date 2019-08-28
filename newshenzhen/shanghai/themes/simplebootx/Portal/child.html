@@ -1,0 +1,312 @@
+<!--儿童齿科-->
+<!DOCTYPE html>
+<html>
+	<tc_include file="Public:head" />
+	<link href="__TMPL__Public/css/style.css" rel="stylesheet" type="text/css">
+	<title>{$seo_title}</title>
+	<meta name="keywords" content="{$seo_keywords}"/>
+	<meta name="description" content="{$seo_description}" />
+	</head>
+	<body>
+		<tc_include file="Public:new_header" />
+		<div class="main_img">
+			<php>$slide = sp_getslide("child_banner");</php>
+			<div class="hd">
+				<ul>
+					<volist name="slide" id="vo" key="k" >
+						<li>{$k}</li>
+					</volist>
+				</ul>
+			</div>
+			<div class="bd">
+				<ul>
+					<volist name="slide" id="vo">
+						<li><a href="/list/1.html#dddddd" target="_blank"><img src="{:sp_get_asset_upload_path($vo['slide_pic'])}" /></a></li>
+						<!--<li><a href="{$vo.slide_url}" target="_blank"><img src="{:sp_get_asset_upload_path($vo['slide_pic'])}" /></a></li>-->
+					</volist>
+				</ul>
+			</div>
+		</div>
+			
+		<ol class="breadcrumb">
+			<i class="fa fa-home"></i>
+			<li>您所在的位置</li>
+			<li><a href="/">首页</a></li>
+			<li class="active">{$name}</li>
+		</ol>
+		
+		<div class="project">
+			<h2>德道儿童齿科<span>中心项目</span></h2>
+			<ul class="clearfix">
+				<li>
+					<img src="__TMPL__Public/images/child/project_img01.png" />
+					<p>儿童防畸</p>
+				</li>
+				<li>
+					<img src="__TMPL__Public/images/child/project_img02.png" />
+					<p>治蛀防蛀</p>
+				</li>
+				<li>
+					<img src="__TMPL__Public/images/child/project_img03.png" />
+					<p>窝沟封闭</p>
+				</li>
+				<li>
+					<img src="__TMPL__Public/images/child/project_img04.png" />
+					<p>龋齿虫牙</p>
+				</li>
+				<li>
+					<img src="__TMPL__Public/images/child/project_img05.png" />
+					<p>换牙护理</p>
+				</li>
+			</ul>
+			<a href="/swt/" target="_blank" class="swt_btn">立刻咨询>></a>
+		</div>
+		
+		<div class="love_bg_top"></div>
+		<div class="love">
+			<h2>专业儿童口腔 让孩子爱上看牙！</h2>
+			<p class="info">孩子对医生有一种天生的恐惧感，这可能是因为许多医院冰冷的环境让孩子从潜意识上就充满了抵触。而在看牙上,孩子觉得牙医尤为可怕，这可能是因为牙医会严肃的用着会发出噪音的机器钻牙齿，让孩子产生先入为主的观念！</p>
+			<div class="love_boder">
+				<i></i><i></i><i></i><i></i>
+				<h3>德道口腔</h3>
+				<p>德道口腔为了让孩子爱上看牙，特推出儿童口腔诊室——整个环境充分考虑儿童的天性，充满童趣欢乐，并融合先进诊疗技术和导乐心理疏导，提供儿童口腔健康档案与多项目增值服务，让儿童轻松看牙，提高诊疗效果，拥有快乐看牙经历！</p>
+			</div>
+			<div class="love_img clearfix">
+				<img src="__TMPL__Public/images/child/love_example.png">
+				<img src="__TMPL__Public/images/child/love_img.png">
+			</div>
+		</div>
+		
+		<div class="science clearfix">
+			<h2><span>科学护牙</span>从孩子的第一颗乳牙开始！</h2>
+			<div class="bd">
+				<div class="science_left clearfix">
+					<img class="science_img" src="__TMPL__Public/images/child/science_img1.png" />
+					<div class="science_main">
+						<h4><span>窝沟封闭</span><br/>儿童防龋好帮手</h4>
+						<img src="__TMPL__Public/images/child/science_img1-2.png" />
+						<p><b>治疗时间：</b>乳磨牙3－4岁，第一恒磨牙6－7岁,第二恒磨牙 11－13岁 双尖牙9－13岁</p>
+						<p><b>治疗效果：</b>良好抗龋 　 脱落率低 　 效果显著 　 节约时间</p>
+						<a href="/swt/"  target="_blank" class="swt_btn">立刻咨询>></a>
+					</div>
+				</div>
+				<div class="science_left clearfix">
+					<img class="science_img" src="__TMPL__Public/images/child/science_img2.png" />
+					<div class="science_main">
+						<h4><span>儿童正畸</span><br/>拒绝萌芽“出轨”</h4>
+						<img src="__TMPL__Public/images/child/science_img2-2.png" />
+						<p><b>治疗时间：</b>乳磨牙乳牙期阶段4-5，替牙期阶段;女孩8-10岁,男孩9－12岁,恒牙期阶段:女孩11-14岁，男孩13-15岁。</p>
+						<p><b>治疗效果：</b>量齿定制 　 自然舒适 　效果显著 　节约时间</p>
+						<a href="/swt/"  target="_blank" class="swt_btn">立刻咨询>></a>
+					</div>
+				</div>
+				<div class="science_left clearfix">
+					<img class="science_img" src="__TMPL__Public/images/child/science_img3.png" />
+					<div class="science_main">
+						<h4><span>儿童蛀牙</span><br/>3M树脂拯救萌牙</h4>
+						<img src="__TMPL__Public/images/child/science_img3-2.png" />
+						<p><b>治疗时间：</b>发现牙齿表面有龋坏现象（发黑、发黄、表面不平有龋洞）时，应及时到医院处理，否则将导致牙髓炎、牙齿疼痛，大面积龋坏后将拔除牙齿。</p>
+						<p><b>治疗效果：</b>自然美观 效果显著 坚固耐用 使用广泛</p>
+						<a href="/swt/"  target="_blank" class="swt_btn">立刻咨询>></a>
+					</div>
+				</div>
+			</div>
+			<div class="science_right hd">
+				<ul>
+					<li class="on">窝沟封闭<br/>儿童防龋好帮手</li>
+					<li>儿童正畸<br/>拒绝萌芽“出轨”</li>
+					<li>儿童蛀牙<br/>3M树脂拯救萌牙</li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		<div class="love_bg_top"></div>
+		<div class="child-time">
+			<div class="time_main">
+			
+				<div class="time_border">
+					<i></i><i></i><i></i><i></i>
+					<h3>儿童护牙时间表</h3>
+					<p>口腔健康档案的建立，能全面详细了解儿童口腔发育情况，随时进行监控与干预，以免让孩子错过最佳的治疗时间！</p>
+				</div>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>时间</th>
+							<th>第一颗乳牙萌出</th>
+							<th>6个月-1岁</th>
+							<th>3岁</th>
+							<th>3-4岁</th>
+							<th>6岁</th>
+							<th>10岁</th>
+							<th>12岁</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>注意事项</th>
+							<td>建立口腔健康档案并清洁牙齿</td>
+							<td>第一次看牙的最佳时期</td>
+							<td>牙线清洁邻面（3-5岁是邻面龋齿高发期）</td>
+							<td>乳磨牙 窝沟封闭</td>
+							<td>第一恒磨牙 窝沟封闭</td>
+							<td>检查是否有畸形中央尖</td>
+							<td>双尖牙及第二恒磨牙窝沟封闭</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="time_text">
+					<h5>儿童口腔日常护理小知识</h5>
+					<span>1</span><p>养成早晚刷牙、饭后漱口的好习惯，每次刷牙不少于3分钟；</p>
+					<span>2</span><p>定期口腔检查。可以做到有病早治、无病预防，观察儿童牙列和咬合情况，龋病与口腔软组织状况，以及纠正发育期形成的不良口腔习惯。</p>
+					<p>不同年龄口腔检查周期：</p>
+					<p>◎ 0～5岁 3～4个月</p>
+					<p>◎ 6岁以上 半年</p>
+					<p>◎ 12岁以上 1年</p>
+					<span>3</span><p>窝沟封闭：是世界卫生组织推荐的预防牙齿咬合面龋的有效方法。是将窝沟封闭剂，涂在牙面上，经光固化后，就相当于将牙齿“穿”了一层保护衣。</p>
+					<span>4</span><p>牙齿不齐趁早治：前牙反颌又称“地包天”可限制上颌骨发育，导致下颌过度前伸，造成颜面中部三分之一凹陷明显影响面貌。尽早矫治可纠正或减轻面貌改变，取得相对好的治疗效果。</p>
+					<p>乳前牙反咬合的最佳矫治时间为3~4岁。</p>
+					<p>恒牙最佳矫正时期12岁左右。</p>
+					<span>5</span><p>宝宝经常出现夜间磨牙症状，应打起十二分的精神，因为磨牙是一种咬合障碍，多是由于宝宝的牙齿咬合关系出现了异常，应及时带宝宝咨询专业牙医。</p>
+				</div>
+				<img src="__TMPL__Public/images/child/time_img.png" />
+				
+			</div>
+			
+		</div>
+		
+		
+		<div class="compared2 clearfix">
+			<h2>儿童齿科<span>手术对比图</span></h2>
+			<img class="col-md-6" src="__TMPL__Public/images/child/compared01.png" />
+			<img class="col-md-6" src="__TMPL__Public/images/child/compared02.png" />
+		</div>
+		
+		<div class="doctor2">
+			<h2>
+				智能口腔专家团
+			</h2>
+			<div id="slideBox" class="slideBox">
+				<div class="hd"></div>
+				<div class="bd">
+					<ul>
+						<volist name="doctor" id="vo">
+							<php>$extend = json_decode($vo['post_extend'],true);</php>
+							<li>
+								<img src="{$vo.main_img}" />
+								<div>
+									<h4>{$vo.name}<span>{$vo.job}</span></h4>
+									<volist name="vo['experience']" id="vo1" offset="0" length='4'>
+										<p>{$vo1}</p>
+									</volist>
+									<h5>擅长项目</h5>
+									<p>{$vo.item}</p>
+									<a href="/swt/" target="_blank" class="swt_btn">在线预约>></a>	
+								</div>
+							</li>
+						</volist>
+					</ul>
+				</div>
+				<div class="pnBtn prev"> <span class="blackBg"></span> <span class="arrow"></span> </div>
+				<div class="pnBtn next"> <span class="blackBg"></span> <span class="arrow"></span> </div>
+			</div>
+
+		</div>
+		
+		<div class="advertising">
+			<img src="__TMPL__Public/images/child/ad_img.png">
+		</div>
+		
+		<div class="wiki3">
+			<h2>{$name}<span>百科科普</span></h2>
+			<div class="wikiTxtBox">
+				<div class="hd">
+					<ul class="clearfix">
+						<volist name="term_child" id="vo">
+							<li><a href="/list/{$vo.term_id}.html" target="_blank">{$vo.name}</a></li>
+						</volist>
+					</ul>
+				</div>
+				<div class="bd">
+					<volist name="tab_text" id="vo">
+						<ul class="clearfix">
+							<li class="col-md-8">
+								<ul class="media-list">
+									<li class="media">
+										<div class="media-left media-middle">
+											<a href="{:get_article_url($vo['pic_recommend'][0]['tid'],$vo['pic_recommend'][0]['link_type'],$vo['pic_recommend'][0]['post_url']);}">
+												<php>$smeta = json_decode($vo['pic_recommend'][0]['smeta'],true);</php>
+												<img class="media-object" src="{$smeta.thumb}">
+											</a>
+										</div>
+										<div class="media-body">
+											<ul>
+												<volist name="vo['art_recommend']" id="vo1" offset="0" length='2'>
+													<li>
+														<a href="{:get_article_url($vo1['tid'],$vo1['link_type'],$vo1['post_url']);}">
+															<h4 class="media-heading">{$vo1.post_title}<span></span></h4>
+															{$vo1.post_excerpt}
+														</a>
+													</li>	
+												</volist>
+											</ul>
+										</div>
+									</li>
+									<li class="media">
+										<div class="media-body">
+											<ul>
+												<volist name="vo['art_recommend']" id="vo1" offset="2" length='2'>
+													<li>
+														<a href="{:get_article_url($vo1['tid'],$vo1['link_type'],$vo1['post_url']);}">
+															<h4 class="media-heading">{$vo1.post_title}<span></span></h4>
+															{$vo1.post_excerpt}
+														</a>
+													</li>	
+												</volist>
+											</ul>
+										</div>
+										<div class="media-right media-middle">
+											<a href="{:get_article_url($vo['pic_recommend'][1]['tid'],$vo['pic_recommend'][1]['link_type'],$vo['pic_recommend'][1]['post_url']);}">
+												<php>$smeta = json_decode($vo['pic_recommend'][1]['smeta'],true);</php>
+												<img class="media-object" src="{$smeta.thumb}">
+											</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="col-md-4">
+								<dl>
+									<volist name="vo['question']" id="vo2">
+										<dd><a href="/qa/{$vo2.id}"><i class="fa fa-newspaper-o"></i>{$vo2.title}</a></dd>	
+									</volist>
+								</dl>
+								<a class="red_btn"  href="/swt/" target="_blank">我要提问>></a>
+								<a class="yel_btn" href="/swt/" target="_blank">在线咨询>></a>
+							</li>
+						</ul>
+					</volist>
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		
+	</body>
+	<tc_include file="Public:footer" />
+	<script type="text/javascript">
+		jQuery(".main_img").slide({mainCell:".bd ul",autoPlay:true});
+
+		jQuery(".science").slide();
+		jQuery(".wikiTxtBox").slide();
+		jQuery(".slideBox .bd li").first().before(jQuery(".slideBox .bd li").last());
+		jQuery(".slideBox").slide({
+			mainCell: ".bd ul",
+			effect: "leftLoop",
+			autoPlay: true,
+			vis: 3,
+			mouseOverStop: false
+		});
+	</script>
+</html>

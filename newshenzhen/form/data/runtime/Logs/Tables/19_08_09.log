@@ -1,0 +1,30 @@
+[ 2019-08-09T10:52:39+08:00 ] 59.42.91.38 /Tables/AdminTables/view_data_delete/id/6594.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001237s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0003s ]
+SQL: DELETE FROM `cmf_tables_data` WHERE ( id = 6594 ) [ RunTime:0.0032s ]
+
+[ 2019-08-09T12:32:02+08:00 ] 42.236.10.75 /tables/admintables/index/menuid/381.html
+ERR: 无法加载控制器:Admintables
+
+[ 2019-08-09T12:32:12+08:00 ] 42.236.10.125 /tables/admintables/index/menuid/381.html
+ERR: 无法加载控制器:Admintables
+
+[ 2019-08-09T14:44:28+08:00 ] 59.42.91.38 /Tables/AdminTables/view_data_delete/id/6596.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001224s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0003s ]
+SQL: DELETE FROM `cmf_tables_data` WHERE ( id = 6596 ) [ RunTime:0.0045s ]
+

@@ -1,0 +1,11 @@
+<?php return array (
+  'cmf_tables_data' => 884,
+  'cmf_tables_options' => '-1',
+  'cmf_term_relationships' => '-1',
+  'cmf_terms' => '-1',
+  'cmf_tpl' => '-1',
+  'cmf_user_favorites' => '-1',
+  'cmf_users' => '-1',
+  'cmf_working' => '-1',
+);
+?>

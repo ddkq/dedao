@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>矫正牙齿_{$site_name}</title>
+	<tc_include file="Public:head" />
+	<link rel="stylesheet" href="__TMPL__Public/css/bootstrap4.min.css">
+	<link href="__TMPL__Zt/20190427/index.css" rel="stylesheet" type="text/css">
+	<script src="__TMPL__Public/js/jquery-2.1.1.min.js"></script>
+</head>
+	<body>
+		<tc_include file="Public:header" />
+	<section class="banner"><img src="__TMPL__Zt/20190427/imgs/1.png" alt=""></section>
+	
+	<section class="container content-1 pb-3">
+		<form action="" class="pt-5 container mb-4 text-center">
+			<div class="pl-3 pr-3 pt-6">
+				<span class="d-inline-block w-45 mt-2 text-left">
+				<input type="radio" class="mr-1" name="data[symptom]" value="龅（暴）牙" id="radio-1" checked="checked">
+				<label for="radio-1">龅（暴）牙</label>
+			</span>
+			<span class="d-inline-block w-45 mt-2 text-left">
+				<input type="radio" class="mr-1" name="data[symptom]" value="牙齿稀疏" id="radio-2">
+				<label for="radio-2">牙齿不齐</label>
+			</span>
+			<span class="d-inline-block w-45 mt-2 text-left">
+				<input type="radio" class="mr-1" name="data[symptom]" value="牙齿不齐" id="radio-3">
+				<label for="radio-3">牙齿拥挤</label>
+			</span>
+			<span class="d-inline-block w-45 mt-2 text-left">
+				<input type="radio" class="mr-1" name="data[symptom]" value="牙齿拥挤" id="radio-4">
+				<label for="radio-4">牙缝过大</label>
+			</span>
+			<span class="d-inline-block w-45 mt-2 text-left">
+				<input type="radio" class="mr-1" name="data[symptom]" value="牙错位" id="radio-5">
+				<label for="radio-5">地包天</label>
+			</span>
+			<span class="d-inline-block w-45 mt-2 text-left">
+				<input type="radio" class="mr-1" name="data[symptom]" value="其他牙齿情况" id="radio-6">
+				<label for="radio-6">其他牙齿问题</label>
+			</span>
+			</div>
+			<div class="pl-2 pr-2">
+			<input type="text" class="w-100 pt-2 btn1 pb-2 mt-3 name" placeholder="姓名：" name="data[name]">
+			<input type="text" class="w-100 pt-2 btn1 pb-2 mt-2 phone"  placeholder="电话:" name="data[phone]">
+			<input type="hidden" name="table_id" value="54" />
+			<input type="hidden" name="page" class="page" />
+			<input type="hidden" name="code" value="{$code = mt_rand(0,1000000)}">
+			</div>
+		</form>
+		<div class="container w-75 text-center pt-2"><a href="javascript:;" class="text-center text-white  submit-btn"><img src="__TMPL__Zt/20190427/imgs/btn.png"/></a></div>
+	</section>
+	
+	<div class="container mt-2">
+		<img src="__TMPL__Zt/20190427/imgs/3.png" alt="">
+		<img src="__TMPL__Zt/20190427/imgs/4.png" alt="">
+		<img src="__TMPL__Zt/20190427/imgs/5.png" alt="">
+		<div class="pl-2 pr-2 position-relative">
+			<img src="__TMPL__Zt/20190427/imgs/3.gif" alt="">
+		 <img class="w-35 position-absolute absolute-fixed" src="__TMPL__Zt/20190427/imgs/fixed.png"/>
+		</div>
+	</div>
+	<div class="mt-3"><img src="__TMPL__Zt/20190427/imgs/6.png" alt=""></div>
+	
+		<tc_include file="Public:footer" />
+	</body>
+	<script type="text/javascript">
+		$(function() {
+	
+		$(".gotoform").click(function(){
+			$("html,body").animate({scrollTop:500}, 500);
+		});
+	
+		$('.page').val(window.location.href);
+		$('.submit-btn').on('click', function() {
+			var name = $(".name").val();
+			var re1 = /^[\u4E00-\u9FA5]{1,6}$/; 
+			if(name == ''){
+				alert("姓名不能为空"); 
+				return false; 
+			}else if(name != ''){
+				if (!re1.test(name)){ 
+					alert("姓名格式不正确"); 
+					return false; 
+				}	
+			}
+			
+			var phone = $(".phone").val();
+			var re3 = /^((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+(\d{8})$/;
+			if(phone == ''){
+				alert("电话不能为空"); 
+				return false; 
+			}else if(phone != ''){
+				if (!re3.test(phone)){ 
+					alert("电话格式不正确"); 
+					return false; 
+				}
+			}
+			
+			var data = $('form').serializeArray();
+			$.post('/tables/tables/add_post',data,function(result){
+				//console.log(result);
+				alert(result.info);
+			});
+		});
+	})
+	</script>
+</html>

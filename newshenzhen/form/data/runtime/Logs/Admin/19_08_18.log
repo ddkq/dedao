@@ -1,0 +1,72 @@
+[ 2019-08-18T09:00:19+08:00 ] 59.42.88.234 /Admin/public/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001229s ]
+
+[ 2019-08-18T09:00:24+08:00 ] 59.42.88.234 /Admin/public/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000585s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001208s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'consult' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '20' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: UPDATE `cmf_users` SET `user_login`='consult',`user_pass`='###da45c543d7d7ecd71654e3629915afcb',`user_truename`=NULL,`user_nicename`='',`user_email`='b@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='59.42.88.234',`last_login_time`='2019-08-18 09:00:24',`create_time`='2019-08-07 15:13:53',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`wechat`=NULL WHERE `id` = '20' [ RunTime:0.0034s ]
+
+[ 2019-08-18T09:27:33+08:00 ] 59.42.88.234 /Admin/public/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001208s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'consult' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '20' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: UPDATE `cmf_users` SET `user_login`='consult',`user_pass`='###da45c543d7d7ecd71654e3629915afcb',`user_truename`=NULL,`user_nicename`='',`user_email`='b@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='59.42.88.234',`last_login_time`='2019-08-18 09:27:33',`create_time`='2019-08-07 15:13:53',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`wechat`=NULL WHERE `id` = '20' [ RunTime:0.0025s ]
+
+[ 2019-08-18T11:12:29+08:00 ] 183.40.224.196 /Admin/public/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001326s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###b6c7e65d115dcba6c57374e0699e03ed',`user_truename`='admin',`user_nicename`='admin',`user_email`='1@1.com',`user_url`='http://baidu.com',`avatar`='5982c2a769e2d.jpg',`sex`='0',`birthday`='2000-01-01',`signature`='个性签名',`last_login_ip`='183.40.224.196',`last_login_time`='2019-08-18 11:12:29',`create_time`='2017-02-11 09:06:51',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='1111111',`wechat`='' WHERE `id` = '1' [ RunTime:0.0026s ]
+
+[ 2019-08-18T11:24:22+08:00 ] 113.67.159.24 /Admin/public/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001167s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###b6c7e65d115dcba6c57374e0699e03ed',`user_truename`='admin',`user_nicename`='admin',`user_email`='1@1.com',`user_url`='http://baidu.com',`avatar`='5982c2a769e2d.jpg',`sex`='0',`birthday`='2000-01-01',`signature`='个性签名',`last_login_ip`='113.67.159.24',`last_login_time`='2019-08-18 11:24:22',`create_time`='2017-02-11 09:06:51',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='1111111',`wechat`='' WHERE `id` = '1' [ RunTime:0.0023s ]
+
+[ 2019-08-18T14:56:38+08:00 ] 59.42.88.234 /Admin/public/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001299s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'consult' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '20' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: UPDATE `cmf_users` SET `user_login`='consult',`user_pass`='###da45c543d7d7ecd71654e3629915afcb',`user_truename`=NULL,`user_nicename`='',`user_email`='b@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`='2000-01-01',`signature`=NULL,`last_login_ip`='59.42.88.234',`last_login_time`='2019-08-18 14:56:38',`create_time`='2019-08-07 15:13:53',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='',`wechat`=NULL WHERE `id` = '20' [ RunTime:0.0067s ]
+
+[ 2019-08-18T15:01:48+08:00 ] 113.67.159.24 /Admin/public/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001178s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: UPDATE `cmf_users` SET `user_login`='admin',`user_pass`='###b6c7e65d115dcba6c57374e0699e03ed',`user_truename`='admin',`user_nicename`='admin',`user_email`='1@1.com',`user_url`='http://baidu.com',`avatar`='5982c2a769e2d.jpg',`sex`='0',`birthday`='2000-01-01',`signature`='个性签名',`last_login_ip`='113.67.159.24',`last_login_time`='2019-08-18 15:01:48',`create_time`='2017-02-11 09:06:51',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='1111111',`wechat`='' WHERE `id` = '1' [ RunTime:0.0026s ]
+

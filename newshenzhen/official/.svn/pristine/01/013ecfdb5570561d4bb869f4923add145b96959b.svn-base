@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{$post_title}_{$site_name}</title>
+	<meta name="keywords" content="{$post_keywords}"/>
+	<meta name="description" content="{$post_excerpt}" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<link rel="shortcut icon" href="/public/images/favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/css/contact.css" />
+	<link rel="stylesheet" href="__TMPL__Public/css/swiper.min.css">
+	<link rel="stylesheet" href="__TMPL__Public/css/base2.css">
+
+	<script type="application/javascript" src="__TMPL__Public/js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=NRSdUGWelRPGWYobbVE3bm3kq3KLMGpl"></script>
+	<style type="text/css">
+		.allmap img {
+			max-width: inherit;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="black-bcg"></div>
+		<ul id="menu" class="met-nav">
+			<div class="nav-logo">
+				<a href="/" class="logo">
+					<img class="logo1" src="__TMPL__Public/images/logo.png"/>
+				</a>
+			</div>
+			<div class="nav-box">
+				<div class="nav-side">
+					<hr>
+					<hr>
+					<hr>
+				</div>
+			</div>
+			<div class="side-box">
+				<div class="side-cut">
+					<div class="side-shadow"></div>
+					<div class="side-nav">
+						<div class="side-close"><i class="fa fa-close"></i></div>
+						<div class="logo-2">
+							<img src="__TMPL__Public/images/logo2.png" alt="">
+						</div>
+						<ul class="navlist">
+							<volist name="nav" id="vo">
+								<empty name="vo[child]">
+									<li class="nav-item1"><a href="{$vo.href}" target="{$vo.target}" title="{$vo.label}" class="link">{$vo.label}</a></li>		
+								<else/>
+									<li class="nav-item1" id="sideMenu">
+										<a class=" link " href="javascript:void(0);" title="{$vo.label}" data-toggle="collapse">{$vo.label}<span class="nav-plus"></span></a>
+										<ul class="navlist2 collapse" id="2" style="display: none;">
+											<volist name="vo[child]" id="vo1">
+												<li><a href="{$vo1.href}" target="{$vo1.target}" class="nav2list" title="{$vo1.label}">{$vo1.label}</a></li>
+											</volist>
+										</ul>
+									</li>
+								</empty>
+							</volist>
+							<div class="side-foot">
+								<div class="side-qrcode"><img src="__TMPL__Public/images/1510208180.png" alt=""></div>
+								<div class="side-phone">
+									<p><a href="tel:400-800-6161">官方热线：400-800-6161</a></p>
+								</div>
+								<div class="side-text">COPYRIGHT 2016-2017 未来VR服务有限公司 版权所有</div>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<script>
+				$('a.link').on('click', function(){
+					$("ul.navlist2").slideToggle();
+				});
+
+			  	$('.nav-side').on('click', function() {
+			  		$('.side-box').css('right', '100%')
+			  		$('.navlist>li.nav-item1').css('opacity', 1)
+			  		$('html,body').addClass('ovfHiden')
+			  		$('.black-bcg').fadeIn();
+			  	})
+			  	$('.black-bcg').on('click', function() {
+			  		$('.black-bcg').fadeOut();
+			  		$('.side-box').css('right', '0')
+			  		$('.navlist>li.nav-item1').css('opacity', 0)
+			  	})
+				$('.side-close').on('click', function() {
+					$('.black-bcg').fadeOut();
+			  		$('.side-box').css('right', '0')
+			  		$('.navlist>li.nav-item1').css('opacity', 0)
+			  		$('html,body').removeClass('ovfHiden')
+				})
+			  	$('.black-bcg').height(window.innerHeight)
+			</script>
+		</ul>
+	</header>
+
+	<section>
+		<div class="banner"><div class="bcg"></div></div>
+	</section>
+	
+	<section class="content content-width clear">
+		<div class="right-content">
+			<section>
+				<h2 class="title">联系我们</h2>
+				<div class="contact-info">
+					<p><i class="icons about-email"></i>business@megvii.com</p>
+					<p><i class="icons about-phone"></i>400-800-6161（周一至周五 10:00 - 18:30）</p>
+				</div>
+			</section>
+			<section>
+				<div class="contact-item-wrap">
+					<div class="contact-item-title info">德道深圳总部：</div>
+					<div class="contact-item-desc">深圳市南山区南山街道桂庙路5号9楼整层</div>
+					<div id="map1" class="allmap" style="width: 100%; height: 300px;"></div>
+				</div>
+			</section>
+		</div>
+	</section>
+</body>
+<script>
+	$(window).scroll(function() {
+		if($(window).scrollTop() >= 300) {
+			$('.left-nav').addClass('fixed')
+		}
+		else {
+			$('.left-nav').removeClass('fixed')
+		}
+	})
+
+	$(function(){
+		var map = new BMap.Map("map1");
+		var point  = new BMap.Point(113.933129,22.528875)
+		map.centerAndZoom(point, 19);
+		map.addOverlay(new BMap.Marker(point));
+		
+	});
+
+
+</script>
+</html>

@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+	<tc_include file="Public:head" />
+	<link rel="stylesheet" type="text/css" href="__TMPL__Zt/extraction/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="__TMPL__Zt/extraction/css/baya.css">
+	<link rel="stylesheet" type="text/css" href="__TMPL__Zt/extraction/css/Hover.min.css">
+	<link rel="stylesheet" type="text/css" href="__TMPL__Zt/extraction/css/bajs.min.css">
+	<title>病牙不拔伤害一直持续__{$site_name}</title>
+</head>
+<body>
+	<tc_include file="Public:new_header" />
+	<section class="extraction-container">
+	    <div class="banner">
+	        <div class="bannerList bajs-easy-slider slideBox">
+	        	<div class="bajs-easy-slider-container hd">
+	        		<ul class="bajs-easy-slider-effect-slide-x clearfix" style="width: 9600px; transition: transform 500ms; transform: translate3d(-1920px, 0px, 0px);">
+	        			<li loop-index="2" loop-clone="true">
+	        				<a live-show="chat"><img src="__TMPL__Zt/extraction/imgs/banner.jpg"></a>
+	        			</li>
+			            <li loop-index="0" loop-clone="false" class="active">
+			            	<a live-show="chat"><img src="__TMPL__Zt/extraction/imgs/banner.jpg"></a>
+			            </li>
+	            		<li loop-index="1" loop-clone="false">
+	            			<a live-show="chat"><img src="__TMPL__Zt/extraction/imgs/banner.jpg"></a>
+	            		</li>
+			            <li loop-index="2" loop-clone="false">
+			            	<a live-show="chat"><img src="__TMPL__Zt/extraction/imgs/banner.jpg"></a>
+			            </li>
+			          
+			        </ul>
+			    </div>
+			</div>
+	    </div>
+    	<section class="f1Box">
+        	<div class="item">
+            	<h2 class="titleH2">
+            		病牙不拔<em>伤害一直持续</em>
+            		<span><i></i>An ill tootH<i></i></span>
+            	</h2>
+            	<div class="f1Con">
+	                <ul class="ul1">
+	                    <li class="float-shadow">
+	                        <a href="/list/14.html" target="_blank">
+	                            <dl>
+	                                <dt><img src="__TMPL__Zt/extraction/imgs/pic01.jpg" alt="龋齿"></dt>
+	                                <dd>                                
+	                                    <h4><i></i>龋齿(蛀牙)</h4>
+	                                    <p>发作疼痛难忍<br>连累邻牙一起蛀</p>
+	                                </dd>
+	                            </dl>
+	                        </a>
+	                    </li>
+	                    <li class="float-shadow">
+	                        <a live-show="chat">
+	                            <dl>
+	                                <dt><img src="__TMPL__Zt/extraction/imgs/pic02.jpg" alt="阻生牙"></dt>
+	                                <dd>    
+	                                    <h4><i></i>阻生牙(智齿)</h4>
+	                                    <p>经常发炎<br>长歪了顶坏好牙</p>
+	                                </dd>
+	                            </dl>
+	                        </a>
+	                    </li>
+	                    <li class="float-shadow">
+	                        <a href="/list/13.html" target="_blank">
+	                            <dl>
+	                                <dt><img src="__TMPL__Zt/extraction/imgs/pic03.jpg" alt="牙周病"></dt>
+	                                <dd>
+	                                    <h4><i></i>牙周病</h4>
+	                                    <p>牙龈化脓<br>牙槽骨萎缩</p>
+	                                </dd>
+	                            </dl>
+	                        </a>
+	                    </li>
+	                </ul>
+	                <ul>
+	                    <li class="float-shadow">
+	                        <a href="/encyclopedia/119.html" target="_blank">
+	                            <dl>
+	                                <dt><img src="__TMPL__Zt/extraction/imgs/pic04.jpg" alt="缺损牙"></dt>
+	                                <dd>                           
+	                                    <h4><i></i>缺损牙</h4>
+	                                    <p>外形不美观<br>疼痛发炎常发生</p>
+	                                </dd>
+	                            </dl>
+	                        </a>
+	                    </li>
+	                    <li class="float-shadow">
+	                        <a live-show="chat">
+	                            <dl>
+	                                <dt><img src="__TMPL__Zt/extraction/imgs/pic05.jpg" alt="多生牙"></dt>
+	                                <dd>      
+	                                    <h4><i></i>多生牙</h4>
+	                                    <p>无咀嚼功能<br>影响咬合和美观</p>
+	                                </dd>
+	                            </dl>
+	                        </a>
+	                    </li>
+	                    <li class="float-shadow">
+	                        <a href="/list/3.html" target="_blank">
+	                            <dl>
+	                                <dt><img src="__TMPL__Zt/extraction/imgs/pic06.jpg" alt="矫正拔牙"></dt>
+	                                <dd>
+	                                    <h4><i></i>矫正拔牙</h4>
+	                                    <p>留出矫正空间<br>牙齿整齐才美</p>
+	                                </dd>
+	                            </dl>
+	                        </a>
+	                    </li>
+	                </ul>
+            	</div>
+	            <div class="askBox">
+	                我的牙齿需要拔吗？
+	                <a onclick="openJesongChatByGroup(16524,20125);" live-show="chat" class="pulse">在线咨询 GO</a>
+	            </div>
+        	</div>
+    	</section>
+	    <section class="f2Box">
+	        <div class="item">
+	            <div class="f2Con">
+	                 <dl>
+	                    <dt><img src="__TMPL__Zt/extraction/imgs/pic07.jpg" alt="拔牙多少钱"></dt>
+	                    <dd>
+	                        <h3>拔牙多少钱？<br>拔牙能用医保吗？</h3>
+	                        <a onclick="openJesongChatByGroup(16524,20125);" live-show="chat" class="wobble-horizontal">有疑问点击这里找答案</a>
+	                    </dd>
+	                </dl>
+	                <i class="shadow"></i>
+	            </div>          
+	        </div>
+	    </section>
+	    <section class="f3Box">
+	        <div class="item">
+	            <h2 class="titleH2">微创拔牙<em>少点害怕创伤</em><span><i></i>Minimally tooth extraction<i></i></span></h2>
+	            <dl>
+	                <dt>
+	                    <img src="__TMPL__Zt/extraction/imgs/pic08.jpg" alt="微创拔牙">
+	                    <div class="circle">
+	                        <span></span>
+	                        <ul>
+	                            <li class="li1"><i></i>进口微创设备</li>
+	                            <li class="li2"><i></i>精细准确操作</li>
+	                            <li class="li3"><i></i>创口小出血少</li>
+	                            <li class="li4"><i></i>适合怕痛的人</li>
+	                        </ul>
+	                    </div>
+	                </dt>
+	                <dd>
+	                    <p>德道无痛微创拔牙，即局部麻醉后，应用微动力技术、微创拔牙器械，轻轻插入需拔除病牙，切断相互连接的牙周韧带，使牙齿松动脱离。</p>
+	                    <a onclick="openJesongChatByGroup(16524,20125);" live-show="chat" class="chatBtn wobble-horizontal">我要咨询微创拔牙</a>
+	                </dd>
+	            </dl>
+	        </div>
+	    </section>
+	    <section class="f4Box bajs-chapter-trun-chapter">
+	        <div class="item">
+	            <h2 class="titleH2">
+	            	拔牙对比<em>不停留在过去</em>
+	            	<span><i></i>Tooth extraction comparison<i></i></span>
+	            </h2>
+	            <table>
+	                <tbody>
+	                	<tr>
+		                    <th>微创拔牙<span>Minimally invasivetooth extraction</span></th>
+		                    <th class="td2">PK</th>
+		                    <th>传统拔牙<span>Traditional tooth extraction</span></th>
+	                	</tr>
+		                <tr class="trGrey">
+		                    <td>微创拔牙器械</td>
+		                    <td class="td2">拔牙器械</td>
+		                    <td>钳子、镊子等</td>
+		                </tr>
+		                <tr>
+		                    <td>微创切割、创口小</td>
+		                    <td class="td2">拔牙伤口</td>
+		                    <td>创面大有牙折断风险</td>
+		                </tr>
+		                <tr class="trGrey">
+		                    <td>肿胀小愈合快(3-7天)</td>
+		                    <td class="td2">恢复期</td>
+		                    <td>愈合慢(一周以上)</td>
+		                </tr>
+		                <tr>
+		                    <td>适合疼痛敏感者</td>
+		                    <td class="td2">舒适度</td>
+		                    <td>有疼痛恐惧心理</td>
+		                </tr>
+		                <tr class="trGrey">
+		                    <td>CT查看神经，可靠性高</td>
+		                    <td class="td2">可靠性</td>
+		                    <td>无法准确判断牙根情况</td>
+		                </tr>
+	            	</tbody>
+	            </table>
+	        </div>
+	    </section>
+    	<section class="f5Box bajs-chapter-trun-chapter">
+        	<div class="item">
+             	<h2 class="titleH2">
+             		注意事项<em>拔牙不能随便</em>
+             		<span><i></i>matters needing attention<i></i></span>
+             	</h2>
+             	<div class="f5Before">
+                	<h3><i class="bgImg"></i>拔牙前</h3>
+                	<div class="f5Slide">
+                    	<ul>
+	                        <li style="width: 600px;">
+	                            <div class="pic">
+	                                <img src="__TMPL__Zt/extraction/imgs/pic09.jpg" alt="注意事项">
+	                                <div class="layer"></div>
+	                                <a href="javascript:;" target="_self">
+	                                     <span></span>
+	                                     <b>确定<br>禁忌症</b>
+	                                </a>
+	                            </div>            
+	                            <div class="dsc">
+	                                <p><em>禁忌症</em>高血压、心脏病、糖尿病、血小板减少症等要先说明。</p>
+	                            </div>               
+	                        </li>
+	                        <li>
+	                            <div class="pic">
+	                                <img src="__TMPL__Zt/extraction/imgs/pic10.jpg" alt="注意事项">
+	                                <div class="layer"></div>
+	                                <a href="javascript:;" target="_self">
+	                                     <span></span>
+	                                     <b>不要<br>空腹</b>
+	                                </a>
+	                            </div>
+	                            <div class="dsc">
+	                                <p><em>不要空腹</em>饮食1小时后再拔牙，不可空腹，以免出现低血糖和休克。</p>
+	                            </div>
+	                        </li>
+	                        <li>
+	                            <div class="pic">
+	                                <img src="__TMPL__Zt/extraction/imgs/pic11.jpg" alt="注意事项">
+	                                <div class="layer"></div>
+	                                <a href="javascript:;" target="_self">
+	                                     <span></span>
+	                                     <b>不要<br>喝酒</b>
+	                                </a>
+	                            </div>
+	                            <div class="dsc">
+	                                <p><em>不要喝酒</em>酒精可抵抗麻药，增加疼痛感，同时还会增加出血。</p>
+	                            </div>
+	                        </li>
+	                        <li>
+	                            <div class="pic">
+	                                <img src="__TMPL__Zt/extraction/imgs/pic12.jpg" alt="注意事项">
+	                                <div class="layer"></div>
+	                                <a href="javascript:;" target="_self">
+	                                     <span></span>
+	                                     <b>不要<br>运动</b>
+	                                </a>
+	                            </div>
+	                            <div class="dsc">
+	                                <p><em>不要运动</em>运动后血液循环加快，血压升高，这种情况禁忌拔牙。</p>
+	                            </div>
+	                        </li>
+                    	</ul>
+                	</div>
+             	</div>
+             	<div class="f5After">
+                	<h3><i class="bgImg"></i>拔牙后</h3>
+                	<div class="f5AfterCon">
+	                    <div class="f5AfterL FL">
+	                        <ul>
+	                            <li>
+	                                <dl>
+	                                    <dt><i>1</i></dt>
+	                                    <dd><span>止血</span>创口上的棉球需咬住约半小时才能吐掉。</dd>
+	                                </dl>
+	                            </li>
+	                            <li class="list2">
+	                                <dl>
+	                                    <dt><i>2</i></dt>
+	                                    <dd><span>饮食</span>拔牙后2小时才能饮食，不吃太硬太热的食物。</dd>
+	                                </dl>
+	                            </li>
+	                            <li>
+	                                <dl>
+	                                    <dt><i>3</i></dt>
+	                                    <dd><span>休息</span>不要平卧，不能马上洗热水澡，确保睡眠充足。</dd>
+	                                </dl>
+	                            </li>
+	                            <li class="list2">
+	                                <dl>
+	                                    <dt><i>4</i></dt>
+	                                    <dd><span>生活</span>不用力吐口水、刷牙，不反复漱口，不吮吸伤口。</dd>
+	                                </dl>
+	                            </li>
+	                            <li>
+	                                <dl>
+	                                    <dt><i>5</i></dt>
+	                                    <dd><span>预防</span>按医嘱吃消炎止痛药，预防感染。</dd>
+	                                </dl>
+	                            </li>
+	                        </ul>
+	                    </div>
+	                    <div class="f5AfterR FR">
+	                        <ul>
+	                            <li><a live-show="chat">一次可以拔多少颗牙？</a></li>
+	                            <li class="li2"><a live-show="chat">拔牙疼不疼？</a></li>
+	                            <li class="li3"><a live-show="chat">智齿一定要拔除吗？</a></li>
+	                            <li><a live-show="chat">什么时候拔牙最合适？</a></li>
+	                            <li class="li5"><a live-show="chat">牙齿有炎症可以拔牙吗？</a></li>
+	                            <li><a live-show="chat">拔牙医保能报销多少？</a></li>
+	                        </ul>
+	                        <a onclick="openJesongChatByGroup(16524,20125);" live-show="chat" class="chatBtn  wobble-horizontal">还有哪些疑惑在这里问问</a>
+	                    </div>
+                	</div>
+             	</div>
+        	</div>
+    	</section>
+	    <section class="f6Box">
+	        <div class="item">
+	            <h2 class="titleH2">
+	            	完美拔牙<em>5步搞定</em>
+	            	<span><i></i>Perfect tooth extraction<i></i></span>
+	            </h2>
+	            <div class="f6Con">
+	                <div class="line"><i class="bgImg"></i></div>
+	                <ul>
+	                    <li>
+	                        <span><i>1</i></span>
+	                        <img src="__TMPL__Zt/extraction/imgs/pic13.png" alt="拍片">
+	                        <h4>拍片<i></i></h4>
+	                        <p>了解牙齿牙根情况及是否触及神经等，部分牙无需拍片</p>
+	                    </li>
+	                    <li>
+	                        <span><i>2</i></span>
+	                        <img src="__TMPL__Zt/extraction/imgs/pic14.png" alt="麻醉">
+	                        <h4>麻醉<i></i></h4>
+	                        <p>局部麻醉牙齿，减轻拔牙疼痛感，部分牙齿无需麻醉</p>
+	                    </li>
+	                    <li>
+	                        <span><i>3</i></span>
+	                        <img src="__TMPL__Zt/extraction/imgs/pic15.png" alt="拔除">
+	                        <h4>拔除<i></i></h4>
+	                        <p>微创拔除病牙，根据牙齿的复杂程度需要的时间也不同</p>
+	                    </li>
+	                    <li>
+	                        <span><i>4</i></span>
+	                        <img src="__TMPL__Zt/extraction/imgs/pic16.png" alt="取出">
+	                        <h4>取出<i></i></h4>
+	                        <p>将松动患牙轻轻取出，复杂牙查看有无残留牙碎片</p>
+	                    </li>
+	                    <li>
+	                        <span><i>5</i></span>
+	                        <img src="__TMPL__Zt/extraction/imgs/pic17.png" alt="消毒">
+	                        <h4>消毒<i></i></h4>
+	                        <p>将消毒棉球放置拔牙位置咬住，约40分钟后吐掉</p>
+	                    </li>
+	                </ul>
+	            </div>
+	            <a href="/list/4.html" target="_blank" class="chatBtn wobble-horizontal">病牙拔后缺牙了怎么办？</a>
+	        </div>
+	    </section>
+    	<!--<section class="expert">
+        	<div class="item">
+            	<h2 class="titleH2">
+            		智能口腔专家团
+            		<span><i></i>Tooth extraction trust<i></i></span>
+            	</h2>
+            	<div class="expertSlide bajs-easy-slider">
+            		<div class="slideBox">
+            			<ul class="bd">
+            				<li>
+		                        <dl>
+		                            <dt><a href="/doctor/1.html" target="_blank"><img src="__TMPL__Zt/extraction/imgs/expert01.jpg" alt="李鹏"></a></dt>
+		                            <dd>
+		                                <h4><a href="/doctor/1.html" target="_blank">李鹏</a>医师</h4>
+		                                <p><span><i class="bgImg i1"></i>简介</span>毕业于商丘医大口腔医学系，西南医科大学深造学习；曾多次参加省内各种口腔专业学术交流，对口腔各种常见多发病有着丰富的诊疗经验。</p>
+		                                <p><span><i class="bgImg"></i>擅长</span>无托槽隐形矫治、青少年错合畸形矫治、各种牙病等...</p>
+		                                <div class="askBox">
+		                                    <a onclick="openJesongChatByGroup(16524,20125);" live-show="chat" class="chatBtn btn1 wobble-horizontal">在线咨询</a>
+		                                    <a onclick="openJesongChatByGroup(16524,20125);" live-show="booking" class="chatBtn btn2 wobble-horizontal">在线预约</a>
+		                                </div>
+		                            </dd>
+		                        </dl>
+                    		</li>
+		                    <li class="active">
+		                        <dl>
+		                            <dt><a href="/doctor/7.html" target="_blank"><img src="__TMPL__Zt/extraction/imgs/expert02.jpg" alt="李秀媛"></a></dt>
+		                            <dd>
+		                                <h4><a href="/doctor/7.html" target="_blank">李秀媛</a>微创拔牙专家</h4>
+		                                <p><span><i class="bgImg i1"></i>简介</span>曾任职成都美昂医疗管理有限公司正畸科主任，中国口腔医学会会员，美国隐适美认证医师E-BRACE 舌侧认证医师，师从首都医科大学附属北京口腔医院著名正畸专家张栋梁博士。 </p>
+		                                <p><span><i class="bgImg"></i>擅长</span>无痛微创拔牙、各种牙髓病、根尖病、牙体根管治疗、儿童齿科治疗、口腔疑难杂症等。</p>
+		                                <div class="askBox">
+		                                    <a onclick="openJesongChatByGroup(16524,20125);" live-show="chat" class="chatBtn btn1 wobble-horizontal">在线咨询</a>
+		                                    <a onclick="openJesongChatByGroup(16524,20125);" live-show="booking" class="chatBtn btn2 wobble-horizontal">在线预约</a>
+		                                </div>
+		                            </dd>
+		                        </dl>
+		                    </li>
+		                </ul>
+	                    <a class="bajs-easy-slider-nav prev-btn prev"></a>
+	                    <a class="bajs-easy-slider-nav next-btn next"></a>
+                   </div>
+                </div>
+       	 	</div>
+    	</section>-->
+	</section>
+	<tc_include file="Public:footer"/>
+</body>
+<script>
+	jQuery(".slideBox").slide({autoPlay:true, delayTime:3000});
+	$('.pic').mouseenter(function() {
+		$(this).parent('li').animate({'width': 600},250)
+		$(this).parent('li').siblings('li').animate({'width': 200},250)
+	})
+	jQuery(".slideBox").slide({mainCell:".bd ul",effect:"left",autoPlay:true});
+</script>
+</html>

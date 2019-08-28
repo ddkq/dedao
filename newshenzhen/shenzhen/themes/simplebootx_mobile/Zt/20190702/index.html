@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>牙齿不齐者福音,提前看了牙整齐的效果再矫牙_{$site_name}</title>
+	<tc_include file="Public:head" />
+	<link href="__TMPL__Zt/20190702/index.css" rel="stylesheet" type="text/css">
+	<script src="__TMPL__Public/js/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+	<section class="gotoform"><img src="__TMPL__Zt/20190702/imgs/1.jpg" /></section>
+	
+	<section class="">
+		<form action="" class="container mt-3 pl-4 pr-4">
+			<p class="mb-2">牙齿症状：</p>
+			<div class="symptom d-flex mb-3 justify-content-between">
+				<div class="d-inline-block">
+					<input type="radio" name="data[symptom]" id="radio1" value="龅（暴）牙" checked>
+					<label for="radio1">龅（暴）牙</label>
+				</div>
+				<div class="d-inline-block">
+					<input type="radio" name="data[symptom]" id="radio2" value="牙齿不齐">
+					<label for="radio2">牙齿不齐</label>
+				</div>
+				<div class="d-inline-block">
+					<input type="radio" name="data[symptom]" id="radio3" value="牙齿拥挤">
+					<label for="radio3">牙齿拥挤</label>
+				</div>
+			</div>
+			<div class="symptom d-flex mb-3 justify-content-between">
+				<div class="d-inline-block">
+					<input type="radio" name="data[symptom]" id="radio4" value="牙缝过大">
+					<label for="radio4">牙缝过大</label>
+				</div>
+				<div class="d-inline-block">
+					<input type="radio" name="data[symptom]" id="radio5" value="地包天">
+					<label for="radio5">地包天</label>
+				</div>
+				<div class="d-inline-block">
+					<input type="radio" name="data[symptom]" id="radio6" value="其他牙齿情况">
+					<label for="radio6">其他牙齿情况</label>
+				</div>
+			</div>
+			<input type="text" class="w-100 pt-3 pb-3 pl-2 rounded name" name="data[name]" placeholder="姓名">
+			<input type="text" class="w-100 pt-3 pb-3 pl-2 rounded mt-2 phone"  name="data[phone]" placeholder="电话">
+			<input type="hidden" name="table_id" value="54" />
+			<input type="hidden" name="page" class="page" />
+			<input type="hidden" name="code" value="{$code = mt_rand(0,1000000)}">
+		</form>
+		<p class="text-center pt-3 pb-3 m-auto">
+			<img src="__TMPL__Zt/20190702/imgs/btn.png" class="submit-btn w-50">
+		</p>
+		<div class="">
+			<img src="__TMPL__Zt/20190702/imgs/2.jpg"/>
+			<img src="__TMPL__Zt/20190702/imgs/3.jpg"/>
+			<img src="__TMPL__Zt/20190702/imgs/4.jpg"/>
+		</div>
+		<div class="copy pb-0">
+			<p>CopyRight © 2017 深圳德道口腔门诊部 版权所有 
+				<br/> ICP备案号：<a href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备18089183号</a>
+				<br/> <a target="_blank" class="d-flex justify-content-center" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502003611"><img src="__TMPL__Public/images/ga-icon.png" style="float:left;" />粤公网安备 44030502003611号</a>
+				广审号：粤（B）广[2019]第07-22-327号
+			</p>
+			<img src="__TMPL__Zt/20190702/imgs/5.jpg"/>
+		</div>
+		
+	</section>
+</body>
+<script type="text/javascript">
+	$(function() {
+
+		$(".gotoform").click(function(){
+			$("html,body").animate({scrollTop:300}, 500);
+		});
+	
+		$('.page').val(window.location.href);
+		$('.submit-btn').on('click', function() {
+			var name = $(".name").val();
+			var re1 = /^[\u4E00-\u9FA5]{1,6}$/; 
+			if(name == ''){
+				alert("姓名不能为空"); 
+				return false; 
+			}else if(name != ''){
+				if (!re1.test(name)){ 
+					alert("姓名格式不正确"); 
+					return false; 
+				}	
+			}
+			
+			var phone = $(".phone").val();
+			var re2 = /^((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+(\d{8})$/;
+			if(phone == ''){
+				alert("电话不能为空"); 
+				return false; 
+			}else if(phone != ''){
+				if (!re2.test(phone)){ 
+					alert("电话格式不正确"); 
+					return false; 
+				}
+			}
+			
+			
+			var data = $('form').serializeArray();
+			$.post('/tables/tables/add_post',data,function(result){
+				alert(result.info);
+			});
+		});
+	})
+</script>
+</html>

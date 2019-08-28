@@ -1,0 +1,18 @@
+.banner {
+	margin-top: 120px;
+}
+
+input{
+	border: 1px solid #000;
+	border-radius: 8px;
+}
+
+
+.submit-btn {
+	border-radius: 15px;
+	background-color: #c22121;
+}
+
+.w-30{
+	width: 30%;
+}

@@ -1,0 +1,43 @@
+body {
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+}
+.dhk{ width: 98.125%; margin: 0 auto;}
+
+.dhk h2{ width: 100%; height: 2.5rem; line-height: 2.5rem; font-size: 0.7rem;  background: #be946d; border-radius: 0.8rem 0.8rem 0 0;}
+.dhk h2 p{ width: 65.923%; height: 2.5rem; line-height: 2.5rem; color: #fff; display: block; float: left; margin-left: 3%; font-size: 0.8rem;}
+.dhk h2 a{ width: 25.4777%; height: 1.5rem; line-height: 1.5rem; display: block; background: #c7000b; float: left; color: #fff; ; margin-top: 0.5rem; margin-left: 2%; border-radius: 0.2rem; font-size: 0.6rem;}
+.dhk h2 a span{ width: 22%; display: block; float: left;margin-right: 3%;padding-left: 3%;}
+.dhk h2 a span img{ width: 100%;}
+.dhk-border{width: 99.681526%; height: 20rem; border: 1px solid #be946d; border-top: none; margin-bottom: 1rem;}
+.youhui-wrap{max-width: 640px;  height:100%; margin-left: auto;margin-right: auto; margin-bottom: 10px;  color:#000; position: relative; padding-top: 1%;}
+.youhui-wrap .pp1{ top: 2%; color:#000000; left:4%; font-size: 24px; position: absolute;}
+.youhui-wrap .pp2{ top: 16%; color:#000000; left:24%; font-size: 1rem; position: absolute;padding: 2%; background: #e5e5e5; border-radius: 10px;width: 60%;font-size: 1rem;}
+.youhui-wrap .pp2 .sj{ position:absolute; width:4%;top: 18%; left:-3%; display:block;}
+.youhui-wrap .pp2 font{color: #C0262D;}
+.youhui-wrap .time{top: 10%; color:#000000; left:32%; font-size: 0.8rem; position: absolute;}
+.youhui-wrap .time2{ top: 38%;}
+.youhui-wrap .pp3{ top: 43%;}
+.youhui-wrap .toux{ position: absolute; width:16%;top: 11%; left:6%;}
+.youhui-wrap .toux img{ width:100%}
+.youhui-wrap .toux2{ top: 41%;}
+
+.youhui-wrap textarea{ width:71%; line-height: 1.2;font-size: 0.8rem;position: absolute;     bottom: 5%; left:4%; border:0;border:1px solid #ccc; background: #fffbf7; border-radius: 5px; padding: 1% 1% 0 2%; }
+.youhui-wrap button{ position: absolute; right: 0.8rem;     bottom: 5%; width: 20%; border:0;animation: bianda 3s .2s ease both infinite; background: #fff;
+    -webkit-animation: bianda 3s .2s ease both infinite;
+    -moz-animation: bianda 3s .2s ease both infinite;}
+.youhui-wrap button span{background: #C0262D; border-radius: 5%; width: 100%;    line-height: 2rem;display: block;color: #fff;}
+
+.jump{
+  webkit-animation: jump 2.5s linear normal both infinite;
+    -o-animation: jump 2.5s linear normal both infinite;
+    animation: jump 2.5s linear normal both infinite;
+    /*animation-delay:2s;*/
+}
+
+.swt{position: fixed; bottom: 0;display: flex;justify-content: space-between; width: 100%;background: #C0262D;padding: 0.2rem;border-radius: 4px;max-width: 640px;}
+.swt textarea{ width:70%;margin-left: 1%; line-height: 1.5;font-size: 0.8rem;border:0;border:1px solid #ccc; background: #fffbf7; border-radius: 5px; padding: 1% 1% 0 2%; }
+.swt button{ width: 30%; border:0;padding: 0;background: #C0262D;}
+.swt button span{background: #C0262D;  width: 100%; line-height: 2rem;display: block;color: #fff;font-size: 1rem;}

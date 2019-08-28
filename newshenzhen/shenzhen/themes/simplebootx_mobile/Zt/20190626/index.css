@@ -1,0 +1,48 @@
+.banner {
+    margin-top: 120px;
+}
+form font{
+    width: 30%;
+    background-color: #e0e0e0;
+    font-size: .9rem;
+    color: #000;
+    text-align: center;
+}
+
+.active {
+    background-color: #d10101 !important;
+    color: #fff !important;
+}
+
+video{
+    max-width: 640px;
+}
+
+.submit-btn {
+	border-radius: 8px;
+	background-color: #e60012;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	font-size: 1.3rem;
+}
+
+.swiper-pagination{
+	width: 110px !important;
+	left: 50%;
+	margin-left:-55px ;
+}
+.swiper-pagination>span{
+	margin-left: 10px;
+}
+
+.swiper-pagination-bullet{
+	margin: 0 0.2rem;
+	width: 12px;
+	height: 12px;
+	background: #ee7f7f;
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+	background: #de0000;
+}

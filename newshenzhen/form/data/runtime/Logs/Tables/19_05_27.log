@@ -1,0 +1,18 @@
+[ 2019-05-27T08:55:24+08:00 ] 42.236.10.93 /tables/admintables/view_data.html
+ERR: 无法加载控制器:Admintables
+
+[ 2019-05-27T08:56:31+08:00 ] 42.236.10.84 /tables/admintables/view_data.html
+ERR: 无法加载控制器:Admintables
+
+[ 2019-05-27T10:08:43+08:00 ] 59.42.88.177 /Tables/AdminTables/view_data_delete/id/5329.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001271s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0003s ]
+SQL: DELETE FROM `cmf_tables_data` WHERE ( id = 5329 ) [ RunTime:0.0028s ]
+

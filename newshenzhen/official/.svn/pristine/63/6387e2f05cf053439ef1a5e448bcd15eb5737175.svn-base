@@ -1,0 +1,34 @@
+#menu {background-color: #000;}
+.flex {display: flex;}
+@media (min-width: 780px){
+	.content-width {width: 100%;}
+}
+@media (min-width: 992px){
+	.content-width {width: 90%;}
+}
+@media (min-width: 1200px){
+	.content-width {width: 80%;}
+}
+@media (min-width: 1600px){
+	.content-width {width: 70%;}
+}
+.unshow {display: none;}
+.clear:after {content:"."; display:block; height:0; clear:both; visibility:hidden;}
+*{transition: all .1s linear;}
+.banner .bcg{background: url(../img/tech_title_bg.jpg);height: 300px;}
+.banner:before {content: "";height: 75px;display: block;}
+.content {margin: 60px auto 0;}
+.content .left-nav {width: 18%; float: left; padding: 15px 0; border-left: 1px solid #e3e3e3; position: relative;margin-left: 15px;}
+.content .left-nav:before {content: "";display: inline-block; width: 5px; height: 5px; position: absolute; left: -3px;background-color: #b8b8b8; top: 0;}
+.content .left-nav li {font-size: 1rem;}
+.content .left-nav li:before {content: ""; width: 3px; height: 3px; background-color: gray; display: block; float: left; margin-top: 15px; margin-left: -2px;}
+.content .left-nav li:not(:first-child) {margin-top: 20px;}
+.content .left-nav li a {color: #000; padding: 6px;display: inline-block; position: relative; margin: 0 25px;}
+.content .left-nav li a:before {content: ""; position: absolute; left: -10px; top: 50%; margin-top: -5px; width: 0; height: 0; display: inline-block; border: 5px solid transparent; border-top-color: transparent; border-left-color: transparent; border-bottom-color: transparent;}
+.content .left-nav li .active, .content .left-nav li a:hover {color: #fff; background-color: #c11920;}
+.content .left-nav li .active:before, .content .left-nav li a:hover:before {border-right-color: #c11920;}
+.content .fixed {position: fixed; top: 135px;}
+.footer {text-align: center;padding: 20px 0;background-color: #292931;color: #fff;}
+.content .right-content section .title {font-size: 1.3rem; padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid #DBDBDD;}
+.content .right-content {width: 80%; float: right;}
+

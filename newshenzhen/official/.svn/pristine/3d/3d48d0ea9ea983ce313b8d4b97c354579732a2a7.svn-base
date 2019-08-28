@@ -1,0 +1,32 @@
+.contact-info {
+    margin-bottom: 60px;
+    font-size: 14px;
+}
+.contact-info div span a {
+    color: #C11920;
+    display: block;
+    margin-bottom: 10px;
+}
+.contact-info div span .icons {
+    margin-right: 10px;
+}
+.icons.about-email {
+    background-image: url(../images/icon-mail.png);
+}
+.icons.about-phone {
+    background-image: url(../images/icon-phone.png);
+}
+.contact-info div span span span {
+    padding-left: 0;
+}
+
+.contact-item-wrap {
+    padding: 0;
+}
+.contact-item-wrap .contact-item-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+#contact-us .info {
+    color: #C11920;
+}

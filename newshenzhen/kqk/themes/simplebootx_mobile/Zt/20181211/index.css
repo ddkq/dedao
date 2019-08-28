@@ -1,0 +1,54 @@
+.banner {
+	margin-top: 120px;
+}
+form .age span, form .condition span {
+	width: 22%;
+	background-color: #777;
+	font-size: .9rem;
+}
+form .condition span {
+	font-size: .8rem;
+	width: 18%;
+}
+form .condition .bottom-span {
+	width: auto;
+}
+form p {
+	color: #666;
+}
+.submit-btn {
+	border-radius: 15px;
+	background-color: rgb(194, 33, 33);
+}
+
+.icon {
+    width: 39px;
+    height: 37px;
+	background: url(imgs/icon.png);
+	vertical-align: middle;
+}
+.title {
+  	background: linear-gradient(to bottom, #F1402A, #AA210C);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.bcg {
+	background: #FAE9E4;
+}
+.active {
+	background-color: #c11920 !important;
+}
+
+.swiper-slide span{
+	color: #e27575;
+}
+.bg-pink{
+	background: #fcf2f1;
+}
+
+.date span{
+	background: #e3e3e3;
+	width: 2.5rem;
+    display: inline-block;
+    text-align: center;
+}

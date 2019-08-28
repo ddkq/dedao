@@ -1,0 +1,109 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#">订单信息</a></li>
+		</ul>
+		<form class="well form-search" method="post" action="{:U('AdminOrder/chance')}">
+			<div class="row-fluid">
+				<div class="span12">
+					<p style="text-align: center;">基本信息</p>
+					<table class="table table-bordered">
+						<tr>
+							<th width="100">订单号</th>
+							<td>{$post.order_sn}</td>
+							<input type="hidden" name="order_id" value="{$post.order_id}">
+						</tr>
+						<tr>
+							<th>下单用户</th>
+							<td>{$user.user_nicename}</td>
+						</tr>
+						<tr>
+							<th>订单状态</th>
+							<php>$status=array("0"=>"无效","1"=>"待付款","2"=>"待发货","3"=>"配送中","4"=>"已完成");</php>
+							<td>{$status[$post['order_status']]}</td>
+						</tr>
+						<tr>
+							<th>收货人</th>
+							<td>{$post.consignee}</td>
+						</tr>
+						<tr>
+							<th>收货人电话</th>
+							<td>{$post.tel}</td>
+						</tr>
+					</table>	
+					
+					<p style="text-align: center;">商品信息</p>
+					<table class="table table-bordered">
+						<tr>
+							<td>商品名称</td>
+							<td>商品数量</td>
+							<td>商品单价</td>
+							<td>小计</td>
+						</tr>
+						<volist name="goods" id="vo">
+							<tr>
+								<td>{$vo.goods_name}</td>
+								<td>{$vo.goods_number}</td>
+								<td>{$vo.goods_price}</td>
+								<td><php>echo $vo['goods_number']*$vo['goods_price']</php></td>
+							</tr>	
+						</volist>
+						<tr>
+							<td></td><td></td><td></td>
+							<td>合计：{$goods_price}</td>
+						</tr>
+					</table>
+					<p style="text-align: right;">
+						商品总金额：￥{$goods_price} - 折扣：￥{$market_price-$goods_price}<br/>
+						= 订单总金额：￥{$goods_price-($market_price-$goods_price)}<br/>
+						- 使用积分： ￥{$post.integral_money}<br/>
+						= 应付款金额：￥{$post.order_amount}
+					</p>
+
+					
+				</div>
+				
+			</div>
+			<div class="form-actions">
+				<if condition="($post['order_status'] eq 3) or ($post['order_status'] eq 4) or ($post['order_status'] eq 0)">	
+				<else/>
+					<a href="{:U('AdminOrder/chance',array('id'=>$post['order_id'],'type'=>3))}" class="btn btn-primary btn-small js-ajax-submit">发货</a>
+				</if>
+				
+				<a href="{:U('AdminOrder/chance',array('id'=>$post['order_id'],'type'=>4))}" class="btn btn-primary btn-small js-ajax-submit">确定已完成</a>
+				<a href="{:U('AdminOrder/chance',array('id'=>$post['order_id'],'type'=>0))}" class="btn btn-primary btn-small js-ajax-submit">取消订单</a>
+				<a class="btn" href="{:U('AdminOrder/index')}">返回</a>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+
+	<script type="text/javascript">
+		$(function() {
+			$(".js-ajax-close-btn").on('click', function(e) {
+				e.preventDefault();
+				Wind.use("artDialog", function() {
+					art.dialog({
+						id : "question",
+						icon : "question",
+						fixed : true,
+						lock : true,
+						background : "#CCCCCC",
+						opacity : 0,
+						content : "您确定需要关闭当前页面嘛？",
+						ok : function() {
+							setCookie("refersh_time", 1);
+							window.close();
+							return true;
+						}
+					});
+				});
+			});
+			/////---------------------
+		});
+	</script>
+</body>
+</html>

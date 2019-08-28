@@ -1,0 +1,433 @@
+<admintpl file="header" />
+<style type="text/css">
+.pic-list li {
+	margin-bottom: 5px;
+}
+
+</style>
+<script type="text/html" id="photos-item-wrapper">
+	<li id="savedimage{id}">
+		<input id="photo-{id}" type="hidden" name="photos_url[]" value="{filepath}"> 
+		<input id="photo-{id}-name" type="text" name="photos_alt[]" value="{name}" style="width: 160px;" title="图片名称">
+		<img id="photo-{id}-preview" src="{url}" style="height:36px;width: 36px;" onclick="image_preview_dialog(this.src);">
+		<a href="javascript:upload_one_image('图片上传','#photo-{id}');">替换</a>
+		<a href="javascript:(function(){$('#savedimage{id}').remove();})();">移除</a>
+	</li>
+</script>
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('AdminGoods/index')}">{:L('PORTAL_ADMINEX_INDEX')}</a></li>
+			<li class="active"><a href="{:U('AdminGoods/add',array('term'=>empty($term['term_id'])?'':$term['term_id']))}" target="_self">{:L('PORTAL_ADMINEX_ADD')}</a></li>
+		</ul>
+		<form action="{:U('AdminGoods/add_post')}" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
+			<div class="row-fluid">
+				<div class="span9">
+					<table class="table table-bordered">
+						<tr id="meau">
+							<th width="100">分类</th>
+							<td>
+								<select style="max-height: 100px;" name="term_id">
+									{$taxonomys}
+								</select>
+							</td>
+						</tr>
+						
+						<tr>
+							<th>套餐名</th>
+							<td>
+								<input type="text" style="width:300px;" name="good_name" id="title" required value="" placeholder="请输入套餐名字"/>
+								<span class="form-required">*</span>
+							</td>
+						</tr>
+						<tr>
+							<th>关键词</th>
+							<td><input type="text" name="good_keywords" id="keywords" value="" style="width: 400px" placeholder="请输入关键字"> 多关键词之间用空格或者英文逗号隔开</td>
+						</tr>
+						<tr>
+							<th>摘要</th>
+							<td>
+								<textarea name="good_excerpt" id="description" style="width: 98%; height: 50px;" placeholder="请填写摘要"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<th>商品库存</th>
+							<td>
+								<input type="text" name="good_inventory" value="" style="width: 400px" placeholder="商品库存">
+							</td>
+						</tr>
+						<tr>
+							<th>市场价</th>
+							<td>
+								<input type="text" name="market_price" value="" style="width: 400px" placeholder="市场价">
+							</td>
+						</tr>
+						<tr>
+							<th>本店售价</th>
+							<td>
+								<input type="text" name="shop_price" value="" style="width: 400px" placeholder="本店售价">
+							</td>
+						</tr>
+						<tr>
+							<th>会员价格</th>
+							<td>
+								<input type="text" name="vip_price" value="" style="width: 400px" placeholder="会员价格">
+							</td>
+						</tr>
+						<tr>
+							<th>是否促销</th>
+							<td>
+								<input type="checkbox" id="is_promote" name="is_promote" value="1" onclick="handlePromote(this.checked);">
+								<input type="text" id="disabledInput" name="promote_price" value="" style="width: 400px; margin-bottom: 5px;" placeholder="促销价"><br/>
+								开始时间<input type="text" id="disabledInput" name="promote_start_date" value="{:date('Y-m-d h:m',time())}" class="js-datetime" style="width: 160px;">
+								结束时间<input type="text" id="disabledInput" name="promote_end_date" value="{:date('Y-m-d h:m',time())}" class="js-datetime" style="width: 160px;">
+							</td>
+						</tr>
+						<tr>
+							<th>赠送消费积分数</th>
+							<td>
+								<input type="text" name="integral" value="" style="width: 400px" placeholder="购买该商品时赠送消费积分数">
+							</td>
+						</tr>
+						<tr>
+							<th>积分购买金额</th>
+							<td>
+								<input type="text" name="integral_price" value="" style="width: 400px" placeholder="(此处需填写金额)购买该商品时最多可以使用积分的金额">
+							</td>
+						</tr>
+						
+
+						<tr>
+							<th>详细信息</th>
+							<td>
+								<script type="text/plain" id="content" name="content"></script>
+							</td>
+						</tr>
+						<tr>
+							<th>详细信息(手机)</th>
+							<td>
+								<script type="text/plain" id="pcontent" name="phone_content"></script>
+							</td>
+						</tr>
+
+						<tr>
+              				<th>相册图集</th>
+							<td>
+								<ul id="photos" class="pic-list unstyled"></ul>
+								<a href="javascript:upload_multi_image('图片上传','#photos','photos-item-wrapper');" class="btn btn-small">选择图片</a>
+							</td>
+			            </tr>
+
+					</table>
+				</div>
+				<div class="span3">
+					<table class="table table-bordered">
+						<tr>
+							<th><b>pc端缩略图</b></th>
+						</tr>
+						<tr>
+							<td>
+								<div style="text-align: center;">
+									<input type="hidden" name="smeta[thumb]" id="thumb" value="">
+									<a href="javascript:upload_one_image('图片上传','#thumb');">
+										<img src="__TMPL__Public/assets/images/default-thumbnail.png" id="thumb-preview" width="135" style="cursor: hand" />
+									</a>
+									<input type="button" class="btn btn-small" onclick="$('#thumb-preview').attr('src','__TMPL__Public/assets/images/default-thumbnail.png');$('#thumb').val('');return false;" value="取消图片">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th><b>手机端缩略图</b></th>
+						</tr>
+						<tr>
+							<td>
+								<div style="text-align: center;">
+									<input type="hidden" name="smeta[thumb_phone]" id="thumb1" value="">
+									<a href="javascript:upload_one_image('图片上传1','#thumb1');">
+										<img src="__TMPL__Public/assets/images/default-thumbnail.png" id="thumb1-preview" width="135" style="cursor: hand" />
+									</a>
+									<input type="button" class="btn btn-small" onclick="$('#thumb1-preview').attr('src','__TMPL__Public/assets/images/default-thumbnail.png');$('#thumb').val('');return false;" value="取消图片">
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th><b>添加时间</b></th>
+						</tr>
+						<tr>
+							<td><input type="text" name="add_time" value="{:date('Y-m-d H:i:s',time())}" class="js-datetime" style="width: 160px;"></td>
+						</tr>
+					</table>
+					<table class="table table-bordered" style="background-color: #f2feff">
+						<tr><th><b>商品设置</b></th></tr>
+						<tr><th><b>状态</b></th></tr>
+						<tr>
+							<td>
+								<label class="radio"><input type="radio" name="is_on_sale" value="1" checked>上架</label>
+								<label class="radio"><input type="radio" name="is_on_sale" value="0">下架</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="radio"><input type="radio" name="is_new" value="1" checked>新品</label>
+								<label class="radio"><input type="radio" name="is_new" value="0">未最新</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="radio"><input type="radio" name="is_hot" value="1">热销</label>
+								<label class="radio"><input type="radio" name="is_hot" value="0" checked>非热销</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="radio"><input type="radio" name="is_group" value="1">拼团</label>
+								<input type="text" name="group_num" placeholder="拼团人数" class="group_num" style="display: none;">
+								<input type="text" name="group_price" placeholder="拼团价" class="group_price" style="display: none;">
+								<label class="radio"><input type="radio" name="is_group" value="0" checked>非拼团</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<select name="gender">
+									<option value="0" selected="selected">男女通用</option>
+									<option value="1">男性专用</option>
+									<option value="2">女性专用</option>
+								</select>
+							</td>
+						</tr>
+						<tr><th><b>商品类型</b></th></tr>
+						<tr>
+							<td>
+								<select style="max-height: 100px;" name="post[select]">
+									<option value="0" selected="selected">默认</option>
+									<foreach name="select_type" item="vo">
+										<option value="{$vo.cid}">{$vo.cat_name}</option>
+									</foreach>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<button type="button" class="btn btn-primary btn-lg" onclick="open_content_layer('扩展属性',$('#kzModal'))" ;>扩展属性</button>
+								<div id="kzModal" style="display: none;">
+									<p>
+										<label>扩展1</label>
+										<input type="text" name="post_extend1" value=""  placeholder="扩展1">
+									</p>
+									<p>
+										<label>扩展2</label>
+										<input type="text" name="post_extend2" value=""  placeholder="扩展2">
+									</p>
+									<p>
+										<label>扩展3</label>
+										<input type="text" name="post_extend3" value=""  placeholder="扩展2">
+									</p>
+									<p>
+										<label>扩展4</label>
+										<input type="text" name="post_extend4" value=""  placeholder="扩展2">
+									</p>
+									<p>
+										<label>扩展5</label>
+										<textarea name="post_extend5" rows="1" cols="6"></textarea>
+									</p>
+									<p>
+										<label>扩展6</label>
+										<textarea name="post_extend6" rows="1" cols="6"></textarea>
+									</p>
+									<p>
+										<label>扩展7</label>
+										<textarea name="post_extend7" rows="1" cols="6"></textarea>
+									</p>
+									<p>
+										<label>扩展8</label>
+										<textarea name="post_extend8" rows="1" cols="6"></textarea>
+									</p>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="form-actions">
+				<button class="btn btn-primary js-ajax-submit" type="submit">提交</button>
+				<a class="btn" href="{:U('AdminGoods/index')}">返回</a>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/content_addtop.js"></script>
+	<script type="text/javascript">
+		//编辑器路径定义
+		var editorURL = GV.DIMAUB;
+	</script>
+	<script type="text/javascript" src="__PUBLIC__/js/ueditor/ueditor.config.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/ueditor/ueditor.all.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$(".js-ajax-close-btn").on('click', function(e) {
+				e.preventDefault();
+				Wind.use("artDialog", function() {
+					art.dialog({
+						id : "question",
+						icon : "question",
+						fixed : true,
+						lock : true,
+						background : "#CCCCCC",
+						opacity : 0,
+						content : "您确定需要关闭当前页面嘛？",
+						ok : function() {
+							setCookie("refersh_time", 1);
+							window.close();
+							return true;
+						}
+					});
+				});
+			});
+			/////---------------------
+			Wind.use('validate', 'ajaxForm', 'artDialog', function() {
+				//javascript
+
+				//编辑器
+				editorcontent = new baidu.editor.ui.Editor();
+				editorcontent.render('content');
+				editorcontent1 = new baidu.editor.ui.Editor();
+				editorcontent1.render('pcontent');
+				try {
+					editorcontent.sync();
+				} catch (err) {
+				}
+				//增加编辑器验证规则
+				jQuery.validator.addMethod('editorcontent', function() {
+					try {
+						editorcontent.sync();
+					} catch (err) {
+					}
+					return editorcontent.hasContents();
+				});
+				var form = $('form.js-ajax-forms');
+				//ie处理placeholder提交问题
+				if ($.browser.msie) {
+					form.find('[placeholder]').each(function() {
+						var input = $(this);
+						if (input.val() == input.attr('placeholder')) {
+							input.val('');
+						}
+					});
+				}
+
+				var formloading = false;
+				//表单验证开始
+				form.validate({
+					//是否在获取焦点时验证
+					onfocusout : false,
+					//是否在敲击键盘时验证
+					onkeyup : false,
+					//当鼠标掉级时验证
+					onclick : false,
+					//验证错误
+					showErrors : function(errorMap, errorArr) {
+						//errorMap {'name':'错误信息'}
+						//errorArr [{'message':'错误信息',element:({})}]
+						try {
+							$(errorArr[0].element).focus();
+							art.dialog({
+								id : 'error',
+								icon : 'error',
+								lock : true,
+								fixed : true,
+								background : "#CCCCCC",
+								opacity : 0,
+								content : errorArr[0].message,
+								cancelVal : '确定',
+								cancel : function() {
+									$(errorArr[0].element).focus();
+								}
+							});
+						} catch (err) {
+						}
+					},
+					//验证规则
+					rules : {
+						'good_name' : {
+							required : 1
+						}
+					},
+					//验证未通过提示消息
+					messages : {
+						'good_name' : {
+							required : '请输入套餐名'
+						}
+					},
+					//给未通过验证的元素加效果,闪烁等
+					highlight : false,
+					//是否在获取焦点时验证
+					onfocusout : false,
+					//验证通过，提交表单
+					submitHandler : function(forms) {
+						if (formloading)
+							return;
+						$(forms).ajaxSubmit({
+							url : form.attr('action'), //按钮上是否自定义提交地址(多按钮情况)
+							dataType : 'json',
+							beforeSubmit : function(arr, $form, options) {
+								formloading = true;
+							},
+							success : function(data, statusText, xhr, $form) {
+								formloading = false;
+								if (data.status) {
+									setCookie("refersh_time", 1);
+									//添加成功
+									Wind.use("artDialog", function() {
+										art.dialog({
+											id : "succeed",
+											icon : "succeed",
+											fixed : true,
+											lock : true,
+											background : "#CCCCCC",
+											opacity : 0,
+											content : data.info,
+											button : [ {
+												name : '继续添加？',
+												callback : function() {
+													reloadPage(window);
+													return true;
+												},
+												focus : true
+											}, {
+												name : '返回列表页',
+												callback : function() {
+													location = "{:U('AdminGoods/index')}";
+													return true;
+												}
+											} ]
+										});
+									});
+								} else {
+									isalert(data.info);
+								}
+							}
+						});
+					}
+				});
+			});
+
+	        
+	        $('input:radio[name="is_group"]').click(function(){
+	            var val=$('input:radio[name="is_group"]:checked').val();
+	            if(val==1){
+	            	$('.group_num').css('display','table-row');
+	            	$('.group_price').css('display','table-row');
+	            }
+	            else{
+	            	$('.group_num').css('display','none');
+	            	$('.group_price').css('display','none');
+	            }
+	        });
+
+	        
+			////-------------------------
+		});
+	</script>
+</body>
+</html>

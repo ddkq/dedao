@@ -1,0 +1,54 @@
+.banner {
+	margin-top: 120px;
+}
+.red {
+	color: #f60e0e;
+}
+.form-title {
+	color: #666;
+}
+.content-title {
+  	font-family: "Source Han Sans CN";
+  	color: transparent;
+  	line-height: 1.272;
+  	background: linear-gradient(to bottom, #F97A84, #E80C1D);
+    -webkit-background-clip: text;
+}
+.content-title:after {
+	content: '';
+	width: 25px;
+	height: 5px;
+	background: linear-gradient(to right, #F97A84, #E80C1D);
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.symptom div, .age div {
+  	font-family: "Source Han Sans CN";
+	border: 1px solid #000;
+	width: 48%;
+}
+.symptom .active, .age .active {
+	border-color: #c11920;
+	color: #c11920;
+}
+.submit-btn a {
+  	border-radius: 12px;
+  	background-color: rgb(255, 0, 0);
+  	font-size: 18px;
+}
+.content-3 h4 {
+  	font-family: "Source Han Sans CN";
+	color: #ff0000;
+}
+.msg {
+  	font-family: "Source Han Sans CN";
+}
+.msg span {
+	color: #ff0000;
+}
+.newest {
+	color: #666;
+}

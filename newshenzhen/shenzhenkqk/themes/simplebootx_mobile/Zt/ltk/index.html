@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+		<head>
+	<meta charset="UTF-8">
+	<title>聊天框_{$site_name}</title>
+	<tc_include file="Public:head" />
+	<link rel="stylesheet" href="__TMPL__Public/css/bootstrap4.min.css">
+	<link href="__TMPL__Zt/ltk/index.css" rel="stylesheet" type="text/css">
+	<script src="__TMPL__Public/js/jquery-2.1.1.min.js"></script>
+</head>
+	<body>
+		<section class="">
+			<div><img src="__TMPL__Zt/ltk/imgs/banner.jpg"/></div>
+			<div class="container pb-5">
+				<div class="mt-4 img1"><img src="__TMPL__Zt/ltk/imgs/1.png"/></div>
+				<div class="mt-4 img2"><img src="__TMPL__Zt/ltk/imgs/2.png"/></div>
+			</div>
+			<div class="d-flex align-items-center absolute-bottom pl-2 pr-2  pt-5 position-absolute w-100">
+				<div class="w-80">
+					<input type="text" class="pb-3 w-100 pt-3 iuput-ltk" placeholder="在此输入可直接对话......" />
+				</div>
+				<div class="w-25 text-center ml-3"><a href="/swt/" class="text-white blue p-3 f-13 font-weight-bold">发送</a></div>
+			</div>
+		</section>
+	</body>
+	<script type="text/javascript">
+		function hello(){
+			$('.img1').fadeIn();
+		}
+		function hi(){
+			$('.img2').fadeIn();
+		}
+		setTimeout(hello,1000)
+		setTimeout(hi,3000)
+	</script>
+</html>

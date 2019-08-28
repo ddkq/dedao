@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+	<tc_include file="Public:head" />
+	<link href="__TMPL__Public/css/article.css" rel="stylesheet" type="text/css">
+	<title>{$name}_{$site_name}</title>
+	<meta name="keywords" content="{$seo_keywords}"/>
+	<meta name="description" content="{$seo_description}" />
+	</head>
+	<body>
+		<tc_include file="Public:article_header" />
+
+		<div class="main_list">
+			<h3 class="term_title">{$name}</h3>
+			
+			<div class="anli_bdts" id="anliBox">
+				<php>
+					$where['recommended'] = 1;
+					$case1=sp_sql_posts("cid:174;field:tid,post_title,post_excerpt,smeta,link_type,post_murl,post_murl,post_extend;limit:1;order:post_date desc;");
+					$case2=sp_sql_posts("cid:175;field:tid,post_title,post_excerpt,smeta,link_type,post_murl,post_murl,post_extend;limit:1;order:post_date desc;");
+					$case3=sp_sql_posts("cid:178;field:tid,post_title,post_excerpt,smeta,link_type,post_murl,post_murl,post_extend;limit:1;order:post_date desc;");
+				</php>
+				<div class="anli_mb-hover hd">
+					<ul>
+						<li class="on" data-type="1">种牙案例</li>
+						<li class="" data-type="2">矫牙案例</li>
+						<!--<li class="" data-type="3">修复案例</li>-->
+					</ul>
+				</div>
+				<div class="anli_mb-yg bd">
+					<ul>
+						<php>
+							$extend1 = json_decode($case1[0]['post_extend'],true);
+							$smeta1=json_decode($case1[0]['smeta'],true);
+						</php>
+						<dl>
+							<h1>{$case1[0][post_title]}</h1>
+							<img src="{$smeta1.thumb}">
+							<dt>人物档案：<span>{$extend1['post_extend2']}</span></dt>
+							<dt>修复方案：<span>{$extend1['post_extend4']}</span></dt>
+							<dt>术前症状：<span>{$extend1['post_extend3']}</span></dt>
+							<a onclick="javascript:openJesongChatByGroup(16524,20125);">咨询主治医生</a>
+							<a href="{:get_article_url($case1[0][tid],$case1[0][link_type],$case1[0][post_murl])}" target="_blank" style="background:#be946d">查看案例详情</a>
+						</dl>
+					</ul>
+					<ul>
+						<php>
+							$extend2 = json_decode($case2[0]['post_extend'],true);
+							$smeta2=json_decode($case2[0]['smeta'],true);
+						</php>
+						<dl>
+							<h1>{$case2[0][post_title]}</h1>
+							<div style="height:1.2rem"></div>
+							<img src="{$smeta2.thumb}">
+							<dt>人物档案：<span>{$extend2['post_extend2']}</span></dt>
+							<dt>修复方案：<span>{$extend2['post_extend4']}</span></dt>
+							<dt>术前症状：<span>{$extend2['post_extend3']}</span></dt>
+							<a onclick="javascript:openJesongChatByGroup(16524,20125);">咨询主治医生</a>
+							<a href="{:get_article_url($case2[0][tid],$case2[0][link_type],$case2[0][post_murl])}" target="_blank" style="background:#be946d">查看案例详情</a>
+						</dl>
+					</ul>
+					<!--<ul>
+						<php>
+							$extend3 = json_decode($case3[0]['post_extend'],true);
+							$smeta3=json_decode($case3[0]['smeta'],true);
+						</php>
+						<dl>
+							<h1>{$case3[0][post_title]}</h1>
+							<div style="height:1.2rem"></div>
+							<img src="{$smeta3.thumb}">
+							<dt>人物档案：<span>{$extend3['post_extend1']}，{$extend3['post_extend2']}</span></dt>
+							<dt>修复方案：<span>{$extend3['post_extend4']}</span></dt>
+							<dt>术前症状：<span>{$extend3['post_extend3']}</span></dt>
+							<a onclick="javascript:openJesongChatByGroup(16524,20125);">咨询主治医生</a>
+							<a href="{:get_article_url($case3[0][tid],$case3[0][link_type],$case3[0][post_murl])}" target="_blank" style="background:#be946d">查看案例详情</a>
+						</dl>
+					</ul>-->
+				</div>
+			</div>
+			
+			<div class="dhk">
+				<h2><p>我是在线客服， 有问题可以直接咨询~ </p> <a href="tel:4008006161"><span><img src="__TMPL__Public/images/icon_phone.png"></span>免费热线</a></h2>
+				<div class="dhk-border">
+					<div class="youhui-wrap">
+						<div id="bb" style="">
+							<div class="toux"><img src="__TMPL__Public/images/01_03.png" alt=""></div>
+							<p class="pp2">您好，请问有什么能帮到您？<span class="sj"><img src="__TMPL__Public/images/sj.png" alt=""></span></p>
+						</div>
+						<div id="ee" style="">
+							<div class="toux toux2"><img src="__TMPL__Public/images/01_03.png" alt=""></div>
+							<p class="pp2 pp3">
+								<span class="txt">征集高龄、疑难种植牙案例火热进行中，网络预约可申请种牙专项优惠</span>
+								<span class="sj"><img src="__TMPL__Public/images/sj.png" alt=""></span></p>
+						</div>
+						<a onclick="javascript:openJesongChatByGroup(16524,20125);">
+							<textarea id="input_n" placeholder="在此输入可直接对话"></textarea>
+							<button type="button" id="button"><span class="jump">发送</span></button>
+						</a>
+					</div>
+				</div>
+			</div>
+			
+			<ul class="lists">
+				<volist name="list['posts']" id="vo">
+					<li>
+						<a class="media" href="{:get_article_url($vo['tid'],$vo['link_type'],$vo['post_murl'])}">
+							<div class="media-body">
+								<p>{$vo.post_title}</p>
+								<p class="time">时间：{:substr("$vo[post_modified]", 0, -9)}</p>
+							</div>
+							<div class="media-right">
+								<i class="fa fa-angle-right"></i>
+							</div>
+						</a>
+					</li>
+				</volist>
+			</ul>
+			<ul class="page">{$list['page']}</ul>
+
+		</div>
+		<tc_include file="Public:footer" />
+		<script type="text/javascript">
+			TouchSlide({ slideCell:"#anliBox",effect:"leftLoop" });
+			
+			$('body').on('click','.anli_mb-hover ul li',function(){
+				var type = $(this).data('type');
+				var txt = $('.pp3').find('.txt');
+				if(type == 1){
+					txt.html('征集高龄、疑难种植牙案例火热进行中，网络预约可申请种牙专项优惠');
+				}else if(type == 2){
+					txt.html('征集牙齿矫正案例火热进行中，网络预约可申请种牙专项优惠');
+				}else if(type == 3){
+					txt.html('征集牙齿修复案例火热进行中，网络预约可申请种牙专项优惠');
+				}
+			});
+			
+
+			$(window).scroll(function(){
+			    setTimeout(function(){
+			          var winT=$(this).scrollTop();
+					  var top1=$('.youhui-wrap').offset().top;
+			          if(winT>=(top1-400)){
+			              function show(){
+			                $('#bb').fadeIn(1000);
+			                $('#ee').fadeIn(1000);
+			            };
+			            show();
+			          }
+			    },0)
+			    
+			});
+		</script>
+	</body>
+
+</html>

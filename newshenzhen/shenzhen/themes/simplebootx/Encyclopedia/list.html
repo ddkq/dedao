@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<tc_include file="Public:head" />
+	<link href="__TMPL__Public/css/article.css" rel="stylesheet" type="text/css">
+	<title>{$name}_{$site_name}</title>
+	<meta name="keywords" content="{$seo_keywords}"/>
+	<meta name="description" content="{$seo_description}" />
+	</head>
+	<body>
+		<tc_include file="Public:new_header" />
+		
+		<div class="pdbanner">
+			<div class="hd">
+				<ul>
+					<volist name="ad" id="vo" key="k" >
+						<li>{$k}</li>
+					</volist>
+				</ul>
+			</div>
+			<div class="bd">
+				<ul>
+					<volist name="ad" id="vo">
+						<li><a href="{$vo.slide_url}" target="_blank"><img src="{:sp_get_asset_upload_path($vo['slide_pic'])}" /></a></li>	
+					</volist>
+				</ul>
+			</div>
+		</div>
+		
+		<ol class="breadcrumb">
+			<i class="fa fa-home"></i>
+			<li>您所在的位置</li>
+			<li><a href="/">首页</a></li>
+			<volist name="breadcrumb" id="vo">
+				<li><a href="/encyclopedia/list/{$vo.term_id}.html">{$vo.name}</a></li>
+			</volist>
+		</ol>
+		
+		<div class="main_content clearfix">
+			<div class="LEFT">
+				<h3 class="term_title">{$name}</h3>
+				<ul class="main_list">
+					<volist name="list['posts']" id="vo">
+						<li>
+							<a class="media list_recommend" href="/encyclopedia/{$vo.id}.html">
+								<div class="media-left media-middle">
+									<php>$smeta = json_decode($vo['smeta'],true);</php>
+									<img class="media-object" src="{$smeta.thumb}" >
+								</div>
+								<div class="media-body info">
+									<h4 class="media-heading">{$vo.title}</h4>
+									<p>{:mb_substr($vo[summary],0,90,'utf-8')}...</p>
+								</div>
+							</a>
+						</li>
+					</volist>
+				</ul>
+				<ul class="pages">{$list['page']}</ul>
+			</div>
+			<tc_include file="Public:right"/>
+		</div>
+	</body>
+	<tc_include file="Public:footer"/>
+	<script>
+		jQuery(".pdbanner").slide({mainCell:".bd ul",autoPlay:true});
+	</script>
+</html>
+		

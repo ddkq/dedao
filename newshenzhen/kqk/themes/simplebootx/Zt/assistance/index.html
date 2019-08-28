@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>种牙援助行动_{$site_name}</title>
+	<tc_include file="Public:head" />
+	<link rel="stylesheet" href="__TMPL__Public/css/bootstrap4.min.css">
+	<link href="__TMPL__Zt/assistance/index.css" rel="stylesheet" type="text/css">
+	<script src="__TMPL__Zt/assistance/index.js"></script>
+</head>
+<body>
+	<tc_include file="Public:new_header" />
+
+	<section class="banner">
+		<div><img src="__TMPL__Zt/assistance/imgs/banner.jpg" alt=""></div>
+		<div style="background: #EBE2D7;">
+			<div class="container">
+				<div class="d-flex position-relative">
+					<div class="position-absolute activity-img"><img src="__TMPL__Zt/assistance/imgs/activity.png" alt=""></div>
+					<div class="w-50"></div>
+					<div class="pl-5 pt-3 pb-3">
+						<p class="text-indent">深圳改革开放40年，创造出举世瞩目的“深圳速度”，然而深圳老一辈开拓者的口腔问题也愈加严峻，严重影响他们的晚年生活质量及寿命。为致敬每一位建设者，深圳晚报联合深圳德道口腔、德国ICX、韩国奥齿泰种植厂商发起2018深圳建设者种牙援助工程，以免费种牙，种牙补贴等形式惠民，让更多的建设者摆脱缺牙困扰，不再为种牙辛苦，乐享生活。</p>
+						<div class="text-right">援助行动主办单位：<img src="__TMPL__Zt/assistance/imgs/logo.png" alt=""></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="content-1 mt-5 pb-5">
+		<div class="container">
+			<h1 class="title text-center font-weight-bold">
+				<div class="d-inline-block">德道口腔联合<span>深圳晚报</span></div>
+			</h1>
+			<p class="text-center title-2">给深圳居民一口好牙</p>
+			<div class="d-flex mt-5 justify-content-center">
+				<div class="pr-3"><img src="__TMPL__Zt/assistance/imgs/content1.png" alt=""></div>
+				<div class="pt-4 pb-4 pl-3 content-text">
+					<b>深圳晚报，</b><br>
+					是在中国第一个成长壮大的晚报，<br>
+					也是唯一的大型综合性晚报，<br>
+					以服务社会、面向家庭、关注民生为办报方针，<br>
+					为解决深圳市民在生活中所关心的问题，<br>
+					<b>与深圳德道口腔联合主办</b><br>
+					<b>一场关爱深圳建设者口腔健康公益活动，</b><br>
+					<b>以此感谢他们的辛苦付出。</b>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="content-2 pt-5 pb-5 mb-5 position-relative">
+		<div class="container">
+			<h1 class="title text-center">
+				<div class="d-inline-block">种牙援助<span>行动一</span></div>
+			</h1>
+			<p class="text-center mb-4 title-2">关爱老一辈建设者口腔健康问题</p>
+			<p class="text-indent mb-4">过去，为了深圳的发展和繁荣，老一辈建设者献出了自己的青春和热血，从一个渔火薄田的边陲小镇发展成为欣欣向荣的现代化城市，创造出举世瞩目的“深圳速度”。经过40年的发展，深圳建设者们老了，却没有一口好牙享受生活，还要面临着缺牙引发的危害。</p>
+			<div class="text-center mb-5"><img src="__TMPL__Zt/assistance/imgs/content2.png" alt=""></div>
+			<form action="" class="text-center p-5 w-75">
+				<h4 class="mb-4">立即填写资料，报名申请免费种植体一颗</h4>
+				<div class="d-flex input-line mb-4 justify-content-between">
+					<div><input type="text" placeholder="姓名：" class="pl-3 w-100 input-name" name="data[name]"></div>
+					<div><input type="text" placeholder="性别：" class="pl-3 w-100" name="data[sex]"></div>
+				</div>
+				<div class="d-flex input-line mb-4 justify-content-between">
+					<div><input type="text" placeholder="年龄：" class="pl-3 w-100" name="data[age]"></div>
+					<div><input type="text" placeholder="缺牙颗数：" class="pl-3 w-100" name="data[missingNum]"></div>
+				</div>
+				<div class="d-flex input-line justify-content-between">
+					<div><input type="text" placeholder="牙槽骨情况：" class="pl-3 w-100" name="data[symptom]"></div>
+					<div><input type="text" placeholder="电话号码：" class="pl-3 w-100 input-phone" name="data[phone]"></div>
+				</div>
+				<input type="hidden" name="table_id" value="43" />
+				<input type="hidden" name="page" class="page" />
+				<input type="hidden" name="code" value="{$code = mt_rand(0,1000000)}">
+				<div class="mt-5"><a href="javascript:;" class="submit-btn text-white w-50 pt-2 pb-2 font-weight-bold">立即报名</a></div>
+			</form>
+		</div>
+	</section>
+
+	<section class="content-3 pt-5 pb-5 position-relative">
+		<div class="container">
+			<h1 class="title text-center">
+				<div class="d-inline-block">种牙援助<span>行动二</span></div>
+			</h1>
+			<p class="text-center mb-4 title-2">拯救“单颗牙缺失”新一代建设者</p>
+			<p class="text-indent">如今，为了加快深圳的建设发展，新一代深圳建设者正踏着老一辈建设者的足迹献出自己的智慧与力量。过快的生活节奏，也让年轻人遭受着缺牙的困扰；大多数年轻人在面临着单颗缺牙时，都会“忍”着过，却不知会带来更大的危害。</p>
+			<div class="d-flex mt-5 justify-content-between">
+				<img src="__TMPL__Zt/assistance/imgs/gif.gif" alt="">
+				<img src="__TMPL__Zt/assistance/imgs/content3.png" alt="">
+			</div>
+			<div class="text-center mt-5"><a href="/swt" target="_blank" class="swt-btn text-white w-50 pt-2 pb-2">立即领取<span>500-2000元</span>单颗种牙补贴</a></div>
+		</div>
+	</section>
+
+	<section class="content-4 pt-5 pb-5" style="background: #EFE8DF;">
+		<div class="container">
+			<h1 class="title text-center mt-5">
+				<div class="d-inline-block">种牙援助<span>行动三</span></div>
+			</h1>
+			<p class="text-center title-2">特邀权威种植牙专家亲自为您诊疗</p>
+			<p class="text-indent">深圳晚报为了能够让缺牙者享受更加专业的诊疗，特邀深圳德道口腔院长李建君为大家亲诊。李院长从医近20年，一直致力于种植牙技术的研发和改进，成功种植一万例以上种植牙案例。而种植牙技术也不断地突破时间限制，更快更有效率地解决缺牙者问题。</p>
+			<p><img src="__TMPL__Zt/assistance/imgs/content4.png" alt=""></p>
+			<div class="text-center mt-5"><a href="/swt" target="_blank" class="swt-btn text-white w-50 pt-2 pb-2">立即报名获院长亲诊，免费拍片名额</a></div>
+		</div>
+	</section>
+
+	<section class="content-5 mt-5">
+		<div class="container">
+			<h1 class="title text-center">
+				<div class="d-inline-block"><span>即刻用3.0</span>种植技术</div>
+			</h1>
+			<p class="text-center mb-5 title-2">让种植牙进入更精准、更快速、更安全的新通道</p>
+			<p><img src="__TMPL__Zt/assistance/imgs/content5.png" alt=""></p>
+		</div>
+	</section>
+
+	<section class="content-6 mt-5 pt-5" style="background: #EFE8DF;">
+		<div class="container">
+			<h1 class="title text-center">
+				<div class="d-inline-block">种牙援助行动成<span>全城焦点</span></div>
+			</h1>
+			<div id="certify" class="mt-5 mb-5">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="__TMPL__Zt/assistance/imgs/1.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="__TMPL__Zt/assistance/imgs/2.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="__TMPL__Zt/assistance/imgs/3.jpg" alt=""></div>
+						<div class="swiper-slide"><img src="__TMPL__Zt/assistance/imgs/4.jpg" alt=""></div>
+					</div>
+				</div>
+				<div class="arrow-left"><i class="arrow"></i></div>
+				<div class="arrow-right"><i class="arrow"></i></div>
+			</div>
+		</div>
+	</section>
+
+	<tc_include file="Public:footer" />
+</body>
+</html>

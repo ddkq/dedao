@@ -1,0 +1,5 @@
+<?php
+return array (
+  'TOPIC_ADMINTOPIC_DEFULT' => '专题管理',
+  'TOPIC_ADMINTOPIC_INDEX' => '专题管理',
+);

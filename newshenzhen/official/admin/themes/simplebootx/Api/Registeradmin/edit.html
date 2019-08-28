@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<admintpl file="header" />
+	</head>
+
+	<body>
+		
+		<form id="reply" action="/Api/guestbookadmin/edit_post" method="post" >
+		<div style="padding: 15px;">
+			<div>
+				<div class="col-xs-8 col-sm-2">
+					<label>留言标题</label>
+				</div>
+				<div class="col-xs-4 col-sm-6">
+					<input type="text" value="{$msg.title}" />
+				</div>
+			</div>
+			<div>
+				<div class="col-xs-8 col-sm-2">
+					<label>留言内容</label>
+				</div>
+				<div class="col-xs-4 col-sm-10">
+					<textarea rows="5" cols="10">{$msg.msg}</textarea>
+				</div>
+			</div>
+			<div>
+				<div class="col-xs-8 col-sm-2">
+					<label>回复内容</label>
+				</div>
+				<div class="col-xs-4 col-sm-10">
+					<textarea name="reply_msg" rows="5" cols="10">{$msg.reply_msg}</textarea>
+				</div>
+			</div>
+			<div>
+				<input type="hidden" name="id" value="{$msg.id}">
+				<input class="btn btn-default" type="submit" value="提交">
+			</div>
+		</div>
+		</form>
+	</body>
+
+</html>

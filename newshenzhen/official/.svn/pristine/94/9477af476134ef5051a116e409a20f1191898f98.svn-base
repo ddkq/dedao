@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于德道</title>
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/css/about.css" />
+	<link rel="stylesheet" href="__TMPL__Public/css/swiper.min.css">
+	<link rel="stylesheet" href="__TMPL__Public/css/base2.css">
+
+	<script type="application/javascript" src="__TMPL__Public/js/jquery-2.1.1.min.js"></script>
+	<script src="__TMPL__Public/js/swiper.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="black-bcg"></div>
+		<tc_include file="Public:nav" />
+	</header>
+
+	<section>
+		<div class="banner"><div class="bcg"></div></div>
+	</section>
+	
+	<section class="content content-width clear">
+		<ul class="left-nav">
+			<li><a href="about.html" class="active">关于我们</a></li>
+			<li><a href="javascript:;">公司动态</a></li>
+			<li><a href="javascript:;">工作在德道</a></li>
+			<li><a href="javascript:;">联系我们</a></li>
+			<li><a href="recruit.html">加入我们</a></li>
+		</ul>
+		<div class="right-content">
+			<section>
+				<h2 class="title">德道口腔品牌连锁 希望让更多人能够体验现代口腔诊疗</h2>
+				<p>北京旷视科技有限公司成立于 2011 年 10 月，是中国领军的人工智能产品公司。旷视以深度学习和物联传感技术为核心，立足于自有原创深度学习算法引擎 Brain++，深耕金融安全，城市安防，手机 AR，商业物联，工业机器人五大核心行业，致力于为企业级用户提供全球领先的人工智能产品和行业解决方案。发展至今，旷视已在北京、西雅图、南京设立独立研究院，并在十余个核心城市设立分部。在“赋能机器之眼，构建城市大脑”的愿景下，旷视人正在推动人工智能技术在中国及全球范围的产业落地，并通过打造 MegCity 城市大脑数据平台为构建智慧城市、平安城市基础设施而奋斗。旷视的核心人脸识别技术 Face++ 曾被美国著名科技评论杂志《麻省理工科技评论》评定为 2017 全球十大前沿科技，同时公司入榜全球最聪明公司并位列第 11 名。在中国科技部火炬中心“独角兽”榜单中，旷视排在人工智能类首位。2017 年 7 月，旷视曾作为唯一科技企业代表在政府半年经济会议中向李克强总理及国家各级领导做企业创新汇报。</p>
+				<ul class="brand_qs_nav clear">
+		          	<li class="barnd_qs_nav1">
+		            	<i></i>
+		            	<h3>核心理念</h3>
+		            	<p>以医疗本质为德，以科技发展为道</p>
+		          	</li>
+		          	<li class="barnd_qs_nav3">
+		            	<i></i>
+		            	<h3>德道使命</h3>
+		            	<p>为口腔医疗产业升级而来</p>
+		          	</li>
+		        </ul>
+			</section>
+			<section>
+				<h2 class="title">采用世界口腔智能齿科科技 设立6大特色齿科诊疗中心</h2>
+				<p>美奥口腔重点开设种植牙中心、矫正中心、修复中心、美白中心、牙周等口腔疾病中心及儿童口腔中心，真正实现分型诊疗，制定个性化的治疗方案，解决您的牙齿难题。精准检查、高效治疗是品质医疗的基础，美奥整合全球高端口腔资源，引入最新科研成果和技术装备，全面提升医疗水平，为患者提供安全可靠的诊疗服务。</p>
+				<h1>精准美齿 笑出明星范</h1>
+				<div class="content-banner swiper-container mySwiper1">
+					<ul>
+						<li class="left-btn"><i class="arrow"></i></li>
+						<li class="right-btn"><i class="arrow"></i></li>
+					</ul>
+					<ul class="content-img swiper-wrapper">
+						<li class="swiper-slide">
+							<img src="__TMPL__Public/images/01.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="__TMPL__Public/images/02.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="__TMPL__Public/images/03.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="__TMPL__Public/images/04.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="__TMPL__Public/images/05.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="__TMPL__Public/images/06.jpg" alt="">
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<h2 class="title">执行国家高精医疗标准  美奥整合国际资源,JCI国际医疗标准</h2>
+				<p>JCI认证是一个严谨的体系，JCI标准涵盖368个标准（其中200个核心标准，168个非核心标准），每个 标准之下又包含几个衡量要素，共有1033小项，主要针对医疗、护理过程中最重要的环节。美奥口腔作为品质口腔连锁机构，严格执行JCI国际 化的医疗管理标准，对就诊和施医全流程进行优化提升，做到医疗无小事，监管无遗漏，以保障医疗安全、提高医疗效率。</p>
+				<p class="content-img"><img src="__TMPL__Public/images/img02.jpg" alt=""></p>
+			</section>
+			<section>
+				<h2 class="title">美奥口腔全国连锁 打造中国高品质服务齿科品牌</h2>
+				<div class="swiper-container mySwiper2">
+					<ul class="flex tab">
+						<li class="on">诊前答疑服务<i class="tab-arrow"></i></li>
+						<li class="">私人订制服务<i class="tab-arrow"></i></li>
+						<li class="">安全诊疗服务<i class="tab-arrow"></i></li>
+						<li class="">术后保障服务<i class="tab-arrow"></i></li>
+					</ul>
+					<ul class="content-img swiper-wrapper ">
+						<li class="swiper-slide"><img src="__TMPL__Public/images/img03.jpg" alt=""></li>
+						<li class="swiper-slide"><img src="__TMPL__Public/images/img03.jpg" alt=""></li>
+						<li class="swiper-slide"><img src="__TMPL__Public/images/img03.jpg" alt=""></li>
+						<li class="swiper-slide"><img src="__TMPL__Public/images/img03.jpg" alt=""></li>
+					</ul>
+				</div>
+				
+				<div class="btn">
+					<a href="/swt/" target="_blank">在线咨询</a>
+					<a href="/swt/" target="_blank">预约挂号</a>
+				</div>
+			</section>
+			<section>
+				<h2 class="title">美奥口腔全国连锁 打造中国高品质服务齿科品牌</h2>
+				<a href="javascript:;" class="img-box"><img src="__TMPL__Public/images/join-dedao.jpg" alt=""></a>
+			</section>
+		</div>
+	</section>
+	<footer class="footer">
+		苏州美奥口腔门诊部有限公司 版权所有 ICP备案号： 苏ICP备13063843号-1
+	</footer>
+</body>
+<script>
+	$(window).scroll(function() {
+		if($(window).scrollTop() >= 300) {
+			$('.left-nav').addClass('fixed')
+		}
+		else {
+			$('.left-nav').removeClass('fixed')
+		}
+	})
+	var mySwiper = new Swiper('.mySwiper1', {
+		loop : true,
+		simulateTouch : false,
+		navigation: {
+		    nextEl: '.right-btn',
+		    prevEl: '.left-btn',
+		  }
+	})
+	
+	var tabsSwiper = new Swiper('.mySwiper2', {
+		speed : 500,
+		simulateTouch : false,
+		loop : true
+	});
+	
+	$(".tab li").on('click', function() {
+		$(".tab li").removeClass('on');
+		$(this).addClass('on');
+		tabsSwiper.slideTo($(this).index()+1, 500, false);
+	});
+
+
+
+
+</script>
+</html>

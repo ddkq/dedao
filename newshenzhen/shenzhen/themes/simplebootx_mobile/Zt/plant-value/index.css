@@ -1,0 +1,72 @@
+.banner {
+	margin-top: 120px;
+}
+.blue{
+	color: #223f8a;
+}
+.red{
+	color: #fa0510;
+}
+
+
+.title h4:before,
+.title h4:after{
+	position: absolute;
+	content: '';
+	width: 15%;
+	height: 1px;
+	background-color: #223f8a;
+	top: 50%;
+}
+.title h4:before{
+	left: 0;
+}
+.title h4:after{
+	right: 0;
+}
+
+.title2 h4:before,
+.title2 h4:after{
+	background-color: #fff;
+}
+
+.outnumber:after, .outnumber:before {
+    content: '';
+    display: inline-block;
+    width: 20%;
+    background-color: #e0dfdf;
+    position: absolute;
+    height: 1px;
+    top: 50%;
+}
+.outnumber:before {
+    left: 0%;
+}
+.outnumber:after {
+    right: 0%;
+}
+
+.border{
+	border-color: #c9c9c9 !important;
+	border-radius: 10px !important;
+}
+.checked{
+	color: #f84d59;
+	border-color: #f84d59 !important;
+}
+.w-47{
+	width: 47%;
+}
+form input{
+	border: 1px solid rgb(181, 181, 181) !important;
+}
+
+.submit-btn{
+	border-radius: 10px;
+	background-color: rgb(209, 14, 14);
+}
+
+.content-list{
+	background: #18264d;
+}
+

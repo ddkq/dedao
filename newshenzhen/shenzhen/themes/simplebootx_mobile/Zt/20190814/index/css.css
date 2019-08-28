@@ -1,0 +1,169 @@
+body, dl, dd, ul, ol, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, textarea, optgroup, p, blockquote, figure, hr, menu, dir, thead, tbody, tfoot, th, td {
+    margin: 0;
+    padding: 0;
+    font-family: '微软雅黑',Arial, Helvetica, sans-serif;
+	font-size:20px;
+}
+.qc{clear:both;font-size:0;}
+ul, ol {
+    list-style-type: none;
+    list-style-image: none
+}
+
+a {
+    text-decoration: none
+}
+
+a:active {
+    background-color: transparent
+}
+
+a:active, a:hover {
+    outline: 0 none
+}
+
+a:focus {
+    outline: 1px dotted
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    font-size: 62.5%
+}
+
+/*body {*/
+    /*font-size: 14px;*/
+    /*line-height: 1.8*/
+/*}*/
+
+body, button, input, select, textarea {
+    font-family: 'helvetica neue', tahoma, 'hiragino sans gb', stheiti, 'wenquanyi micro hei', \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, sans-serif;
+    -ms-text-autospace: ideograph-alpha ideograph-numeric ideograph-parenthesis;
+    text-autospace: ideograph-alpha ideograph-numeric ideograph-parenthesis
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400
+}
+
+h1 {
+    font-size: 36px
+}
+
+h2 {
+    font-size: 30px
+}
+
+h3 {
+    font-size: 22px;
+	text-align:center;
+	font-weight:bold;
+	padding:20px 0 10px 0;
+	color:#ff5357;
+}
+
+h4 {
+    font-size: 18px
+}
+
+h5 {
+    font-size: 14px
+}
+
+h6 {
+    font-size: 12px
+}
+strong{font-size:.3rem;}
+img{width:100%;}
+body{
+	min-width:320px;
+    max-width:750px;
+    margin:0 auto;
+}
+.box{
+    width:100%;
+    height:100%;
+    margin:0 auto;
+    padding:0;
+    font-size:.7rem;
+}
+.main{padding:15px;}
+.bord{border-bottom:1px solid #ccc;margin-bottom:10px;}
+.lin{padding:10px 0;position:relative;}
+.gztc{position:absolute;display:block;width:30%;height:100%;top:0;right:0;}
+.fhtc{position:absolute;display:block;width:10%;height:100%;top:0;left:0;}
+.ma_text{
+	text-indent:1.4rem;
+	line-height:1.5;
+	text-align:justify;
+	color:#343434;
+	padding:10px 0;
+}
+.tex_cl{color:#2c5a05;}
+.co_list{
+    border:4px solid #57af0b;
+    padding: 10px;
+    text-indent: 1.4rem;
+}
+
+.kl_text{
+	text-indent:1.4rem;
+	line-height:1.5;
+	text-align:justify;
+	color:#2c5a05;
+	padding:5px 0;
+}
+.account{background: #3f8801;
+    color: #fff;
+    padding:3px 5px;}
+
+.bypd{padding:10px;border:3px dashed #58af0a;line-height:1.5;}
+.pd1{color:#f00;font-size:20px;}
+.pd3{color:#f00;font-weight:bold;}
+
+
+
+
+/*评论*/
+.pinglun li {
+    border-bottom: 1px solid #cfcfcf;
+    padding:10px 0 10px 10px;
+    overflow: hidden;
+}
+.pinglun dl {
+    width: 100%;
+    overflow: hidden;
+}
+.pinglun dt {
+    width: 50px;
+    float: left;
+}
+.pinglun dd {
+    margin-left: 60px;
+    font-size: 18px;
+}
+.pinglun dd p {
+    color: #999;
+    margin-top: 1%;
+}
+.pinglun .pl {
+    margin-left: 60px;
+	font-size:18px;
+    line-height:1.5;
+	padding-right:10px;
+	text-align:justify;
+}
+.zan{background: #eee;
+    color: #999;
+    font-size:16px;
+    line-height:30px;
+    padding: 0 .5rem;
+    border-top: 1px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;}
+
+.go{background: #3f8801;
+    color: #fff;
+    padding:3px 5px;}
+

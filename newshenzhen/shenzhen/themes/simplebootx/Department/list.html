@@ -1,0 +1,122 @@
+﻿<!--医资力量-->
+<!DOCTYPE html>
+<html>
+	<tc_include file="Public:head" />
+	<link href="__TMPL__Public/css/page.css" rel="stylesheet" type="text/css">
+	<title>{$name}_{$site_name}</title>
+	<meta name="keywords" content="{$seo_keywords}"/>
+	<meta name="description" content="{$seo_description}" />
+	</head>
+	<style type="text/css">
+		.w-48{
+			width: 48%;
+		}
+	</style>
+	<body>
+		<tc_include file="Public:new_header" />
+		
+		<div class="main_img">
+			<img src="__TMPL__Public/images/brand/banner.png"/>
+		</div>
+		
+		<div class="brand_main clearfix">
+			<tc_include file="Public:brand_left" />
+			<div class="brand_right">
+				<div class="brand_path">当前位置：<a href="/">首页</a> &gt; {$name}</div>
+				<h1 class="brand_right_hd">{$name}</h1>
+				<div class="brand_zj_intro">
+					德道口腔拥有严格的医师准入制度，每一位进入德道的医师都必须经过层层考核。目前，在口腔种植、口腔正畸、口腔修复、牙齿美白、牙周治疗、儿童口腔等各领域均有资深专家及领军人才储备，在学科带头人的领导下，各学科组潜心钻研，夯实学科理论基础，提高临床实操技能，致力于为广大消费者提供专业、权威的口腔诊疗服务。
+				</div>
+				<div class="brand_zj">
+					<div class="con">
+						<ul class="clearfix">
+							<volist name="all_doctor" id="vo" offset="0" length='20'>
+								<li class="clearfix w-48 d-inline-block p-3 border mr- position-relative">
+									<div class="zj_pic"><img src="{$vo.main_img}"></div>
+									<div class="zj_des">
+										<div class="zj_title">{$vo.name} <strong>{$vo.job}</strong></div>
+										<div class="zj_ry">
+											<volist name="vo['experience']" id="vo1">
+												<p>{$vo1}</p>
+											</volist>
+										</div>
+										<div class="zj_xm">擅长项目：{$vo.item}</div>
+									</div>
+									<div class="zj_hover">
+										<div class="text">
+											<volist name="vo['experience']" id="vo1" offset="0" length='3'>
+												<p style="height: 21px;">{$vo1}</p>
+											</volist>
+										</div>
+										<i class="fa fa-chevron-circle-down"></i>
+										<div class="swt">
+											<a href="{:get_doctor_url($vo[id],$vo[link_type],$vo[post_url])}" target="_blank">专家详情</a>
+											<a onclick="openJesongChatByGroup(16524,20125);">预约咨询</a>	
+										</div>
+									</div>
+								</li>
+							</volist>
+						</ul>
+					</div>
+				</div>
+				
+				
+				
+					<div class="brand_btns">
+						<ul class="clearfix">
+						<li>
+							<a href="/swt/"  target="_blank">
+								<div class="brand_statu1">
+									<i class="fa fa-microphone"></i>
+									<b>健康咨询</b>
+									<span>health inquiry</span>
+								</div>
+								<div class="brand_statu2">
+									<p>德道提供免费健康咨询服务，也可添加德道口腔公众号：成都德道口腔医院，了解护牙知识。</p>
+									<span>&gt;&gt;点击预约</span>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="/swt/"  target="_blank">
+								<div class="brand_statu1">
+									<i class="fa fa-user-md"></i>
+									<b>预约医生</b>
+									<span>make an appointment</span>
+								</div>
+								<div class="brand_statu2">
+									<p>可在我院免费预约，到院无需排队可享受VIP就诊。</p>
+									<span>&gt;&gt;点击预约</span>
+								</div>
+							</a>
+						</li>
+						<li class="last">
+							<a href="/swt/"  target="_blank">
+								<div class="brand_statu1">
+									<i class="fa fa-map-marker"></i>
+									<b>来院指引</b>
+									<span>Hospital guidance</span>
+								</div>
+								<div class="brand_statu2">
+									<p>德道口腔全国连锁机构，就近就医或选喜欢的机构，来院前可联系导医获取交通指南。</p>
+									<span>&gt;&gt;获取交通指南</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+			</div>	
+		</div>
+		
+		
+
+
+	</body>
+
+	<tc_include file="Public:footer" />
+	<script type="text/javascript" src="__TMPL__Public/js/brand.js"></script>
+	<script>
+		jQuery(".brand_zj").slide({});
+	</script>
+</html>

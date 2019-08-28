@@ -1,0 +1,12 @@
+[ 2019-07-29T04:39:42+08:00 ] 220.181.124.77 /robots.txt
+ERR: 无法加载控制器:Robots.txt
+
+[ 2019-07-29T04:39:42+08:00 ] 220.181.124.77 /robots.txt
+ERR: 无法加载控制器:Robots.txt
+
+[ 2019-07-29T08:45:10+08:00 ] 180.163.220.3 /index.php
+ERR: 模板不存在:themes/simplebootx_mobile/Portal/index.html
+
+[ 2019-07-29T08:45:32+08:00 ] 180.163.220.4 /index.php
+ERR: 模板不存在:themes/simplebootx_mobile/Portal/index.html
+

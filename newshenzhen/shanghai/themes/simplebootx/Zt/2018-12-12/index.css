@@ -1,0 +1,133 @@
+a:hover {
+	text-decoration: none;
+}
+* {
+	font-family: '思源黑体 CN' !important;
+}
+.banner {
+	margin-top: 205px;
+}
+.content-1 {
+	background: url(imgs/content-1-bcg.jpg);
+	background-size: cover;
+}
+.subheading {
+  	border: 1px solid rgb(47, 42, 42);
+  	font-size: 20px;
+  	color: #2f2a2a;
+}
+.content-text {
+	line-height: 2;
+	font-size: 18px;
+}
+.doctor-text {
+	border-left: 2px solid #979494;
+}
+.doctor-text p {
+	line-height: 2;
+	font-size: 19px;
+	color: #2f2a2a;
+}
+.good {
+	border: 2px solid #C11920;
+	border-radius: 20px;
+	font-size: 20px;
+}
+.good-icon {
+	background: url(imgs/good.png);
+	width: 26px;
+	height: 24px;
+	top: 3px;
+}
+.content-2 .swt-btn {
+	font-size: 20px;
+	width: 162px;
+}
+.swt-btn {
+	background: #C11920;
+	border-radius: 20px;
+}
+.content-3 {
+	background: #C11920;
+}
+.content-3 .subheading{
+	border-color: #fff;
+}
+.content-4-bcg {
+	background: #F3F3F5;
+}
+.text-indent {
+	text-indent: 2rem;
+}
+.right-text {
+	line-height: 2;
+	font-size: 18px;
+}
+.content-4-title-2:after {
+	content: '';
+	background: #C11920;
+	display: inline-block;
+	width: 10px;
+	height: 96px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.content4-text, .content5-text, .content6-text {
+	font-size: 18px;
+}
+.lef-text {
+	width: 45%;
+	background: #c11920;
+}
+.lef-text h2:after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	width: 15%;
+	height: 40px;
+	border-top: 3px solid #fff;
+	border-right: 3px solid #fff;
+	right: 0;
+	bottom: 0;
+}
+.lef-text div {
+	border-right: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+}
+.lef-text span {
+	border-radius: 20px;
+	background: #fff;
+	color: #c11920;
+}
+.right-img {
+	width: 55%;
+}
+.tab {
+	right: 10%;
+    bottom: 3%;
+}
+.tab li {
+	color: #fff;
+	background: rgba(255, 255, 255, .502);
+	width: 35px;
+	cursor: pointer;
+}
+.tab li:first-child {
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+.tab li:last-child {
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.tab li.active {
+	background: #fff;
+	color: #c11920;
+}
+.content-5 .swt-btn {
+	background: #fff;
+	border: 1px solid #2F2A2A;
+	color: #2f2a2a;
+	font-size: 20px;
+}

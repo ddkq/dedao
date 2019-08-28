@@ -1,0 +1,4 @@
+<?php
+return array (
+  'TES2_TESTTT_TEST1' => 'test2',
+);

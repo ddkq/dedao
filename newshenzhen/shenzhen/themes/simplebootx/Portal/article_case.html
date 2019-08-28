@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+	<tc_include file="Public:head" />
+	<link href="__TMPL__Public/css/article.css" rel="stylesheet" type="text/css">
+	<link href="__TMPL__Public/css/share.min.css" rel="stylesheet" type="text/css">
+	<title>{$article.post_title}_{$site_name}</title>
+	<meta name="keywords" content="{$article.post_keywords}"/>
+	<meta name="description" content="{$article.post_excerpt}" />
+	</head>
+	<body>
+		<tc_include file="Public:new_header" />
+		
+		<div class="pdbanner">
+			<div class="hd">
+				<ul>
+					<volist name="ad" id="vo" key="k" >
+						<li>{$k}</li>
+					</volist>
+				</ul>
+			</div>
+			<div class="bd">
+				<ul>
+					<volist name="ad" id="vo">
+						<li><a href="{$vo.slide_url}" target="_blank"><img src="{:sp_get_asset_upload_path($vo['slide_pic'])}" /></a></li>	
+					</volist>
+				</ul>
+			</div>
+		</div>
+		
+		<ol class="breadcrumb">
+			<i class="fa fa-home"></i>
+			<li>您所在的位置</li>
+			<li><a href="/">首页</a></li>
+			<volist name="breadcrumb" id="vo">
+				<li><a href="/list/{$vo.term_id}.html">{$vo.name}</a></li>
+			</volist>
+			<li><a href="/list/{$term.term_id}.html">{$term.name}</a></li>
+		</ol>
+		
+		<div class="main_content clearfix">
+			<div class="title clearfix">
+		        <h3>{$article.post_title}</h3>
+		        <div class="botton">
+		        	<a href="javascript:" class="ioc1"><i class="fa fa-weixin"></i>微信客服</a>
+		        	<div id="qrcode"><img src="__TMPL__Public/images/smcode.jpg" alt=""></div>
+		            <a href="javascript:swtClick();" target="_blank" class="ioc2"><i class="fa fa-commenting"></i>咨询</a>
+		            <a href="javascript:swtClick();" target="_blank" class="ioc3"><i class="fa fa-calendar"></i>预约</a>
+		        </div>
+		    </div>
+			<div class="LEFT">
+				<div class="content clearfix">
+					<div class="LeftTool">
+						<div class="left-stick-wp" style="top: 0px;">
+							<div class="year through"><span>{$year}</span></div>
+							<div class="md">{$month}</div>
+							<div class="time">{$hour}</div>
+							<div class="share-title through"><span>分享</span></div>
+							<div class="share"></div>
+						</div>
+					</div>
+					<div class="content-article">{$article[post_content]}</div>
+					<div class="advisory clearfix">
+						<div class="col-md-6">
+							<img src="__TMPL__Public/images/article_logo.png">
+							<span>您身边的口腔医生</span>
+							<p>免费在线咨询</p>
+						</div>
+						<div class="col-md-6">
+							<a href="/swt/" target="_blank" class="col-md-3"><i class="fa fa-commenting-o"></i>在线咨询</a>
+							<a href="/swt/" target="_blank" class="col-md-3"><i class="fa fa-user-md"></i>预约专家</a>
+							<a href="/swt/" target="_blank" class="col-md-3"><i class="fa fa-cny"></i>价格咨询</a>
+							<a href="/traffic.html" target="_blank" class="col-md-3"><i class="fa fa-level-up"></i>来源路线</a>
+						</div>
+					</div>
+					<div class="next clearfix">
+						<notempty name="prev">
+							<a href="{:get_article_url($prev['tid'],$prev['link_type'],$prev['post_url'])}" class="col-md-6"><i class="fa fa-chevron-circle-left"></i>{$prev.post_title}</a>
+						</notempty>
+						<notempty name="next">  
+							<a href="{:get_article_url($next['tid'],$next['link_type'],$next['post_url'])}" class="col-md-6"><i class="fa fa-chevron-circle-right"></i>{$next.post_title}</a>
+						</notempty>
+					</div>
+					<div class="recommend clearfix">
+						<p>相关阅读:</p>
+						<ul>
+							<volist name="hits" id="vo">
+								<eq name="vo[tid]" value="$cid">
+									<else/>
+									<li><a href="{:get_article_url($vo[tid],$vo[link_type],$vo[post_url])}" target="_blank">{$vo.post_title}</a></li>
+								</eq>
+							</volist>
+						</ul>
+					</div>
+					
+					
+					<div class="comments" data-aid="{$article_id}">
+			
+					</div>
+					<ul class="pages flex">
+						<li class="prev-page"></li>
+						<li class="next-page"></li>
+					</ul>
+					
+					<div class="comment_post" id="comment_post">
+						<form class="comment-form" method="post">
+							<div class="control-group">
+								<div class="comment-postbox-wraper">
+									<textarea class="form-control comment-postbox" placeholder="请输入评论内容" style="min-height:90px;" name="content"></textarea>
+								</div>
+							</div>
+							<div class="control-group">
+								<input type="text" name="full_name" value="" placeholder="名称" />
+								<input type="text" name="verify" value="" placeholder="验证码" /> {:sp_verifycode_img('length=4&font_size=14&width=100&height=34&charset=1234567890&use_noise=1&use_curve=0')}
+
+								<button type="button" class="btn pull-right btn-primary comment-submit"><i class="fa fa-comment-o"></i> 发表评论</button>
+							</div>
+						
+							<input type="hidden" name="post_title" value="{$article.post_title}" />
+							<input type="hidden" name="post_table" value="posts" />
+							<input type="hidden" name="post_id" value="{$article_id}" />
+							<input type="hidden" name="url" value="" />
+							<input type="hidden" name="to_uid" value="0" />
+							<input type="hidden" name="parentid" value="0" />
+						</form>
+					</div>
+
+					
+				</div>
+			</div>
+			<tc_include file="Public:right"/>
+		</div>
+		
+	</body>
+	<tc_include file="Public:footer"/>
+
+	<script type="text/javascript" src="__TMPL__Public/js/jquery.share.min.js"></script>
+	<script>
+		jQuery(".pdbanner").slide({mainCell:".bd ul",autoPlay:true});
+		$('.ioc1').hover(function(){
+			$('#qrcode').animate({
+				height: '207px',
+				opacity: '1',
+			});
+		},function(){
+			$('#qrcode').animate({
+				height: '0'
+			});
+		});
+		$('.share').share({sites: ['wechat','qq','qzone','weibo']});
+		
+		$(function(){
+			$("input[name='url']").attr('value',window.location.href);
+			var page = 1;
+			var aid = $('.comments').data('aid');
+			var pageCount = '';
+			$.post('/comment/comment/index.html',{page:page,aid:aid},function(data){
+				//console.log(data)
+				
+				pageCount = data[0].page_count;
+				if(pageCount == 0){
+					return;
+				}
+				var li = '';
+				var html = '';
+				for(var i = 1; i <= data[0].page_count; i ++) {
+					li += `<li class="page-num">${i}</li>`
+				}
+				for(var i = 0; i < data.length; i ++) {
+					html += `<div class="comment flex" data-id="${data[i].id}">
+								<div class="head-img">
+									<img class="avatar" src="__TMPL__Public/images/headicon.png" class="headicon">
+								</div>
+								<div class="comment-body">
+									<div class="comment-content">
+										<p class="username">
+											${data[i].full_name}
+											<span class="comment-time">${data[i].createtime}</span>
+										</p>
+										<p class="content-text">${data[i].content}</p>
+									</div>
+								    <div class="clearfix">
+										<a class="comments-like click-like" href="javascript:;">
+											<i class="fa fa-thumbs-o-up"></i>
+											<span class="like-num">${data[i].comment_like}</span>
+										</a>
+										<a class="comment_reply">回复</a>
+									</div>
+								</div>
+							</div>`;
+				}
+				$('.comments').html(html);
+				$('.comments div').eq(0).before(`<h3>全部评论</h3>`);
+				$('.pages li').eq(0).after(li);
+				$('.pages li').eq(1).addClass('list-on');
+				$('.next-page').html('下一页');
+			});
+
+			$('body').on('click', '.next-page', function() {
+				page ++;
+				page == pageCount ? $('.next-page').html('') : ''
+				$('.prev-page').html('上一页');
+				$('.list-on').removeClass('list-on').next().addClass('list-on');
+				$('.comments').html();
+
+				getComment(page);
+			})
+			
+			$('body').on('click', '.prev-page', function() {
+				page --;
+				page == 1 ? $('.prev-page').html('') : ''
+				$('.next-page').html('下一页');
+				$('.list-on').removeClass('list-on').prev().addClass('list-on');
+				$('.comments').html();
+
+				getComment(page);
+			})
+
+			$('body').on('click', '.page-num', function() {
+				var pageNum = $(this).text();
+				$('.comments').html();
+				$(this).addClass('list-on').siblings().removeClass('list-on');
+				$('.prev-page').html('上一页');
+				$('.next-page').html('下一页');
+				if(pageNum == 1) {
+					$('.prev-page').html('');
+				}
+				else if(pageNum == pageCount){
+					$('.next-page').html('');
+				}
+				page = pageNum;
+
+				getComment(pageNum);
+			})
+
+			function getComment(pag) {
+				var html = '';
+				$.post('/comment/comment/index.html',{page:pag,aid:aid},function(data){
+					for(var i = 0; i < data.length; i ++) {
+						html += `<div class="comment flex" data-id="${data[i].id}">
+									<div class="head-img">
+										<img class="avatar" src="__TMPL__Public/images/headicon.png" class="headicon">
+									</div>
+									<div class="comment-body">
+										<div class="comment-content">
+											<p class="username">
+												${data[i].full_name}
+												<span class="comment-time">${data[i].createtime}</span>
+											</p>
+											<p class="content-text">${data[i].content}</p>
+										</div>
+									    <div class="clearfix">
+											<a class="comments-like click-like" href="javascript:;">
+												<i class="fa fa-thumbs-o-up"></i>
+												<span class="like-num">${data[i].comment_like}</span>
+											</a>
+											<a class="comment_reply" >回复</a>
+										</div>
+									</div>
+								</div>`;
+					}
+					$('.comments').html(html);
+					$('.comments div').eq(0).before(`<h3>全部评论</h3>`);
+				});
+			}
+		});
+		$('.comment-submit').click(function(){
+			
+			var content = $('.comment-postbox').text();
+			if(content == ''){
+				alert("评论内容不能为空");
+				return false;
+			}
+			var name = $("input[name=full_name]").val();
+			var re1 = /^[\u4E00-\u9FA5]{1,6}$/; 
+			if(name == null){
+				alert("姓名不能为空"); 
+				return false; 
+			}else if(name != null){
+				if (!re1.test(name)){ 
+					alert("姓名格式不正确"); 
+					return false; 
+				}	
+			}
+			
+			var data = $('.comment-form').serializeArray();
+			$.post('/comment/comment/post.html',data,function(result){
+				alert(result.info);
+				window.location.reload();
+			});
+		});
+		
+		$('body').on('click','.comments-like',function(){
+			var id = $(this).parents('.comment').data('id');
+			var like = $(this).find('.like-num');
+			var num = parseInt(like.html());
+			$(this).removeClass('comments-like');
+			$.post('/comment/comment/do_like.html',{id,id},function(data){
+				if(data.status){
+					num+=1;
+					like.html(num);
+				}
+			});
+		});
+		
+		$('body').on('click', '.comment_reply', function() {
+			$("html,body").stop(true);
+			$("html,body").animate({scrollTop: $("#comment_post").offset().top - 150}, 500);
+		})
+		
+		
+	</script>
+</html>

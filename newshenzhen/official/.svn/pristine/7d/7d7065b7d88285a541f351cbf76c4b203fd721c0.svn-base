@@ -1,0 +1,175 @@
+<!--医生终端页-->
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{$post_title}_{$site_name}</title>
+	<meta name="keywords" content="{$post_keywords}"/>
+	<meta name="description" content="{$post_excerpt}" />
+	<link rel="shortcut icon" href="/public/images/favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/css/about.css" />
+	<link rel="stylesheet" href="__TMPL__Public/css/swiper.min.css">
+	<link rel="stylesheet" href="__TMPL__Public/css/base2.css">
+
+	<script type="application/javascript" src="__TMPL__Public/js/jquery-2.1.1.min.js"></script>
+	<script src="__TMPL__Public/js/swiper.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="black-bcg"></div>
+		<tc_include file="Public:nav" />
+	</header>
+
+	<section>
+		<div class="banner"><div class="bcg"></div></div>
+	</section>
+	
+	<section class="content content-width clear">
+		<ul class="left-nav">
+			<li><a href="/about.html">关于我们</a></li>
+			<li><a href="/china.html">全国连锁</a></li>
+			<li><a href="/department/7.html" class="active">专家团队</a></li>
+			<li><a href="/list/189.html">公司动态</a></li>
+			<li><a href="/careers.html">工作在德道</a></li>
+			<li><a href="/contact.html">联系我们</a></li>
+			<li><a href="/job/2.html">加入我们</a></li>
+		</ul>
+		<div class="right-content">
+			<div class="doctor_img">
+				<img src="{$smeta[thumb]}" />
+			</div>
+			<div class="doctor_info">
+				<h3>{$name}<span>{$job}</span></h3>
+				<volist name="experience" id="vo" offset="0" length='4'>
+					<p class="red">{$vo}</p>
+				</volist>
+				<p>职务：{$duties}</p>
+				<p>科室：
+					<volist name="terms" id="vo">
+						{$vo.name}&nbsp;&nbsp;
+					</volist>
+				</p>
+				<p>职称：{$job}</p>
+				<p>坐诊时间：
+							<table class="table table-bordered text-center">
+								<php>
+									foreach($working as $vo){
+										if($vo == 11){
+											$s11 = '<i class="fa fa-check"></i>';}if($vo == 12){
+												$s12 = '<i class="fa fa-check"></i>';}if($vo == 13){
+													$s13 = '<i class="fa fa-check"></i>';}
+										if($vo == 21){
+											$s21 = '<i class="fa fa-check"></i>';}if($vo == 22){
+												$s22 = '<i class="fa fa-check"></i>';}if($vo == 23){
+													$s23 = '<i class="fa fa-check"></i>';}
+										if($vo == 31){
+											$s31 = '<i class="fa fa-check"></i>';}if($vo == 32){
+												$s32 = '<i class="fa fa-check"></i>';}if($vo == 33){
+													$s33 = '<i class="fa fa-check"></i>';}
+										if($vo == 41){
+											$s41 = '<i class="fa fa-check"></i>';}if($vo == 42){
+												$s42 = '<i class="fa fa-check"></i>';}if($vo == 43){
+													$s43 = '<i class="fa fa-check"></i>';}
+										if($vo == 51){
+											$s51 = '<i class="fa fa-check"></i>';}if($vo == 52){
+												$s52 = '<i class="fa fa-check"></i>';}if($vo == 53){
+													$s53 = '<i class="fa fa-check"></i>';}
+										if($vo == 61){
+											$s61 = '<i class="fa fa-check"></i>';}if($vo == 62){
+												$s62 = '<i class="fa fa-check"></i>';}if($vo == 63){
+													$s63 = '<i class="fa fa-check"></i>';}
+										if($vo == 71){
+											$s71 = '<i class="fa fa-check"></i>';}if($vo == 72){
+												$s72 = '<i class="fa fa-check"></i>';}if($vo == 73){
+													$s73 = '<i class="fa fa-check"></i>';}
+									}
+								</php>
+								<thead>
+									<tr>
+										<th></th>
+										<th>周一</th>
+										<th>周二</th>
+										<th>周三</th>
+										<th>周四</th>
+										<th>周五</th>
+										<th>周六</th>
+										<th>周日</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">上午</th>
+										<td>{$s11}</td>
+										<td>{$s21}</td>
+										<td>{$s31}</td>
+										<td>{$s41}</td>
+										<td>{$s51}</td>
+										<td>{$s61}</td>
+										<td>{$s71}</td>
+									</tr>
+									<tr>
+										<th scope="row">中午</th>
+										<td>{$s12}</td>
+										<td>{$s22}</td>
+										<td>{$s32}</td>
+										<td>{$s42}</td>
+										<td>{$s52}</td>
+										<td>{$s62}</td>
+										<td>{$s72}</td>
+									</tr>
+									<tr>
+										<th scope="row">下午</th>
+										<td>{$s13}</td>
+										<td>{$s23}</td>
+										<td>{$s33}</td>
+										<td>{$s43}</td>
+										<td>{$s53}</td>
+										<td>{$s63}</td>
+										<td>{$s73}</td>
+									</tr>
+								</tbody>
+							</table>
+						</p>
+			</div>
+			<div class="doctor_content">
+				<h4>医师介绍:</h4>
+				{$excerpt}
+				<h4>专业擅长:</h4>
+				{$content}
+			</div>
+		</div>
+	</section>
+	<tc_include file="Public:footer" />
+</body>
+<script>
+	$(window).scroll(function() {
+		if($(window).scrollTop() >= 300) {
+			$('.left-nav').addClass('fixed')
+		}
+		else {
+			$('.left-nav').removeClass('fixed')
+		}
+	})
+	var mySwiper = new Swiper('.mySwiper1', {
+		loop : true,
+		simulateTouch : false,
+		navigation: {
+		    nextEl: '.right-btn',
+		    prevEl: '.left-btn',
+		  }
+	})
+	
+	var tabsSwiper = new Swiper('.mySwiper2', {
+		speed : 500,
+		simulateTouch : false,
+		loop : true
+	});
+	
+	$(".tab li").on('click', function() {
+		$(".tab li").removeClass('on');
+		$(this).addClass('on');
+		tabsSwiper.slideTo($(this).index()+1, 500, false);
+	});
+</script>
+</html>

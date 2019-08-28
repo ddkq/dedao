@@ -1,0 +1,69 @@
+/* CSS Document */
+
+.banner img,.num1 img,.num2 img,.num3 img,.num4 img,.num5 img{width:100%;display:block;}
+.numtitle {margin:0.5rem auto 1rem;}
+.numtitle span{font-size:1rem;color:#282828;margin-top:-0.2rem;margin-bottom:0.5rem;text-align:center; font-weight:bold;    display: block;}
+.numtitle h3{font-size:1.3rem;text-align:center;color:#282828;margin:1.2rem auto 0.5rem;}
+.numtext{width:86%;margin:auto;}
+.numtext p{line-height:1.5rem;color:#282828;text-align:center;padding:0.2rem 0 1.2rem 0;font-family:"黑体";}
+.num2{margin-top:1.3rem;}
+
+.num2box{width:95%;margin:0.8rem auto 1rem;}	
+.num2box .hd{   text-align:justify;}
+.num2box .hd ul{ overflow:hidden;  }
+.num2box .hd ul li{ float:left; color:#282828;font-size:0.7rem;width:20.5%;margin-left:1.2%;border:1px solid #e3e3e3;height:2rem;line-height:2rem;padding:0 0.3rem;text-align:center;border-radius:33px; }
+.num2box .hd ul .on{ background:#b60005;   }
+.num2box .hd ul .on a{ display:block; color:#fff; }
+.num2box .n2_li4{width:22.8% !important;}
+.num2box .n2_li1{margin-left:0px !important;}
+.num2box .bd .con{font-size:0.8rem;line-height:1.2rem;margin:0.8rem auto 1rem;width:97%;text-indent:2em;}
+.num2box .bd a{ -webkit-tap-highlight-color:rgba(0,0,0,0); }  /* 去掉链接触摸高亮 */
+.num2box .bd li a{ color:#555;  }
+
+.num3{margin-top:1.3rem;}
+.num3 .numtitle{margin:0.8rem auto 1rem}
+
+.num5{margin:0 auto 1rem;}
+
+.numlink{border:2px solid #000;width:55%;margin:1rem auto;text-align:center;height:2.5rem;line-height:2.5rem;}
+.numlink a{color:#282828;font-size:1.1rem;}
+.zj h3{font-size:1.5rem;font-weight:bold; color:#000; text-align:center; padding:2% 0 0.7rem 0;font-family:"黑体";}
+.zj{margin-top:-0.5rem;}
+@media (min-width:320px) and (max-width:359px)
+{
+.num2box .hd ul li{ font-size:0.6rem;width:25.5%;margin-left:0.1%;height:2rem;line-height:2rem;padding:0 0.3rem;text-align:center;border-radius:33px; }
+.numtitle h3 {font-size: 1rem}
+}
+@media (min-width:360px) and (max-width:399px)
+{
+.num2box .n2_li4{width:24.6% !important;padding:0 0.2rem !important;}
+.num2box .n2_li1{width:18% !important;}
+.numtitle h3 {font-size: 1.2rem}
+
+}
+@media (min-width:400px) and (max-width:439px)
+{
+
+}
+@media (min-width:440px) and (max-width:479px)
+{
+}
+@media (min-width:640px)
+{
+.num2box .hd ul li{ font-size:1rem;width:20.5%;margin-left:1.2%;height:2.3rem;line-height:2.3rem;padding:0 0.5rem; }	
+.num2box .bd .con{font-size:1rem;line-height:1.4rem;}
+.numtitle h3{font-size:2.1rem;margin-top:1.8rem;}
+.numtitle{margin-top:1.8rem !important;}	
+.zj h3{font-size:2.4rem;}
+.numtext p{font-size:1.2rem;}
+.numlink{margin:1.5rem auto;}
+}
+
+
+
+
+
+
+
+
+

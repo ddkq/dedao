@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>个人中心_{$site_name}</title>
+<link href="__TMPL__Public/css/user.css" rel="stylesheet" type="text/css">
+<meta name="keywords" content="{$site_seo_keywords}" />
+<meta name="description" content="{$site_seo_description}">
+<tc_include file="Public:head" />
+<script type="text/html" id="photos-item-wrapper">
+	<li id="savedimage{id}">
+		<input id="photo-{id}" type="hidden" name="photos_url[]" value="{filepath}"> 
+		<input id="photo-{id}-name" type="hidden" name="photos_alt[]" value="{name}" style="width: 160px;" title="图片名称">
+		<img id="photo-{id}-preview" src="{url}" style="height:36px;width: 36px;" onclick="image_preview_dialog(this.src);">
+		<a href="javascript:upload_one_image('图片上传','#photo-{id}');">替换</a>
+		<a href="javascript:(function(){$('#savedimage{id}').remove();})();">移除</a>
+	</li>
+</script>
+<body>
+<tc_include file="Public:user_header" />
+
+<div class="position">
+	<img src="/public/images/home.jpg">您现在的位置：<a href="/" target="_blank">主页</a> &gt; <font>个人中心</font>
+</div>
+
+<div class="content width1100 mt20 clear overflow">
+	<div class="right_box">
+      <div class="right_box_main">
+        <div class="member_box">
+        	<div class="member_con">
+
+				<div class="tabbed-box-hd">
+					<h3 class="title">评价</h3>
+				</div>
+				<form action="{:U('user/profile/add_comment')}" method="post" class="form-horizontal js-ajax-forms" enctype="multipart/form-data">
+				<div class="remark-item">
+					<div class="item-detail">
+						<div class="item-info">
+							<a class="item-d-img" href="/goods/{$goods.good_id}.html" target="_blank"><img alt="查看商品详情" src="{$smeta1.thumb}"></a>
+							<h3><a href="/goods/{$goods.good_id}.html" target="_blank">{$goods.good_name}</a></h3>
+							<input type="hidden" name="post_id" value="{$goods.good_id}" />
+							<input type="hidden" name="uid" value="{$id}" />
+							<input type="hidden" name="full_name" value="{$user_nicename}" />
+							<input type="hidden" name="email" value="{$user_email}" />
+						</div>
+					</div>
+					<div class="item-review">
+						<div class="rate-msg-handle">评论：</div>
+						<div class="rate-msg-box">
+							<div class="bd">
+								<div class="textinput">
+									<textarea name="content" maxlength="" class="rate-msg">来分享一下您的使用感受吧！</textarea>
+								</div>
+							</div>
+							<div class="ft">
+								<ul id="photos" class="pic-list unstyled"></ul>
+								<a href="javascript:upload_multi_image('图片上传','#photos','photos-item-wrapper');" class="btn btn-small">选择图片</a>
+							</div>
+						</div>
+					</div>
+					<div class="item-btn clear" >
+						<button class="w-btn js-ajax-submit" type="submit">提交</button>
+					</div>
+					
+				</div>
+				</form>
+
+           </div>
+        </div>
+      </div>
+   </div>
+</div>
+
+	
+
+<tc_include file="Public:footer" />
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+<script>
+	$(".w-btn").click(function(){
+		var p = $('#total').text();
+		var c = $('.w-number1-input').val();
+		$.post("/user/profile/add_comment",{id:goods_id,count:c,price:p,type:type,g:gid},function(data){
+			 //console.log(data);
+			 //alert(data['status']);
+			 if(data.status == 1){
+			 	alert(data.info);
+			 	location.href = "/";
+			 }else{
+				alert(data.info);
+			 }
+		 },'json');	
+	});
+</script>
+
+</body>
+</html>

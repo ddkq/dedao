@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>德国种牙节抽奖</title>
+	<tc_include file="Public:head" />
+	<link rel="stylesheet" href="__TMPL__Public/css/bootstrap4.min.css">
+	<link href="__TMPL__Zt/draw/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<section class="pb-5">
+		<div class="logo ml-5 pt-5"><img src="__TMPL__Zt/draw/imgs/logo.png" width="25%"></div>
+		<div class="text-center mt-3"><img src="__TMPL__Zt/draw/imgs/title.png" width="50%"></div>
+		<div class="d-flex justify-content-center pb-5 pl-5 pr-5">
+			<div class="draw position-relative mr-5">
+				<div class="title position-absolute text-center">1000元种牙抵扣券</div>
+				<div class="text-center"><img src="__TMPL__Zt/draw/imgs/bcg2.png" width="850px"></div>
+				<div class="num-box position-absolute text-white d-flex justify-content-between text-center">
+					<div class="num d-flex justify-content-center"><i id="ResultNum">00</i></div>
+					<div class="num d-flex justify-content-center"><i id="ResultNum">00</i></div>
+					<div class="num d-flex justify-content-center"><i id="ResultNum">00</i></div>
+					<div class="num d-flex justify-content-center"><i id="ResultNum">00</i></div>
+					<div class="num d-flex justify-content-center"><i id="ResultNum">00</i></div>
+				</div>
+				<div class="star-btn position-absolute text-center">
+					<a href="javascript:;" onclick="beginRndNum(this)">抽奖</a>
+				</div>
+				<a href="javascript:;" class="position-absolute text-white next-time">开始下一轮抽奖</a>
+			</div>
+			<div class="result mt-5 ml-5">
+				<div class="text-center position-relative result-img"><img src="__TMPL__Zt/draw/imgs/result.png" width="400px"></div>
+			</div>
+		</div>
+	</section>
+</body>
+<script src="__TMPL__Zt/draw/script.js"></script>
+</html>

@@ -1,0 +1,69 @@
+<html>
+	<tc_include file="Public:head" />
+	<link href="__TMPL__Public/css/article.css" rel="stylesheet" type="text/css">
+	<title>{$article.title}_{$site_name}</title>
+	<meta name="keywords" content="{$article.keywords}"/>
+	</head>
+	<body>
+	
+	<div class="article_header">
+		<h1 style="padding-left: 1rem;"><a href="javascript:history.go(-1);"><i class="fa fa-angle-left"></i></a>{$article.title}</h1>
+	</div>
+	<div style="height: 55px;"></div>
+	<!-- 这里是内容 -->
+	
+	<div id="stepTabBox" class="stepTabBox">
+		<div class="hd">
+
+		</div>
+		<div class="bd">
+			<ul>
+				<h3>简介</h3>
+				<div class="thumbnail">
+					<notempty name="excerpt[photo]">
+						<div class="cont_img">
+							<volist name="excerpt[photo]" id="vo2">
+								<img src="{:sp_get_image_preview_url($vo2)}">
+							</volist>
+						</div>
+					</notempty>
+					<div class="caption">
+						{$excerpt.post}
+					</div>
+				</div>
+			</ul>
+			<volist name="step" key="k" id="vo">
+				<php>$count = count($vo)-2;</php>
+				<volist name="vo" key="k1" id="vo1" offset="2" length='$count'>
+				    <ul class="cont_{$k1}">
+				    	<h3>步骤方法</h3>
+				    	<div class="cont_left">
+				    		<div class="num"><span>{$k1}</span>/{$count}</div>
+				            <div class="user_pig"><div class="user_name">{$vo1.content}</div></div>      
+				        </div>
+				        <div class="cont_right">
+				        	<div class="cont_word">
+								<notempty name="vo1[photo]">
+									<p>
+										<volist name="vo1[photo]" id="vo2">
+											<img src="{:sp_get_image_preview_url($vo2)}" alt="" width="400">
+										</volist>
+									</p>	
+								</notempty>
+				            </div>            
+				        </div>
+				    </ul>
+				</volist>
+		   </volist>
+		</div>
+	</div>
+	<tc_include file="Public:scripts" />
+	<script type="text/javascript">
+		TouchSlide({
+			slideCell: "#stepTabBox",
+			effect: "left"
+		});
+	</script>
+
+	</body>
+</html>

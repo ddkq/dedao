@@ -1,0 +1,11 @@
+[ 2019-08-08T09:50:44+08:00 ] 59.42.91.222 /tables/adminTablesOptions/data_index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `cmf_tables_options` WHERE ( id = 0 ) LIMIT 1   [ RunTime:0.0001s ]
+

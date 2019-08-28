@@ -1,0 +1,159 @@
+/*终端页样式*/
+@font-face{font-family:Politica;src: url("politica.ttf");}
+.LEFT{width: 80%;float: left;}
+.RIGHT{width: 20%;float: right;}
+
+.title{width:100%;line-height:50px;padding-bottom: 10px;border-bottom: 1px solid #ccc;position: relative;}
+.title h3 {font-size: 1.4rem; text-align:center;color:#000;line-height: 1.4;width: 80%;margin: 0 auto;}
+
+.LeftTool {width: 8%;padding-right: 30px;text-align: center;float: left;font-size: 12px;color: gray;}
+.LeftTool .left-stick-wp {position: relative;}
+.LeftTool .through {position: relative;}
+.LeftTool .through span {display: inline-block;background: #fff;padding: 0 5px;}
+.LeftTool .through:after {content: "";display: block;width: 100%;height: 1px;background: #5a5959;position: absolute;top: 50%;left: 0;z-index: -1;}
+.LeftTool .md, .LeftTool .year {color: #000;font-family:Politica; text-align: center;}
+.LeftTool .year {font-size: 20px;}
+.LeftTool .md {font-size: 34px;line-height: 1.2; margin: 10px 0;}
+.LeftTool .time{font-size: 20px;color: #000;font-family:Politica;margin-bottom: 25px; letter-spacing: 2px;}
+.LeftTool p{font-size: 12px;}
+
+.LeftTool .share-title {margin-top: 100px;margin-bottom: 18px;}
+
+.content-article {width: 88%; margin: 0 auto;}
+.content-article p{font-size: 1rem;line-height: 1.6rem;margin-bottom: 20px;}
+
+.recommend h3{font-size: 1rem; text-align: center;}
+.recommend h3:after{content: ""; width: 30px; height: 2px; background: #C11920; margin: 5px auto;}
+.recommend li{width: 80%;margin: 1rem auto;font-size: 0.8rem;text-align: center;}
+
+
+/*终端页样式*/
+
+
+
+/*列表页样式*/
+.tab-bar-container {
+    height: auto;
+    /* background-color: #fff; */
+}
+.tab-bar {
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    height: auto;
+    overflow: visible;
+    transition: all .3s ease 0s;
+    position: relative;
+}
+.tab-bar h4 {
+    display: block;
+    height: 3rem;
+    line-height: 3rem;
+    background-color: #f5f5f5;
+    color: #404040;
+    width: 100%;
+    position: relative;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid #d6d6d6;
+}
+.tab-bar h4 span:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 6rem;
+    top: .9rem;
+    width: .6rem;
+    height: .6rem;
+    border-left: 2px solid #5c5c5c;
+    border-bottom: 2px solid #5c5c5c;
+    transition: all .3s ease 0s;
+    transform: rotate(-45deg);
+}
+.tab-bar.show h4 span:after {
+    top: 1.3rem;
+    transform: rotate(135deg);
+}
+
+.tab-bar ul li {
+    position: relative;
+    font-size: 1rem;
+    height: auto;
+    text-align: center;
+    line-height: 1;
+    background-color: whitesmoke;
+    border-top: none;
+    overflow: hidden;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.tab-bar ul li a {
+    position: relative;
+    z-index: 4;
+    display: inline-block;
+    color: #222;
+    min-width: auto;
+    padding: 18px 0;
+}
+
+.tab-bar ul li.active a, .tab-bar ul li:hover a {
+    color: #404040;
+}
+
+.onenews {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e4e4e4;
+    width: 90%;
+    margin: 20px auto;
+    background: #f9f9f9;
+}
+.onenews img {
+    padding: 1rem;
+}
+.onenews .infomation {
+    padding: 0 1rem 1rem;
+}
+.onenews .infomation p {
+    color: #737373;
+    font-size: 14px;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.onenews .infomation h3 {
+    color: #3e3e3e;
+    font-size: 24px;
+    line-height: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+.onenews .infomation p.news-time {
+    font-size: 12px;
+    color: #b5b5b5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

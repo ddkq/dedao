@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+	<tc_include file="Public:head" />
+	<link href="__TMPL__Public/css/style.css" rel="stylesheet" type="text/css">
+	<title>{$seo_title}</title>
+	<meta name="keywords" content="{$seo_keywords}"/>
+	<meta name="description" content="{$seo_description}" />
+	</head>
+	<body>
+		<tc_include file="Public:new_header" />
+		<div class="main_img">
+			<php>$slide = sp_getslide("implanted_banner");</php>
+			<div class="hd">
+				<ul>
+					<volist name="slide" id="vo" key="k" >
+						<li>{$k}</li>
+					</volist>
+				</ul>
+			</div>
+			<div class="bd">
+				<ul>
+					<volist name="slide" id="vo">
+						<li><a href="{$vo.slide_url}" target="_blank"><img src="{:sp_get_asset_upload_path($vo['slide_pic'])}" /></a></li>	
+					</volist>
+				</ul>
+			</div>
+		</div>
+			
+		<ol class="breadcrumb">
+			<i class="fa fa-home"></i>
+			<li>您所在的位置</li>
+			<li><a href="/">首页</a></li>
+			<li class="active">{$name}</li>
+		</ol>
+		
+		<div class="problem">
+			<h2>牙齿缺失的痛苦<span>你体会过吗？</span><i></i></h2>
+			<p class="description">很多人对牙齿缺失熟视无睹，实际上口腔是消化道的开端，咀嚼功能的减退，必然加重肠胃的负担。此外，长期缺失不修复，邻牙可能倾斜倒塌，口内其他牙齿所承受的压力也将加大，最终可能导致这些牙齿脱落。</p>
+			<ul class="clearfix">
+				<li>
+					<h3>01</h3>
+					<p>影响饮食，容易实物嵌塞</p>
+					<img src="__TMPL__Public/images/implanted/p_img1.png"/>
+				</li>
+				<li>
+					<h3>02</h3>
+					<p>破坏牙列的完整性</p>
+					<img src="__TMPL__Public/images/implanted/p_img2.png"/>
+				</li>
+				<li>
+					<h3>03</h3>
+					<p>面部变形 影响美观</p>
+					<img src="__TMPL__Public/images/implanted/p_img3.png"/>
+				</li>
+				<li>
+					<h3>04</h3>
+					<p>引发各类口腔疾病</p>
+					<img src="__TMPL__Public/images/implanted/p_img4.png"/>
+				</li>
+			</ul>
+			<a class="swt_btn" href="/swt/" target="_blank">立即咨询>></a>
+		</div>
+
+		<div class="adv">
+			<p class="col-md-6">
+				<i class="fa fa-question-circle-o"></i>
+				<span>了解种植牙  |  为什么要做种植牙</span>
+			</p>
+			<p class="col-md-6">
+				<a href="/swt/" target="_blank">种植牙寿命</a>  |   
+				<a href="/swt/" target="_blank">种植牙有风险吗</a>  |   
+				<a href="/swt/" target="_blank">种植牙价格</a>  |   
+				<a href="/swt/" target="_blank">种植牙好在哪里</a>  |   
+				<a href="/swt/" target="_blank">种植体品牌</a>
+			</p>
+		</div>
+
+		<div class="inrto">
+			<h3><span>种植牙</span>——广受认可的缺牙修复技术</h3>
+			<ul class="test">
+				<li>主要材料是种植体\修复基台\牙冠三部分组成的</li>
+				<li>植体植入牙槽骨内充当牙根，增加假牙固定性，能够更好的恢复口腔咀嚼受力</li>
+			</ul>
+			<h4>什么情况需要种植牙？</h4>
+			<ul class="sick">
+				<li class="col-md-4">
+					<img src="__TMPL__Public/images/implanted/sick_img1.png" />
+					<p><a href="/list/23.html" target="">单颗缺失</a></p>
+				</li>
+				<li class="col-md-4">
+					<img src="__TMPL__Public/images/implanted/sick_img2.png" />
+					<p><a href="/list/25.html" target="">多颗缺失</a></p>
+				</li>
+				<li class="col-md-4">
+					<img src="__TMPL__Public/images/implanted/sick_img3.png" />
+					<p><a href="/list/26.html" target="">半口缺失</a></p>
+				</li>
+				<li class="col-md-4">
+					<img src="__TMPL__Public/images/implanted/sick_img4.png" />
+					<p><a href="/list/64.html" target="">全口缺失</a></p>
+				</li>
+				<li class="col-md-4">
+					<img src="__TMPL__Public/images/implanted/sick_img5.png" />
+					<p>牙齿脱落</p>
+				</li>
+				<li class="col-md-4">
+					<img src="__TMPL__Public/images/implanted/sick_img6.png" />
+					<p>颌骨缺损</p>
+				</li>
+			</ul>
+		</div>
+
+		<div class="price clearfix">
+			<div class="price_left col-md-4">
+				<h3>&nbsp;&nbsp;[种植牙为什么不贵？]</h3>
+				<div class="adv_red">
+					<p>0.68元/天  =  幸福生活</p>
+					<p>健康好牙+乐享美食+灿烂笑容</p>
+				</div>
+				<p class="desc">种植牙齿由三部分组成，即种植体、牙冠和基台，通常种植体的价格在几千至上万元不等(以下我们按1万元来计算)</p>
+				<span>1颗种植牙可使用40年（甚至更久） 一年365天，40年约等于14600天</span>
+				<font>10000元÷14600天=0.68元<small>/天</small></font>
+				<img alt="" src="__TMPL__Public/images/implanted/best.png">
+			</div>
+			<div class="price_right col-md-6">
+				<h3>[影响种植牙价格的因素包括]</h3>
+				<ul class="clearfix">
+					<li class="col-md-6">
+						<h5><span>01</span><font>医院/医生</font></h5>
+						<p>医院的技术实力、医生实力、手术设备等是影响种植牙价格的重要因素之一。</p>
+					</li>
+					<li class="col-md-6">
+						<h5><span>02</span><font>种植牙材料</font></h5>
+						<p>材料不同、性能不一样，价格就会存在差异，品质越高的材料价格自然就越高。</p>
+					</li>
+					<li class="col-md-6">
+						<h5><span>03</span><font>牙齿种植难易程度</font></h5>
+						<p>医生根据每个人的情况定制方案，治疗方法、难易程度不一样，价格也不一样。</p>
+					</li>
+					<li class="col-md-6">
+						<h5><span>04</span><font>患者口腔状况</font></h5>
+						<p>口腔状况好的患者可直接进行手术，反之则需对口腔问题进行治疗后再种牙。</p>
+					</li>
+				</ul>
+				<div class="price_btn">
+					<a class="swt_btn" href="/swt/" target="_blank">立即咨询>></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="technology2">
+			<h2>即刻用3.0种植牙 革新种植新体验
+			<p>新技术 新理念 新突破</p>
+			</h2>
+			<div class="tech_box">
+				<div class="hd">
+					<ul>
+						<li>种牙新高度</li>
+						<li>3.0口腔诊疗体系</li>
+						<li>个体化量身种牙</li>
+						<li>精进的技术设备</li>
+					</ul>
+				</div>
+				<div class="bd">
+					<ul>
+						<li>
+							<div class="n4_l">
+								<img alt="" src="__TMPL__Public/images/implanted/n4_01.jpg">
+							</div>
+							<div class="n4_c">
+								<div class="n4tit">
+									<h3>种植新高度</h3>
+								</div>
+								<p>即刻用3.0种植牙技术是种植牙技术的一个新高度，它从各个方面对种植牙做了完善和改进。相比传统种植牙技术，它不仅仅只是单纯一项技术，而是一套科学设计的系统方案。</p>
+							</div>
+							<div class="n4_r">
+								<img alt="" src="__TMPL__Public/images/implanted/n4_02.jpg">
+							</div>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div class="n4_l">
+								<img alt="" src="__TMPL__Public/images/implanted/n4_03.jpg">
+							</div>
+							<div class="n4_c">
+								<div class="n4tit">
+									<h3>即刻用3.0体系</h3>
+								</div>
+								<p>德道口腔即刻用3.0口腔诊疗体系 ，从数字化的口腔检查到三维模拟种植、从即刻种植到即刻负重、从无痛种植到3D打印导板、从术前调理到术后康复，一个能实现“即拔、即种、即用”效果的“即刻用”种植牙方案。</p>
+								<div class="n4link">
+									<a class="swt_btn" href="/swt/" target="_blank">立即咨询</A>
+								</div>
+							</div>
+							<div class="n4_r">
+								<img alt="" src="__TMPL__Public/images/implanted/n4_04.jpg">
+							</div>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div class="n4_l">
+								<img alt="" src="__TMPL__Public/images/implanted/n4_05.jpg">
+							</div>
+							<div class="n4_c">
+								<div class="n4tit">
+									<h3>个体化量身种牙</h3>
+								</div>
+								<p>
+								在精进的技术设备的辅助下，根据国人的口腔特点、骨质密度、饮食习惯等地域特征、不同年龄、不同性别、不同体质条件、牙槽骨密度、质量等问题进行技术提升优化，为不同缺牙者提供个性化方案设计。
+								
+								</p>
+								<div class="n4link">
+									<a class="swt_btn" href="" target="_blank">立即咨询</A>
+								</div>
+							</div>
+							<div class="n4_r">
+								<img alt="" src="__TMPL__Public/images/implanted/n4_06.jpg">
+							</div>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div class="n4_l">
+								<img alt="" src="__TMPL__Public/images/implanted/n4_07.jpg">
+							</div>
+							<div class="n4_c">
+								<div class="n4tit">
+									<h3>精进的技术设备</h3>
+								</div>
+								<p>通过CAD\CAM精密重建患者下颌骨立体模型，多次模拟种植，来确定最适合患者口腔状况的种植体位置、数量、种植深度，种植体倾斜角度等，患者能提前预知自己的戴牙效果。</p>
+								<div class="n4link">
+									<a class="swt_btn" target="_blank">立即咨询</A>
+								</div>
+							</div>
+							<div class="n4_r">
+								<img alt="" src="__TMPL__Public/images/implanted/n4_08.jpg">
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	
+		<div class="advantage">
+			<h2><span>5大优势</span>带您做次不一样的种植牙
+				<p>它不仅仅只是单纯一项技术，而是一套科学设计的系统方案</p>
+			</h2>
+			<div class="adv_main clearfix">
+				<div class="adv_fri">
+					<dl>
+						<div class="media">
+							<div class="media-left media-middle">
+								<img class="media-object" src="__TMPL__Public/images/implanted/adv_img1.png">
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">01</h4>
+							</div>
+						</div>
+						<span>微创无痛</span>
+						<p>融合先进技术，达到无痛、精准、快速、安全的种植牙手术效果。</p>
+					</dl>
+					<dl>
+						<div class="media">
+							<div class="media-left media-middle">
+								<img class="media-object" src="__TMPL__Public/images/implanted/adv_img2.png">
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">02</h4>
+							</div>
+						</div>
+						<span>无需磨牙</span>
+						<p>依靠人工牙根进行修复，不用磨损旁边的健康牙齿</p>
+					</dl>
+				</div>
+				<div class="adv_sed">
+					<dl>
+						<h5>03</h5>
+						<span>即种即用</span>
+						<p>解决耗时长问题，实现“即拔、即种、即用”。</p>
+						<img src="__TMPL__Public/images/implanted/adv_img3.png">
+					</dl>
+					<dl class="red">
+						<a class="swt_btn" href="">点击在线设计方案</a>
+					</dl>
+				</div>
+				<div class="adv_tri">
+					<dl>
+						<div class="media">
+							<div class="media-left media-middle">
+								<img class="media-object" src="__TMPL__Public/images/implanted/adv_img4.png">
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">04</h4>
+							</div>
+						</div>
+						<span>咀嚼功能强</span>
+						<p>与真牙的力学原理相似，咀嚼功能优于传统假牙</p>
+					</dl>
+					<dl>
+						<div class="media">
+							<div class="media-left media-middle">
+								<img class="media-object" src="__TMPL__Public/images/implanted/adv_img5.png">
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">05</h4>
+							</div>
+						</div>
+						<span>美观效果好</span>
+						<p>根据患者脸型、其它牙齿形状与色泽制作牙冠，达到整体外观更协调</p>
+					</dl>
+				</div>
+			</div>
+		</div>
+
+		<div class="compared compared1">
+			<h2>即刻用3.0种植牙VS<span>传统种植牙</span></h2>
+			<table class="table">
+				<thead>
+					<tr>
+						<th> </th>
+						<th>即刻用3.0种植牙<img src="__TMPL__Public/images/implanted/preferred.png" /></th>
+						<th>传统种植牙</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">术前检查</th>
+						<td>
+							<img src="__TMPL__Public/images/implanted/compared_img4.png"/>
+							新一代的360°3D口腔透视，不留死角，不误诊，准确率高达99.8%，确保手术方案安全可靠。
+						</td>
+						<td>
+							<img src="__TMPL__Public/images/implanted/compared_img5.png"/>
+							全景X光片，2D口腔影像，存在探视死角，误诊率近20%
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">方案设计</th>
+						<td>通过<b>CAD/CAM</b>方案精密设计种植牙速度、深度、角度，个体化方案设计</td>
+						<td>2D口腔影像+医生经验</td>
+					</tr>
+					<tr>
+						<th scope="row">创伤程度</th>
+						<td><b>3D导板精准可视</b>种植，无需翻瓣（不切开）种牙，全程可视，能有效避开血管和神经的损伤，创伤小，无需拆线，一步到位</td>
+						<td>医生经验种植，要翻瓣、打孔、缝合、拆线等一系列步骤</td>
+					</tr>
+					<tr>
+						<th scope="row">修复速度</th>
+						<td>种植体植入后不再受3-6个月等候期约束，术后可即刻负重，当天就可戴上牙冠，轻松进食</td>
+						<td>种植体植入后需要3-6个月的恢复期，才能安装牙冠，在这个期间是不能用种植体吃东西</td>
+					</tr>
+					<tr>
+						<th scope="row">年龄限制</th>
+						<td>即刻用3.0种植牙采取<b>微创无痛方式</b>，手术时间短、种牙和戴牙可以同期进行，可<b>突破牙槽骨状态差、年龄大限制</b></td>
+						<td>年龄稍大一些、体质偏弱、牙周炎严重、缺牙过多，都很难实现做种植牙</td>
+					</tr>
+					<tr>
+						<th scope="row">护理方案</th>
+						<td>治疗后精准医学护理</td>
+						<td>一般笼统性的护理</td>
+					</tr>
+					<tr>
+						<th scope="row">使用寿命</th>
+						<td>恰当维护，<b>终身受用</b></td>
+						<td>使用寿命稳定性不佳</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		
+		<div class="doctor">
+			<h2>
+				智能口腔专家团
+			</h2>
+			<div id="slideBox" class="slideBox">
+				<div class="hd"></div>
+				<div class="bd">
+					<ul>
+						<volist name="doctor" id="vo">
+							<php>$extend = json_decode($vo['post_extend'],true);</php>
+							<li>
+								<img src="{$vo.main_img}" />
+								<div>
+									<h4>{$vo.name}<span>{$vo.job}</span></h4>
+									<volist name="vo['experience']" id="vo1" offset="0" length='4'>
+										<p>{$vo1}</p>
+									</volist>
+									<h5>擅长项目</h5>
+									<p>{$vo.item}</p>
+									<a href="/swt/" target="_blank" class="swt_btn">在线预约>></a>	
+								</div>
+							</li>
+						</volist>
+					</ul>
+				</div>
+				<div class="pnBtn prev"> <span class="blackBg"></span> <span class="arrow"></span> </div>
+				<div class="pnBtn next"> <span class="blackBg"></span> <span class="arrow"></span> </div>
+			</div>
+
+		</div>
+
+		<div class="wiki">
+			<h2>种植牙<span>百科科普</span></h2>
+			<div class="wikiTxtBox">
+				<div class="hd">
+					<ul class="clearfix">
+						<volist name="term_child" id="vo">
+							<li><a href="/list/{$vo.term_id}.html" target="_blank">{$vo.name}</a></li>
+						</volist>
+					</ul>
+				</div>
+				<div class="bd">
+					<volist name="tab_text" id="vo">
+						<ul class="clearfix">
+							<li class="col-md-8">
+								<ul class="media-list">
+									<li class="media">
+										<div class="media-left media-middle">
+											<a href="{:get_article_url($vo['pic_recommend'][0]['tid'],$vo['pic_recommend'][0]['link_type'],$vo['pic_recommend'][0]['post_url']);}">
+												<php>$smeta = json_decode($vo['pic_recommend'][0]['smeta'],true);</php>
+												<img class="media-object" src="{$smeta.thumb}">
+											</a>
+										</div>
+										<div class="media-body">
+											<ul>
+												<volist name="vo['art_recommend']" id="vo1" offset="0" length='2'>
+													<li>
+														<a href="{:get_article_url($vo1['tid'],$vo1['link_type'],$vo1['post_url']);}">
+															<h4 class="media-heading">{$vo1.post_title}<span></span></h4>
+															{$vo1.post_excerpt}
+														</a>
+													</li>	
+												</volist>
+											</ul>
+										</div>
+									</li>
+									<li class="media">
+										<div class="media-body">
+											<ul>
+												<volist name="vo['art_recommend']" id="vo1" offset="2" length='2'>
+													<li>
+														<a href="{:get_article_url($vo1['tid'],$vo1['link_type'],$vo1['post_url']);}">
+															<h4 class="media-heading">{$vo1.post_title}<span></span></h4>
+															{$vo1.post_excerpt}
+														</a>
+													</li>	
+												</volist>
+											</ul>
+										</div>
+										<div class="media-right media-middle">
+											<a href="{:get_article_url($vo['pic_recommend'][1]['tid'],$vo['pic_recommend'][1]['link_type'],$vo['pic_recommend'][1]['post_url']);}">
+												<php>$smeta = json_decode($vo['pic_recommend'][1]['smeta'],true);</php>
+												<img class="media-object" src="{$smeta.thumb}">
+											</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="col-md-4">
+								<dl>
+									<volist name="vo['question']" id="vo2">
+										<dd><a href="/qa/{$vo2.id}"><i class="fa fa-newspaper-o"></i>{$vo2.title}</a></dd>	
+									</volist>
+								</dl>
+								<a class="red_btn" href="/swt/" target="_blank">我要提问>></a>
+								<a class="yel_btn" href="/swt/" target="_blank">在线咨询>></a>
+							</li>
+						</ul>
+					</volist>
+					
+				</div>
+			</div>
+		</div>
+	
+	
+	</body>
+
+	<tc_include file="Public:footer" />
+	<script type="text/javascript">
+		jQuery(".main_img").slide({mainCell:".bd ul",autoPlay:true});
+		jQuery(".tech_box").slide({autoPlay:true});
+		jQuery(".caseBox").slide({autoPlay:true});
+		jQuery(".wikiTxtBox").slide();
+		jQuery(".slideBox .bd li").first().before(jQuery(".slideBox .bd li").last());
+		jQuery(".slideBox").slide({
+			mainCell: ".bd ul",
+			effect: "leftLoop",
+			autoPlay: true,
+			vis: 3,
+			mouseOverStop: false
+		});
+	</script>
+</html>

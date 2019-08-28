@@ -1,0 +1,15 @@
+﻿@charset "utf-8";
+
+
+
+/*main*/
+.container { margin-left:auto; margin-right:auto; padding: 0;max-width: 640px;}
+
+
+/*文章内容*/
+
+.content_news{display:block; margin:10px;}
+.content_news a{color:#F00;}
+.content_news p{ overflow:hidden; display:block; padding:5px 0; color:#666}
+.content_news p img{ width:100% ;vertical-align: middle;}
+

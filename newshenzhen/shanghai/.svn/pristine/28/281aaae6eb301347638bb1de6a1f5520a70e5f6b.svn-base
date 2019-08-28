@@ -1,0 +1,139 @@
+<php>
+
+	//正畸王牌专家
+	$doctor = sp_get_doctor();
+	$i = 0;
+	foreach ($doctor as $k => $v) {
+		if($i >= 5){
+			unset($doctor[$k]);
+		}else{
+    		if($v['recommended'] == 0){
+    			unset($doctor[$k]);
+    		}else{
+    			$extend = json_decode($v['post_extend'],true);
+    			$doctor[$k]['main_img'] = $extend['thumb'];
+    			$doctor[$k]['experience'] = explode(",",$extend['post_extend5']);
+    			$doctor[$k]['item'] = $extend['post_extend1'];
+    			$i++;
+    		}	
+		}
+	}
+
+	//案例
+	$case_where['recommended'] = 1;
+	$case = sp_sql_posts_bycatid(108,'field:tid,post_title,smeta,post_extend;limit:0,5;',$case_where);
+	
+	//热门推荐
+	$hots = sp_sql_posts_bycatid(62,'field:tid,post_title,post_excerpt,smeta,post_url,link_type;limit:0,4;',$case_where);
+</php>
+
+<div class="RIGHT">
+
+	
+	<div class="doctor">
+		<h3>口腔专家<a href="/department/7.html">MORE+</a></h3>
+		<div id="right_doctorBox" class="right_doctorBox">
+			<div class="hd">
+				<ul>
+					<volist name="doctor" id="vo" key="k" >
+						<li></li>
+					</volist>
+				</ul>
+			</div>
+			<div class="bd">
+				<ul>
+					<volist name="doctor" id="vo">
+					<li>
+						<img src="{$vo.main_img}" />
+						<div class="info">
+							<h4>{$vo.name}<span>{$vo.job}</span></h4>
+						</div>
+						<p class="item">擅长:{$vo.item}</p>
+						<div class="swt">
+							<a onclick="openJesongChatByGroup(16524,20125);"><i class="fa fa-commenting-o"></i>在线咨询</a>
+							<a onclick="openJesongChatByGroup(16524,20125);"><i class="fa fa-user"></i>定制方案</a>
+						</div>
+					</li>
+				</volist>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="case">
+		<h3>成功案例<a href="/list/108.html">MORE+</a></h3>
+		<div id="right_caseBox" class="right_caseBox">
+			<div class="hd">
+				<ul>
+					<volist name="case" id="vo" key="k" >
+						<li></li>
+					</volist>
+				</ul>
+			</div>
+			<div class="bd">
+				<ul>
+					<volist name="case" id="vo">
+						<li>
+							<a href="#" target="_blank">
+								<php>$smeta = json_decode($vo['smeta'],true);</php>
+								<img src="{$smeta.thumb}" />
+								<p>{$vo.post_title}</p>
+							</a>
+						</li>	
+					</volist>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="hots">
+		<h3>热门推荐</h3>
+		<ul>
+			<volist name="hots" id="vo">
+				<li>
+					<a href="{:get_article_url($vo[tid],$vo[link_type],$vo[post_url])}" target="_blank">{$vo.post_title}</a>
+				</li>	
+			</volist>
+		</ul>
+	</div>
+	
+	<div class="contact">
+		<div class="tel">
+			<i class="fa fa-phone"></i>
+			<div>
+				<p>24小时热线</p>
+				<p>400-800-6161</p>
+			</div>
+		</div>
+		<div class="time">
+			<i class="fa fa-clock-o"></i>
+			<div>
+				<p>服务时间：</p>
+				<p>门诊：9:00-18:00</p>
+			</div>
+		</div>
+		<div class="swt">
+			<a onclick="openJesongChatByGroup(16524,20125);"><i class="fa fa-commenting-o"></i>在线咨询</a>
+			<a onclick="openJesongChatByGroup(16524,20125);"><i class="fa fa-user"></i>定制方案</a>
+		</div>
+	</div>
+	
+	
+	<div class="upsetBox">
+		<h2><span>你在<em>烦恼</em>这些吗？<i></i></span></h2>
+		<div class="upsetCon">
+			<a onclick="openJesongChatByGroup(16524,20125);" class="ioc10">牙齿矫正多少钱 </a>
+			<a onclick="openJesongChatByGroup(16524,20125);" class="ioc11">拔牙多少钱 </a>
+			<a onclick="openJesongChatByGroup(16524,20125);" class="ioc12">种植牙多少钱一颗 </a>
+			<a onclick="openJesongChatByGroup(16524,20125);" class="ioc4">树脂贴面什么价格 </a>
+			<a onclick="openJesongChatByGroup(16524,20125);" class="ioc5">最便宜的箍牙多少钱 </a>
+			<a onclick="openJesongChatByGroup(16524,20125);" class="ioc6">现在镶牙好还是种牙好 </a>
+			<a onclick="openJesongChatByGroup(16524,20125);" class="ioc7">镶牙多少钱 </a>
+			<a onclick="openJesongChatByGroup(16524,20125);" class="ioc8">牙齿有些突，有什么办法可以解决？</a>
+			<a onclick="openJesongChatByGroup(16524,20125);" class="ioc9">烤瓷牙如何收费 </a>
+	
+		</div>
+	</div>
+	
+	
+</div>

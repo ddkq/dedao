@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{$name}_{$site_name}</title>
+	<meta name="keywords" content="{$seo_keywords}"/>
+	<meta name="description" content="{$seo_description}" />
+	<link rel="shortcut icon" href="/public/images/favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/css/article.css" />
+	<link rel="stylesheet" href="__TMPL__Public/css/swiper.min.css">
+	<link rel="stylesheet" href="__TMPL__Public/css/base2.css">
+
+	<script type="application/javascript" src="__TMPL__Public/js/jquery-2.1.1.min.js"></script>
+	<script src="__TMPL__Public/js/swiper.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="black-bcg"></div>
+		<tc_include file="Public:nav" />
+	</header>
+
+	<section>
+		<div class="banner"><div class="bcg"></div></div>
+	</section>
+	
+	<section class="content content-width clear">
+		<ul class="left-nav">
+			<li><a href="about.html" class="active">关于我们</a></li>
+			<li><a href="/list/189.html">公司动态</a></li>
+			<li><a href="/careers.html">工作在德道</a></li>
+			<li><a href="/contact.html">联系我们</a></li>
+			<li><a href="/job/2.html">加入我们</a></li>
+		</ul>
+		<div class="right-content">
+			<div class="swiper-container mySwiper2">
+				<ul class="tab-bar align-right">
+					<volist name="terms" id="vo">
+						<if condition="$vo[term_id] eq $cat_id">
+							<li class="on"><a href="javascript:;">{$vo.name}</a></li>	
+						<else/>
+							<li class=""><a href="javascript:;">{$vo.name}</a></li>
+						</if>	
+					</volist>
+				</ul>
+				<ul class="swiper-wrapper ">
+					<li class="swiper-slide">
+						<volist name="list['posts']" id="vo">
+							<div class="onenews">
+								<php>$smeta = json_decode($vo['smeta'],true);</php>
+								<img src="{$smeta.thumb}">
+								<div class="infomation">
+									<p class="tag"><strong>{$vo.name}</strong></p>
+									<h3>{$vo.post_title}</h3>
+									<p class="news-time">{:date('Y-m-d',$vo['post_modified'])}</p>
+									<div class="">
+										<p>{$vo[post_excerpt]}</p>
+									</div>
+								</div>
+							</div>	
+						</volist>
+						<ul class="pages">{$list['page']}</ul>
+					</li>
+					<li class="swiper-slide">
+						<volist name="list1['posts']" id="vo">
+							<div class="onenews">
+								<php>$smeta = json_decode($vo['smeta'],true);</php>
+								<img src="{$smeta.thumb}">
+								<div class="infomation">
+									<p class="tag"><strong>{$vo.name}</strong></p>
+									<h3>{$vo.post_title}</h3>
+									<p class="news-time">{:date('Y-m-d',$vo['post_modified'])}</p>
+									<div class="">
+										<p>{$vo[post_excerpt]}</p>
+									</div>
+								</div>
+							</div>	
+						</volist>
+						<ul class="pages">{$list['page']}</ul>
+					</li>
+					<li class="swiper-slide">
+						<volist name="list2['posts']" id="vo">
+							<div class="onenews">
+								<php>$smeta = json_decode($vo['smeta'],true);</php>
+								<img src="{$smeta.thumb}">
+								<div class="infomation">
+									<p class="tag"><strong>{$vo.name}</strong></p>
+									<h3>{$vo.post_title}</h3>
+									<p class="news-time">{:date('Y-m-d',$vo['post_modified'])}</p>
+									<div class="">
+										<p>{$vo[post_excerpt]}</p>
+									</div>
+								</div>
+							</div>	
+						</volist>
+						<ul class="pages">{$list['page']}</ul>
+					</li>
+					<li class="swiper-slide">
+						<volist name="list3['posts']" id="vo">
+							<div class="onenews">
+								<php>$smeta = json_decode($vo['smeta'],true);</php>
+								<img src="{$smeta.thumb}">
+								<div class="infomation">
+									<p class="tag"><strong>{$vo.name}</strong></p>
+									<h3>{$vo.post_title}</h3>
+									<p class="news-time">{:date('Y-m-d',$vo['post_modified'])}</p>
+									<div class="">
+										<p>{$vo[post_excerpt]}</p>
+									</div>
+								</div>
+							</div>	
+						</volist>
+						<ul class="pages">{$list['page']}</ul>
+					</li>
+				</ul>
+				
+			</div>
+					
+
+				
+			</div>
+		</div>
+	</section>
+	<tc_include file="Public:footer" />
+</body>
+<script>
+	$(window).scroll(function() {
+		if($(window).scrollTop() >= 300) {
+			$('.left-nav').addClass('fixed')
+		}
+		else {
+			$('.left-nav').removeClass('fixed')
+		}
+	})
+	
+	var tabsSwiper = new Swiper('.mySwiper2', {
+		speed : 500,
+		simulateTouch : false,
+		loop : true
+	});
+	
+	$(".tab-bar li").on('click', function() {
+		$(".tab-bar li").removeClass('on');
+		$(this).addClass('on');
+		tabsSwiper.slideTo($(this).index()+1, 500, false);
+	});
+
+</script>
+</html>

@@ -1,0 +1,246 @@
+* {
+	font-family: '思源黑体 CN' !important;
+}
+.fa {
+	font-family: 'FontAwesome' !important;
+}
+a:hover {
+	text-decoration: none;
+}
+.banner {
+	margin-top: 205px;
+}
+.content-title {
+	color: #22396a;
+}
+.content-1 h1 {
+	color: #c0a062;
+}
+.form {
+	border: 2px solid #2A3F6F;
+}
+.form h4 {
+	color: #253b6c;
+	line-height: 1.5;
+}
+.form span {
+	color: #838383;
+	font-size: 18px;
+}
+.form input {
+	width: 63%;
+	background: #F5F5F5;
+}
+.symptom {
+	line-height: 1.8;
+}
+.form-symptom {
+	width: 58%;
+}
+.form-doctor {
+	width: 40%;
+}
+.form-symptom, .form-doctor, .form input {
+	border: 2px solid #E7E7E7;
+	border-radius: 5px;
+}
+.doctor-active .doctor-name, .active-symptom {
+	color: #253b6c !important;
+}
+.symptom span:not(:last-child) {
+	border-right: 2px solid #c7c7c7;
+}
+.symptom span {
+	padding: 0 5px;
+}
+.form-doctor li, .symptom span {
+	cursor: pointer;
+}
+.submit-btn, .swt-btn {
+	background: #253B6C;
+	border-radius: 5px;
+}
+.tips {
+	color: #253b6c;
+}
+.content2-text {
+	z-index: 5;
+}
+.content2-text a {
+	background: #C0A062;
+	border-radius: 5px;
+}
+.banner-nanme, .banner-job {
+	color: #253b6c;
+}
+.banner-nanme {
+	border-bottom: 2px solid #C0A062;
+}
+.banner-border {
+	border: 1px solid #344976;
+	z-index: 6;
+}
+.content-2doctor-img {
+	right: 15px;
+	bottom: 0;
+}
+.prev-btn, .next-btn {
+	height: 60px;
+    width: 35px;
+    position: absolute;
+    top: 45%;
+    z-index: 99;
+    border-radius: 3px;
+    background-color: rgba( 0, 0, 0, 0.302 );
+    cursor: pointer;
+}
+.arrow {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 20px;
+    transition: all .2s linear;
+}
+.next-btn .arrow {
+    transform: rotate(225deg);
+    right: -7px;
+}
+.prev-btn .arrow {
+    transform: rotate(45deg);
+    left: -7px;
+}
+.next-btn {
+	right: 0%;
+}
+.content-3 p, .content3-list li {
+	color: #22396a;
+	font-size: 21px;
+}
+.border-bottom-line {
+	border-bottom: 1px solid #C0A062;
+}
+.content3-list {
+	padding: 35% 0;
+}
+.content3-list:before {
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	border: 1px solid #253B6C;
+	left: 49.1%;
+	top: 0;
+}
+.content3-list:after {
+    width: 1px;
+    height: 100%;
+    background: #253B6C;
+    left: 50%;
+    top: 22px;
+}
+.content3-list:before, .content3-list:after, .content3-list li .line:after {
+	position: absolute;
+	content: '';
+}
+.content3-list li:first-child {
+	top: 5%;
+}
+.content3-list li .line {
+	width: 25%;
+	height: 1px;
+	background: #253B6C;
+    bottom: 7px;
+}
+.content3-list li .line:after {
+	border-radius: 50%;
+	background: #253B6C;
+	width: 22px;
+	height: 22px;
+    left: 93%;
+    top: -10px;
+}
+.content3-list li:nth-child(even) {
+	right: 0;
+}
+.content3-list li:nth-child(even) .line:after {
+	left: -10px;
+}
+.content3-list li:nth-child(2) {
+	top: 16%;
+}
+.content3-list li:nth-child(3) {
+	top: 28%;
+}
+.content3-list li:nth-child(4) {
+	top: 40%;
+}
+.content3-list li:nth-child(5) {
+	top: 52%;
+}
+.content3-list li:nth-child(6) {
+	top: 64%;
+}
+.content3-list li:nth-child(7) {
+	top: 76%;
+}
+.content3-list li:nth-child(8) {
+	top: 88%;
+}
+.content-3 .swt-btn {
+	border-radius: 60px;
+	font-size: 21px;
+}
+.content-4>div {
+	background: #E3E3E3;
+}
+.content4-banner {
+    width: 67%;
+}
+.banner-tab-list {
+    width: 31.9%;
+}
+.banner-tab-list .bcg {
+	background: rgba(37, 59, 108, .702);
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	cursor: pointer;
+}
+.active-tab .bcg {
+	background: rgba(192, 160, 98, 0.651);
+}
+.doctor-list-1, .doctor-list-2, .doctor-list-3 {
+	max-height: 150px;
+}
+.doctor-list-1 .fa, .doctor-list-2 .fa, .doctor-list-3 .fa {
+	display: none;
+}
+.form-doctor .i {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+.doctor-active .fa {
+	display: inline-block;
+}
+.doctor-active .i {
+	display: none;
+}
+.time div {
+    border: 2px solid #E7E7E7;
+    border-radius: 5px;
+    width: 63%;
+    background: #F5F5F5;
+    height: 44px;
+    line-height: 44px;
+}
+.time div input {
+	width: 95%;
+	border: none;
+}

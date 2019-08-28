@@ -1,0 +1,18 @@
+[ 2019-08-09T13:52:17+08:00 ] 59.42.91.38 /portal/AdminPost/index.html
+NOTIC: D方法实例化没找到模型类Portal\Model\PostsModel
+
+[ 2019-08-09T13:52:21+08:00 ] 59.42.91.38 /article/9337.html
+ERR: 模板不存在:themes/simplebootx/Portal/404.html
+
+[ 2019-08-09T13:52:27+08:00 ] 59.42.91.38 /article/9334.html
+ERR: 模板不存在:themes/simplebootx/Portal/404.html
+
+[ 2019-08-09T19:30:48+08:00 ] 180.163.220.67 /
+ERR: 模板不存在:themes/simplebootx_mobile/Portal/index.html
+
+[ 2019-08-09T19:31:04+08:00 ] 42.236.10.78 /
+ERR: 模板不存在:themes/simplebootx_mobile/Portal/index.html
+
+[ 2019-08-09T19:31:05+08:00 ] 42.236.10.78 /
+ERR: 模板不存在:themes/simplebootx_mobile/Portal/index.html
+

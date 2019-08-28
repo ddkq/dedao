@@ -1,0 +1,319 @@
+<!--牙齿美白-->
+<!DOCTYPE html>
+<html>
+	<tc_include file="Public:head" />
+	<link href="__TMPL__Public/css/style.css" rel="stylesheet" type="text/css">
+	<title>{$seo_title}</title>
+	<meta name="keywords" content="{$seo_keywords}"/>
+	<meta name="description" content="{$seo_description}" />
+	</head>
+	<body>
+		<tc_include file="Public:new_header" />
+		<div class="main_img">
+			<php>$slide = sp_getslide("white_banner");</php>
+			<div class="hd">
+				<ul>
+					<volist name="slide" id="vo" key="k" >
+						<li>{$k}</li>
+					</volist>
+				</ul>
+			</div>
+			<div class="bd">
+				<ul>
+					<volist name="slide" id="vo">
+						<li><a href="{$vo.slide_url}" target="_blank"><img src="{:sp_get_asset_upload_path($vo['slide_pic'])}" /></a></li>	
+					</volist>
+				</ul>
+			</div>
+		</div>
+		
+		<ol class="breadcrumb">
+			<i class="fa fa-home"></i>
+			<li>您现在在的位置</li>
+			<li class="active">{$name}</li>
+		</ol>
+		
+		<div class="problem">
+			<h2>常见需要美白牙齿的情况<i></i></h2>
+		  	<p class="description">牙齿问题，不仅影响我们的外表形象，更对我们的口腔健康和其他生理方面容易产生较多影响。定期检查牙齿及时维护口腔健康很重要。</p>
+			<ul class="clearfix">
+				<li>
+					<h3>01</h3>
+					<p><a href="/list/153.html" target="_blank">黄牙</a></p>
+					<img src="__TMPL__Public/images/white/problem_img01.jpg" >
+				</li>
+			  	<li>
+					<h3>02</h3>
+					<p><a href="/list/21.html" target="_blank">烟渍牙</a></p>
+				 	<img src="__TMPL__Public/images/white/problem_img02.jpg"/>
+			  	</li>
+			  	<li>
+					<h3>03</h3>
+					<p><a href="/list/73.html" target="_blank">氟斑牙</a></p>
+				  	<img src="__TMPL__Public/images/white/problem_img03.jpg"/>
+			  	</li>
+				<li>
+					<h3>04</h3>
+					<p><a href="/list/72.html" target="_blank">四环素牙</a></p>
+					<img src="__TMPL__Public/images/white/problem_img04.jpg"/>
+				</li>
+			</ul>
+			<a class="swt_btn" onclick="openJesongChatByGroup(16524,20125);">立即咨询>></a>
+		</div>
+        
+        <div class="technology3">
+            <h2>牙齿美白<span>优势项目</span></h2>
+            <div class="tech_box2">
+	            <div class="hd"> 
+	                <ul> 
+	                    <li class="on"><i class="hot"></i>皓齿美白</li>
+	                    <li>冷光美白</li>
+	                    <li>贴面美白</li>
+						<li>美牙冠美白</li>
+	                </ul>
+	            </div>
+	            <div class="bd">
+	            	<div class="tech_info">
+		            	<h3>德道皓齿美白技术</h3> 
+		               	<p>该技术是通过美国FDA认证、欧盟CE认证的纯生物纳米美白技术。它采用低温纳米光，把过氧化氢、硝酸钾和氟化物相结合，通过氧化还原作用将牙体内的浅、中、深层所残留色素清除，氟化作用促使牙釉质新生，封闭牙本质小管和牙釉质微孔，从而美白牙齿。</p>
+	                    <ul class="adv_list">
+	                    	<li>
+		                    	<div class="media">
+		                    		<div class="media-left media-middle"><span class="badge">01</span></div>
+		                    		<div class="media-body">
+		                    			<h4 class="media-heading">量齿定做</h4>
+		                    			<p>德道医生会根据色素侵入牙齿的深浅程度，为患者制定不同的美牙方案，对轻中度的四环素牙、烟渍牙、黑牙、黄牙、氟斑牙等变色牙，采取针对性治疗</p>
+		                    		</div>
+		                    	</div>
+		                    	<div class="media">
+		                    		<div class="media-left media-middle"><span class="badge">02</span></div>
+		                    		<div class="media-body">
+		                    			<h4 class="media-heading">美白牙齿</h4>
+		                    			<p>通过过氧化氢中的小分子，穿过牙釉质和牙本质渗透到牙齿的所有部分，分解清除色素同时不改变牙齿结构，一个午休可实现牙齿亮白。</p>
+		                    		</div>
+		                    	</div>	
+	                    	</li>
+	                    	<li>
+		                    	<div class="media">
+		                    		<div class="media-left media-middle"><span class="badge">03</span></div>
+		                    		<div class="media-body">
+		                    			<h4 class="media-heading">舒适美牙</h4>
+		                    			<p>牙髓中有许多神经血管，传统冷光美白会使牙齿脱水，造成牙齿敏感（发酸、怕凉）和疼痛等，德道牙齿美白技术中的硝酸钾，可镇痛止痛，让美牙更舒适</p>
+		                    		</div>
+		                    	</div>
+		                    	<div class="media">
+		                    		<div class="media-left media-middle"><span class="badge">04</span></div>
+		                    		<div class="media-body">
+		                    			<h4 class="media-heading">坚固健康</h4>
+		                    			<p>氟化剂作用于封闭牙本质小管和牙釉质微孔，促使牙釉质新生，形成对牙齿的有效保护，增强了牙齿的持续美白效果，美白后的牙齿更坚固、健康、活力。</p>
+		                    		</div>
+		                    	</div>	
+	                    	</li>
+	                    	<img src="__TMPL__Public/images/white/advantage_bg.png">
+	                    	
+	                    </ul>
+	            	</div>
+	            	<div class="tech_info tech_info2">
+		            	<h3>适应症: 黄牙、黑牙、色素牙。</h3> 
+		               	<p>高强度彩光定点照射，去除牙齿表面的色素沉积、深层所附着的色素，让您拥有一口润白亮泽的牙齿。</p>
+		               	<span>效果：持久、自然、快速、专业、安全。 </span>
+	                    <ul> 
+	                        <li><img src="__TMPL__Public/images/white/tech_img01.jpg"><p>1.口腔检查 术前比色</p></li>
+	                        <li><img src="__TMPL__Public/images/white/tech_img02.jpg"><p>2.药物保护 保护牙龈</p></li>
+	                        <li><img src="__TMPL__Public/images/white/tech_img03.jpg"><p>3.彩光照射 迅速分解色素</p></li>
+	                        <li><img src="__TMPL__Public/images/white/tech_img04.jpg"><p>4.术后保护 稳固美白效果</p></li>
+	                    </ul>
+	            	</div>
+	            	<div class="tech_info tech_info2">
+		            	<h3>适应症: 轻度四环素牙、氟斑牙。</h3> 
+		               	<p>陶瓷贴面、树脂贴面等贴在牙齿表面，通过改变前牙的颜色、大小、形态来达到美化前牙、美化微笑的热门方式。</p>
+							<span></span>
+	                    <ul> 
+	                        <li><img src="__TMPL__Public/images/white/tech_img01.jpg"><p>1.口腔检查 设计贴合贴面</p></li>
+	                        <li><img src="__TMPL__Public/images/white/tech_img02.jpg"><p>2.vita比色 定制贴面颜色</p></li>
+	                        <li><img src="__TMPL__Public/images/white/tech_img03.jpg"><p>3.数字取模 制备全瓷贴面</p></li>
+	                        <li><img src="__TMPL__Public/images/white/tech_img04.jpg"><p>4.贴面安装 安全粘结剂</p></li>
+	                    </ul>
+	            	</div>
+					<div class="tech_info tech_info2">
+		            	<h3>适应症: 重度四环素牙、氟斑牙、黑牙。</h3> 
+		               	<p>不仅可以让牙齿整齐，还可以改变牙齿颜色，矫正、美齿一步到位，真正实现了全面美牙一站式治疗。</p>
+						<span></span>
+	                    <ul> 
+	                        <li><img src="__TMPL__Public/images/white/tech_img01.jpg"><p>1.口腔检查 设计修复方案</p></li>
+	                        <li><img src="__TMPL__Public/images/white/tech_img02.jpg"><p>2.备牙排线 使修复体密合</p></li>
+	                        <li><img src="__TMPL__Public/images/white/tech_img03.jpg"><p>3.佩戴临时牙冠</p></li>
+	                        <li><img src="__TMPL__Public/images/white/tech_img04.jpg"><p>4.镶嵌美容冠</p></li>
+	                    </ul>
+	            	</div>
+	             </div>
+        	</div>
+    	</div>
+
+		<div class="case case5 clearfix">
+			<h2>案例展示</h2>
+			<ul>
+				<li class="col-md-6">
+					<div class="col-md-6">
+						<img src="__TMPL__Public/images/white/mb1.jpg">
+						<p>美白前</p>
+					</div>
+					<div class="col-md-6">
+						<img src="__TMPL__Public/images/white/mb2.jpg">
+						<p>美白后</p>
+					</div>
+				</li>
+				<li class="col-md-6">
+					<div class="col-md-6">
+						<img src="__TMPL__Public/images/white/mb3.jpg">
+						<p>美白前</p>
+					</div>
+					<div class="col-md-6">
+						<img src="__TMPL__Public/images/white/mb4.jpg">
+						<p>美白后</p>
+					</div>
+				</li>
+				<li class="col-md-6">
+					<div class="col-md-6">
+						<img src="__TMPL__Public/images/white/mb5.jpg">
+						<p>美白前</p>
+					</div>
+					<div class="col-md-6">
+						<img src="__TMPL__Public/images/white/mb6.jpg">
+						<p>美白后</p>
+					</div>
+				</li>
+				<li class="col-md-6">
+					<div class="col-md-6">
+						<img src="__TMPL__Public/images/white/mb7.jpg">
+						<p>美白前</p>
+					</div>
+					<div class="col-md-6">
+						<img src="__TMPL__Public/images/white/mb8.jpg">
+						<p>美白后</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="doctor">
+			<h2>
+				智能口腔专家团
+			</h2>
+			<div id="slideBox" class="slideBox">
+				<div class="hd"></div>
+				<div class="bd">
+					<ul>
+						<volist name="doctor" id="vo">
+							<php>$extend = json_decode($vo['post_extend'],true);</php>
+							<li>
+								<img src="{$vo.main_img}" />
+								<div>
+									<h4>{$vo.name}<span>{$vo.job}</span></h4>
+									<volist name="vo['experience']" id="vo1" offset="0" length='4'>
+										<p>{$vo1}</p>
+									</volist>
+									<h5>擅长项目</h5>
+									<p>{$vo.item}</p>
+									<a onclick="openJesongChatByGroup(16524,20125);" class="swt_btn">在线预约>></a>	
+								</div>
+							</li>
+						</volist>
+					</ul>
+				</div>
+				<div class="pnBtn prev"> <span class="blackBg"></span> <span class="arrow"></span> </div>
+				<div class="pnBtn next"> <span class="blackBg"></span> <span class="arrow"></span> </div>
+			</div>
+
+		</div>
+
+		<div class="wiki">
+			<h2>{$name}<span>百科科普</span></h2>
+			<div class="wikiTxtBox">
+				<div class="hd">
+					<ul class="clearfix">
+						<volist name="term_child" id="vo">
+							<li><a href="/list/{$vo.term_id}.html" target="_blank">{$vo.name}</a></li>
+						</volist>
+					</ul>
+				</div>
+				<div class="bd">
+					<volist name="tab_text" id="vo">
+						<ul class="clearfix">
+							<li class="col-md-8">
+								<ul class="media-list">
+									<li class="media">
+										<div class="media-left media-middle">
+											<a href="{:get_article_url($vo['pic_recommend'][0]['tid'],$vo['pic_recommend'][0]['link_type'],$vo['pic_recommend'][0]['post_url']);}">
+												<php>$smeta = json_decode($vo['pic_recommend'][0]['smeta'],true);</php>
+												<img class="media-object" src="{$smeta.thumb}">
+											</a>
+										</div>
+										<div class="media-body">
+											<ul>
+												<volist name="vo['art_recommend']" id="vo1" offset="0" length='2'>
+													<li>
+														<a href="{:get_article_url($vo1['tid'],$vo1['link_type'],$vo1['post_url']);}">
+															<h4 class="media-heading">{$vo1.post_title}<span></span></h4>
+															{$vo1.post_excerpt}
+														</a>
+													</li>	
+												</volist>
+											</ul>
+										</div>
+									</li>
+									<li class="media">
+										<div class="media-body">
+											<ul>
+												<volist name="vo['art_recommend']" id="vo1" offset="2" length='2'>
+													<li>
+														<a href="{:get_article_url($vo1['tid'],$vo1['link_type'],$vo1['post_url']);}">
+															<h4 class="media-heading">{$vo1.post_title}<span></span></h4>
+															{$vo1.post_excerpt}
+														</a>
+													</li>	
+												</volist>
+											</ul>
+										</div>
+										<div class="media-right media-middle">
+											<a href="{:get_article_url($vo['pic_recommend'][1]['tid'],$vo['pic_recommend'][1]['link_type'],$vo['pic_recommend'][1]['post_url']);}">
+												<php>$smeta = json_decode($vo['pic_recommend'][1]['smeta'],true);</php>
+												<img class="media-object" src="{$smeta.thumb}">
+											</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="col-md-4">
+								<dl>
+									<volist name="vo['question']" id="vo2">
+										<dd><a href="/qa/{$vo2.id}"><i class="fa fa-newspaper-o"></i>{$vo2.title}</a></dd>	
+									</volist>
+								</dl>
+								<a class="red_btn" onclick="openJesongChatByGroup(16524,20125);">我要提问>></a>
+								<a class="yel_btn" onclick="openJesongChatByGroup(16524,20125);">在线咨询>></a>
+							</li>
+						</ul>
+					</volist>
+					
+				</div>
+			</div>
+		</div>
+	
+	
+	</body>
+	<tc_include file="Public:footer" />
+	<script type="text/javascript">
+		jQuery(".main_img").slide({mainCell:".bd ul",autoPlay:true});
+		jQuery(".tech_box2").slide();
+		jQuery(".wikiTxtBox").slide({autoPlay:true});
+		jQuery(".slideBox .bd li").first().before(jQuery(".slideBox .bd li").last());
+		jQuery(".slideBox").slide({
+			mainCell: ".bd ul",
+			effect: "leftLoop",
+			autoPlay: true,
+			vis: 3,
+			mouseOverStop: false
+		});
+	</script>
+</html>

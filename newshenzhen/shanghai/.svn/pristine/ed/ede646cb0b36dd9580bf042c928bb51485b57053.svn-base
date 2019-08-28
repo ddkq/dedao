@@ -1,0 +1,74 @@
+body {
+  overflow: hidden;
+  background: #000116;
+}
+section {
+	background: url(imgs/banner.jpg);
+	width: 100%;
+  background-size: cover;
+}
+a:hover {
+  text-decoration: none;
+}
+.star-btn {
+	margin: auto;
+	left: 0;
+	right: 0;
+	width: 25%;
+  bottom: 20%;
+}
+.title {
+  	font-size: 38px;
+  	font-family: "SourceHanSansCN";
+  	color: rgb(174, 4, 3);
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 475px;
+    top: 4%;
+}
+.result {
+	background: rgba(0, 0, 0, .5);
+	border-radius: 20px;
+	width: 500px;
+}
+.result-img {
+	bottom: 3rem;
+}
+.result-text {
+	bottom: 2rem;
+  font-size: 19px;
+}
+.num-box {
+  width: 600px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 45.5%;
+}
+.num {
+	background: url(imgs/bcg3-new.png);
+	background-size: cover;
+	width: 84px;
+	font-family: "SourceHanSansCN";
+  line-height: 4.5;
+  height: 175px;
+}
+.num i {
+	font-size: 40px;
+  color: #333;
+}
+.star-btn a {
+  background: url(imgs/star-new.png);
+  background-size: cover;
+  width: 280px;
+  line-height: 2.5;
+  font-size: 30px;
+  color: #8c4f0f;
+  font-family: 'HYe3gj';
+}
+.next-time {
+  right: 2rem;
+  bottom: 3rem;
+  font-size: 19px;
+}

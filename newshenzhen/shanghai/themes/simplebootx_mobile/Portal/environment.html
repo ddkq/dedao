@@ -1,0 +1,63 @@
+<!--院内环境-->
+<!DOCTYPE html>
+<html>
+	<tc_include file="Public:head" />
+	<link href="__TMPL__Public/css/page.css" rel="stylesheet" type="text/css">
+	<title>{$post_title}_{$site_name}</title>
+	<meta name="keywords" content="{$post_keywords}"/>
+	<meta name="description" content="{$post_excerpt}" />
+	</head>
+	<body>
+		<tc_include file="Public:article_header" />
+		
+		<div class="main_img">
+			<img src="__TMPL__Public/images/brand/banner.png"/>
+		</div>
+		
+		<div class="brand_main clearfix">
+			<div class="brand_path">当前位置：<a href="/">首页</a> &gt; {$post_title}</div>
+			<h1 class="brand_right_hd">{$post_title}</h1>
+			<div class="brand_hj_info">{$post_phone}</div>
+			<div class="slideBox" id="slideBox">
+				<div class="bd">
+					<ul>
+						<li>
+							<a class="pic" href="#"><img src="__TMPL__Public/images/environment/lh1.jpg" /></a>
+							<a class="tit" href="#"></a>
+						</li>
+						<li>
+							<a class="pic" href="#"><img src="__TMPL__Public/images/environment/lh2.jpg"/></a>
+							<a class="tit" href="#"></a>
+						</li>
+						<li>
+							<a class="pic" href="#"><img src="__TMPL__Public/images/environment/lh3.jpg"/></a>
+							<a class="tit" href="#"></a>
+						</li>
+						<li>
+							<a class="pic" href="#"><img src="__TMPL__Public/images/environment/lh4.jpg"/></a>
+							<a class="tit" href="#"></a>
+						</li>
+						<li>
+							<a class="pic" href="#"><img src="__TMPL__Public/images/environment/lh5.jpg"/></a>
+							<a class="tit" href="#"></a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="hd">
+					<ul></ul>
+				</div>
+			</div>
+		</div>
+	</body>
+	<tc_include file="Public:footer" />
+	<script type="text/javascript">
+		TouchSlide({ 
+			slideCell:"#slideBox",
+			titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+			mainCell:".bd ul", 
+			effect:"leftLoop", 
+			autoPage:true //自动分页
+		});
+	</script>
+</html>

@@ -1,0 +1,71 @@
+<script type="text/javascript" src="__TMPL__Public/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="__TMPL__Public/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="__TMPL__Public/js/jquery.SuperSlide.2.1.1.js"></script>
+
+<script>
+	
+	jQuery(document).ready(function() {
+		/*头部*/
+	   	jQuery(window).scroll(function() {		
+			if($(window).scrollTop() >= jQuery("header").height()){
+				$('header').addClass("header_scr");
+			}else{    
+				$('header').removeClass("header_scr");
+			}  
+		});
+	    //activator_pc
+	    $("#activator_pc").click(function(){
+	        $("#subclass_pc").fadeToggle();
+	        $(".subclass").toggleClass("subclass_active");
+	        $(this).toggleClass("active");
+	    });
+	    $("#activator").click(function(){
+	        $("#subclass_pc").fadeToggle();
+	        $(".subclass").toggleClass("subclass_active");
+	        $('.menu-activator').toggleClass("active");
+	    });
+	    $("#search").click(function(){
+	        $("#search_pc").fadeToggle();
+	        $(".subclass").toggleClass("subclass_active");
+	    });
+	    $(".search_i").click(function(){
+	        $("#search_pc").fadeToggle();
+	        $(".subclass").toggleClass("subclass_active");
+	    });
+	});
+	
+	
+	jQuery(".ad_tech").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"left",autoPlay:true,vis:4,prevCell:'.prev1',nextCell:'.next1'});
+	jQuery("#nav1").slide({ type:"menu", titCell:".nLi", targetCell:".sub",effect:"slideDown",delayTime:300,triggerTime:0,returnDefault:true});
+	jQuery(".header_nav").slide({ type:"menu", titCell:".nLi", targetCell:".sub",effect:"slideDown",delayTime:300,triggerTime:0,returnDefault:true});
+	jQuery(".banner_top ul").slide({ type:"menu", titCell:".nLi", targetCell:".sub",effect:"slideDown",delayTime:300,triggerTime:0,returnDefault:true});
+	$('.fix_main').find('.btn').click(function(){
+		if($(this).find('i').hasClass('fa-reorder')){
+			$(this).find('i').removeClass('fa-reorder').addClass('fa-times');
+		}else{
+			$(this).find('i').removeClass('fa-times').addClass('fa-reorder');
+		}
+	});
+	var rn = Math.floor(Math.random()*(100-41)+40);
+	$('#radNum').text(rn);
+	
+	jQuery(".right_advBox").slide({mainCell:".bd ul",autoPlay:true});
+	jQuery(".right_doctorBox").slide({mainCell:".bd ul",autoPlay:true});
+	jQuery(".right_caseBox").slide({mainCell:".bd ul",autoPlay:true});
+	
+	//跟踪地址
+	var alinks = document.getElementsByTagName('a');
+	var localhref = window.location.href.split('#');
+	if (localhref.length >1&& localhref[1] != '') {
+	    for (var index in alinks) {
+	        if (typeof(alinks[index].href)=='string' && alinks[index].href.substr(0, 10).toLowerCase() != 'javascript' && alinks[index].href.substr(0, 3).toLowerCase() != 'tel') {
+	            if (alinks[index].href.indexOf("#") == -1) {
+	                alinks[index].href = alinks[index].href + '#' + localhref[1];
+	            } else {
+	                alinks[index].href = alinks[index].href + '&' + localhref[1];
+	            }
+	        }
+	    }
+	}
+	
+</script>

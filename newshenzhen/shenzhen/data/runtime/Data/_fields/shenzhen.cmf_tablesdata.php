@@ -1,0 +1,1 @@
+a:9:{i:0;s:2:"id";i:1;s:9:"tables_id";i:2;s:7:"content";i:3;s:4:"page";i:4;s:2:"ip";i:5;s:10:"createtime";i:6;s:6:"status";s:3:"_pk";s:2:"id";s:5:"_type";a:7:{s:2:"id";s:16:"int(20) unsigned";s:9:"tables_id";s:7:"int(20)";s:7:"content";s:4:"text";s:4:"page";s:12:"varchar(255)";s:2:"ip";s:11:"varchar(16)";s:10:"createtime";s:8:"datetime";s:6:"status";s:10:"tinyint(1)";}}

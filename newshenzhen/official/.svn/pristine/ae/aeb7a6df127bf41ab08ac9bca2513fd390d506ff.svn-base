@@ -1,0 +1,74 @@
+<admintpl file="header" />
+</head>
+<body style="min-width: 800px;">
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="{:U('Messageadmin/index')}">留言列表</a></li>
+		</ul>
+		<form class="js-ajax-form" method="post">
+			<div class="table-actions">
+				<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('Messageadmin/delete')}" data-subcheck="true" data-msg="{:L('DELETE_CONFIRM_MESSAGE')}">{:L('DELETE')}</button>
+			</div>
+			<table class="table table-hover table-bordered table-list">
+				<thead>
+					<tr>
+						<th width="50">处理情况</th>
+						<th width="50">ID</th>
+						<th width="80">姓名</th>
+						<th width="50">性别</th>
+						<th width="50">年龄</th>
+						<th width="100">手机号码</th>
+						<th width="100">Email</th>
+						<th width="100">地区</th>
+						<th width="100">疾病</th>
+						<th width="200">内容</th>
+						<th width="100">留言时间</th>
+						<th width="80">{:L('ACTIONS')}</th>
+					</tr>
+				</thead>
+				<php>$status=array("1"=>L('AUDITED'),"0"=>L('NOT_AUDITED'));</php>
+				<foreach name="messages" item="vo">
+				<tr>
+					<td style="text-align: center;"><i class="<php>if($vo['handle'] == 1){echo "glyphicon glyphicon-ok";}else{echo "glyphicon glyphicon-remove";}</php>"  ></i></td>
+					<td>{$vo.id}</td>
+					<td>{$vo.name}</td>
+					<td><php>if($vo['gender'] == 1){echo '男';}else{echo '女';}</php></td>
+					<td>{$vo.age}</td>
+					<td>{$vo.phone}</td>
+					<td>{$vo.email}</td>
+					<td><php>if($vo['location'] == 1){echo '雅加达';}else if($vo['location'] == 2){echo '棉兰';}else if($vo['location'] == 3){echo '泗水';}else{echo '坤甸';}</php></td>
+					<td>{$vo.sick}</td>
+					<td>{$vo.content}</td>
+					<td>{$vo.createtime}</td>
+					<td>
+						<php>if($vo['handle'] == 0):</php><a href="{:U('Messageadmin/handle',array('id'=>$vo['id']))}" class="js-ajax-dialog-btn">处理留言</a><php>endif</php>
+						<a href="{:U('Messageadmin/delete',array('id'=>$vo['id']))}" class="js-ajax-delete">{:L('DELETE')}</a>
+					</td>
+				</tr>
+				</foreach>
+				<tfoot>
+					<tr>
+						<th width="50"><label>处理情况</label></th>
+						<th width="50">ID</th>
+						<th width="80">姓名</th>
+						<th width="50">性别</th>
+						<th width="50">年龄</th>
+						<th width="100">电话号码</th>
+						<th width="100">Email</th>
+						<th width="100">地区</th>
+						<th width="100">疾病</th>
+						<th width="200">内容</th>
+						<th width="100">留言时间</th>
+						<th width="80">{:L('ACTIONS')}</th>
+					</tr>
+				</tfoot>
+			</table>
+			<div class="table-actions">
+				<button class="btn btn-primary btn-small js-ajax-submit" type="submit" data-action="{:U('Commentadmin/delete')}" data-subcheck="true" data-msg="{:L('DELETE_CONFIRM_MESSAGE')}">{:L('DELETE')}</button>
+			</div>
+			<div class="pagination">{$Page}</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

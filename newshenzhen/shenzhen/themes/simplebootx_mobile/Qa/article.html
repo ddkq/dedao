@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<tc_include file="Public:head" />
+	<link href="__TMPL__Public/css/article.css" rel="stylesheet" type="text/css">
+	<title>{$question.title}_{$site_name}</title>
+	<meta name="keywords" content="{$question.title}"/>
+	<meta name="description" content="{$question.excerpt}" />
+	</head>
+	<body>
+		<tc_include file="Public:article_header" />
+		
+		<div class="main_content clearfix">
+			<h3 class="question_title">{$question.title}</h3>
+			<div class="user_info">
+				<if condition="$question[gender] eq 1">
+					<span>男 | {$question.age}岁</span>	
+				<else/>
+					<span>女 | {$question.age}岁</span>
+				</if>
+				<span>{$question.ceratetime}</span>
+				<span>{$question.answer_num}人回复</span>
+			</div>
+			
+		    <div class="question_info">
+				<p><span>健康咨询描述：</span> {$question.excerpt}</p>
+				<notempty name="question['help']">
+					<p><span>想得到怎样的帮助：</span> {$question.help}</p>	
+				</notempty>
+			</div>
+			
+			<div class="answer">
+				<div class="answer_title"><h3>医生回复区</h3></div>
+				<div class="answerli">
+					<volist name="answer" id="vo">
+						<div class="answer_info">
+							<div class="media-middle media-left">
+								<a href="/doctor/{$vo[doctor][id]}.html" target="_blank" >
+									<img class="media-object img-thumbnail" src="{:sp_get_user_avatar_url($vo[avatar])}" width="60" height="71">
+								</a>
+							</div>
+							<div class="media-body">
+								<div class="doctor_info">
+									<a href="/doctor/{$vo[doctor][id]}.html" target="_blank">{$vo.user_nicename}<b>{$vo['doctor']['job']}</b></a>
+			                        <p class="excerpt">{:strip_tags($vo['doctor']['content'])}</p>	
+			                        <a href="/swt/" target="_blank" class="swt">向TA提问 </a>
+								</div>
+							</div>
+						</div>
+						<!-- 回复开始 -->
+						<div class="answercont clearfix">
+							<div class="anscontc">
+								<if condition="$vo[status] eq 1">
+									<i class="cceptico"></i>	
+								</if>
+								<span class="anscont_time">{$vo.createtime}</span>
+								<div class="anscont_cont">
+									<php>$content=json_decode($vo['content'],true);</php>
+									{$content.content}
+								</div>
+							</div>
+						</div>
+					</volist>
+				</div>
+			</div>
+			
+			<div class="question_related">
+		        <h4>其他类似问题</h4>
+				<ul>
+					<volist name="related" id="vo" offset="0" length='10'>
+						<li><a title="{$vo.title}" href="/qa/{$vo.id}.html">{$vo.title}</a></li>	
+					</volist>
+				</ul>
+			</div>
+
+		</div>
+	</body>
+	<tc_include file="Public:footer"/>
+	<script>
+		$('.wechat_img').hover(function(){
+			$('.hover_wechat').css('display','block');
+		},function(){
+			$('.hover_wechat').css('display','none');
+		});
+	</script>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>{$article.post_title}_{$site_name}</title>
+	<meta name="keywords" content="{$article.post_keywords}"/>
+	<meta name="description" content="{$article.post_excerpt}" />
+	<link rel="shortcut icon" href="/public/images/favicon.ico" type="image/x-icon"/>
+	
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/css/base2.css" />
+	<link href="__TMPL__Public/css/article.css" rel="stylesheet" type="text/css">
+	<link href="__TMPL__Public/css/share.min.css" rel="stylesheet" type="text/css">
+	<script type="application/javascript" src="__TMPL__Public/js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="__TMPL__Public/js/jquery.share.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="black-bcg"></div>
+			<tc_include file="Public:nav" />
+		</header>
+	
+		<section>
+			<div class="banner"><div class="bcg"></div></div>
+		</section>
+		
+		<div class="content content-width clear">
+			<div class="title clearfix">
+		        <h3>{$article.post_title}</h3>
+		    </div>
+
+			<div class="content clear">
+				<div class="LEFT">
+					<div class="LeftTool">
+						<div class="left-stick-wp" style="top: 0px;">
+							<div class="year through"><span>{$year}</span></div>
+							<div class="md">{$month}</div>
+							<div class="time">{$hour}</div>
+							<div class="share-title through"><span>分享</span></div>
+							<div class="share"></div>
+						</div>
+					</div>
+					<div class="content-article">{$article[post_content]}</div>			
+				</div>
+				<div class="RIGHT">
+					<h3>相关推荐</h3>
+					<ul class="clear">
+						<volist name="recommend" id="vo">
+							<li>
+								<a href="{:get_article_url($vo[tid],$vo[link_type],$vo[post_url])}" target="_blank">
+									<php>$smeta = json_decode($vo['smeta'],true);</php>
+									<img width="100%" src="{$smeta.thumb}" alt="">
+								</a>
+								<div class="txt">
+									<a href="{:get_article_url($vo[tid],$vo[link_type],$vo[post_url])}" target="_blank">{$vo.post_title}</a>
+								</div>
+							</li>	
+						</volist>
+					</ul>
+				</div>	
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		<footer class="footer">
+			苏州美奥口腔门诊部有限公司 版权所有 ICP备案号： 苏ICP备13063843号-1
+		</footer>	
+	</body>
+	<script>
+		$('.share').share({sites: ['wechat','qq','qzone','weibo']});
+	</script>
+</html>

@@ -1,0 +1,40 @@
+.modal1 {position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 1050;display: none;overflow: hidden;-webkit-overflow-scrolling: touch;outline: 0;}
+.modal1 .row{padding: 10px;}
+.cul{ list-style-type: none;}
+.checkbox1 {display: block;}
+
+.section {padding: 10px 0 0 0;}
+.table-style{border: 1px solid #ddd;border-collapse: separate;border-radius: 4px;padding: 10px 0 10px 10px;}
+#lefttable p{margin:0 0 8px 8px; font-size: 16px;}
+#lefttable .but{overflow: auto;}
+#lefttable .but a{float: left; margin-right: 20px;}
+#lefttable .but .addbut{box-sizing: border-box;display:block;width: 141px;height: 33px;margin-top: 10px;border: 1px solid #dadada;font: 14px/32px "";font-weight: 700;text-align: center;color: #3399cc;background-color: #fcfcfc;cursor: pointer;}
+
+#lefttable .title p span{width: 80px;display: inline-block;}
+
+
+#lefttable .move_photos{margin: 10px; overflow: auto;padding-left: 28px;font-size: 12px;line-height: 40px;color: #ccc;}
+#lefttable .move_photos li{margin-right: 30px;list-style: none;}
+#lefttable .addurl {padding: 10px;}
+#lefttable .addurl input{width: 360px;height: 20px;padding: 5px;border: 1px solid #d7d7d7;line-height: 20px;}
+#lefttable .surl {padding: 10px;}
+#lefttable .surl input{width: 360px;height: 20px;padding: 5px;border: 1px solid #d7d7d7;line-height: 20px;}
+#lefttable .tool dd{padding-left: 10px;}
+#lefttable .tool dd input{margin-left:15px; width: 500px;}
+#lefttable #allstep{margin-top: 10px;background: #f2feff;}
+#lefttable .step dd{border: 1px dashed #ccc;margin-bottom: 10px; padding: 10px;}
+#lefttable .step dd #stepnum{width: 32px;height: 32px;text-align: center;color: rgb(238, 255, 238);background: #3399cc; border-radius: 15px;display: inline-block; line-height: 32px;}
+#lefttable .step dd .li-btn{width:630px; height: auto; float: right;}
+#lefttable .step dd .li-btn a{display: block;font-size: 14px;height: 22px;color: #555;cursor: pointer;}
+#lefttable .step dd .lin-btn{display: block;overflow: auto;}
+#lefttable .step dd .lin-btn a{display: block;font-size: 20px;color: #555;cursor: pointer; float: left; width: 32px; height: 32px;line-height: 32px; text-align: center;}
+#lefttable #addallstep{text-align: center;}
+#lefttable #addallstep a{width: 500px;}
+
+
+#lefttable dd{padding: 10px;}
+#lefttable dd span{margin-right: 10px;}
+#lefttable dd textarea{margin-right: 10px;}
+#kzModal{padding: 10px;}
+
+

@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<tc_include file="Public:head" />
+	<link rel="stylesheet" href="__TMPL__Public/css/bootstrap4.min.css">
+	<link rel="stylesheet" href="__TMPL__Public/css/swiper.min.css">
+	<link rel="stylesheet" href="__TMPL__Zt/jz/index.css">
+	<title>0元免费定制专属矫正方案_{$site_name}</title>
+</head>
+<body>
+	<tc_include file="Public:header" />
+	
+	<section class="banner"><img src="__TMPL__Zt/jz/imgs/banner.jpg" alt=""></section>
+
+	<section class="content-box-1 mb-5">
+		<div class="container">
+			<div class="border p-3 position-relative">
+				<div class="title text-center position-absolute"><img src="__TMPL__Zt/jz/imgs/title1.png" alt=""></div>
+				<form method="post" enctype="multipart/form-data" id="form1">
+					<input type="hidden" name="table_id" value="31" />
+					<input type="hidden" name="page" class="page" />
+					<input type="hidden" name="code" value="{$code = mt_rand(0,1000000)}">
+					<p class="symptom mt-2 mb-2">我的牙齿症状：</p>
+					<p class="radio d-flex flex-wrap  mb-0 pb-3">
+						<span class="w-33"><i class="index-icon mr-1"></i>牙齿不齐</span>
+						<span class="w-33"><i class="mr-1"></i>龅(暴)牙</span>
+						<span class="w-33"><i class="mr-1"></i>歪牙</span>
+						<span class="w-33"><i class="mr-1"></i>牙缝大</span>
+						<span class="w-33"><i class="mr-1"></i>地包天</span>
+						<span class="w-33"><i class="mr-1"></i>牙齿拥挤</span>
+						<span><i class="mr-1"></i>牙齿其他情况</span>
+					</p>
+					<input type="hidden" name="data[symptom]" class="input-symptom" value="牙齿不齐">
+					<p class="name-input position-relative mt-3">
+						<i class="index-icon position-absolute"></i>
+						<input type="text" name="data[name]" placeholder="姓名" class="pl-5">
+					</p>
+					<p class="phone-input position-relative">
+						<i class="index-icon position-absolute"></i>
+						<input type="text" name="data[phone]" placeholder="电话" class="pl-5">
+					</p>
+				</form>
+				<p class="mb-2"><a href="javascript:;" class="swt-btn text-white d-block text-center submit-btn">提交获取方案</a></p>
+			</div>
+		</div>
+	</section>
+
+	<section class="content-box-2 mb-5">
+		<div class="container">
+			<div class="border p-3 position-relative">
+				<div class="title text-center position-absolute"><img src="__TMPL__Zt/jz/imgs/title2.png" alt=""></div>
+				<div class="d-flex flex-wrap text-center mt-2 mb-2">
+					<div class="w-33">
+						<p class="mb-2"><img src="__TMPL__Zt/jz/imgs/1.png" alt="" width="80%"></p>
+						<p>牙齿不齐</p>
+					</div>
+					<div class="w-33">
+						<p class="mb-2"><img src="__TMPL__Zt/jz/imgs/2.png" alt="" width="80%"></p>
+						<p>龅(暴)牙</p>
+					</div>
+					<div class="w-33">
+						<p class="mb-2"><img src="__TMPL__Zt/jz/imgs/3.png" alt="" width="80%"></p>
+						<p>牙缝大</p>
+					</div>
+					<div class="w-33">
+						<p class="mb-2"><img src="__TMPL__Zt/jz/imgs/4.png" alt="" width="80%"></p>
+						<p class="mb-0">牙齿拥挤</p>
+					</div>
+					<div class="w-33">
+						<p class="mb-2"><img src="__TMPL__Zt/jz/imgs/5.png" alt="" width="80%"></p>
+						<p class="mb-0">歪牙</p>
+					</div>
+					<div class="w-33">
+						<p class="mb-2"><img src="__TMPL__Zt/jz/imgs/6.png" alt="" width="80%"></p>
+						<p class="mb-0">地包天</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="content-box-3 mb-5">
+		<div class="container">
+			<div class="border p-3 position-relative">
+				<div class="title text-center position-absolute"><img src="__TMPL__Zt/jz/imgs/title3.png" alt=""></div>
+				<div><img src="__TMPL__Zt/jz/imgs/content-3.png" alt=""></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="content-box-4 mb-4">
+		<div class="container">
+			<div class="border p-3 position-relative">
+				<div class="title text-center position-absolute"><img src="__TMPL__Zt/jz/imgs/title4.png" alt=""></div>
+				<p class="mt-2"><img src="__TMPL__Zt/jz/imgs/text.jpg" alt=""></p>
+				<div class="swiper-container pb-4 doctor">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide text-center">
+							<p class="pl-5 pr-5 mb-0"><img src="__TMPL__Zt/jz/imgs/doctor-img1.png" alt=""></p>
+							<h4>周卫明</h4>
+							<p>AI+即刻正推广专家<br>师从全国著名正畸专家李兰超主任</p>
+							<h5><i class="index-icon mr-2 position-relative"></i>擅长项目</h5>
+							<p class="mb-0">对各类错合畸形的诊断和治疗，包括牙列不齐、前突、开合、反合、正畸合联合手术、肌功能矫治等</p>
+						</div>
+						<div class="swiper-slide text-center">
+							<p class="pl-5 pr-5 mb-0"><img src="__TMPL__Zt/jz/imgs/doctor-img2.png" alt=""></p>
+							<h4>李秀媛</h4>
+							<p>AI+即刻正推广专家<br>中国口腔医学会会员</p>
+							<h5><i class="index-icon mr-2 position-relative"></i>擅长项目</h5>
+							<p class="mb-0">致力于VTO可视化矫治、直丝弓矫治技术、舌侧矫治技、隐形正畸的研究和应用</p>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+				<p class="btn d-flex justify-content-between">
+					<a href="/swt" target="_blank" class="swt-btn d-inline-block text-white"><i class="index-icon position-relative mr-2"></i>立即预约</a>
+					<a href="/department/7.html" class="d-inline-block text-white"><i class="index-icon position-relative mr-2"></i>查看详情</a>
+				</p>
+			</div>
+			
+		</div>
+	</section>
+
+	<section class="content-box-5 mb-3">
+		<div class="container">
+			<div class="border p-3">
+				<p><img src="__TMPL__Zt/jz/imgs/content-5.png" alt=""></p>
+				<p class="mb-0"><a href="/swt" target="_blank" class="swt-btn text-white text-center d-block">免费获取定制方案</a></p>
+			</div>
+		</div>
+	</section>
+
+	<tc_include file="Public:footer" />
+</body>
+<script src="__TMPL__Public/js/swiper.min.js"></script>
+<script>
+	$(function(){
+		$('.page').val(window.location.href);
+	});
+	var mySwiper = new Swiper('.doctor', {
+		pagination: {
+	    	el: '.swiper-pagination',
+	  	},
+	})
+
+	$('.radio>span').on('click', function() {
+		var value = $(this).text();
+		$(this).children('i').addClass('index-icon');
+		$(this).siblings().children('i').removeClass('index-icon');
+		$('.input-symptom').val(value);
+	})
+
+	$('body').on('click', '.submit-btn', function() {	
+		var name = $(".name-input input").val();
+		var re1 = /^[\u4E00-\u9FA5]{1,6}$/; 
+		if(name == null){
+			alert("姓名不能为空"); 
+			return false; 
+		}else if(name != null){
+			if (!re1.test(name)){ 
+				alert("姓名格式不正确"); 
+				return false; 
+			}	
+		}
+		
+
+		var phone = $(".phone-input input").val();
+		var re2 = /^((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+(\d{8})$/;
+		if(phone == null){
+			alert("电话不能为空"); 
+			return false; 
+		}else if(phone != null){
+			if (!re2.test(phone)){ 
+				alert("电话格式不正确"); 
+				return false; 
+			}
+		}
+		
+		var data = $('#form1').serializeArray();
+		// console.log(data)
+		$.post('/tables/tables/add_post',data,function(result){
+			//console.log(result);
+			alert(result.info);
+		});
+	});
+</script>
+</html>

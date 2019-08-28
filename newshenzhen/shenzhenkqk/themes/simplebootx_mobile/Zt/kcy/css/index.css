@@ -1,0 +1,157 @@
+.main{ width:640px; margin:0 auto 10%; padding:0;}
+.top{ width:100%; margin:0 auto; overflow:hidden; text-align:center;}
+.nav { background:#c79351; color: #fff;  height:200%; overflow: hidden; text-align: center; width: 100%; }
+.nav ul{ height:150%; padding:2% 0;}
+.nav ul li { border-right: 1px solid #fff;font-size:140%; height:150%; line-height:150%; box-sizing: border-box; float: left;  height: 100%; width: 25%; }
+.nav ul li a{ color:#FFFFFF;}
+
+body{ margin:0 auto; max-width:640px; min-width:320px;color:#353535;}
+.zjbanner{ width:100%;}
+
+
+#pubBanner{ height:3.96rem; position:relative; overflow:hidden;}
+#pubBanner .bd ul li,#pubBanner .bd{ width:6.4rem!important;position:relative}
+#pubBanner .hd { bottom: 0.1rem; height: 0.12rem; position: absolute; text-align: center; width: 100%; z-index: 1; }
+#pubBanner .hd ul { display: inline-block; font-size: 0; height: 0.12rem; padding: 0.03rem 0.05rem; vertical-align: top; }
+#pubBanner .hd ul li {  display:block; height: 0.08rem; margin: 0 0.04rem; width: 0.7rem; background:#231815; float:left;}
+#pubBanner .hd ul .on { background: none repeat scroll 0 0 red; }
+.clearfix:after, #container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; overflow: hidden }
+.pub_width{max-width:6.4rem; width: 100%; margin:0 auto}
+
+/*��������*/
+.mygat{margin:5% auto 0; overflow:hidden; width:100%; zoom:1;margin-top: 115px; }
+.mygat img{ width:100%;}
+.mygan{ width:100%; margin:1% auto 0;}
+.mygp{ font-size:114%; color:#555555; line-height:150%; text-indent:2em; width:92.5%; margin:0 auto;}
+.mygn{ background:url(../imgs/myga_bg.jpg) no-repeat center top; margin-top:3%; background-size:100%;}
+.mygnl{ width:43.3%; float:left;}
+.mygnl a{ display:block; width:56.76%; margin-top:13%; margin-left:43%;}
+.mygnl a img{ width:100%;}
+.mygnr{ width:56.5%; float:right; overflow:hidden;}
+.mygnr ul{ width:100%; margin-top:3%; margin-left:2%;}
+.mygnr ul li{ float:left; width:46.1%; margin-bottom:2%; margin-right:3%;}
+.mygnr ul li img{ width:100%;}
+.mygnr ul li p{ text-align:center; font-size:114%; color:#555555; width:100%; margin:0 auto 5%; }
+.mygnr ul li p span{ display:block; width:18.7%; float:left; margin-left:10%;}
+.mygnr ul li p span img{ width:100%;}
+.mygnr ul li p i{ width:62%; float:left; display:block; font-style:normal;line-height:150%;}
+
+/*��������*/
+.ycwt_t{margin:5% auto 0; overflow:hidden; width:100%; zoom:1; }
+.ycwt_t img{ width:100%;}
+.ycwtn{ overflow:hidden;}
+.ycwtp{ font-size:114%; background:url(../imgs/ycwt_01.jpg) no-repeat center top; background-size:100%; color:#555555; line-height:160%; text-indent:2em; padding-top:1%; padding-bottom:0.5%; overflow:hidden;}
+.ycwtp p{ width:92.5%; margin:0 auto;}
+.yczx{ background:url(../imgs/ycwt_05.jpg) no-repeat center top; background-size:100%; overflow:hidden;}
+.zxbutt { margin: 4% auto; overflow: hidden; width: 100%; }
+.zxbutt .dh2 { background: #525252 url("http://4g.01089595959.com/images/zj_dh1.png") no-repeat scroll center center; background-size:100%; float: left; line-height: 290%; margin-left: 1.5%; overflow: hidden; width: 53%; }
+.zxbutt .dh2 a { color: #fff; display: block; font-family: "΢���ź�"; font-size: 119%; line-height: 145%; padding-left: 17%; width: 100%; }
+.zxbutt .zx { background: #7b3313; float: left; line-height: 290%; margin-left:1.5%; overflow: hidden; width: 43%; }
+.zxbutt .zx a { color: #fff; display: block; font-size: 119%; line-height: 290%; text-align: center; width: 100%; }
+
+/*����������*/
+.yxln_t{margin:5% auto 0; overflow:hidden; width:100%; zoom:1; }
+.yxln_t img{ width:100%;}
+.yxlnn{ width:100%; margin:1% auto 0;}
+.yxlnp{ font-size:114%; color:#555555; line-height:150%; text-indent:2em; width:92.5%; margin:0 auto;}
+.myln ul li{ float:left; width:30.6%; float:left; margin-left:2%; margin-top:3%;}
+.myln ul li img{ width:100%;}
+
+/*����֮��*/
+.cczm_t{margin:5% auto 0; overflow:hidden; width:100%; zoom:1; }
+.cczm_t img{ width:100%;}
+.cczmn{ overflow:hidden;}
+.cczmp{ font-size:114%; background:url(../imgs/cczm_01.jpg) no-repeat center top; background-size:100%; color:#555555; line-height:150%; text-indent:2em; padding-top:0.3%; }
+.cczmp p{width:95.5%; margin:0 auto;}
+.cczx{background:url(../imgs/cczm_04.jpg) no-repeat center top; background-size:100%; overflow:hidden;}
+
+/*Ʒ�Ʋ���*/
+.ppcl_t{margin:5% auto 0; overflow:hidden; width:100%; zoom:1; }
+.ppcl_t img{ width:100%;}
+.ppcln{ width:100%; margin:1% auto 0;}
+.ppclp{ font-size:114%; color:#555555; line-height:150%; text-indent:2em; width:92.5%; margin:0 auto; padding-bottom:1.5%;}
+.ppcn{ width:100%;}
+.ppcn ul li{ overflow:hidden; position:relative;}
+.ppcn ul li img{ width:100%;}
+.ppcn ul li .tedi{ position:absolute; width:53.1%; left:34.8%; top:8%;}
+.ppcn ul li .tedi h3{ font-size:120%; color:#f17221; line-height:150%;}
+.ppcn ul li .tedi p{ font-size:114%; color:#555; line-height:150%; margin-top:2%;}
+.ppcn ul li .tedi p span{ font-weight:bold;}
+
+/*ר���Ŷ�*/
+.zjtd_t{margin:5% auto 0; overflow:hidden; width:100%; zoom:1; }
+.zjtd_t img{ width:100%;}
+.zjtdn{ overflow:hidden;}
+.zjtdp{ font-size:114%; background:url(../imgs/zjtd_01.jpg) no-repeat center top; background-size:100%; color:#555555; line-height:160%; text-indent:2em; padding-top:2%; padding-bottom:1.5%;}
+.zjtdp p{ width:92.5%; margin:0 auto;}
+.mynr{ overflow:hidden;}
+.slideTxtBox_by{ width:100%;margin:0 auto; }
+.slideTxtBox_by > .hd{width:100%; background:url(../imgs/hd_bg.jpg) no-repeat center top; background-size:100%; overflow:hidden; }
+.slideTxtBox_by > .hd > ul{ float:left;  top:-1px; width:100%; margin-top:1.5%;  }
+.slideTxtBox_by > .hd > ul > li{ float:left; width:14%; margin-left:8%;  line-height:160%;  cursor:pointer;  overflow:hidden;}
+.slideTxtBox_by > .hd > ul > li.on{float:left; width:14%; margin-left:8%; line-height:160%; overflow:hidden;  }
+.slideTxtBox_by > .hd > ul > li > a{ color:#707070; }
+.slideTxtBox_by > .hd > ul > li.on > a{ color:#fff;}
+.slideTxtBox_by > .hd > ul > li > a img{ background:#d0cdce; border-radius:50%; max-width:100%;  display:block;}
+.slideTxtBox_by > .hd > ul > li.on > a img{background:#dc6737; border-radius:50%; max-width:100%;   display:block;}
+.slideTxtBox_by > .hd > ul > li h3{ color:#525252; line-height:220%; font-size:114%; font-weight:bold; text-align:center;}
+.slideTxtBox_by > .hd > ul > li p{ color:#ff5a00; line-height:140%; padding:2%; font-size:100%; text-align:center; border:1px solid #ff5a00;}
+.slideTxtBox_by > .hd > ul > li p.wh{ color:#acacac; line-height:140%; padding:2%; font-size:100%; text-align:center; border:1px solid #a8a8a8;}
+.slideTxtBox_by > .bd{ width:100%; background:url(../imgs/zjbg.jpg) no-repeat center top; background-size:100%;}
+.slideTxtBox_by > .bd > ul{ zoom:1; }
+.slideTxtBox_by > .bd > ul > li{ width:100%; margin:0 auto;}
+.zj_zj01{}
+.zj_zjlf{width:60%; float:left;}
+.zj_zjrg{ width:39.5%; float:right; overflow:hidden;}
+.qwzj{width:96.1%; margin-left:3.8%;}
+.qwzj h3{ font-size:150%; color:#FFFFFF; text-align:center; font-weight:normal; margin-top:10%;}
+
+.zjtd_L{margin-left:5%; width:94%; float:left; margin-top:5%;}
+.zjtd_L h1{ width:25.7%; font-size:140%; line-height:180%; font-weight:bold; color:#fff; border-right:1px solid #fff; float:left;}
+.zjtd_L h5{ width:70%; color:#fff; float:left; margin-left:1%; font-size:95%;}
+.zjtd_L ol{width:70%; color:#fff; float:left;margin-left:1%; font-size:114%; }
+.zjtd_L dl{ width:100%; float:left; margin-top:3%;}
+.zjtd_L dl dd{ color:#fff; line-height:160%; font-size:100%;}
+.zjtd_L span{ width:40.4%; line-height:200%; display:block; float:left; font-size:114%; color:#fff; text-align:center; margin-bottom:3%; background:#f17221;}
+.zjtd_L p{ font-size:100%; color:#fff; float:left;}
+.zjbg{ background:url(../imgs/zj_bg.jpg) no-repeat center top; background-size:100%; overflow:hidden;}
+
+/*����ȱ��*/
+.ycqh_t{margin:3% auto 0; overflow:hidden; width:100%; zoom:1; }
+.ycqh_t img{ width:100%;}
+.ycqhn{ width:100%; margin:5% auto 0; overflow:hidden;}
+
+/*��ǻҽԺ*/
+.kqyy_t{margin:5% auto 0; overflow:hidden; width:100%; zoom:1; }
+.kqyy_t img{ width:100%;}
+.ldpp{ text-indent:2em; color:#3a3a3a; font-size:114%; line-height:150%; width:92.5%; margin:3% auto 0;}
+.yyjjn ul{ margin-top:5%; zoom:1;}
+.yyjjn ul li{ float:left; width:21.7%; margin-left:2.6%;}
+.yyjjn ul a:first-child li{margin-left: 15%;}
+.yyjjn ul li p{ font-size:100%; text-align:center; line-height:150%; color:#646565; margin-top:2%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<tc_include file="Public:head" />
+	<link href="__TMPL__Public/css/article.css" rel="stylesheet" type="text/css">
+	<title>{$title}_{$site_name}</title>
+	<meta name="keywords" content="{$keywords}"/>
+	</head>
+	<body>
+		<tc_include file="Public:new_header" />
+		<input id="ex_id" type="hidden" value="{$id}" />
+		<div class="pdbanner">
+			<div class="hd">
+				<ul>
+					<volist name="ad" id="vo" key="k" >
+						<li>{$k}</li>
+					</volist>
+				</ul>
+			</div>
+			<div class="bd">
+				<ul>
+					<volist name="ad" id="vo">
+						<li><a href="{$vo.slide_url}" target="_blank"><img src="{:sp_get_asset_upload_path($vo['slide_pic'])}" /></a></li>	
+					</volist>
+				</ul>
+			</div>
+		</div>
+		
+		<ol class="breadcrumb">
+			<i class="fa fa-home"></i>
+			<li>您所在的位置</li>
+			<li><a href="/">首页</a></li>
+			<volist name="breadcrumb" id="vo">
+				<li><a href="/experience/list/{$vo.term_id}.html">{$vo.name}</a></li>
+			</volist>
+		</ol>
+		
+		<div class="main_content clearfix">
+			<div class="LEFT">
+				<h3 class="term_title">{$title}</h3>
+				<div class="pimg">
+					<ul></ul>
+					<a href="/experience/step/{$id}.html" class="gostep">分步阅读></a>
+				</div>
+				<div id="summary" class="summary">
+					{$excerpt.post}
+					<notempty name="excerpt[photo]">
+						<p style="text-align: center;">
+							<volist name="excerpt[photo]" id="vo2">
+								<img src="{:sp_get_image_preview_url($vo2)}" alt="" width="400">
+							</volist>
+						</p>
+					</notempty>
+				</div>
+				<notempty name="tool[0]">
+				<div id="tool" class="excontent tool">
+					<h3>工具原料</h3>
+					<div class="text">
+						<volist name="tool" id="vo">
+							<p>{$vo}</p>
+						</volist>
+					</div>
+				</div>	
+				</notempty>
+				
+				<volist name="step" key="k" id="vo">
+				<div id="details_{$k}" class="excontent step">
+					<h3>{$vo.name}</h3>
+					<php>$count = count($vo)-2;</php>
+					<volist name="vo" key="k1" id="vo1" offset="2" length='$count'>
+						<div class="extext">
+							<div class="st" id="{$k}_floor-{$k1}"><font>{$k1}</font></div>
+							<div class="stepcontent">
+								{$vo1.content}
+								<notempty name="vo1[photo]">
+									<a href="/experience/step/{$id}.html"  class="img_p" style="text-align: center;">
+										<volist name="vo1[photo]" id="vo2">
+											<img src="{:sp_get_image_preview_url($vo2)}" alt="" width="400">
+											<span class="enter_step_btn">步骤阅读</span>
+										</volist>
+									</a>	
+								</notempty>	
+							</div>
+						</div>
+					</volist>
+					<div class="pinned">
+						<php>$count = count($vo)-2;</php>
+						<volist name="vo" key="k1" id="vo1" offset="2" length='$count'>
+							<div style="visibility: hidden" id="{$k1}_step"><a href="#{$k}_floor-{$k1}">{$k1}</a></div>
+						</volist>
+					</div>
+				</div>
+				</volist>
+				
+				<notempty name="attention[0]">
+					<div id="attention" class="excontent attention">
+						<h3>注意事项</h3>
+						<volist name="attention" id="vo">
+							<p>{$vo}</p>
+						</volist>
+					</div>	
+				</notempty>
+
+			</div>
+			<tc_include file="Public:right"/>
+		</div>
+	</body>
+	<tc_include file="Public:footer"/>
+	<script  type="text/javascript" src="__TMPL__Public/js/waypoints.min.js"></script>
+	<script>
+		jQuery(".pdbanner").slide({mainCell:".bd ul",autoPlay:true});
+		$(function(){
+			var count = $('.step img').length;
+			var html = '';
+			var exid = $('#ex_id').val();
+			
+			$.each($(".step img"),function(i){
+				i++;
+				html += "<li><a href='/experience/step/"+exid+".html'><img style='height: 50px; width: 67px;' src='"+ $(this).attr('src') +"' /></a><span>"+ i +"</span></li>";
+			});	
+			$('.pimg ul').append(html);
+
+	        $(".pinned").css("left", ((window.screen.width - 1120) / 2) +13 + "px");
+	        $(".step .st").each(function (index, element) {
+	            $(element).waypoint(function (direction) {
+	                if (direction == "up") {
+	                    for (var i = 0; i < $(".pinned div").length; i++) {
+	                        if (i >= index) {
+	                            $($(".pinned div").get(i)).css("visibility", "hidden");
+	                        }
+	                        if (i > 0 && i==index) {
+	                            $($(".pinned div").get(i-1)).removeClass("gray");
+	                        }
+	                    }
+	                    $(element).css("visibility", "visible");
+	                } else {
+	                    $(element).css("visibility", "hidden");
+	                    for (var i = 0; i < $(".pinned div").length; i++) {
+	                        if (i < index) {
+	                            $($(".pinned div").get(i)).addClass("gray");
+	                        } else if (i == index) {
+	                            $($(".pinned div").get(i)).css("visibility", "visible");
+	                            $($(".pinned div").get(i)).removeClass("gray");
+	
+	                        } else {
+	                            $($(".pinned div").get(i)).css("visibility", "hidden");
+	                        }
+	                    }
+	                }
+	
+	                $($("#ico-group div").get(index)).unbind("click").bind("click", function() {
+	                    var _targetTop = $(element).offset().top;//获取位置
+	                    jQuery("html,body").animate({ scrollTop: _targetTop }, 300);//跳转
+	                });
+	
+	            }, {
+	                offset: 0 +index*32
+	            });
+	        });
+		});
+	</script>
+</html>

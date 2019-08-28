@@ -1,0 +1,17 @@
+body {
+	background-color: #F3EEEE;
+}
+.swt-btn {
+	border-top: 1px solid #C3C2C2;
+    width: 95%;
+}
+.swt-btn input {
+	border-radius: .3rem;
+    border: 1px solid #D1D1D1;
+}
+.swt-btn a {
+  	border-radius: .3rem;
+  	background-color: rgb(20, 131, 232);
+  	width: 23%;
+  	line-height: 2.5;
+}

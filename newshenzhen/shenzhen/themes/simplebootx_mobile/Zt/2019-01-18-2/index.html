@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>领取福袋_{$site_name}</title>
+	<tc_include file="Public:head" />
+	<script src="__TMPL__Public/js/jquery-2.1.1.min.js"></script>
+	<script src="__TMPL__Public/js/swiper.min.js"></script>
+	<link rel="stylesheet" href="__TMPL__Public/css/bootstrap4.min.css">
+	<link rel="stylesheet" href="__TMPL__Public/css/swiper.min.css">
+	<link href="__TMPL__Zt/2019-01-17/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<section class="">
+		<img src="__TMPL__Zt/2019-01-18/imgs/banner.jpg" alt="">
+	</section>
+
+	<section class="content-1">
+		<div class="container">
+			<form action="">
+				<div class="form-input mt-3">
+					<input type="text" placeholder="姓名" class="w-100 pl-2 pt-2 pb-2 name" name="data[name]">
+				</div>
+				<div class="form-input mt-3">
+					<input type="text" placeholder="电话" class="w-100 pl-2 pt-2 pb-2 phone" name="data[phone]">
+				</div>
+				<div class="form-input mt-3">
+					<input type="text" placeholder="年龄" class="w-100 pl-2 pt-2 pb-2 phone" name="data[age]">
+				</div>
+				<input type="hidden" name="table_id" value="51" />
+				<input type="hidden" name="page" class="page" />
+				<input type="hidden" name="code" value="{$code = mt_rand(0,1000000)}">
+			</form>
+			<div class="submit-btn mt-3">
+				<a href="javascript:;" class="text-white text-center d-block pt-2 pb-2">立即领取福袋</a>
+			</div>
+			<div class="mt-3">
+				<img src="__TMPL__Zt/2019-01-18/imgs/content-1.jpg" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section class="content-2 mt-4">
+		<img src="__TMPL__Zt/2019-01-18/imgs/content-2.jpg" alt="">
+	</section>
+
+	<section class="content-3">
+		<img src="__TMPL__Zt/2019-01-18/imgs/content-3.jpg" alt="">
+	</section>
+
+	<section class="content-4 mt-4">
+		<img src="__TMPL__Zt/2019-01-18/imgs/content-4.jpg" alt="">
+	</section>
+
+	<section class="content-5 mt-4">
+		<img src="__TMPL__Zt/2019-01-18/imgs/content-5.jpg" alt="">
+	</section>
+
+	<section class="content-6">
+		<img src="__TMPL__Zt/2019-01-18/imgs/content-6.jpg" alt="">
+	</section>
+</body>
+</html>
+
+<script>
+	$('.page').val(window.location.href);
+	$('.submit-btn').on('click', function() {
+		var name = $(".name").val();
+		var re1 = /^[\u4E00-\u9FA5]{1,6}$/; 
+		if(name == ''){
+			alert("姓名不能为空"); 
+			return false; 
+		}else if(name != ''){
+			if (!re1.test(name)){ 
+				alert("姓名格式不正确"); 
+				return false; 
+			}	
+		}
+		
+		var phone = $(".phone").val();
+		var re3 = /^((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+(\d{8})$/;
+		if(phone == ''){
+			alert("电话不能为空"); 
+			return false; 
+		}else if(phone != ''){
+			if (!re3.test(phone)){ 
+				alert("电话格式不正确"); 
+				return false; 
+			}
+		}
+
+		var data = $('form').serializeArray();
+		$.post('/tables/tables/add_post',data,function(result){
+			alert(result.info);
+		});
+	});
+</script>

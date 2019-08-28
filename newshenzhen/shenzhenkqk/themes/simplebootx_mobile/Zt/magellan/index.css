@@ -1,0 +1,179 @@
+a {
+	text-decoration: none;
+	color: #333;
+}
+a:hover {
+	text-decoration: none;
+	color: #333;
+}
+img{
+	max-width: 100%;
+}
+.red {
+	color: #cc1515;
+}
+.blue{
+	color: #1c42cb;
+}
+.org{
+	color: #fdb349;
+}
+.font-9{
+	font-size: 0.9rem;
+}
+.font-8{
+	font-size: 0.8rem;
+}
+.w-90{
+	width: 90%;
+}
+.w-30{
+	width: 30%;
+}
+.w-32{
+	width: 32%;
+}
+
+.banner{
+	margin-top: 7.4rem;
+}
+.text-indent{
+	text-indent: 2em;
+}
+
+.content-box-1{
+	background-image: url(imgs/content-1-bg.jpg);
+}
+.content-box-2{
+	background-image: url(imgs/content2-bg.jpg);
+}
+.content-box-3{
+	background-image: url(imgs/content3-bg.jpg);
+}
+.content-box-4{
+	background-image: url(imgs/content4-bg.jpg);
+}
+.content-box-5{
+	background: linear-gradient(#e1e5ec, #f7fafd);
+}
+.content-box-6{
+	background-image: url(imgs/doctor.png);
+}
+.content-box-1,.content-box-2,.content-box-3,.content-box-4,.content-box-6{
+	background-size: cover;
+}
+
+.content-title p {
+	font-size: 1rem;
+}
+.content-title i {
+	width: 100%;
+	height: 2.1rem;
+	border: 1px solid #4378db;
+	top: 1rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.content-title i:before, .content-title i:after {
+	content: '';
+	width: 2px;
+	height: 1.2rem;
+	background: #1C42CB;
+	display: inline-block;
+	position: absolute;
+	top: .4rem;
+}
+.content-title i:before {
+	left: -1px;
+}
+.content-title i:after {
+	right: -1px;
+}
+.content-title p, .content-title h4 {
+	color: #1c42cb;
+	background: #E5EEFE;
+	z-index: 2;
+}
+
+.content-box-2 .content-title i,.content-box-3 .content-title i,.content-box-6 .content-title i{
+	border-color: #fff;
+}
+.content-box-2 .content-title i:before, .content-box-2 .content-title i:after,
+.content-box-3 .content-title i:before, .content-box-3 .content-title i:after,
+.content-box-6 .content-title i:before, .content-box-6 .content-title i:after{
+	background-color: #fff;
+}
+.content-box-2 .content-title p, .content-box-2 .content-title h4{
+	background: linear-gradient(to right, #0f1d3d , #0b2975 , #0f1e3f);
+}
+.content-box-6 .content-title p, .content-box-6 .content-title h4{
+	background: linear-gradient(to right, #0b2a69 , #0a2b74 , #0b2a69);
+}
+.content-box-5 .content-title p, .content-box-5 .content-title h4{
+	background: #e6eaf0;
+}
+
+.swiper-pagination{
+	width: 92%;
+}
+.swiper-pagination-bullet{
+	margin: 0 4px;
+	width: 12px;
+	height: 12px;
+	background: #3f5eb0;
+}
+.swiper-pagination-bullet-active{
+	background: #fff;
+}
+.content-box-2 ul li{
+	background: url(imgs/11.png) no-repeat #e5eefe;
+	background-size: 15%;
+    background-position-y: center;
+    background-position-x: 5%;
+}
+.content-box-2 ul li:nth-child(2){
+	background: url(imgs/12.png) no-repeat #e5eefe;
+	background-size: 15%;
+    background-position-y: center;
+    background-position-x: 5%;
+}
+.content-box-2 ul li:nth-child(3){
+	background: url(imgs/13.png) no-repeat #e5eefe;
+	background-size: 15%;
+    background-position-y: center;
+    background-position-x: 5%;
+}
+.content-box-2 ul li:nth-child(4){
+	background: url(imgs/14.png) no-repeat #e5eefe;
+	background-size: 15%;
+    background-position-y: center;
+    background-position-x: 5%;
+}
+
+.content-box-3 .content-title p, .content-box-3 .content-title h4{
+	background-color: #0c2565;
+}
+
+.content-box-4 .d-flex{
+	background-color: #fff;
+}
+.swt-btn{
+	background-color: #c11920;
+	border-radius: 30px;
+}
+.content-box-6{
+	padding-bottom: 11rem;
+}
+.content-box-6 .swt-btn{
+	bottom: 10px;
+	left: 30%;
+}
+
+footer{
+	background: url(../zzyrzds-after/imgs/footer.jpg);
+	background-size: cover;
+}
+footer h4{
+	letter-spacing:0.6rem;
+}

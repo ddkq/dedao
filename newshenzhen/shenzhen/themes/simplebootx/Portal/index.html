@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<tc_include file="Public:head" />
+	<title>{$site_seo_title}</title>
+	<meta name="keywords" content="{$site_seo_keywords}" />
+	<meta name="description" content="{$site_seo_description}" />
+	<link rel="stylesheet" href="__TMPL__Public/css/new-index.css">
+</head>
+<body>
+	<tc_include file="Public:new_header" />
+
+	<section class="content1">
+		<div class="banner swiper-container">
+			<ul class="swiper-wrapper">
+				<volist name="slides" id="vo">
+					<li class="swiper-slide">
+						<a href="{$vo.slide_url}" target="_blank" class="{$vo.slide_des}">
+							<img src="{:sp_get_asset_upload_path($vo['slide_pic'])}" />
+							{:htmlspecialchars_decode($vo[slide_content])}
+						</a>
+					</li>	
+				</volist>
+			</ul>
+			<div class="swiper-pagination"></div>
+			<div class="arrow-right next"><i class="arrow"></i></div>
+			<div class="arrow-left prev"><i class="arrow"></i></div>
+		</div>
+		<ul class="banner-bottom-msg flex content-width">
+			<li class="banner-bottom-active">
+				<a href="/zt/s-missing">
+					<div class="banner-bottom-msg-left"><i class="index-icon"></i></div>
+					<div class="banner-bottom-msg-right">
+						<p>单颗缺牙</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="/swt" target="_blank">
+					<div class="banner-bottom-msg-left"><i class="index-icon"></i></div>
+					<div class="banner-bottom-msg-right">
+						<p>半口缺牙</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="/swt" target="_blank">
+					<div class="banner-bottom-msg-left"><i class="index-icon"></i></div>
+					<div class="banner-bottom-msg-right">
+						<p>全口缺牙</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</section>
+	
+	<section class="content2">
+		<div class="content-width">
+			<div class="content-title">
+				<h1><i class="index-icon"></i>德道口腔 AI+ 即刻 3.0 技术中心</h1>
+			</div>
+			<div class="flex content2-detail">
+					<div><img src="__TMPL__Public/images/index-content2.gif" alt=""></div>
+				<div>
+					<div class="content2-video-box">
+						<img src="__TMPL__Public/images/technology.gif" controls="controls" width="100%" />
+					</div>
+					<div><img src="__TMPL__Public/images/index-content2.jpg" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+	<!-- <section class="content-width swt-img-box"><a onclick="openJesongChatByGroup(16524,20125);"><img src="__TMPL__Public/images/ad.jpg" alt=""></a></section> -->
+	
+	
+	<section class="content-width content4">
+		<div class="content-title">
+			<h1>
+				<i class="index-icon"></i>智能口腔中心
+				<span class="content-more"><a href="/list/62.html">更多 ></a></span>
+			</h1>
+		</div>
+		<ul class="flex content4-tab">
+			<li class="content4-tab-active"><i class="index-icon"></i>牙齿种植</li>
+			<li><i class="index-icon"></i>牙齿正畸</li>
+			<li><i class="index-icon"></i>牙齿修复</li>
+			<li><i class="index-icon"></i>儿童口腔</li>
+			<li><i class="index-icon"></i>综合治疗</li>
+		</ul>
+		<div class="swiper-container content4-1">
+			<div class="content4-bottom-detail swiper-wrapper">
+				<div class="swiper-slide">
+					<ul class="flex content4-second-tab1 content4-second-tab">
+						<volist name="sick1" id="s1">
+							<if condition="$i eq 1">
+								<li class="content4-second-active">{$s1.name}</li>
+							<else/>
+								<li>{$s1.name}</a></li>
+							</if>
+						</volist>
+					</ul>
+					<div class="swiper-container content4-2">
+						<div class="swiper-wrapper">
+							<volist name="sick1" id="s1">
+								<div class="swiper-slide">
+									<div class="flex content4-detail">
+										<ul class="content-img-box flex">
+											<li>
+												<a onclick="openJesongChatByGroup(16524,20125);">
+													<img src="__TMPL__Public/images/content4-img-list1-1.jpg" alt="">
+													<div class="detail-hover unshow"><span>单颗<br>种植</span></div>
+												</a>
+											</li>
+											<li>
+												<a onclick="openJesongChatByGroup(16524,20125);">
+													<img src="__TMPL__Public/images/content4-img-list1-2.jpg" alt="">
+													<div class="detail-hover unshow"><span>多颗<br>种植</span></div>
+												</a>
+											</li>
+											<li>
+												<a onclick="openJesongChatByGroup(16524,20125);">
+													<img src="__TMPL__Public/images/content4-img-list1-3.jpg" alt="">
+													<div class="detail-hover unshow"><span>门牙<br>种植</span></div>
+												</a>
+											</li>
+											<li>
+												<a onclick="openJesongChatByGroup(16524,20125);">
+													<img src="__TMPL__Public/images/content4-img-list1-4.jpg" alt="">
+													<div class="detail-hover unshow"><span>全口<br>种植</span></div>
+												</a>
+											</li>
+										</ul>
+										<div class="content4-right-text">
+											<div>
+												<div class="date">
+													<span>{:date('m-d',strtotime($s1[commended_article][post_modified]))}</span><br>
+													<span>{:date('Y',strtotime($s1[commended_article][post_modified]))}</span>
+												</div>
+												<div class="content4-msg">
+													<a href="{:get_article_url($s1[commended_article][tid],$s1[commended_article][link_type],$s1[commended_article][post_url])}">
+														<h1>{$s1[commended_article][post_title]}</h1>
+														<p>{$s1[commended_article][post_excerpt]}</p>
+													</a>
+												</div>
+											</div>
+											<div class="link-list">
+												<ul>
+													<volist name="s1['etc_article']" id="vo">
+														<li>
+															<a href="{:get_article_url($vo[tid],$vo[link_type],$vo[post_url])}" style="display: block;">{$vo.post_title}<span>{:date('Y-m-d',strtotime($vo[post_modified]))}</span></a>
+														</li>
+													</volist>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>	
+							</volist>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<ul class="flex content4-second-tab2 content4-second-tab">
+						<volist name="sick2" id="s1">
+							<if condition="$i eq 1">
+								<li class="content4-second-active">{$s1.name}</li>
+							<else/>
+								<li>{$s1.name}</a></li>
+							</if>
+						</volist>
+					</ul>
+					<div class="swiper-container content4-3">
+						<div class="swiper-wrapper">
+							<volist name="sick2" id="s1">
+								<div class="swiper-slide">
+									<div class="flex content4-detail">
+										<ul class="content-img-box flex">
+											<li>
+												<a onclick="openJesongChatByGroup(16524,20125);">
+													<img src="__TMPL__Public/images/content4-img-list2-1.jpg" alt="">
+													<div class="detail-hover unshow"><span>陶瓷<br>正畸</span></div>
+												</a>
+											</li>
+											<li>
+												<a onclick="openJesongChatByGroup(16524,20125);">
+													<img src="__TMPL__Public/images/content4-img-list2-2.jpg" alt="">
+													<div class="detail-hover unshow"><span>舌侧<br>正畸</span></div>
+												</a>
+											</li>
+											<li>
+												<a onclick="openJesongChatByGroup(16524,20125);">
+													<img src="__TMPL__Public/images/content4-img-list2-3.jpg" alt="">
+													<div class="detail-hover unshow"><span>传统<br>正畸</span></div>
+												</a>
+											</li>
+											<li>
+												<a onclick="openJesongChatByGroup(16524,20125);">
+													<img src="__TMPL__Public/images/content4-img-list2-4.jpg" alt="">
+													<div class="detail-hover unshow"><span>隐形<br>正畸</span></div>
+												</a>
+											</li>
+										</ul>
+										<div class="content4-right-text">
+											<div>
+												<div class="date">
+													<span>{:date('m-d',strtotime($s1[commended_article][post_modified]))}</span><br>
+													<span>{:date('Y',strtotime($s1[commended_article][post_modified]))}</span>
+												</div>
+												<div class="content4-msg">
+													<a href="{:get_article_url($s1[commended_article][tid],$s1[commended_article][link_type],$s1[commended_article][post_url])}">
+														<h1>{$s1[commended_article][post_title]}</h1>
+														<p>{$s1[commended_article][post_excerpt]}</p>
+													</a>
+												</div>
+											</div>
+											<div class="link-list">
+												<ul>
+													<volist name="s1['etc_article']" id="vo">
+														<li><a href="{:get_article_url($vo[tid],$vo[link_type],$vo[post_url])}">{$vo.post_title}</a><span>{:date('Y-m-d',strtotime($vo[post_modified]))}</span></li>
+													</volist>
+													
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>	
+							</volist>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<ul class="flex content4-second-tab3 content4-second-tab">
+						<volist name="sick3" id="s1">
+							<if condition="$i eq 1">
+								<li class="content4-second-active">{$s1.name}</li>
+							<else/>
+								<li>{$s1.name}</a></li>
+							</if>
+						</volist>
+					</ul>
+					<div class="swiper-container content4-4">
+						<div class="swiper-wrapper">
+							<volist name="sick3" id="s1">
+								<div class="swiper-slide">
+									<div class="flex content4-detail">
+										<ul class="content-img-box flex">
+											<li>
+												<a href="/zt/ztm/" target="_blank">
+													<img src="__TMPL__Public/images/content4-img-list3-1.jpg" alt="">
+													<div class="detail-hover unshow"><span>瓷贴<br>面</span></div>
+												</a>
+											</li>
+											<li>
+												<a href="/zt/ztm/" target="_blank">
+													<img src="__TMPL__Public/images/content4-img-list3-2.jpg" alt="">
+													<div class="detail-hover unshow"><span>瓷贴<br>面</span></div>
+												</a>
+											</li>
+											<li>
+												<a href="/zt/ztm/" target="_blank">
+													<img src="__TMPL__Public/images/content4-img-list3-3.jpg" alt="">
+													<div class="detail-hover unshow"><span>瓷贴<br>面</span></div>
+												</a>
+											</li>
+											<li>
+												<a href="/zt/ztm/" target="_blank">
+													<img src="__TMPL__Public/images/content4-img-list3-4.jpg" alt="">
+													<div class="detail-hover unshow"><span>瓷贴<br>面</span></div>
+												</a>
+											</li>
+										</ul>
+										<div class="content4-right-text">
+											<div>
+												<div class="date">
+													<span>{:date('m-d',strtotime($s1[commended_article][post_modified]))}</span><br>
+													<span>{:date('Y',strtotime($s1[commended_article][post_modified]))}</span>
+												</div>
+												<div class="content4-msg">
+													<a href="{:get_article_url($s1[commended_article][tid],$s1[commended_article][link_type],$s1[commended_article][post_url])}">
+														<h1>{$s1[commended_article][post_title]}</h1>
+														<p>{$s1[commended_article][post_excerpt]}</p>
+													</a>
+												</div>
+											</div>
+											<div class="link-list">
+												<ul>
+													<volist name="s1['etc_article']" id="vo">
+														<li><a href="{:get_article_url($vo[tid],$vo[link_type],$vo[post_url])}">{$vo.post_title}</a><span>{:date('Y-m-d',strtotime($vo[post_modified]))}</span></li>
+													</volist>
+													
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>	
+							</volist>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<ul class="flex content4-second-tab4 content4-second-tab">
+						<volist name="sick4" id="s1">
+							<if condition="$i eq 1">
+								<li class="content4-second-active">{$s1.name}</li>
+							<else/>
+								<li>{$s1.name}</a></li>
+							</if>
+						</volist>
+					</ul>
+					<div class="swiper-container content4-5">
+						<div class="swiper-wrapper">
+							<volist name="sick4" id="s1">
+								<div class="swiper-slide">
+									<div class="flex content4-detail">
+										<ul class="content-img-box flex">
+											<li>
+												<a href="/list/154.html" target="_blank">
+													<img src="__TMPL__Public/images/content4-img-list4-1.jpg" alt="">
+													<div class="detail-hover unshow"><span>儿童<br>口腔</span></div>
+												</a>
+											</li>
+											<li><img src="__TMPL__Public/images/content4-img-list4-2.jpg" alt=""></li>
+											<li><img src="__TMPL__Public/images/content4-img-list4-3.jpg" alt=""></li>
+											<li>
+												<a href="/list/154.html" target="_blank">
+													<img src="__TMPL__Public/images/content4-img-list4-4.jpg" alt="">
+													<div class="detail-hover unshow"><span>儿童<br>口腔</span></div>
+												</a>
+											</li>
+										</ul>
+										<div class="content4-right-text">
+											<div>
+												<div class="date">
+													<span>{:date('m-d',strtotime($s1[commended_article][post_modified]))}</span><br>
+													<span>{:date('Y',strtotime($s1[commended_article][post_modified]))}</span>
+												</div>
+												<div class="content4-msg">
+													<a href="{:get_article_url($s1[commended_article][tid],$s1[commended_article][link_type],$s1[commended_article][post_url])}">
+														<h1>{$s1[commended_article][post_title]}</h1>
+														<p>{$s1[commended_article][post_excerpt]}</p>
+													</a>
+												</div>
+											</div>
+											<div class="link-list">
+												<ul>
+													<volist name="s1['etc_article']" id="vo">
+														<li><a href="{:get_article_url($vo[tid],$vo[link_type],$vo[post_url])}">{$vo.post_title}</a><span>{:date('Y-m-d',strtotime($vo[post_modified]))}</span></li>
+													</volist>
+													
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>	
+							</volist>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<ul class="flex content4-second-tab5 content4-second-tab">
+						<volist name="sick5" id="s1">
+							<if condition="$i eq 1">
+								<li class="content4-second-active">{$s1.name}</li>
+							<else/>
+								<li>{$s1.name}</a></li>
+							</if>
+						</volist>
+					</ul>
+					<div class="swiper-container content4-6">
+						<div class="swiper-wrapper">
+							<volist name="sick5" id="s1">
+								<div class="swiper-slide">
+									<div class="flex content4-detail">
+										<ul class="content-img-box flex">
+											<li>
+												<a href="/list/13.html" target="_blank">
+													<img src="__TMPL__Public/images/content4-img-list5-1.jpg" alt="">
+													<div class="detail-hover unshow"><span>综合<br>治疗</span></div>
+												</a>
+											</li>
+											<li><img src="__TMPL__Public/images/content4-img-list5-2.jpg" alt=""></li>
+											<li><img src="__TMPL__Public/images/content4-img-list5-3.jpg" alt=""></li>
+											<li>
+												<a href="/list/13.html" target="_blank">
+													<img src="__TMPL__Public/images/content4-img-list5-4.jpg" alt="">
+													<div class="detail-hover unshow"><span>综合<br>治疗</span></div>
+												</a>
+											</li>
+										</ul>
+										<div class="content4-right-text">
+											<div>
+												<div class="date">
+													<span>{:date('m-d',strtotime($s1[commended_article][post_modified]))}</span><br>
+													<span>{:date('Y',strtotime($s1[commended_article][post_modified]))}</span>
+												</div>
+												<div class="content4-msg">
+													<a href="{:get_article_url($s1[commended_article][tid],$s1[commended_article][link_type],$s1[commended_article][post_url])}">
+														<h1>{$s1[commended_article][post_title]}</h1>
+														<p>{$s1[commended_article][post_excerpt]}</p>
+													</a>
+												</div>
+											</div>
+											<div class="link-list">
+												<ul>
+													<volist name="s1['etc_article']" id="vo">
+														<li><a href="{:get_article_url($vo[tid],$vo[link_type],$vo[post_url])}">{$vo.post_title}</a><span>{:date('Y-m-d',strtotime($vo[post_modified]))}</span></li>
+													</volist>
+													
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>	
+							</volist>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	
+	<section class="content6">
+		<div class="content-width">
+			<div class="content-title">
+				<h1>
+					<i class="index-icon"></i>展会活动
+					<span class="content-more"><a href="">更多 ></a></span>
+				</h1>
+			</div>
+		</div>
+		<div id="certify">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<volist name="activitiy_banner" id="vo">
+						<div class="swiper-slide"><img src="{:sp_get_asset_upload_path($vo['slide_pic'])}"/></div>	
+					</volist>
+				</div>
+			</div>
+			<div class="arrow-left content6-left-btn"><i class="arrow"></i></div>
+			<div class="arrow-right content6-right-btn"><i class="arrow"></i></div>
+		</div>
+	</section>
+
+	<section class="content7">
+		<div class="content-width">
+			<div class="content-title">
+				<h1>
+					<i class="index-icon"></i>德道资讯
+					<span class="content-more"><a href="/list/146.html">更多 ></a></span>
+				</h1>
+			</div>
+		</div>
+		<div class="flex content7-news content-width">
+			<div class="content7-left-img-box">
+				<a href="/swt/"><img src="__TMPL__Public/images/news.jpg" alt=""></a>
+				<!--<div class="flex news-img-box-text">
+					<div class="content7-date">
+						<span>{:date('m-d',strtotime($top_news[0][post_modified]))}</span>
+					</div>
+					<div>
+						<h1>{$top_news[0][post_title]}</h1>
+						<p>{$top_news[0][post_excerpt]}</p>
+					</div>
+				</div>-->
+			</div>
+			<div class="content7-right-msg-list">
+				<div class="content7-list-title">近期新闻</div>
+				<ul class="news1">
+					<volist name="news" id="vo">
+						<li>
+							<a href="{:get_article_url($vo[tid],$vo[link_type],$vo[post_url])}" class="flex">
+								<div class="right-msg-date">
+									<span>{:date('m-d',strtotime($vo[post_modified]))}</span><br>
+									<span>{:date('Y',strtotime($vo[post_modified]))}</span>
+								</div>
+								<div>
+									<h1>{$vo.post_title}</h1>
+									<p>{$vo[post_excerpt]}</p>
+								</div>
+							</a>
+						</li>	
+					</volist>
+				</ul>
+				<div class="content7-list-title" style="background: #BCA17A;">活动新闻</div>
+				<ul class="news2">
+					<volist name="activity" id="vo">
+						<li>
+							<a href="{:get_article_url($vo[tid],$vo[link_type],$vo[post_url])}" class="flex">
+								<div class="news-list-date">{:date('Y-m-d',strtotime($vo[post_modified]))}</div>
+								<div class="news-list-text">{$vo.post_title}</div>
+							</a>
+						</li>	
+					</volist>
+				</ul>
+			</div>
+		</div>
+	</section>
+	
+	<tc_include file="Public:footer" />
+</body>
+<script src="__TMPL__Public/js/jquery.lazyload.min.js"></script>
+<script src="__TMPL__Public/js/index.js"></script>
+</html>

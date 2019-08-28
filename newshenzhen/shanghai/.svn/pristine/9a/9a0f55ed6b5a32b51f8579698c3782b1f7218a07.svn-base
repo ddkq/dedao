@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<tc_include file="Public:head" />
+		<title>404错误页面_{$site_name}</title>
+	</head>
+	<body>
+		<tc_include file="Public:new_header" />
+		
+		<div id="w_pd">
+			<div class="error">
+				<div class="error-top">
+					<dl>
+						<dt><img src="__TMPL__Public/images/ico_03.png" width="141" height="146" alt=" "></dt>
+						<dd>
+							<p><span>sorry</span>您访问的页面弄丢了</p>
+						</dd>
+						<dd>您的牙齿问题没解决？
+							<a onclick="openJesongChatByGroup(16524,20125);">咨询医生</a>吧... ...</dd>
+					</dl>
+				</div>
+				<div class="error-mid">
+					<div class="error-mid1">
+						<dl>
+							<dt>您好！有问题，请点击发起对话！我们随时准备为您解答。</dt>
+							<dd>
+								<a onclick="openJesongChatByGroup(16524,20125);">发起<br> 对话
+								</a>
+							</dd>
+						</dl>
+					</div>
+					<div class="error-mid2">
+						<p>全国免费咨询热线：<strong>400-800-6161</strong></p>
+						<div class="error-mid2-txt">
+							<form action="{:U('portal/search/index')}" method="post">
+								<input type="text" id="telInput" class="a1" placeholder="请输入关键词" name="keyword">
+								<input type="hidden" name="type" value="1">
+								<input type="submit" id="callBtn" value="搜索" class="a2">
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="error-bot">
+					<ul>
+						<li>
+							<a href="/">网站首页<i class="fa fa-arrow-circle-o-right"></i></a>
+						</li>
+						<li>
+							<a oonclick="openJesongChatByGroup(16524,20125);">了解更多<i class="fa fa-arrow-circle-o-right"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		
+		<tc_include file="Public:footer"/>
+	</body>
+</html>

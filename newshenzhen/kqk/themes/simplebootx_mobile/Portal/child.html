@@ -1,0 +1,224 @@
+<!--儿童齿科-->
+<!DOCTYPE html>
+<html>
+	<tc_include file="Public:head" />
+	<link href="__TMPL__Public/css/style.css" rel="stylesheet" type="text/css">
+	<title>{$name}_{$site_seo_title}</title>
+	<meta name="keywords" content="{$seo_keywords}"/>
+	<meta name="description" content="{$seo_description}" />
+	</head>
+	<body>
+		<tc_include file="Public:article_header" />
+		<div class="main_img">
+			<php>$slide = sp_getslide("child_pbanner");</php>
+			<div class="hd">
+				<ul>
+					<volist name="slide" id="vo" key="k" >
+						<li>{$k}</li>
+					</volist>
+				</ul>
+			</div>
+			<div class="bd">
+				<ul>
+					<volist name="slide" id="vo">
+						<li><a href="{$vo.slide_url}" target="_blank"><img src="{:sp_get_asset_upload_path($vo['slide_pic'])}" /></a></li>	
+					</volist>
+				</ul>
+			</div>
+		</div>
+			
+		<div class="project">
+			<h2>德道儿童齿科<span>中心项目</span></h2>
+			<ul class="clearfix">
+				<li class="col-xs-4">
+					<img src="__TMPL__Public/images/child/project_img01.png" />
+					<p>儿童防畸</p>
+				</li>
+				<li class="col-xs-4">
+					<img src="__TMPL__Public/images/child/project_img02.png" />
+					<p>治蛀防蛀</p>
+				</li>
+				<li class="col-xs-4">
+					<img src="__TMPL__Public/images/child/project_img03.png" />
+					<p>窝沟封闭</p>
+				</li>
+				<li class="col-xs-4 col-xs-offset-2">
+					<img src="__TMPL__Public/images/child/project_img04.png" />
+					<p>龋齿虫牙</p>
+				</li>
+				<li class="col-xs-4">
+					<img src="__TMPL__Public/images/child/project_img05.png" />
+					<p>换牙护理</p>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="love_bg_top"></div>
+		<div class="love">
+			<h2>专业儿童口腔<br/>让孩子爱上看牙</h2>
+			<p class="info">德道口腔为了让孩子爱上看牙，特推出儿童口腔诊室——整个环境充分考虑儿童的天性，充满童趣欢乐，并融合先进诊疗技术和导乐心理疏导，提供儿童口腔健康档案与多项目增值服务，让儿童轻松看牙，提高诊疗效果，拥有快乐看牙经历！</p>
+			<div class="love_img clearfix">
+				<img src="__TMPL__Public/images/child/love_img.png">
+			</div>
+		</div>
+		
+		<div class="science clearfix">
+			<h2><span>科学护牙</span>从孩子的第一颗<br/>乳牙开始</h2>
+			<div class="hd">
+				<ul>
+					<li class="col-xs-4 on">窝沟封闭<br/>儿童防龋好帮手<i></i></li>
+					<li class="col-xs-4">儿童正畸<br/>拒绝萌芽出轨<i></i></li>
+					<li class="col-xs-4">儿童蛀牙<br/>3M树脂拯救萌牙<i></i></li>
+				</ul>
+			</div>
+			<div class="bd">
+				<div class="science_left clearfix">
+					<div class="science_main">
+						<h4><span>窝沟封闭</span><br/>儿童防龋好帮手</h4>
+						<img src="__TMPL__Public/images/child/science_img1-2.png" />
+						<p><b>治疗时间：</b>乳磨牙3－4岁，第一恒磨牙6－7岁,第二恒磨牙 11－13岁 双尖牙9－13岁</p>
+						<p><b>治疗效果：</b>良好抗龋 　 脱落率低 　 效果显著 　 节约时间</p>
+						<a href="javascript:swtClick();"  target="_blank" class="swt_btn">立刻咨询>></a>
+					</div>
+				</div>
+				<div class="science_left clearfix">
+					<div class="science_main">
+						<h4><span>儿童正畸</span><br/>拒绝萌芽“出轨”</h4>
+						<img src="__TMPL__Public/images/child/science_img2-2.png" />
+						<p><b>治疗时间：</b>乳磨牙乳牙期阶段4-5，替牙期阶段;女孩8-10岁,男孩9－12岁,恒牙期阶段:女孩11-14岁，男孩13-15岁。</p>
+						<p><b>治疗效果：</b>量齿定制 　 自然舒适 　效果显著 　节约时间</p>
+						<a href="javascript:swtClick();"  target="_blank" class="swt_btn">立刻咨询>></a>
+					</div>
+				</div>
+				<div class="science_left clearfix">
+					<div class="science_main">
+						<h4><span>儿童蛀牙</span><br/>3M树脂拯救萌牙</h4>
+						<img src="__TMPL__Public/images/child/science_img3-2.png" />
+						<p><b>治疗时间：</b>发现牙齿表面有龋坏现象（发黑、发黄、表面不平有龋洞）时，应及时到医院处理，否则将导致牙髓炎、牙齿疼痛，大面积龋坏后将拔除牙齿。</p>
+						<p><b>治疗效果：</b>自然美观 效果显著 坚固耐用 使用广泛</p>
+						<a href="javascript:swtClick();"  target="_blank" class="swt_btn">立刻咨询>></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="time_bg_top"></div>
+		<div class="time">
+			<h2>儿童护牙时间表</h2>
+			<div class="time_main">
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>时间</th>
+							<th class="col-xs-4">第一颗乳牙萌出</th>
+							<th class="col-xs-3">6个月-1岁</th>
+							<th>3岁</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>注意事项</th>
+							<td>建立口腔健康档案并清洁牙齿</td>
+							<td>第一次看牙的最佳时期</td>
+							<td>牙线清洁邻面（3-5岁是邻面龋齿高发期）</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>时间</th>
+							<th>6岁</th>
+							<th>10岁</th>
+							<th>12岁</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>注意事项</th>
+							<td>第一恒磨牙 窝沟封闭</td>
+							<td>检查是否有畸形中央尖</td>
+							<td>双尖牙及第二恒磨牙窝沟封闭</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+		
+		<div class="compared2 clearfix">
+			<h2>儿童齿科<span>手术对比图</span></h2>
+			<img class="col-xs-12" src="__TMPL__Public/images/child/compared01.png" />
+			<img class="col-xs-12" src="__TMPL__Public/images/child/compared02.png" />
+		</div>
+		
+		<div class="doctor">
+			<h2>智能口腔专家团</h2>
+			<div class="doctorBox" id="doctorBox">
+				<div class="hd">
+					<ul></ul>
+				</div>
+				<div class="bd">
+					<ul>
+						<volist name="doctor" id="vo">
+							<li>
+								<div class="dimg col-xs-6">
+									<img src="{$vo.main_img}" />
+									<a href="javascript:swtClick();" target="_blank"><i class="fa fa-commenting-o"></i>在线咨询</a>
+								</div>
+								<div class="text col-xs-6">
+									<div class="info">
+										<h4>{$vo.name}<span>{$vo.job}</span></h4>
+										<volist name="vo['experience']" id="vo1" offset="0" length='4'>
+											<p>{$vo1}</p>
+										</volist>
+									</div>
+									<p class="item"><span>擅长项目</span>{$vo.item}</p>
+								</div>
+							</li>
+						</volist>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="advertising">
+			<img src="__TMPL__Public/images/child/ad_img.png">
+		</div>
+		
+		<div class="wiki3">
+			<h2>{$name}<span>热点关注</span></h2>
+			<ul class="clearfix">
+				<volist name="tab_text" id="vo">
+					<li>
+						<a href="{:get_article_url($vo['tid'],$vo['link_type'],$vo['post_url']);}">
+							<h4 class="media-heading">{$vo.post_title}<span></span></h4>
+							{$vo.post_excerpt}
+						</a>
+						<a href="/list/{$vo.term_id}.html" target="_blank" class="tab_term">{$vo[name]}</a>
+					</li>	
+				</volist>
+			</ul>
+		</div>
+		
+		
+		
+	</body>
+	<tc_include file="Public:footer" />
+	<script type="text/javascript">
+
+		TouchSlide({slideCell:".main_img",effect:"leftLoop"});
+		jQuery(".science").slide();
+
+		TouchSlide({ 
+			slideCell:"#doctorBox",
+			titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+			mainCell:".bd ul", 
+			effect:"leftLoop", 
+			autoPlay:true,//自动播放
+			autoPage:true, //自动分页
+			switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+		});
+	</script>
+</html>

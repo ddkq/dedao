@@ -1,0 +1,62 @@
+img{
+	max-width: 100%;
+}
+.red {
+	color: #cc1515;
+}
+.other {
+	border: none;
+	border-bottom: 1px solid #999;
+}
+.form input {
+	margin-right: .5rem;
+    position: relative;
+    top: 1.4px;
+    width: 15px;
+    height: 15px;
+}
+p {
+	font-size: 1rem;
+}
+h5 {
+	font-size: 1.1rem;
+}
+/*input {
+    border-radius: 0;
+}*/
+.form1 input{
+	border: 0;
+	border-bottom: 1px solid #999 !important;
+	outline: none;
+    -webkit-appearance: none;
+}
+.submit-btn{
+	background: #eed790;
+	color: #fff;
+	display: block;
+	width: 50%;
+	padding: 0.5rem;
+	text-align: center;
+	margin: 2rem auto;
+	font-size: 1.4rem;
+}
+table i{
+	display: block;
+    border: 1px solid #999;
+    width: 0.5rem;
+    padding: 0.5rem;
+    margin: auto;
+}
+table i.checked{
+	background: #eed790;
+	border: 0;
+}
+table input{
+	display: none;
+}
+.name {
+	border-bottom: 1px solid #E4E4E4;
+}
+.a-1, .b-1, .c-1, .d-1, .a-2, .b-2, .c-2 {
+	display: none;
+}

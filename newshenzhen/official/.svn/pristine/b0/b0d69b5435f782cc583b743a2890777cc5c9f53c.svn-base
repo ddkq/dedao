@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+		<link rel="shortcut icon" href="/public/images/favicon.ico" type="image/x-icon"/>
+		<link rel="stylesheet" type="text/css" href="__TMPL__Public/css/base.css" />
+		<link rel="stylesheet" type="text/css" href="__TMPL__Public/css/index.css" />
+		<link rel="stylesheet" href="__TMPL__Public/css/swiper.min.css">
+
+		<script type="application/javascript" src="__TMPL__Public/js/jquery-2.1.1.min.js"></script>
+		<script type="application/javascript" src="__TMPL__Public/js/map.js"></script>
+		<script src="__TMPL__Public/js/swiper.min.js"></script>
+		<title>{$site_seo_title}</title>
+		<style type="text/css">
+			#allmap img {
+				max-width: inherit;
+			}
+		</style>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=NRSdUGWelRPGWYobbVE3bm3kq3KLMGpl"></script>
+		<script src="__TMPL__Public/js/index.js"></script>
+	</head>
+	<body>
+		<div class="black-bcg"></div>
+		<div class="swiper-container swiper1">
+			<div class="swiper-wrapper">
+				<div class="section swiper-slide">
+					<div class="swiper-container swiper2">
+						<div class="swiper-wrapper">
+							<div class="slide active swiper-slide">
+								<video autoplay="autoplay" width="100%" loop="loop" poster="__TMPL__Public/images/video-bcg.png">
+									<source src="__TMPL__Public/images/1510217626431307.mp4" type="video/mp4" />
+								</video>
+								<div class="banner-text">
+									<div class='banner-text-con'>
+										<h4 class="title">医本为德，科技为道</h4>
+										<span class="line"></span>
+										<p class="subtitle">为口腔医疗产业升级而来</p>
+										<p class="banner-icon" ><i class="icon pe-"></i></p>
+									</div>
+									<div class="banner-next">
+										<a class="next-btn">
+											<img class="mouse" src="__TMPL__Public/images/mouse.png" alt="">
+											<img class="arrows-1" src="__TMPL__Public/images/arrow-1.png" alt="">
+											<img class="arrows-2" src="__TMPL__Public/images/arrow-2.png" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="slide swiper-slide">
+								<img src="__TMPL__Public/images/banner.jpg" height="100%">
+								<div class="banner2-text">
+									<div class='banner-text-con'>
+										<h4 class="title">开始智能口腔新时代</h4>
+										<span class="line"></span>
+										<p class="subtitle">实现智能科技与口腔医疗的完美结合</p>
+										<p class="banner-icon" ><i class="icon pe-"></i></p>
+									</div>
+									<div class="banner-next">
+										<a class="next-btn">
+											<img class="mouse" src="__TMPL__Public/images/mouse.png" alt="">
+											<img class="arrows-1" src="__TMPL__Public/images/arrow-1.png" alt="">
+											<img class="arrows-2" src="__TMPL__Public/images/arrow-2.png" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination nav2"></div>
+					</div>
+				</div>
+				<div class="section section2 swiper-slide">
+					<h2 class="section-line section2-title">
+						为口腔医疗产业升级而来
+						<p>3年投资200亿进行中国10个一线大型城市的口腔医疗产业升级</p>
+						<i></i>
+					</h2>
+					<div class="content section2-text">
+						<p>随着新时代的到来，中国各个领域相继进行产业升级和科技创新，但是我们的口腔行业却还是徘徊在传统与现代的边缘。<br/>德道两位创始人希望能够携手为中国现代口腔医学的发展提供新的模式和思考，希望以我们为起点，<b>让口腔行业进行产业的升级和优化。</b></p>
+						<p><b>每一个城市的德道口腔</b>，不仅仅只是作为一家服务当地口腔需求者的医院，还要承担为整个城市的口腔医疗行业进行升级的责任，<br/>成为一家集教学、培训、医疗于一体的专业化口腔医院，而德道口腔这个全新的口腔产业平台，将为所有城市的产业升级提供三个城市的产业集群合力作为支撑。</p>
+						<img class="service_img" src="__TMPL__Public/images/service_img.jpg">
+					</div>
+				</div>
+				<div class="section section2 swiper-slide" style="background: #f1f1f1;">
+					<h2 class="section02-title section-line">
+						现代医疗产业升级平台
+						<p>三大产业集群支撑</p>
+						<i></i>
+					</h2>
+					<div class="content">
+						<ul class="clearfix section2-list">
+							<li>
+								<h3>成都</h3>
+								<h5>国家级口腔医疗产业集群</h5>
+								<img src="__TMPL__Public/images/chengdu.jpg"/>
+								<p style="text-align: left;">中国种植牙发展的起源地，德道口腔中国现代口腔案例大数据中心</p>
+								<div class="btn"><a href="/swt/" target="_blank">了解详情>><i class="add">+</i></a></div>
+							</li>
+							<li>
+								<h3>深圳</h3>
+								<h5>国家高科技与人工智能产业集群</h5>
+								<img src="__TMPL__Public/images/shenzhen.jpg"/>
+								<p style="text-align: left;">科技之城，德道口腔智能医疗研究及开发中心</p>
+								<div class="btn"><a href="/swt/" target="_blank">了解详情>><i class="add">+</i></a></div>
+							</li>
+							<li>
+								<h3>上海</h3>
+								<h5>国际化平台产业集群</h5>
+								<img src="__TMPL__Public/images/shanghai.jpg"/>
+								<p style="text-align: left;">国际大都市，德道口腔国际化诊疗及技术对接中心</p>
+								<div class="btn" class="btn"><a href="/swt/" target="_blank">了解详情>><i class="add">+</i></a></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="section section3 swiper-slide">
+					<div class="section3-title">
+						<h2 class="section03-title section-line">
+							研发支持
+							<p>十大口腔诊疗及科研中心</p>
+							<i></i>
+						</h2>
+					</div>
+					<ul class="clearfix">
+						<li>
+							<h4 class="num">01</h4>
+							<p>即刻用3.0种植牙研究中心</p>
+						</li>
+						<li>
+							<h4 class="num">02</h4>
+							<p class="list-img-box"><img src="__TMPL__Public/images/section03-01.jpg" alt="">人工智能种数字化植牙中心（人机种植牙对决实验室）</p>
+						</li>
+						<li>
+							<h4 class="num">03</h4>
+							<p>VR宣教中心</p>
+						</li>
+						<li>
+							<h4 class="num">04</h4>
+							<p>VR儿童诊疗中心</p>
+						</li>
+						<li>
+							<h4 class="num">05</h4>
+							<p class="list-img-box">大数据库百年口腔案例及云存储系统<img src="__TMPL__Public/images/section03-02.jpg" alt=""></p>
+						</li>
+						<li>
+							<h4 class="num">06</h4>
+							<p>美学设计及3D打印中心</p>
+						</li>
+						<li>
+							<h4 class="num">07</h4>
+							<p>咬合力测试实验室</p>
+						</li>
+						<li>
+							<h4 class="num">08</h4>
+							<p>区块链医疗风险控制研究中心</p>
+						</li>
+						<li>
+							<h4 class="num">09</h4>
+							<p>国际口腔技术研究及引进中心</p>
+						</li>
+						<li>
+							<h4 class="num">10</h4>
+							<p class="list-img-box"><img src="__TMPL__Public/images/section03-03.jpg" alt="">云端专家智库及远程诊疗中心</p>
+						</li>
+					</ul>
+				</div>
+				<div class="section section2 section04 swiper-slide">
+					<h2 class="section04-title section-line">
+						德道版图
+						<p>布局全国连锁 立足核心城市</p>
+						<i></i>
+					</h2>
+					<div class="map">
+						<img src="__TMPL__Public/images/map.png" width="716" height="595" usemap="#Map" border="0">
+						<div class="shop shop1">国家级口腔医疗产业集群<i class="arrow"></i></div>
+						<div class="shop shop2">国家高科技与人工智能产业集群<i class="arrow"></i></div>
+						<div class="shop shop3">国际化平台产业集群<i class="arrow"></i></div>
+						<div class="city">
+							<div class="citybg" style="background:url(__TMPL__Public/images/map/anhui.png) no-repeat 0 0; top:312px; left:595px; width:75px; height:90px;"></div>
+							<a style=" position:absolute; top:353px; left:617px; z-index:10;" href="/">安徽</a>
+						</div>
+						<div class="city">
+							<div class="citybg" style="background: url(__TMPL__Public/images/map/neimeng.png) 0px 0px no-repeat; top: 7px; left: 368px; width: 318px; height: 272px; display: none;"></div>
+							<a style="position:absolute; top:209px; left:496px; z-index:10;" href="/"><!--内蒙--></a>
+						</div>
+						<div class="city">
+							<div class="citybg" style=" background:url(__TMPL__Public/images/map/heilongjiang.png) no-repeat 0 0; top:-1px; left:622px; width:165px; height:151px;"></div>
+							<a style="position:absolute;top:79px; left:696px; z-index:10;" href="/">黑龙江</a>
+						</div>
+						<div class="city">
+							<div class="citybg" style=" background:url(__TMPL__Public/images/map/xinjiang.png) no-repeat 0 0; top:71px; left:72px; width:292px; height:223px;"></div>
+							<a style="position:absolute;top:209px; left:196px; z-index:10;" href="/"><!--新疆--></a>
+						</div>
+						<div class="city">
+							<div class="citybg" style=" background:url(__TMPL__Public/images/map/xizang.png) no-repeat 0 0; top:273px; left:103px; width:281px; height:175px;"></div>
+							<a style="position:absolute;top:359px; left:217px; z-index:10;" href="/"><!--西藏--></a>
+						</div>
+						<div class="city">
+							<div class="citybg" style=" background:url(__TMPL__Public/images/map/qinghai.png) no-repeat 0 0; top:238px; left:254px; width:185px; height:135px;"></div>
+							<a style="position:absolute;top:298px; left:326px; z-index:10;" href="/"><!--青海--></a>
+						</div>
+						<div class="city">
+							<div class="citybg" style="background: url(__TMPL__Public/images/map/gansu.png) 0px 0px no-repeat; top: 185px; left: 308px; width: 207px; height: 177px; display: none;"></div>
+							<a style="position:absolute;top:308px; left:436px; z-index:10;" href="/"><!--甘肃--></a>
+						</div>
+						<div class="city">
+							<div class="citybg" style=" background:url(__TMPL__Public/images/map/ningxia.png) no-repeat 0 0; top:243px; left:451px; width:49px; height:75px;"></div>
+							<a style="position:absolute;top:270px; left:462px; z-index:10;" href="/"><!--宁夏--></a>
+						</div>
+						<div class="city">
+							<div class="citybg" style=" background:url(__TMPL__Public/images/map/shanghai.png) no-repeat 0 0; top:352px; left:682px; width:23px; height:22px;"></div>
+							<a style="position:absolute;top:350px; left:687px;; z-index:10;" href="/"><!--上海--></a>
+						</div>
+						<div class="city">
+							<div class="citybg" style=" background:url(__TMPL__Public/images/map/liaoning.png) no-repeat 0 0; top:159px; left:629px; width:91px; height:87px;"></div>
+							<a style="position:absolute;top:178px; left:672px; z-index:10;" href="/">辽宁</a>
+						</div>
+						<div class="city">
+							<div class="citybg" style=" background:url(__TMPL__Public/images/map/guangdong.png) no-repeat 0 0; top:468px; left:536px; width:111px; height:88px;"></div>
+							<a style="position:absolute;top:488px; left:572px; z-index:10;" href="/">广东</a>
+						</div>
+						<div class="city">
+							<div class="citybg" style=" background:url(__TMPL__Public/images/map/guangxi.png) no-repeat 0 0; top:452px; left:454px; width:118px; height:92px;"></div>
+							<a style="position:absolute;top:486px; left:504px; z-index:10;" href="/"><!--广西--></a>
+						</div>
+						<div class="city">
+							<div class="citybg" style=" background:url(__TMPL__Public/images/map/henan.png) no-repeat 0 0; top:286px; left:533px; width:118px; height:92px;"></div>
+							<a style="position:absolute;top:318px; left:562px; z-index:10;" href="/">河南</a>
+						</div>
+						<div class="city">
+							<div class="citybg" style=" background:url(__TMPL__Public/images/map/shanxi.png) no-repeat 0 0; top:240px; left:468px; width:79px; height:134px;"></div>
+							<a style="position:absolute;top:319px; left:502px; z-index:10;" href="/">陕西</a>
+						</div>
+						<div class="city">
+							<div class="citybg" style=" background:url(__TMPL__Public/images/map/shanxi2.png) no-repeat 0 0; top:217px; left:530px; width:56px; height:112px;"></div>
+							<a style="position:absolute;top:269px; left:542px; z-index:10;" href="/">山西</a>
+						</div>
+						<div class="city">
+							<div class="citybg" style=" background:url(__TMPL__Public/images/map/hebei.png) no-repeat 0 0; top:182px; left:569px; width:85px; height:118px;"></div>
+							<a style="position:absolute;top:245px; left:580px; z-index:10;" href="/">河北</a>
+						</div>
+						<div class="city">
+							<div class="citybg" style="background: url(__TMPL__Public/images/map/jilin.png) 0px 0px no-repeat; top: 111px; left: 647px; width: 125px; height: 88px; display: none;"></div>
+							<a style="position:absolute;top:148px; left:714px; z-index:10;" href="/">吉林</a>
+						</div>
+						<div class="city">
+							<div class="citybg" style=" background:url(__TMPL__Public/images/map/beijing.png) no-repeat 0 0; top:208px; left:584px; width:50px; height:38px;"></div>
+							<a style="position:absolute;top:213px; left:587px; z-index:10;" href="/">北京</a>
+						</div>
+						<div class="city">
+							<div class="citybg" style=" background:url(__TMPL__Public/images/map/tianjin.png) no-repeat 0 0; top:222px; left:607px; width:26px; height:34px;"></div>
+							<a style="position:absolute;top:227px; left:607px; z-index:10;" href="/"><!--天津--></a>
+						</div>
+						<div class="city">
+							<div class="citybg" style=" background:url(__TMPL__Public/images/map/shandong.png) no-repeat 0 0; top:254px; left:593px; width:103px; height:68px;"></div>
+							<a style="position:absolute;top:279px; left:612px; z-index:10;" href="/">山东</a>
+						</div>
+						<div class="city">
+							<div class="citybg" style=" background:url(__TMPL__Public/images/map/jiangsu.png) no-repeat 0 0; top:303px; left:611px; width:93px; height:72px;"></div>
+							<a style="position:absolute;top:319px; left:642px; z-index:10;" href="/">江苏</a>
+						</div> 
+						<div class="city">
+							<div class="citybg" style=" background:url(__TMPL__Public/images/map/hainan.png) no-repeat 0 0; top:554px; left:514px; width:89px; height:88px;"></div>
+							<a style="position:absolute;top:563px; left:522px; z-index:10;" href="/">海南</a>
+						</div>  
+						<div class="city">
+							<div class="citybg" style=" background:url(__TMPL__Public/images/map/hubei.png) no-repeat 0 0; top:343px; left:510px; width:115px; height:75px;"></div>
+							<a style="position:absolute;top:363px; left:552px; z-index:10;" href="/">湖北</a>
+						</div>
+						<div class="city">
+							<div class="citybg" style=" background:url(__TMPL__Public/images/map/yunnan.png) no-repeat 0 0; top:410px; left:352px; width:132px; height:138px;"></div>
+							<a style="position:absolute;top:483px; left:392px; z-index:10;" href="/">云南</a>
+						</div>
+						<div class="city">
+							<div class="citybg" style=" background:url(__TMPL__Public/images/map/sichuan.png) no-repeat 0 0; top:326px; left:356px; width:161px; height:143px;"></div>
+							<a style="position:absolute;top:470px; left:345px; z-index:10;color: rgba(0,0,0,0);" href="/">四川</a>
+						</div>
+						<div class="city">
+							<div class="citybg" style=" background:url(__TMPL__Public/images/map/guizhou.png) no-repeat 0 0; top:407px; left:439px; width:93px; height:81px;"></div>
+							<a style="position:absolute;top:443px; left:477px; z-index:10;" href="/">贵州</a>
+						</div> 
+						<div class="city">
+							<div class="citybg" style=" background:url(__TMPL__Public/images/map/taiwan.png) no-repeat 0 0; top:454px; left:685px; width:32px; height:65px;"></div>
+							<a style="position:absolute;top:473px; left:692px; z-index:10;" href="/"><!--台湾--></a>
+						</div>
+						<div class="city">
+							<div class="citybg" style=" background:url(__TMPL__Public/images/map/fujian.png) no-repeat 0 0; top:413px; left:620px; width:70px; height:84px;"></div>
+							<a style="position:absolute;top:443px; left:637px; z-index:10;" href="/">福建</a>
+						</div>
+						<div class="city">
+							<div class="citybg" style=" background:url(__TMPL__Public/images/map/hunan.png) no-repeat 0 0; top:392px; left:517px; width:83px; height:96px;"></div>
+							<a style="position:absolute;top:423px; left:547px; z-index:10;" href="/">湖南</a>
+						</div>
+						<div class="city">
+							<div class="citybg" style=" background:url(__TMPL__Public/images/map/zhejiang.png) no-repeat 0 0; top:365px; left:646px; width:62px; height:70px;"></div>
+							<a style="position:absolute;top:393px; left:660px; z-index:10;" href="/">浙江</a>
+						</div>
+						<div class="city">
+							<div class="citybg" style=" background:url(__TMPL__Public/images/map/jiangxi.png) no-repeat 0 0; top:388px; left:585px; width:76px; height:98px;"></div>
+							<a style="position:absolute;top:423px; left:597px; z-index:10;" href="/">江西</a>
+						</div>
+						<div class="city">
+							<div class="citybg" style=" background:url(__TMPL__Public/images/map/chongqing.png) no-repeat 0 0; top:361px; left:469px; width:70px; height:80px;"></div>
+							<a style="position:absolute;top:388px; left:492px; z-index:10;font-size: 6px;" href="/">重庆</a>
+						</div>
+						<div class="tip">
+							<ul>
+								<li>机构已覆盖城市</li>
+								<li>机构未覆盖城市</li>
+							</ul>
+							<div>专注25年 · 覆盖50余城 · 连锁200余家</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide section section05">
+					<div class="section3-title">
+						<h2 class="section05-title section-line">
+							德道动态
+							<i></i>
+						</h2>
+					</div>
+					<div class="section5-content">
+						<ul class="flex">
+							<li>
+								<h1><i class="start"></i>德道动态</h1>
+								<img src="{$c1['smeta']['thumb']}"/>
+								<p class="section5-content-title">{$c1.post_title}<span class="time">{:date('Y-m-d',$c1['post_modified'])}</span></p>
+								<p class="section5-content-text">{$c1.post_excerpt}</p>
+								<div class="btn"><a href="/list/190.html" target="_blank">了解详情>><i class="add">+</i></a></div>
+							</li>
+							<li>
+								<h1><i class="start"></i>科学前沿</h1>
+								<img src="{$c2['smeta']['thumb']}"/>
+								<p class="section5-content-title">{$c2.post_title}<span class="time">{:date('Y-m-d',$c2['post_modified'])}</span></p>
+								<p class="section5-content-text">{$c2.post_excerpt}</p>
+								<div class="btn"><a href="/list/191.html" target="_blank">了解详情>><i class="add">+</i></a></div>
+							</li>
+							<li>
+								<h1><i class="start"></i>学术交流</h1>
+								<img src="{$c3['smeta']['thumb']}"/>
+								<p class="section5-content-title">{$c3.post_title}<span class="time">{:date('Y-m-d',$c3['post_modified'])}</span></p>
+								<p class="section5-content-text">{$c3.post_excerpt}</p>
+								<div class="btn"><a href="/list/192.html" target="_blank">了解详情>><i class="add">+</i></a></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="swiper-slide section section06">
+					<div id="allmap" style="height:900px; width:100%;top: 8%;"></div>
+					<div class="contact-bcg"></div>
+					<div class="contact-us">
+						<div class="head">
+							<h3 class="title">联系我们<span class="line"></span></h3>
+							<p class="subtitle">Contact Us</p>
+						</div>
+						<ul class="details">
+							<li><img src="__TMPL__Public/images/qrcode.png" alt=""></li>
+						    <li class="">中国地区XX分区5A写字楼8-88号</li>
+						     
+						    <li class="mark">ADD：Building B1,No.1,Disheng West Road Beijing</li>
+
+						    <li class="">官方热线：666-888-8888</li>
+						    <li class="">Email:1234566666@qq.com</li>
+						</ul>
+					</div>
+					<div class="bottom-text">© Copyright 2015 Revelance. All rights reserved.</div>
+				</div>
+			</div>
+			<div class="swiper-pagination nav1"></div>
+		</div>
+		
+		<tc_include file="Public:nav" />
+	
+	</body>
+</html>

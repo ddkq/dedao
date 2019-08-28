@@ -1,0 +1,39 @@
+.content-1{
+	background: url(imgs/2.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.banner {
+	margin-top: 120px;
+}
+.w-45{
+	width: 45%;
+}
+.btn1{
+	border-radius: 8px;
+}
+.w-35{
+	width: 35%;
+}
+.pt-6{
+	padding-top: 4.5rem;
+}
+.absolute-fixed{
+	right: -3%;
+	bottom: 15%;
+}
+.fixed{
+	background: url(imgs/fixed-bg.jpg);
+	background-size: cover;
+	max-width: 640px;
+	margin: 0 auto;
+}
+.fixed-btn {
+    bottom: 30%;
+    right: -10%;
+    animation: btn 3s ease infinite;
+}
+@keyframes btn {
+	0% {bottom: 30%;}
+	50% {bottom: 35%;}
+	100% {bottom: 30%;}
+}

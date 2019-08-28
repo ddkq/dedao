@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<link rel="shortcut icon" href="/public/images/favicon.ico" type="image/x-icon"/>
+	<title>{$site_seo_title}</title>
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/css/base.css" />
+	<link rel="stylesheet" href="__TMPL__Public/css/index-phone.css">
+	<link rel="stylesheet" href="__TMPL__Public/css/swiper.min.css">
+
+	<script type="application/javascript" src="__TMPL__Public/js/jquery-2.1.1.min.js"></script>
+	<script type="application/javascript" src="__TMPL__Public/js/map.js"></script>
+	<script src="__TMPL__Public/js/swiper.min.js"></script>
+</head>
+<style type="text/css">
+	#allmap img {
+		max-width: inherit;
+	}
+</style>
+<body>
+	<header>
+		<div class="black-bcg"></div>
+		<ul id="menu" class="met-nav">
+			<div class="nav-logo">
+				<a href="/" class="logo">
+					<img class="logo1" src="__TMPL__Public/images/logo.png"/>
+				</a>
+			</div>
+			<div class="nav-box">
+				<div class="nav-side">
+					<hr>
+					<hr>
+					<hr>
+				</div>
+			</div>
+			<div class="side-box">
+				<div class="side-cut">
+					<div class="side-shadow"></div>
+					<div class="side-nav">
+						<div class="side-close"><i class="fa fa-close"></i></div>
+						<div class="logo-2">
+							<img src="__TMPL__Public/images/logo2.png" alt="">
+						</div>
+						<ul class="navlist">
+							<volist name="nav" id="vo">
+								<empty name="vo[child]">
+									<li class="nav-item1"><a href="{$vo.href}" target="{$vo.target}" title="{$vo.label}" class="link">{$vo.label}</a></li>		
+								<else/>
+									<li class="nav-item1" id="sideMenu">
+										<a class=" link " href="javascript:void(0);" title="{$vo.label}" data-toggle="collapse">{$vo.label}<span class="nav-plus"></span></a>
+										<ul class="navlist2 collapse" id="2" style="display: none;">
+											<volist name="vo[child]" id="vo1">
+												<li><a href="{$vo1.href}" target="{$vo1.target}" class="nav2list" title="{$vo1.label}">{$vo1.label}</a></li>
+											</volist>
+										</ul>
+									</li>
+								</empty>
+							</volist>
+							<div class="side-foot">
+								<div class="side-qrcode"><img src="__TMPL__Public/images/1510208180.png" alt=""></div>
+								<div class="side-phone">
+									<p><a href="tel:400-800-6161">官方热线：400-800-6161</a></p>
+								</div>
+								<div class="side-text">COPYRIGHT 2016-2017 未来VR服务有限公司 版权所有</div>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<script>
+				$('a.link').on('click', function(){
+					$("ul.navlist2").slideToggle();
+				});
+
+			  	$('.nav-side').on('click', function() {
+			  		$('.side-box').css('right', '100%')
+			  		$('.navlist>li.nav-item1').css('opacity', 1)
+			  		$('.black-bcg').fadeIn();
+			  	})
+			  	$('.black-bcg').on('click', function() {
+			  		$('.black-bcg').fadeOut();
+			  		$('.side-box').css('right', '0')
+			  		$('.navlist>li.nav-item1').css('opacity', 0)
+			  	})
+				$('.side-close').on('click', function() {
+					$('.black-bcg').fadeOut();
+			  		$('.side-box').css('right', '0')
+			  		$('.navlist>li.nav-item1').css('opacity', 0)
+				})
+			  	$('.black-bcg').height(window.innerHeight)
+			</script>
+		</ul>
+	</header>
+	
+	<section class="swiper-container banner-bcg">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide section">
+				<div class="">
+					<div class="bcg"></div>
+					<div class="banner-text">
+						<div class='banner-text-con'>
+							<h4 class="title">医本为德，科技为道</h4>
+							<p class="subtitle">为口腔医疗产业升级而来</p>
+							<span class="line"></span>
+						</div>
+						<div class="banner-next">
+							<a class="next-btn">
+								<img class="mouse" src="__TMPL__Public/images/mouse.png" alt="">
+								<img class="arrows-1" src="__TMPL__Public/images/arrow-1.png" alt="">
+								<img class="arrows-2" src="__TMPL__Public/images/arrow-2.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-slide section2">
+				<h2 class="section-line section-title">
+					服务理念
+					<p>3年投资200亿进行中国10个一线大型城市的口腔医疗产业升级</p>
+					<i></i>
+				</h2>
+				<div class="content section-text">
+					<p>随着新时代的到来，中国各个领域相继进行产业升级和科技创新，但是我们的口腔行业却还是徘徊在传统与现代的边缘。<br/>德道两位创始人希望能够携手为中国现代口腔医学的发展提供新的模式和思考，希望以我们为起点，<b>让口腔行业进行产业的升级和优化。</b></p>
+					<p><b>每一个城市的德道口腔</b>，不仅仅只是作为一家服务当地口腔需求者的医院，还要承担为整个城市的口腔医疗行业进行升级的责任，<br/>成为一家集教学、培训、医疗于一体的专业化口腔医院，而德道口腔这个全新的口腔产业平台，将为所有城市的产业升级提供三个城市的产业集群合力作为支撑。</p>
+					<img class="service_img" src="__TMPL__Public/images/service_img.jpg">
+				</div>
+			</div>
+
+			<div class="swiper-slide section3">
+				<h2 class="section-line section-title">
+					现代医疗产业升级平台
+					<p>三大产业集群支撑</p>
+					<i></i>
+				</h2>
+				<ul>
+					<li class="flex">
+						<div class="img-box"><img src="__TMPL__Public/images/chengdu.jpg" alt=""></div>
+						<div class="city">
+							<h1>成都</h1>
+							<p class="msg">国家级口腔医疗产业集群</p>
+							<p>中国种植牙发展的起源地，德道口腔中国现代口腔案例大数据中心</p>
+						</div>
+					</li>
+					<li class="flex">
+						<div class="img-box"><img src="__TMPL__Public/images/shenzhen.jpg" alt=""></div>
+						<div class="city">
+							<h1>深圳</h1>
+							<p class="msg">国家高科技与人工智能产业集群</p>
+							<p>科技之城，德道口腔智能医疗研究及开发中心</p>
+						</div>
+					</li>
+					<li class="flex">
+						<div class="img-box"><img src="__TMPL__Public/images/shanghai.jpg" alt=""></div>
+						<div class="city">
+							<h1>上海</h1>
+							<p class="msg">国际化平台产业集群</p>
+							<p>国际大都市，德道口腔国际化诊疗及技术对接中心</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="swiper-slide section4">
+				<div class="section-title">
+					<h2 class="section03-title section-line">
+						研发支持
+						<p>十大口腔诊疗及科研中心</p>
+						<i></i>
+					</h2>
+				</div>
+				<ul class="clearfix">
+					<li>
+						<h4 class="num">01</h4>
+						<p>即刻用3.0种植牙研究中心</p>
+					</li>
+					<li>
+						<h4 class="num">02</h4>
+						<p class="list-img-box">人工智能种数字化植牙中心（人机种植牙对决实验室）</p>
+					</li>
+					<li>
+						<h4 class="num">03</h4>
+						<p>VR宣教中心</p>
+					</li>
+					<li>
+						<h4 class="num">04</h4>
+						<p>VR儿童诊疗中心</p>
+					</li>
+					<li>
+						<h4 class="num">05</h4>
+						<p class="list-img-box">大数据库百年口腔案例及云存储系统</p>
+					</li>
+					<li>
+						<h4 class="num">06</h4>
+						<p>美学设计及3D打印中心</p>
+					</li>
+					<li>
+						<h4 class="num">07</h4>
+						<p>咬合力测试实验室</p>
+					</li>
+					<li>
+						<h4 class="num">08</h4>
+						<p>区块链医疗风险控制研究中心</p>
+					</li>
+					<li>
+						<h4 class="num">09</h4>
+						<p>国际口腔技术研究及引进中心</p>
+					</li>
+					<li>
+						<h4 class="num">10</h4>
+						<p class="list-img-box">云端专家智库及远程诊疗中心</p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="section5 swiper-slide">
+				<h2 class="section-title section-line">
+					德道版图
+					<p>布局全国连锁 立足核心城市</p>
+					<i></i>
+				</h2>
+				<div class="map">
+					<div class="map-bcg">
+						<div class="shop shop1">国家级口腔医疗产业集群<i class="arrow"></i></div>
+						<div class="shop shop2">国家高科技与人工智能产业集群<i class="arrow"></i></div>
+						<div class="shop shop3">国际化平台产业集群<i class="arrow"></i></div>
+					</div>
+					<div class="tip">
+						<ul>
+							<li>机构已覆盖城市</li>
+							<li>机构未覆盖城市</li>
+						</ul>
+						<div>专注25年 · 覆盖50余城 · 连锁200余家</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-slide section6">
+				<h2 class="section-title section-line">
+					德道动态
+					<i></i>
+				</h2>
+				<div class="section-content swiper-container">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide">
+							<h1><i class="start"></i>德道动态</h1>
+							<img src="{$c1['smeta']['thumb']}"/>
+							<p class="section-content-title">{$c1.post_title}<span class="time">{:date('Y-m-d',$c1['post_modified'])}</span></p>
+							<p class="section-content-text">{$c1.post_excerpt}</p>
+							<div class="btn"><a href="/list/190.html" target="_blank">了解详情>><i class="add">+</i></a></div>
+						</li>
+						<li class="swiper-slide">
+							<h1><i class="start"></i>科学前沿</h1>
+							<img src="{$c2['smeta']['thumb']}"/>
+							<p class="section-content-title">{$c2.post_title}<span class="time">{:date('Y-m-d',$c2['post_modified'])}</span></p>
+							<p class="section-content-text">{$c2.post_excerpt}</p>
+							<div class="btn"><a href="/list/191.html" target="_blank">了解详情>><i class="add">+</i></a></div>
+						</li>
+						<li class="swiper-slide">
+							<h1><i class="start"></i>学术交流</h1>
+							<img src="{$c3['smeta']['thumb']}"/>
+							<p class="section-content-title">{$c3.post_title}<span class="time">{:date('Y-m-d',$c3['post_modified'])}</span></p>
+							<p class="section-content-text">{$c3.post_excerpt}</p>
+							<div class="btn"><a href="/list/192.html" target="_blank">了解详情>><i class="add">+</i></a></div>
+						</li>
+					</ul>
+					<div class="ctrl-banner">
+						<div class="left-btn"><i></i></div>
+						<div class="right-btn"><i></i></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-slide section7">
+				<div id="allmap" style="width:100%;top: 11%;"></div>
+				<!-- <div class="contact-bcg"></div> -->
+				<div class="contact-us">
+					<div class="head">
+						<h3 class="title">联系我们<span class="line"></span></h3>
+						<p class="subtitle">Contact Us</p>
+					</div>
+					<ul class="details">
+						<li><img src="__TMPL__Public/images/qrcode.png" alt=""></li>
+					    <li class="">中国地区XX分区5A写字楼8-88号</li>
+					     
+					    <li class="mark">ADD：Building B1,No.1,Disheng West Road Beijing</li>
+
+					    <li class="">官方热线：666-888-8888</li>
+					    <li class="">Email:1234566666@qq.com</li>
+					</ul>
+				</div>
+				<div class="bottom-text">© Copyright 2015 Revelance. All rights reserved.</div>
+			</div>
+		</div>
+	</section>
+</body>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=NRSdUGWelRPGWYobbVE3bm3kq3KLMGpl"></script>
+<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map("allmap");
+    // 创建地址解析器实例
+    var myGeo = new BMap.Geocoder();
+    // 将地址解析结果显示在地图上,并调整地图视野
+    var point  = new BMap.Point(104.016731,30.688926)
+    map.centerAndZoom(point, 17);
+
+    map.addOverlay(new BMap.Marker(point));
+    // var myIcon = new BMap.Icon("/APP/Public/images/map-logo.png", new BMap.Size(80,49));
+    
+    var marker2 = new BMap.Marker(point,"成都市青羊区金凤路19号附1号德道口腔医院");  // 创建标注
+    map.addOverlay(marker2);              // 将标注添加到地图中
+	map.addControl(new BMap.MapTypeControl({ anchor: BMAP_ANCHOR_TOP_RIGHT, offset: new BMap.Size(10, 10) }));
+    map.addControl(new BMap.OverviewMapControl({ anchor: BMAP_ANCHOR_BOTTOM_RIGHT, isOpen: 1 }));  
+	var sContent =  
+		"<h4 style='margin:0 0 5px 0;padding:0.2em 0'>成都市德道口腔医院</h4>" +  
+		"<p style='margin:0;line-height:1.5;font-size:13px;'>地址：成都市青羊区金凤路19号附1号德道口腔医院<br/>电话：400-800-6161</p>" +  
+		"</div>";  
+    var infoWindow = new BMap.InfoWindow(sContent);  // 创建信息窗口对象  
+    marker2.openInfoWindow(infoWindow, map.getCenter());      // 打开信息窗口 
+    marker2.addEventListener('click', function() {   //点击标注显示信息窗口
+    	marker2.openInfoWindow(infoWindow, map.getCenter());
+    })
+
+    var end = "成都市德道口腔医院";
+    var routePolicy = [BMAP_TRANSIT_POLICY_LEAST_TIME,BMAP_TRANSIT_POLICY_LEAST_TRANSFER,BMAP_TRANSIT_POLICY_LEAST_WALKING,BMAP_TRANSIT_POLICY_AVOID_SUBWAYS];
+    var transit = new BMap.TransitRoute(map, {
+        renderOptions: {map: map},
+        policy: 0
+    });
+    $('#allmap').height(window.innerHeight)
+</script>
+<script>
+	$(function() {
+		$('.banner-bcg').height(window.innerHeight)
+		$('.bcg').height(window.innerHeight)
+	})
+	$(document).ready(function() {
+		var mySwiper = new Swiper ('.banner-bcg', {
+		    direction: 'vertical',	// 竖屏轮播
+		    mousewheel: true,
+		    width: window.innerWidth,
+		    height: window.innerHeight,
+		    simulateTouch : false,
+		     on: {
+		     	slideChangeTransitionStart: function() {
+		     		// 除了第一版头部透明，其余都是黑色
+					if(this.activeIndex >= 1) {
+						$('#menu').css('background-color','#000');
+					}
+					else {
+						$('#menu').css('background','0');
+					}
+					// 第二版动画效果
+					if(this.activeIndex == 1) {
+						setTimeout(function() {
+				  			$('.section2 .section-title').css({'top': '5%', 'opacity': 1})
+							setTimeout(function() {
+								$('.section2 .section-text p').eq(0).css({'top': '0', 'opacity': 1});
+								setTimeout(function() {
+									$('.section2 .section-text p').eq(1).css({'top': '0', 'opacity': 1});
+									setTimeout(function() {
+										$('.section2 .section-title').removeClass('section-line');
+									}, 100)
+								}, 500)
+							}, 400)
+				  		}, 200)
+					}
+					else {
+						$('.section2 .section-title').css({'top': '10%', 'opacity': 0});
+						$('.section2 .section-text p').css({'top': '1rem', 'opacity': 0});
+						$('.section2 .section-title').addClass('section-line');
+					}
+					// 第三版特效
+					if(this.activeIndex == 2) {
+						setTimeout(function() {
+							$('.section3 li:first-child').css('right', 0)
+							setTimeout(function() {
+								$('.section3 li:nth-child(2)').css('left', 0)
+								setTimeout(function() {
+									$('.section3 li:last-child').css('right', 0)
+									setTimeout(function() {
+										$('.section3 .section-title').removeClass('section-line');
+									}, 100)
+								}, 400)
+							}, 400)
+						}, 200)
+					}
+					else {
+						$('.section3 li:first-child, .section3 li:last-child').css('right', '100%')
+						$('.section3 li:nth-child(2)').css('left', '100%')
+						$('.section3 .section-title').addClass('section-line')
+					}
+					// 第四版动画
+					if(this.activeIndex == 3) {
+						$('.section4 ul li:first-child').css({'left': '50%', 'opacity': 1})
+						setTimeout(function() {
+							$('.section4 ul li:nth-child(2)').css({'right': '50%', 'opacity': 1})
+							setTimeout(function() {
+								$('.section4 ul li:nth-child(3)').css({'left': '50%', 'opacity': 1})
+								setTimeout(function() {
+									$('.section4 ul li:nth-child(4)').css({'right': '50%', 'opacity': 1})
+									setTimeout(function() {
+										$('.section4 ul li:nth-child(5)').css({'left': '50%', 'opacity': 1})
+										setTimeout(function() {
+											$('.section4 ul li:nth-child(6)').css({'right': '50%', 'opacity': 1})
+											setTimeout(function() {
+												$('.section4 ul li:nth-child(7)').css({'left': '50%', 'opacity': 1})
+												setTimeout(function() {
+													$('.section4 ul li:nth-child(8)').css({'right': '50%', 'opacity': 1})
+													setTimeout(function() {
+														$('.section4 ul li:nth-child(9)').css({'left': '50%', 'opacity': 1})
+														setTimeout(function() {
+															$('.section4 ul li:nth-child(10)').css({'right': '50%', 'opacity': 1})
+															setTimeout(function() {
+																$('.section4 .section-title').removeClass('section-line');
+															}, 300)
+														}, 300)
+													}, 300)
+												}, 300)
+											}, 300)
+										}, 300)
+									}, 300)
+								}, 300)
+							}, 300)
+						}, 300)
+					}
+					else {
+						$('.section4 ul li:nth-of-type(odd)').css({'left': '70%', 'opacity': 0})
+						$('.section4 ul li:nth-of-type(even)').css({'right': '70%', 'opacity': 0})
+						$('.section4 .section-title').addClass('section-line');
+					}
+					// 第五屏特效
+					if(this.activeIndex == 4) {
+						setTimeout(function() {
+							$('.map-bcg').css('transform', 'scale(1)')
+							setTimeout(function() {
+								$('.shop1').css({'top': '50%', 'opacity': 1})
+								setTimeout(function() {
+									$('.shop2').css({'bottom': '-10%', 'opacity': 1})
+									setTimeout(function() {
+										$('.shop3').css({'top': '40%', 'opacity': 1})
+										setTimeout(function() {
+											$('.tip').fadeIn()
+											setTimeout(function() {
+												$('.section5 .section-title').removeClass('section-line');
+											}, 300)
+										}, 400)
+									}, 400)
+								}, 400)
+							}, 400)
+						}, 200)
+					}
+					else {
+						$('.map-bcg').css('transform', 'scale(0)')
+						$('.shop1').css({'top': '30%', 'opacity': 0})
+						$('.shop2').css({'bottom': '-30%', 'opacity': 0})
+						$('.shop3').css({'top': '20%', 'opacity': 0})
+						$('.tip').fadeOut()
+						$('.section5 .section-title').addClass('section-line');
+					}
+					// 第六屏特效
+					if(this.activeIndex == 5) {
+						setTimeout(function() {
+							$('.section6 .section-content li').css({'top': 0, 'opacity': 1})
+							setTimeout(function() {
+								$('.section6 .section-content ul').css('overflow', 'visible')
+							}, 500)
+							setTimeout(function() {
+								$('.section6 .section-title').removeClass('section-line');
+							}, 300)
+						}, 400)
+					}
+					else {
+						$('.section6 .section-content li').css({'top': 500, 'opacity': 0})
+						$('.section6 .section-title').addClass('section-line')
+						$('.section6 .section-content ul').css('overflow', 'hidden')
+					}
+					// 第七屏特效
+					if(this.activeIndex == 6) {
+						// $('.contact-bcg').css('top', "58%")
+						$('.contact-us').css('padding', '10%')
+						setTimeout(function() {
+							$('.bottom-text').css('bottom', 0)
+						}, 400)
+						setTimeout(function() {
+							$('.head').css('left', 0)
+							setTimeout(function() {
+								$('.details').slideDown("normal")
+							},800)
+						}, 200)
+					}
+					else {
+						$('.details').slideUp('fast')
+						$('.head').css('left', 300)
+						// $('.contact-bcg').css('top', '100%')
+						$('.contact-us').css('padding', '0')
+						$('.bottom-text').css('bottom', '-10%')
+					}
+		     	}
+		     }
+		})
+		// 点击按钮跳到第二屏
+	  	$('.next-btn').on('click', function() {
+	  		mySwiper.slideTo(1, 500, false)
+	  		$('#menu').css('background-color','#000')
+	  		// 第二版动画效果
+			setTimeout(function() {
+	  			$('.section2 .section-title').css({'top': '5%', 'opacity': 1})
+				setTimeout(function() {
+					$('.section2 .section-text p').eq(0).css({'top': '0', 'opacity': 1});
+					setTimeout(function() {
+						$('.section2 .section-text p').eq(1).css({'top': '0', 'opacity': 1});
+						setTimeout(function() {
+							$('.section2 .section-title').removeClass('section-line');
+						}, 100)
+					}, 500)
+				}, 400)
+	  		}, 200)
+  		
+	  	})
+	  	var mySwiper2 = new Swiper ('.section-content', {
+		    simulateTouch : false,
+		    navigation: {
+			    nextEl: '.right-btn',
+			    prevEl: '.left-btn',
+			}
+	  	})
+	})
+</script>
+</html>

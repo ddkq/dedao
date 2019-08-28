@@ -1,0 +1,316 @@
+[ 2019-08-19T10:04:34+08:00 ] 59.42.90.68 /Tables/AdminTables/determine/id/6790.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001238s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=20 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '20' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM cmf_auth_access a INNER JOIN cmf_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('4') AND b.name IN ('tables/admintables/determine')  [ RunTime:0.0003s ]
+
+[ 2019-08-19T10:07:42+08:00 ] 59.42.90.68 /Tables/AdminTables/determine/id/6790.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001269s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=20 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '20' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.0003s ]
+SQL: SELECT * FROM cmf_auth_access a INNER JOIN cmf_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('4') AND b.name IN ('tables/admintables/determine')  [ RunTime:0.0003s ]
+
+[ 2019-08-19T10:07:48+08:00 ] 59.42.90.68 /Tables/AdminTables/determine/id/6790.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001208s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=20 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '20' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.0003s ]
+SQL: SELECT * FROM cmf_auth_access a INNER JOIN cmf_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('4') AND b.name IN ('tables/admintables/determine')  [ RunTime:0.0003s ]
+
+[ 2019-08-19T16:31:21+08:00 ] 59.42.90.68 /Tables/AdminTables/determine/id/6794.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001209s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=20 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '20' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.0003s ]
+SQL: SELECT * FROM cmf_auth_access a INNER JOIN cmf_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('4') AND b.name IN ('tables/admintables/determine')  [ RunTime:0.0004s ]
+
+[ 2019-08-19T16:31:25+08:00 ] 59.42.90.68 /Tables/AdminTables/determine/id/6794.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001265s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=20 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '20' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM cmf_auth_access a INNER JOIN cmf_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('4') AND b.name IN ('tables/admintables/determine')  [ RunTime:0.0003s ]
+
+[ 2019-08-19T16:52:43+08:00 ] 59.42.90.68 /Tables/AdminTables/determine/id/6788.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001189s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=20 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '20' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.0003s ]
+SQL: SELECT * FROM cmf_auth_access a INNER JOIN cmf_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('4') AND b.name IN ('tables/admintables/determine')  [ RunTime:0.0004s ]
+
+[ 2019-08-19T16:52:47+08:00 ] 59.42.90.68 /Tables/AdminTables/determine/id/6791.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001188s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=20 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '20' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.0003s ]
+SQL: SELECT * FROM cmf_auth_access a INNER JOIN cmf_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('4') AND b.name IN ('tables/admintables/determine')  [ RunTime:0.0003s ]
+
+[ 2019-08-19T16:52:55+08:00 ] 59.42.90.68 /Tables/AdminTables/determine/id/6789.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001198s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=20 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '20' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM cmf_auth_access a INNER JOIN cmf_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('4') AND b.name IN ('tables/admintables/determine')  [ RunTime:0.0004s ]
+
+[ 2019-08-19T16:52:58+08:00 ] 59.42.90.68 /Tables/AdminTables/determine/id/6791.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001175s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=20 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '20' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.0003s ]
+SQL: SELECT * FROM cmf_auth_access a INNER JOIN cmf_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('4') AND b.name IN ('tables/admintables/determine')  [ RunTime:0.0003s ]
+
+[ 2019-08-19T16:53:16+08:00 ] 59.42.90.68 /Tables/AdminTables/determine/id/6787.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001244s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=20 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '20' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.0003s ]
+SQL: SELECT * FROM cmf_auth_access a INNER JOIN cmf_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('4') AND b.name IN ('tables/admintables/determine')  [ RunTime:0.0003s ]
+
+[ 2019-08-19T16:54:11+08:00 ] 59.42.90.68 /Tables/AdminTables/determine/id/6799.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001253s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0003s ]
+SQL: UPDATE `cmf_tables_data` SET `status`='1' WHERE ( id=6799 ) [ RunTime:0.0037s ]
+
+[ 2019-08-19T16:58:02+08:00 ] 59.42.90.68 /Tables/AdminTables/determine/id/6798.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001194s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=22 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '22' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.0003s ]
+SQL: SELECT * FROM cmf_auth_access a INNER JOIN cmf_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('5') AND b.name IN ('tables/admintables/determine')  [ RunTime:0.0003s ]
+
+[ 2019-08-19T16:58:08+08:00 ] 59.42.90.68 /Tables/AdminTables/determine/id/6798.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=22 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '22' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.0003s ]
+SQL: SELECT * FROM cmf_auth_access a INNER JOIN cmf_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('5') AND b.name IN ('tables/admintables/determine')  [ RunTime:0.0003s ]
+
+[ 2019-08-19T16:59:21+08:00 ] 59.42.90.68 /Tables/AdminTables/determine/id/6798.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001217s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=22 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '22' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.0003s ]
+SQL: SELECT * FROM cmf_auth_access a INNER JOIN cmf_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('5') AND b.name IN ('tables/admintables/determine')  [ RunTime:0.0003s ]
+
+[ 2019-08-19T16:59:31+08:00 ] 59.42.90.68 /Tables/AdminTables/determine/id/6798.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=22 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '22' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.0004s ]
+SQL: SELECT * FROM cmf_auth_access a INNER JOIN cmf_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('5') AND b.name IN ('tables/admintables/determine')  [ RunTime:0.0004s ]
+
+[ 2019-08-19T16:59:35+08:00 ] 59.42.90.68 /Tables/AdminTables/determine/id/6798.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001183s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=22 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '22' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.0003s ]
+SQL: SELECT * FROM cmf_auth_access a INNER JOIN cmf_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('5') AND b.name IN ('tables/admintables/determine')  [ RunTime:0.0003s ]
+
+[ 2019-08-19T16:59:47+08:00 ] 59.42.90.68 /Tables/AdminTables/determine/id/6798.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001193s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=22 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '22' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.0003s ]
+SQL: SELECT * FROM cmf_auth_access a INNER JOIN cmf_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('5') AND b.name IN ('tables/admintables/determine')  [ RunTime:0.0004s ]
+
+[ 2019-08-19T16:59:56+08:00 ] 59.42.90.68 /Tables/AdminTables/determine/id/6798.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=22 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '22' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.0003s ]
+SQL: SELECT * FROM cmf_auth_access a INNER JOIN cmf_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('5') AND b.name IN ('tables/admintables/determine')  [ RunTime:0.0003s ]
+
+[ 2019-08-19T17:00:05+08:00 ] 59.42.90.68 /Tables/AdminTables/determine/id/6798.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001182s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=22 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '22' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.0003s ]
+SQL: SELECT * FROM cmf_auth_access a INNER JOIN cmf_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('5') AND b.name IN ('tables/admintables/determine')  [ RunTime:0.0003s ]
+
+[ 2019-08-19T17:00:10+08:00 ] 59.42.90.68 /Tables/AdminTables/determine/id/6798.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001187s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=22 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '22' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.0003s ]
+SQL: SELECT * FROM cmf_auth_access a INNER JOIN cmf_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('5') AND b.name IN ('tables/admintables/determine')  [ RunTime:0.0003s ]
+
+[ 2019-08-19T17:00:22+08:00 ] 59.42.90.68 /Tables/AdminTables/determine/id/6798.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001187s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=22 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '22' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.0003s ]
+SQL: SELECT * FROM cmf_auth_access a INNER JOIN cmf_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('5') AND b.name IN ('tables/admintables/determine')  [ RunTime:0.0003s ]
+
+[ 2019-08-19T17:00:38+08:00 ] 59.42.90.68 /Tables/AdminTables/determine/id/6798.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001210s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=22 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '22' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.0003s ]
+SQL: SELECT * FROM cmf_auth_access a INNER JOIN cmf_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('5') AND b.name IN ('tables/admintables/determine')  [ RunTime:0.0003s ]
+
+[ 2019-08-19T17:00:52+08:00 ] 59.42.90.68 /Tables/AdminTables/determine/id/6798.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001192s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=22 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '22' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.0003s ]
+SQL: SELECT * FROM cmf_auth_access a INNER JOIN cmf_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('5') AND b.name IN ('tables/admintables/determine')  [ RunTime:0.0003s ]
+
+[ 2019-08-19T17:01:29+08:00 ] 59.42.90.68 /Tables/AdminTables/determine/id/6798.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000411s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001333s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=22 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '22' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0003s ]
+SQL: UPDATE `cmf_tables_data` SET `status`='1' WHERE ( id=6798 ) [ RunTime:0.0034s ]
+
+[ 2019-08-19T17:07:34+08:00 ] 59.42.90.68 /Tables/AdminTables/determine/id/6797.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001208s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=20 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '20' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.0003s ]
+SQL: SELECT * FROM cmf_auth_access a INNER JOIN cmf_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('4') AND b.name IN ('tables/admintables/determine')  [ RunTime:0.0003s ]
+
+[ 2019-08-19T17:11:47+08:00 ] 59.42.90.68 /Tables/AdminTables/determine/id/6800.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001228s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=22 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '22' AND `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0003s ]
+SQL: UPDATE `cmf_tables_data` SET `status`='1' WHERE ( id=6800 ) [ RunTime:0.0030s ]
+

@@ -1,0 +1,28 @@
+<?php
+return array(
+    "TITLE" => '标题',
+    "PORTAL_ADMINDP_INDEX" => '科室管理',
+    "PORTAL_ADMINDP_RECYCLE" => '科室回收',
+    "PORTAL_ADMINDP_ADD" => '添加科室',
+    "PORTAL_ADMINDP_EDIT" => '修改科室',
+    "PORTAL_ADMINDP_SET" => '编辑详情',
+    "AUTHOR" => '作者',
+    "TIME" => '修改时间',
+    "NAME" => '科室名称',
+    "CATEGORY_URL" => '访问',
+    "ADD_SUB_CATEGORY" => '添加子类',
+    "CATEGORY_DESCRIPTION" => '描述',
+    "PARENT" => '上级',
+    "ROOT" => '作为一级分类',
+    "SEO_TITLE" => 'SEO标题',
+    "SEO_KEYWORDS" => 'SEO关键字',
+    "SEO_DESCRIPTION" => 'SEO描述',
+    "LIST_TEMPLATE" => '列表页模板',
+    "ARTICLE_TEMPLATE" => '单文章模板',
+    "GENERAL_SETTING" => '基本属性',
+    "SICK_SETTING" => '疾病设置',
+    "SEO_SETTING" => 'SEO设置',
+    "TEMPLATE_SETTING" => '模板设置',
+    "SICK_TITLE" => '疾病名字',
+    "SICK_URL" => '疾病地址'
+);

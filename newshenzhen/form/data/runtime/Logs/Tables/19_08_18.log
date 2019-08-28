@@ -1,0 +1,12 @@
+[ 2019-08-18T09:52:25+08:00 ] 59.42.88.234 /Tables/AdminTables/determine/id/6789.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001311s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=20 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM cmf_role_user a INNER JOIN cmf_role as b on a.role_id =b.id  WHERE `user_id` = '20' AND `status` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_auth_access` [ RunTime:0.0003s ]
+SQL: SELECT * FROM cmf_auth_access a INNER JOIN cmf_auth_rule as b on a.rule_name =b.name  WHERE a.role_id IN ('4') AND b.name IN ('tables/admintables/determine')  [ RunTime:0.0003s ]
+

@@ -1,0 +1,163 @@
+a {
+	text-decoration: none;
+	color: #333;
+}
+a:hover {
+	text-decoration: none;
+	color: #333;
+}
+img{
+	max-width: 100%;
+}
+.red {
+	color: #cc1515;
+}
+.w-49{
+	width: 49%;
+}
+
+.banner{
+	margin-top: 7.4rem;
+}
+
+
+.form-body{
+	border-radius: 10px;
+	box-shadow: 0px 14px 20px 1px #eaeaea;
+}
+.form-body p{
+	border: 1px solid #cccccc;
+	border-radius: 30px;
+	font-size: 0.8rem;
+}
+.form-body p i{
+	width: 1rem;
+	height: 1rem;
+	display: inline-block;
+	background-size:cover ;
+}
+.form-body p.name i{
+	background-image: url(imgs/name.png);
+}
+.form-body p.phone i{
+	background-image: url(imgs/phone.png) ;
+}
+.form-body p.symptom i{
+	background-image: url(imgs/symptom.png);
+}
+.swt-btn{
+	background-color: #cd1e26;
+	border-radius: 30px;
+}
+.submit-btn{
+	background: linear-gradient(to right, #cdb999 , #bb9f78);
+	border-radius: 30px;
+}
+.linear{
+	background: linear-gradient(to bottom right, #cdb999 , #bb9f78);
+	font-size: 0.8rem;
+}
+.content-box-2{
+	background-color: #f6f6f6;
+}
+.content-list p{
+	border: 1px dashed #efa0a1;
+	border-radius: 30px;
+	background-color: #fff;
+}
+.content-list p span{
+	display: inline-block;
+	background-color: #c9a269;
+	border-radius: 30px;
+	font-size: 0.8rem;
+}
+
+.content-list p.list-2{
+	border-color: #e0a3e0;
+}
+.content-list p.list-2 span,
+.content-list p.list-3 span,
+.content-list p.list-8 span{
+	background-color: #bba078;
+}
+.content-list p.list-4{
+	border-color: #acd8fb;
+}
+.content-list p.list-4 span,
+.content-list p.list-7 span{
+	background-color:#d0bd9f ;
+}
+.content-list p.list-5{
+	border-color: #f1c9a0;
+}
+.content-list p.list-5 span{
+	background-color: #d0a562;
+}
+.content-list p.list-6{
+	border-color: #eda1bd;
+}
+.content-list p.list-6 span{
+	background-color: #dfba81;
+}
+.content-list p.list-7{
+	border-color: #dacebd;
+}
+.content-list p.list-8{
+	border-color: #dbd0c1;
+}
+.w-40{
+	width: 40%;
+}
+.w-56{
+	width: 57%;
+}
+
+
+
+.content-footer {
+	background: #333;
+}
+.content-footer .footer-logo, .content-footer .footer-qr-code {
+	border-bottom: 1px solid #404040;
+}
+.content-footer .footer-qr-code {
+	border-top: 1px solid #404040;
+}
+.content-footer .qr-code-box {
+	border-radius: 10px;
+    margin: auto;
+    overflow: hidden;
+}
+.footer-icon {
+	background: url(../jkz/imgs/sz-index-icon.png);
+    background-size: 367px;
+    display: inline-block;
+}
+.content-footer .phone .footer-icon {
+    width: 21px;
+    height: 20px;
+    background-position: -60px -162px;
+    vertical-align: middle;
+    bottom: 3px;
+}
+.content-footer .phone {
+    font-size: 1.5rem;
+    font-family: '微软雅黑';
+    color: #fff;
+}
+.content-footer .footer-text {
+	color: #ccc;
+}
+.content-footer .footer-list-line {
+	border-left: 1px solid #939393;
+	border-right: 1px solid #939393;
+	width: 35%;
+}
+.copy {
+	display: none;
+}
+
+
+
+
+

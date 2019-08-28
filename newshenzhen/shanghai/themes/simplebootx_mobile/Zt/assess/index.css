@@ -1,0 +1,117 @@
+.banner {
+	margin-top: 120px;
+}
+.text-indent {
+	text-indent: 2rem;
+}
+.red {
+	color: #ba1714;
+}
+.yellow {
+	color: #fbe20e;
+}
+.content-1 {
+	background: url(imgs/bcg1.jpg);
+}
+.content-2 {
+	background: url(imgs/bcg2.jpg);
+}
+.content-3 {
+	background: url(imgs/bcg3.jpg);
+}
+.content-4 {
+	background: url(imgs/bcg4.jpg);
+}
+.content-5 {
+	background: url(imgs/bcg5.jpg);
+}
+.content-6 {
+	background: url(imgs/bcg6.jpg);
+}
+.content-1, .content-2, .content-3, .content-4, .content-5, .content-6 {
+	background-size: cover;
+}
+.content-1 .title, .content-3 .title, .content-5 .title {
+	background: url(imgs/title-bcg.png) no-repeat;
+}
+.content-2 .title {
+	background: url(imgs/title-bcg2.png) no-repeat;
+}
+.title {
+	background-size: 63px !important;
+    background-position: center 18px !important;
+}
+.content-1 .title span {
+	color: #ba1714;
+}
+.content-2 .title span, .content-2 .title-text span {
+	color: #fbe20e;
+}
+.content-1 li {
+	width: 25%;
+}
+.content-1 form {
+	background: #fff;
+  	border-radius: 18px;
+  	box-shadow: 0px 0px 16px 0px rgba(183, 178, 178, 0.75);
+}
+.content-1 form input {
+	width: 70%;
+}
+.submit-btn, .swt-btn  {
+  	border-radius: 32px;
+  	background-color: rgb(231, 124, 29);
+  	font-size: 1.12rem;
+}
+.content-2 .title-text span {
+	font-size: 1.2rem;
+}
+.content-3-text {
+	background: #fff;
+  	border-radius: 10px;
+  	box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.37);
+}
+.content-3 .swt-btn, .content-5 .swt-btn {
+	background: #BA1714;
+}
+.content-4-title {
+	border: 1px solid #fff;
+}
+
+.content-5 .title span {
+	color: #ba1714;
+}
+.content-6 .swt-btn {
+	bottom: 35%;
+}
+.case .swiper-button-prev {
+	left: 4px !important;
+}
+.case .swiper-button-next {
+	right: 4px !important;
+}
+.point {
+	height: 20px;
+}
+.point .swiper-pagination {
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.point .swiper-pagination-bullet {
+	margin: 0 5px;
+}
+.point .swiper-pagination-bullet-active {
+	background: #C11820;
+}
+.doctor-tab {
+	bottom: 1.25rem;
+	z-index: 10;
+}
+.doctor-tab div {
+	border: 6px solid #fff;
+	width: 31%;
+}
+.doctor-tab .tab-active {
+	border-color: #E77C1D;
+}

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+	<tc_include file="Public:head" />
+	<title>百万征集种植牙案例_{$site_name}</title>
+	<link rel="stylesheet" href="__TMPL__Zt/bwzj/base.css">
+	<script type="text/javascript" src="__TMPL__Public/js/jquery-2.1.1.min.js" ></script>
+</head>
+<body>
+
+	<img src="__TMPL__Zt/bwzj/imgs/1.jpg" />
+	
+	<div class="red-btn">提交资料——获取名额</div>
+	
+	<div class="index-situation">
+		<form id="form1" method="post" enctype="multipart/form-data">
+			<input type="hidden" name="table_id" value="28" />
+			<input type="hidden" name="page" class="page" />
+			<input type="hidden" name="code" value="{$code = mt_rand(0,1000000)}">
+			
+			<h4 class="must" data-type="12">我的牙齿症状</h4>
+			<div class="checkbox-control checkbox-box multiple-box">
+				<label class="checkbox-item">
+					<input type="checkbox" value="缺门牙" class="radio-style cheakbox1">
+					<span>缺门牙</span>
+				</label>
+				<label class="checkbox-item">
+					<input type="checkbox" value="缺大牙" class="radio-style cheakbox1">
+					<span>缺大牙</span>
+				</label>
+				<label class="checkbox-item">
+					<input type="checkbox" value="多颗缺牙" class="radio-style cheakbox1">
+					<span>多颗缺牙</span>
+				</label>
+				<label class="checkbox-item">
+					<input type="checkbox" value="半口缺牙" class="radio-style cheakbox1">
+					<span>半口缺牙</span>
+				</label>
+				<label class="checkbox-item">
+					<input type="checkbox" value="全口缺牙" class="radio-style cheakbox1">
+					<span>全口缺牙</span>
+				</label>
+				<label class="checkbox-item">
+					<input type="checkbox" value="烂牙（蛀牙）" class="radio-style cheakbox1">
+					<span>烂牙（蛀牙）</span>
+				</label>
+				<label class="checkbox-item">
+					<input type="checkbox" value="烤瓷牙失败" class="radio-style cheakbox1">
+					<span>烤瓷牙失败</span>
+				</label>
+				<label class="checkbox-item">
+					<input type="checkbox" value="其他牙齿情况" class="radio-style cheakbox1">
+					<span>其他牙齿情况</span>
+				</label>
+				<input type="hidden" data-type="12" name="data[symptom]" value="">
+			</div>
+			<div class="situation-input-text">
+				<input required="required" type="text" data-type="1" name="data[name]"  placeholder="姓名">
+				<span class="input-clear"></span>
+			</div>
+			<div class="situation-input-text">
+				<input required="required" type="text" data-type="2" name="data[phone]"  placeholder="电话">
+				<span class="input-clear"></span>
+			</div>
+
+			<div class="situation-btn">
+				<a href="javascript:;" class="submit-btn">提交报名</a>
+			</div>	
+		</form>
+		
+	</div>
+	<img src="__TMPL__Zt/bwzj/imgs/2.jpg" />
+	<div class="rich-text">
+		<div class="inner">
+			<p style="text-align: center;">成都青羊德道口腔医院</p>
+			<p style="text-align: center;">（成青） 医广【2018】第06-05-510105045号</p>
+			<p><br></p>
+		</div>
+	</div>
+</body>
+<script>
+	
+	$(function(){
+		$('.page').val(window.location.href);
+	});
+	
+	var options = "";
+	
+	
+	//多选
+	$('.cheakbox1').on('click', function(){
+		if($(this).is(':checked')) {
+			options += $(this).val() + ',';
+		}
+		else {
+			options = options.split($(this).val() + ',').join("");
+		}
+		$(this).parent('label').nextAll('input').attr('value',options);
+	})
+
+	$('body').on('input', '.situation-input-text input', function() {
+		var inputValue = $(this).val();
+		inputValue == '' ? '' : $(this).next().css('display', 'block')
+	})
+	$('body').on('click', '.input-clear', function() {
+		$(this).prev().val('');
+		$(this).css('display', 'none');
+	})
+	
+	
+	$('body').on('click', '.submit-btn', function() {	
+		var name = $("input[data-type=1]").val();
+		var re1 = /^[\u4E00-\u9FA5]{1,6}$/; 
+		if(name == null){
+			alert("姓名不能为空"); 
+			return false; 
+		}else if(name != null){
+			if (!re1.test(name)){ 
+				alert("姓名格式不正确"); 
+				return false; 
+			}	
+		}
+		
+
+		var phone = $("input[data-type=2]").val();
+		var re2 = /^((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+(\d{8})$/;
+		if(phone == null){
+			alert("电话不能为空"); 
+			return false; 
+		}else if(phone != null){
+			if (!re2.test(phone)){ 
+				alert("电话格式不正确"); 
+				return false; 
+			}
+		}
+		
+		var options = $("input[data-type=12]").val();
+		if(options == null){
+			alert("请选择相关数据"); 
+			return false;
+		}
+		
+		var data = $('#form1').serializeArray();
+		$.post('/tables/tables/add_post',data,function(result){
+			//console.log(result);
+			alert(result.info);
+		});
+	});
+	
+	
+</script>
+</html>

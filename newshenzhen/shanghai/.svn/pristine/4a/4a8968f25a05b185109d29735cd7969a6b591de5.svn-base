@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+	<tc_include file="Public:head" />
+	<link href="__TMPL__Zt/mrxf/css/common.css" rel="stylesheet" type="text/css">
+	<link href="__TMPL__Zt/mrxf/css/css.css" rel="stylesheet" type="text/css">
+	<title>精准美容修复_{$site_name}</title>
+</head>
+<body>
+	<tc_include file="Public:header" />
+	<div class="banner">
+    	<a onclick="javascript:openJesongChatByGroup(16524,20125);" target="_blank"><img src="__TMPL__Zt/mrxf/imgs/banner.jpg"></a>
+   </div>
+    
+    <div class="wrap-zt">
+		<span class="wz">	　 外貌在第一印象中占据了十分重要的位置， 一口龅牙、两排黑牙或几颗歪牙，分分钟就能将原本高颜值的你，拉向"丑"的边缘。不仅如此，牙齿不够美观，还会影响身心健康。德道口腔PM牙齿精准美容修复技术体系，助你"齿如编贝"，赢来颜值巅峰！ </span>
+		<div class="t2t">
+			<img src="__TMPL__Zt/mrxf/imgs/ban_03.jpg">
+			<span>	　 德道口腔·PM精准美容修复技术体系，是以"口腔精准医学"和"整体医学"为指导，以口腔健康为目标，依托CBCT、CT等高精设备对口腔问题进行精准评估和诊断，同时综合考虑患者的遗传、心理、健康、功能及美学多方面因素，在尽可能保留牙体组织结构的前提下。
+				<a onclick="javascript:openJesongChatByGroup(16524,20125);" target="_blank">[在线咨询]</a>
+			</span> 
+		</div>
+		<div class="con3">
+			<div class="t2s">
+				<ul class="con3-flex">
+					<li style="margin-left:0">
+						<img src="__TMPL__Zt/mrxf/imgs/t_06.jpg">
+						<p>口腔数据精准采集</p>
+				  	</li>
+	  				<li>
+						<img src="__TMPL__Zt/mrxf/imgs/t_08.jpg">
+						<p>精准诊断口腔问题</p>
+				  	</li>
+				  	<li>
+						<img src="__TMPL__Zt/mrxf/imgs/t_10.jpg">
+						<p> 个体化精准设计</p>
+				  	</li>
+				</ul>
+	  		</div>
+            <div class="t2s t2b">
+				<ul class="con3-flex" style="justify-content: center;">
+					<li>
+						<img src="__TMPL__Zt/mrxf/imgs/t_16.jpg">
+						<p>精准口腔修复</p>
+					</li>
+					<li>
+						<img src="__TMPL__Zt/mrxf/imgs/t_18.jpg">
+						<p>个性化美齿效果</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	 	<div class="dh clearfix">
+			<a href="tel:4008006161">拨打热线：400-800-6161</a>
+	  		<a onclick="javascript:openJesongChatByGroup(16524,20125);" target="_blank">在线咨询预约专家&gt;&gt;</a>
+	 	</div>      
+ 		<div class="t2t">
+ 			<img src="__TMPL__Zt/mrxf/imgs/ban_09.jpg">
+			<span>	　 德道口腔·PM牙齿精准美容修复技术体系，具有无需拔牙、即可修复牙齿，同时还可美牙的强大功效，是牙齿美容修复领域突破性的新技术！</span>
+		</div>   
+		<div class="bz">
+   			<ul>
+			   <li>
+				   <img src="__TMPL__Zt/mrxf/imgs/c1.jpg">
+ 					<p>PM牙齿美容修复 </p>
+			   </li>
+			   <li>
+				   <img src="__TMPL__Zt/mrxf/imgs/c2.jpg">
+ 					<p>美牙冠</p>
+			   	</li>
+                <li>
+				   <img src="__TMPL__Zt/mrxf/imgs/c3.jpg">
+				   <p>牙齿贴面</p>
+			   	</li>
+			   	<li>
+				   <img src="__TMPL__Zt/mrxf/imgs/c4.jpg">
+				   <p>烤瓷牙</p>
+			   	</li>
+			</ul>
+		</div>     
+    	<div class="t2t">
+		    <img src="__TMPL__Zt/mrxf/imgs/ban_11.jpg">
+		    <img src="__TMPL__Zt/mrxf/imgs/zj_37.jpg">
+		</div>             
+
+	    <div class="al">
+		    <img src="__TMPL__Zt/mrxf/imgs/zj_40.jpg">
+		    <a onclick="javascript:openJesongChatByGroup(16524,20125);" target="_blank"><img src="__TMPL__Zt/mrxf/imgs/zj_42.jpg"></a>
+	    </div>  
+		<div class="zj" id="zj">
+    		<h3>智能口腔专家团</h3>
+		    <div class="bd">
+					<ul>
+				        <li>
+				        	<a onclick="javascript:openJesongChatByGroup(16524,20125);" target="_blank">
+				        		<img src="__TMPL__Zt/mrxf/imgs/ztzj3.jpg">
+				        	</a>
+				        </li>
+				        <li>
+				        	<a onclick="javascript:openJesongChatByGroup(16524,20125);" target="_blank">
+				        		<img src="__TMPL__Zt/mrxf/imgs/ztzj_wmx.jpg">
+				        	</a>
+				        </li>
+					</ul>
+			</div>
+			<div class="hd" style="display:none">
+				<ul>
+					<li class="">1</li>
+					<li class="">2</li>
+					<li class="">3</li>
+					<li class="on">4</li>
+					<li class="">5</li>
+					<li class="">6</li>
+					<li class="">7</li>
+					<li class="">8</li>
+					<li class="">9</li>
+					<li class="">10</li>
+					<li class="">11</li>
+				</ul>
+			</div>
+		</div> 
+	</div>
+	<tc_include file="Public:footer" />
+</body>
+<script type="text/javascript">
+    TouchSlide({ 
+		slideCell:"#zj",
+		titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+		mainCell:".bd ul", 
+		effect:"leftLoop", 
+		autoPlay:true,//自动播放
+		autoPage:true, //自动分页
+		switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+	});
+</script>
+</html>

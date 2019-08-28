@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>9.20爱牙日_{$site_name}</title>
+	<tc_include file="Public:head" />
+	<link rel="stylesheet" href="__TMPL__Public/css/bootstrap4.min.css">
+	<link href="__TMPL__Zt/Teeth-care-Day/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<tc_include file="Public:new_header" />
+	
+	<section class="content-box-1 text-center"><a onclick="openJesongChatByGroup(16524,20125);"><img src="__TMPL__Zt/Teeth-care-Day/imgs/banner.jpg" alt=""></a></section>
+
+	<section class="content-box-2 mt-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 text-center"><img src="__TMPL__Zt/Teeth-care-Day/imgs/activity-bcg.png" alt=""></div>
+				<div class="col-md-10 text-indent activity-bcg lead mt-3">四川省中老年口腔健康数据普查行动进行半个月以来，得到了众多成都缺牙市民的积极参与，据目前数据统计，参与普查的大多市民普遍存在口腔问题，其中一半的老年人缺牙达5年以上，口腔状况不容乐观。对此，在920爱牙日到来之际，德道口腔发起关爱缺牙市民全民调查行动，助力缺牙市民提升口腔保健意识，摆脱缺牙之苦，拥有好口福，享受品质生活。</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="content-box-3 pb-5">
+		<div class="container">
+			<div class="title text-center text-white mt-5 pt-5 mb-5 pb-3 position-relative">
+				<h1 class="font-weight-bold mt-5">全民大调查，您是哪种缺牙情况？</h1>
+				<i class="index-icon d-inline-block position-absolute"></i>
+			</div>
+			<div><img src="__TMPL__Zt/Teeth-care-Day/imgs/content.png" alt=""></div>
+			<div class="swt-btn text-center mt-3 pb-5 d-flex justify-content-around">
+				<a onclick="openJesongChatByGroup(16524,20125);" class="text-white pt-2 pb-2">参与口腔健康普查<i class="index-icon ml-3"></i></a>
+				<a onclick="openJesongChatByGroup(16524,20125);" class="text-white pt-2 pb-2">预约专家免费设计种牙方案<i class="index-icon ml-3"></i></a>
+			</div>
+		</div>
+	</section>
+
+	<section class="content-box-4">
+		<div class="container text-center">
+			<div class="title mt-5 mb-4 pb-3 position-relative">
+				<h1 class="font-weight-bold mt-5">聚焦调查数据，挖掘缺牙现状！</h1>
+				<i class="index-icon d-inline-block position-absolute"></i>
+			</div>
+			<p class="text mb-5">截至9月15日所收到的数据显示，四川省50岁以上的中老年人口腔情况不容乐观，成为影响身体健康的头号敌人！</p>
+			<div class="list-title">
+				<h2 class="d-inline-block text-white pl-3 pr-3 pb-2"><b class="pl-2 pr-2 mr-3 pt-1 position-relative">01</b>63%的市民存在3-10颗缺牙问题：</h2>
+			</div>
+			<div class="row justify-content-between mt-5 mb-5">
+				<div class="col-md-2"><img src="__TMPL__Zt/Teeth-care-Day/imgs/content-2-01.png" alt=""></div>
+				<div class="col-md-2"><img src="__TMPL__Zt/Teeth-care-Day/imgs/content-2-02.png" alt=""></div>
+				<div class="col-md-2"><img src="__TMPL__Zt/Teeth-care-Day/imgs/content-2-03.png" alt=""></div>
+				<div class="col-md-2"><img src="__TMPL__Zt/Teeth-care-Day/imgs/content-2-04.png" alt=""></div>
+				<div class="col-md-2"><img src="__TMPL__Zt/Teeth-care-Day/imgs/content-2-05.png" alt=""></div>
+			</div>
+			<div class="tips text-right mb-4">* 样本数为300</div>
+		</div>
+	</section>
+
+	<section class="content-box-5">
+		<div class="container text-center">
+			<div class="list-title mt-5">
+				<h2 class="d-inline-block text-white pl-3 pr-3 pb-2"><b class="pl-2 pr-2 mr-3 pt-1 position-relative">02</b>90%的市民认为，牙缺失对吃东西影响较大：</h2>
+			</div>
+			<div class="mt-5 mb-5"><img src="__TMPL__Zt/Teeth-care-Day/imgs/content-3.png" alt=""></div>
+		</div>
+	</section>
+
+	<section class="content-box-6">
+		<div class="container text-center">
+			<div class="list-title mt-5">
+				<h2 class="d-inline-block text-white pl-3 pr-3 pb-2"><b class="pl-2 pr-2 mr-3 pt-1 position-relative">03</b>牙齿缺失的中老年人选择修复的方式：</h2>
+			</div>
+			<div class="row mt-5">
+				<div class="col-md-4"><img src="__TMPL__Zt/Teeth-care-Day/imgs/content-4-01.jpg" alt=""></div>
+				<div class="col-md-4"><img src="__TMPL__Zt/Teeth-care-Day/imgs/content-4-02.jpg" alt=""></div>
+				<div class="col-md-4"><img src="__TMPL__Zt/Teeth-care-Day/imgs/content-4-03.jpg" alt=""></div>
+			</div>
+			<div class="tips text-right mb-5">* 样本数为300</div>
+		</div>
+	</section>
+
+	<section class="content-box-7 pb-5">
+		<div class="container text-center">
+			<div class="title text-center text-white mt-5 pt-5 mb-4 pb-3 position-relative">
+				<h1 class="font-weight-bold mt-5">为什么近6成的缺牙者选择种植牙？</h1>
+				<i class="index-icon d-inline-block position-absolute"></i>
+			</div>
+			<p class="text mb-5 text-white">德道即刻用3.0种植技术，改变缺牙市民生活。</p>
+			<div class="mb-5"><img src="__TMPL__Zt/Teeth-care-Day/imgs/content-5.png" alt=""></div>
+			<div class="swt-btn mb-5 pb-5">
+				<a onclick="openJesongChatByGroup(16524,20125);" class="text-white pt-2 pb-2">了解即刻用3.0种植牙<i class="index-icon ml-3"></i></a>
+			</div>
+		</div>
+	</section>
+
+	<section class="content-box-8 pb-5">
+		<div class="container text-center">
+			<div class="title mt-5 mb-4 pb-3 position-relative">
+				<h1 class="font-weight-bold mt-5">他们修复了缺牙，不再忍受缺牙之苦！</h1>
+				<i class="index-icon d-inline-block position-absolute"></i>
+			</div>
+			<div class="pt-5 pb-5"><img src="__TMPL__Zt/Teeth-care-Day/imgs/content-6.jpg" alt=""></div>
+		</div>
+	</section>
+
+	<section class="text-center">
+		<a onclick="openJesongChatByGroup(16524,20125);"><img src="__TMPL__Zt/Teeth-care-Day/imgs/footer.jpg" alt=""></a>
+	</section>
+	
+	<tc_include file="Public:footer" />
+</body>
+</html>

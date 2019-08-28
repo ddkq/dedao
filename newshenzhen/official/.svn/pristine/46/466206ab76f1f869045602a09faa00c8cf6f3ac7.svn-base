@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="keywords" content="{$post_keywords}"/>
+	<meta name="description" content="{$post_excerpt}" />
+	<link rel="shortcut icon" href="/public/images/favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/css/base.css" />
+	<link rel="stylesheet" href="__TMPL__Public/css/base2.css">
+
+	<script type="application/javascript" src="__TMPL__Public/js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=NRSdUGWelRPGWYobbVE3bm3kq3KLMGpl"></script>
+</head>
+<body>
+	<header>
+		<div class="black-bcg"></div>
+		<tc_include file="Public:nav" />
+	</header>
+
+	<section>
+		<div class="banner"><div class="bcg"></div></div>
+	</section>
+	
+	<section class="content content-width clear">
+		<ul class="left-nav">
+			<li><a href="about.html">关于我们</a></li>
+			<li><a href="/list/189.html">公司动态</a></li>
+			<li><a href="/job/2.html">工作在德道</a></li>
+			<li><a href="/contact.html" class="active">联系我们</a></li>
+			<li><a href="/job/2.html">加入我们</a></li>
+		</ul>
+		<div class="right-content">
+			<section>
+				<h2 class="title">全国连锁</h2>				
+			</section>
+			<section>
+				
+			</section>
+		</div>
+	</section>
+	<tc_include file="Public:footer" />
+</body>
+</html>

@@ -1,0 +1,1 @@
+a:6:{i:0;s:2:"id";i:1;s:11:"topic_title";i:2;s:9:"topic_url";i:3;s:11:"create_time";s:3:"_pk";s:2:"id";s:5:"_type";a:4:{s:2:"id";s:19:"bigint(20) unsigned";s:11:"topic_title";s:12:"varchar(100)";s:9:"topic_url";s:12:"varchar(255)";s:11:"create_time";s:7:"int(10)";}}

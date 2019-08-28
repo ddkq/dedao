@@ -1,0 +1,27 @@
+[ 2019-07-17T16:29:29+08:00 ] 59.42.89.247 /Tables/AdminTables/view_data_delete/id/6340.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001201s ]
+SQL: SHOW COLUMNS FROM `cmf_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `cmf_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `cmf_tables` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_options` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `cmf_tables_data` [ RunTime:0.0003s ]
+SQL: DELETE FROM `cmf_tables_data` WHERE ( id = 6340 ) [ RunTime:0.0029s ]
+
+[ 2019-07-17T19:58:15+08:00 ] 42.236.10.75 /tables/admintables/view_data/menuid/387.html
+ERR: 无法加载控制器:Admintables
+
+[ 2019-07-17T19:58:23+08:00 ] 42.236.10.93 /tables/admintables/view_data/menuid/387.html
+ERR: 无法加载控制器:Admintables
+
+[ 2019-07-17T20:20:31+08:00 ] 180.163.220.4 /tables/admintables/view_data/menuid/387.html
+ERR: 无法加载控制器:Admintables
+
+[ 2019-07-17T20:20:49+08:00 ] 42.236.10.125 /tables/admintables/view_data/menuid/387.html
+ERR: 无法加载控制器:Admintables
+
+[ 2019-07-17T20:20:49+08:00 ] 42.236.10.125 /tables/admintables/view_data/menuid/387.html
+ERR: 无法加载控制器:Admintables
+

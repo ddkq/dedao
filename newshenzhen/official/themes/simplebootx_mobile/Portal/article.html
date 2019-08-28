@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>{$article.post_title}_{$site_name}</title>
+	<meta name="keywords" content="{$article.post_keywords}"/>
+	<meta name="description" content="{$article.post_excerpt}" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<link rel="shortcut icon" href="/public/images/favicon.ico" type="image/x-icon"/>
+	
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/css/base2.css" />
+	<link href="__TMPL__Public/css/article.css" rel="stylesheet" type="text/css">
+	<script type="application/javascript" src="__TMPL__Public/js/jquery-2.1.1.min.js"></script>
+
+	</head>
+	<body>
+		
+		<tc_include file="Public:nav" />
+		
+		<section>
+			<div class="banner">
+				
+			</div>
+		</section>
+		
+		<section class="content content-width clear">
+			<div class="title clearfix">
+		        <h3>{$article.post_title}</h3>
+		    </div>
+		</section>
+		<section>
+			<div class="content-article">{$article[post_phone]}</div>	
+		</section>
+		
+		<section class="recommend">
+			<h3>相关推荐</h3>
+			<ul class="clear">
+				<volist name="recommend" id="vo">
+					<li>
+						<a href="{:get_article_url($vo[tid],$vo[link_type],$vo[post_url])}" target="_blank">
+							<php>$smeta = json_decode($vo['smeta'],true);</php>
+							<img width="100%" src="{$smeta.thumb}" alt="">
+						</a>
+						<div class="txt">
+							<a href="{:get_article_url($vo[tid],$vo[link_type],$vo[post_url])}" target="_blank">{$vo.post_title}</a>
+						</div>
+					</li>	
+				</volist>
+			</ul>
+		</section>	
+
+
+		<tc_include file="Public:footer" />
+	</body>
+</html>

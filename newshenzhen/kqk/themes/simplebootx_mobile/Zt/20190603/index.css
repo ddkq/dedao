@@ -1,0 +1,51 @@
+.banner {
+	margin-top: 120px;
+}
+form font{
+	width: 30%;
+	background-color: #e0e0e0;
+	font-size: .9rem;
+	color: #000;
+	text-align: center;
+}
+.submit-btn {
+	border-radius: 8px;
+	background-color: #e60012;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	font-size: 1.3rem;
+}
+.active {
+	background-color: #d10101 !important;
+	color: #fff !important;
+}
+
+
+.fixed-btn{
+	max-width: 640px;
+	margin: 0 auto;
+	background: #e60012;
+	padding: 3.3rem;
+}
+.fixed-btn2 {
+	width: 23%;
+    bottom: 2%;
+    left: 6%;
+    animation: btn1 3s ease infinite;
+}
+.fixed-btn3 {
+    bottom: 15%;
+    width: 70%;
+    right: 2%;
+    animation: btn 3s ease infinite;
+}
+@keyframes btn {
+	0% {bottom: 15%;}
+	50% {bottom: 25%;}
+	100% {bottom: 15%;}
+}
+@keyframes btn1 {
+	0% {bottom: 2%;}
+	50% {bottom: 6%;}
+	100% {bottom: 2%;}
+}

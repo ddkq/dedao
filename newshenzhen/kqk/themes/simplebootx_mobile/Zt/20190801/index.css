@@ -1,0 +1,22 @@
+
+.w-30{
+	width: 30%;
+}
+
+.submit-btn {
+	border-radius: 8px;
+	background-color: #e60012;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	font-size: 1.3rem;
+}
+
+
+.wow{
+	bottom: 0;
+	right: 0;
+}
+
+.copy{
+	background-color: #bca17a;
+}

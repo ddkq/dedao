@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>四川省首届中老年口腔健康数据普查_{$site_name}</title>
+	<tc_include file="Public:head" />
+	<link rel="stylesheet" href="__TMPL__Public/css/bootstrap4.min.css">
+	<link href="__TMPL__Zt/survey/index.css" rel="stylesheet" type="text/css">
+	<script src="__TMPL__Public/js/swiper.min.js"></script>
+</head>
+<body>
+	
+	<tc_include file="Public:new_header" />
+	
+	<section class="banner"><img src="__TMPL__Zt/survey/imgs/banner.jpg" alt=""></section>
+	
+	<section class="content-box-1">
+		<div class="container p-3">
+			<div class="col-md-2"><h1 class="red font-weight-bold pt-3 pb-3"><b>背景</b></h1></div>
+			<div class="col-md-10">
+				<p class="text-indent mb-0">中国口腔行业长期在低层次的状态下缓慢发展，特别是日益增长的中老年人群体，多数患有不同程度的口腔疾病。虽最近几年口腔行业的发展步伐加快，但相对经济发达国家有很大的差距。</p>
+				<p class="text-indent">在如此严峻的环境下，身为市民“贴心人”的华西都市报决定展开四川省中老年口腔健康数据普查，并与以“为口腔产业升级”为责任的德道口腔医院联手，共同开展这项规模庞大且意义重大的普查。</p>
+			</div>
+		</div>
+	</section>
+	
+	<section class="content-box-2 text-center">
+		<div class="container text-center pt-5">
+			<div class="content-title position-relative text-center mb-4 d-inline-block pl-3 pr-3">
+				<h1 class="font-weight-bold">四川省中老年口腔健康数据普查启动</h1>
+			</div>
+			<p class="text-indent text-left">由华西都市报发起，“四川省中老年口腔健康数据普查”活动即日起全面开启，成都德道口腔医院作为此次活动的定点普查医院，对中老年口腔问题进行普查，寻找四川中老年人口腔疾病健康状况的样本，维护四川中老年人口腔健康。</p>
+		</div>
+		<img src="__TMPL__Zt/survey/imgs/content2-img.png" />
+		<div class="container text-center pb-5">
+		
+			<div class="content-second-title position-relative text-center mt-4 mb-3 d-flex justify-content-center">
+				<i class="mt-2"></i>
+				<h2 class="pl-3 pr-3 font-weight-bold">聚集各界力量，为市民口腔健康出力</h2>
+				<i class="mt-2"></i>
+			</div>
+			<div class="d-flex content2-list">
+				<div class="col-md-3 d-flex align-items-center">
+					<span class="pr-3">01</span>
+					<font class="ml-2">斥资千万元投入</font>
+				</div>
+				<div class="col-md-3 d-flex align-items-center">
+					<span class="pr-3">02</span>
+					<font class="ml-2">全球最先进的云计算<br/>提供技术支持</font>
+				</div>
+				<div class="col-md-3 d-flex align-items-center">
+					<span class="pr-3">03</span>
+					<font class="ml-2">成都二级口腔医院<br/>提供医疗支持</font>
+				</div>
+				<div class="col-md-3 d-flex align-items-center">
+					<span class="pr-3">04</span>
+					<font class="ml-2">上百名口腔医生提供<br/>检查和咨询服务的支持</font>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="content-box-3">
+		<div class="container text-center p-5">
+			<div class="content-title position-relative text-center mb-5 d-inline-block pl-3 pr-3">
+				<h1 class="font-weight-bold">普查，让市民更好地享受口腔健康服务与便利</h1>
+			</div>
+			<div class="d-flex text-left">
+				<div class="col-md-6 p-0 mr-2 d-flex content3-list-left">
+					<div class="col-md-6 p-0"><img src="__TMPL__Zt/survey/imgs/content3-img01.png" /></div>
+					<div class="col-md-6 text pl-4 pr-4">
+						<h2 class="mt-4 text-center">01</h2>
+						<p>通过分析用牙习惯、饮食习惯、口腔卫生行为与口腔疾病的关系，为未来口腔健康的防治方针提供科学依据。</p>
+					</div>
+				</div>
+				<div class="col-md-6 p-0 ml-2 d-flex content3-list-right">
+					<div class="col-md-6 text pl-4 pr-4">
+						<h2 class="mt-4 text-center">02</h2>
+						<p>通过了解各口腔疾病的比重及对于口腔健康的认知程度，为未来口腔健康的教育方针提供参考。</p>
+					</div>
+					<div class="col-md-6 p-0"><img src="__TMPL__Zt/survey/imgs/content3-img02.png" /></div>
+				</div>
+			</div>
+			<div class="d-flex text-left mt-4">
+				<div class="col-md-6 p-0 mr-2 d-flex content3-list-left">
+					<div class="col-md-6 p-0"><img src="__TMPL__Zt/survey/imgs/content3-img04.png" /></div>
+					<div class="col-md-6 text pl-4 pr-4">
+						<h2 class="mt-4 text-center">03</h2>
+						<p>通过普查收集数据，丰富完善口腔大数据库，为例病提供智能辅助诊疗，解决口腔疑难。</p>
+					</div>
+				</div>
+				<div class="col-md-6 p-0 ml-2 d-flex content3-list-right">
+					<div class="col-md-6 text pl-4 pr-4">
+						<h2 class="mt-4 text-center">04</h2>
+						<p>打造专属于中老年人口腔健康的平台，消除群众口腔健康疑问和误区，进而提升口腔保健意识，树立正确护牙观。</p>
+					</div>
+					<div class="col-md-6 p-0"><img src="__TMPL__Zt/survey/imgs/content3-img03.png" /></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="content-box-4">
+		<div class="container p-5 text-center">
+			<div class="content-title position-relative text-center mb-5 d-inline-block pl-3 pr-3">
+				<h1 class="font-weight-bold">四川中老年口腔健康数据普查9月3日起全面实施</h1>
+			</div>
+			<div class="d-flex p-3 border-yel">
+				<div class="col-md-6 position-relative content4-img-box">
+					<img src="__TMPL__Zt/survey/imgs/content4-img.jpg" />
+					<p class="position-absolute mb-0 text-white text-center pt-2 pb-2">普查对象：50岁以上中老年人</p>
+				</div>
+				<div class="col-md-6">
+					<div class="content-second-title position-relative text-center mt-4 mb-3 d-flex justify-content-center">
+						<i class="mt-2"></i>
+						<h2 class="pl-3 pr-3 font-weight-bold">调查项目</h2>
+						<i class="mt-2"></i>
+					</div>
+					<div class="d-flex content4-list justify-content-center mt-4">
+						<div class="list-cricle rounded-circle d-flex text-center align-items-center">
+							<div class="rounded-circle text-white m-auto">饮食<br>习惯</div>
+						</div>
+						<div class="list-cricle rounded-circle d-flex text-center align-items-center ml-4 mr-4">
+							<div class="rounded-circle text-white m-auto">保健<br>意识</div>
+						</div>
+						<div class="list-cricle rounded-circle d-flex text-center align-items-center">
+							<div class="rounded-circle text-white m-auto">用牙<br>习惯</div>
+						</div>
+					</div>
+					<div class="d-flex content4-list justify-content-center mt-3">
+						<div class="list-cricle rounded-circle d-flex text-center align-items-center">
+							<div class="rounded-circle text-white m-auto">缺牙<br>情况</div>
+						</div>
+						<div class="list-cricle rounded-circle d-flex text-center align-items-center ml-4">
+							<div class="rounded-circle text-white m-auto">疾病<br>分布</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="swt-btn d-block p-3 text-center text-white m-auto d-flex justify-content-center" onclick="openJesongChatByGroup(16524,20125);">我要参与普查<i class="ml-3"></i></a>
+		</div>
+	</section>
+	
+	<section class="content-box-5 text-center">
+		<div class="container pt-5 text-center ">
+			<div class="content-title position-relative text-center mb-5 d-inline-block pl-3 pr-3">
+				<h1 class="font-weight-bold">参与普查，为中国口腔健康贡献一份力量</h1>
+			</div>
+			<div class="content5-list p-3">
+				<div class="content-second-title position-relative text-center mt-4 mb-3 d-flex justify-content-center">
+					<i class="mt-2"></i>
+					<h2 class="pl-3 pr-3 font-weight-bold">志愿者招募</h2>
+					<i class="mt-2"></i>
+				</div>
+				<p class="text-center">现面向四川省招募普查志愿者，参与普查的志愿者可获得以下荣誉，欢迎大家踊跃参与！</p>
+				<div class="d-flex mt-5">
+					<div class="col-md-4">
+						<div class="content5-border pb-2">
+							<img src="__TMPL__Zt/survey/imgs/content5-img01.jpg" />
+						</div>
+						<p class="text-center mt-2">颁发荣誉证书</p>
+					</div>
+					<div class="col-md-4">
+						<div class="content5-border pb-2">
+							<img src="__TMPL__Zt/survey/imgs/content5-img02.jpg" />
+						</div>
+						<p class="text-center mt-2">白皮书中署名鸣谢</p>
+					</div>
+					<div class="col-md-4">
+						<div class="content5-border pb-2">
+							<img src="__TMPL__Zt/survey/imgs/content5-img03.jpg" />
+						</div>
+						<p class="text-center mt-2">获发布会出席资格</p>
+					</div>
+				</div>
+				<a class="swt-btn d-block p-3 text-center text-white m-auto d-flex justify-content-center" onclick="openJesongChatByGroup(16524,20125);" style="width: 31%;">我要成为志愿者<i class="ml-3"></i></a>
+			</div>
+			<div class="content-second-title position-relative text-center mt-5 mb-3 d-flex justify-content-center">
+				<i class="mt-2"></i>
+				<h2 class="pl-3 pr-3 font-weight-bold">普查，需要您的一份力量</h2>
+				<i class="mt-2"></i>
+			</div>
+			<p class="text-center">四川首届中老年口腔健康数据普查，需要全四川市民共同携手，参与普查的市民可获得以下福利：</p>
+		</div>
+		<img class="mt-3" src="__TMPL__Zt/survey/imgs/content5-img04.png" />
+		<div class="container pb-5 text-center">
+			<a class="swt-btn d-block p-3 text-center text-white m-auto d-flex justify-content-center" onclick="openJesongChatByGroup(16524,20125);" style="width: 41%;">我要参与普查，领取护牙套装<i class="ml-3" style="width: 7%;"></i></a>
+		</div>
+	</section>
+	
+	<section class="content-box-6">
+		<div class="container text-center p-5">
+			<div class="content-title position-relative text-center d-inline-block pl-3 pr-3">
+				<h1 class="font-weight-bold">共享饕餮盛宴及成果转化</h1>
+			</div>
+			<h3 class="text-center mt-2">探索四川市民口腔健康问题</h3>
+			<p class="text-indent mt-3 text-left">2018年12月，普查办公室将对所收集的数据进行分析与总结，将会制定《四川省中老年口腔健康白皮书》，为以后的种植、治疗提供智能辅助诊疗，解决口腔疑难问题。同时，发布会将会邀请行业知名专家、学者、口腔相关机构等聚集一堂，见证普查成果的转化。</p>
+			<div class="d-flex bg-gray mt-4">
+				<div class="col-md-6 swiper-container p-0">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="__TMPL__Zt/survey/imgs/content6-img02.jpg" /></div>
+						<div class="swiper-slide"><img src="__TMPL__Zt/survey/imgs/content6-img03.jpg" /></div>
+						<div class="swiper-slide"><img src="__TMPL__Zt/survey/imgs/content6-img04.jpg" /></div>
+						<div class="swiper-slide"><img src="__TMPL__Zt/survey/imgs/content6-img05.jpg" /></div>
+						<div class="swiper-slide"><img src="__TMPL__Zt/survey/imgs/content6-img06.jpg" /></div>
+						<div class="swiper-slide"><img src="__TMPL__Zt/survey/imgs/content6-img07.jpg" /></div>
+					</div>
+					<div class="arrow-right next"><i class="arrow"></i></div>
+					<div class="arrow-left prev"><i class="arrow"></i></div>
+				</div>
+				<div class="col-md-6 pt-4 pb-2">
+					<img src="__TMPL__Zt/survey/imgs/content6-img01.png" />
+					<p>《四川中老年人口腔健康白皮书》即将发布</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section>
+		<div class="container text-center p-4">
+			<div class="content-title position-relative text-center d-inline-block pl-3 pr-3">
+				<h1 class="font-weight-bold">诚邀50岁以上的缺牙市民参与口腔普查</h1>
+			</div>
+		</div>
+		<a onclick="openJesongChatByGroup(16524,20125);"><img src="__TMPL__Zt/survey/imgs/case.jpg" /></a>
+	</section>
+	
+
+	<tc_include file="Public:footer" />
+	<script>
+		var mySwiper = new Swiper('.swiper-container', {
+			navigation: {
+		      nextEl: '.next',
+		      prevEl: '.prev',
+		    },
+		})
+	</script>
+</body>
+
+</html>

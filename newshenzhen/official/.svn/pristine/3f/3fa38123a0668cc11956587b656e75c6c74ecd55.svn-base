@@ -1,0 +1,28 @@
+<div style="height: 3.125rem;"></div>
+<div class="footer">
+	<a href="/" class="col-xs-2">
+		<i class="fa fa-home"></i>
+		<span>首页</span>
+	</a>
+	<a href="tel:400-800-6161" class="col-xs-2">
+		<i class="fa fa-phone"></i>
+		<span>免费电话</span>
+	</a>
+	<a href="javascript:swtClick();" class="col-xs-2">
+		<i class="fa fa-calendar"></i>
+		<span>快速预约</span>
+	</a>
+	<a href="javascript:swtClick();" class="col-xs-2">
+		<i class="fa fa-commenting"><span id="radNum">42</span></i>
+		<span>在线咨询</span>
+	</a>
+	<a href="/traffic.html" class="col-xs-2">
+		<i class="fa fa-map-marker"></i>
+		<span>来院路线</span>
+	</a>
+	
+</div>
+
+<div class="btn-top" style="display: none;"><i class="fa fa-arrow-up"> </i></div>
+<tc_include file="Public:scripts" />
+

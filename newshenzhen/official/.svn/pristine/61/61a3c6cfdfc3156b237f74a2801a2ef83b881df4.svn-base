@@ -1,0 +1,115 @@
+<?php
+// +----------------------------------------------------------------------
+// | ThinkCMF [ WE CAN DO IT MORE SIMPLE ]
+// +----------------------------------------------------------------------
+// | Copyright (c) 2013-2014 http://www.thinkcmf.com All rights reserved.
+// +----------------------------------------------------------------------
+// | Author: Dean <zxxjjforever@163.com>
+// +----------------------------------------------------------------------
+namespace Portal\Controller;
+use Common\Controller\HomebaseController; 
+/**
+ * Ê×Ò³
+ */
+class IndexController extends HomebaseController {	
+    //Ê×Ò³
+	public function index() {
+
+		$phone = sp_is_mobile();
+		if($phone){
+			$slides = sp_getslide(phone_banner);
+
+			$case_where['recommended'] = 1;
+	    	$case = sp_sql_posts_bycatid(108,'field:tid,post_title,smeta,post_extend,link_type,post_url,post_murl;limit:0,5;',$case_where);
+	    	$this->assign('case',$case);
+
+			$commonweal_where['recommended'] = 1;
+	    	$commonweal_where['recommended_type'] = 41;
+	    	$c1 = sp_sql_post_where(181,'field:tid,post_title,post_excerpt,link_type,post_url,smeta;order:post_modified desc;',$commonweal_where);
+	    	$c1['smeta'] = json_decode($c1['smeta'],true);
+	    	$c2 = sp_sql_post_where(141,'field:tid,post_title,post_excerpt,link_type,post_url,smeta;order:post_modified desc;',$commonweal_where);
+	    	$c2['smeta'] = json_decode($c2['smeta'],true);
+
+	    	$brand_where['recommended'] = 1;
+			$brand_where['recommended_type'] = 34;
+			$brand = sp_sql_posts_bycatid(145,'field:tid,post_title,post_excerpt,link_type,post_url;order:post_modified desc;limit:0,3',$brand_where);
+			$this->assign('brand',$brand);
+
+
+		}else{
+			$index_nav = sp_get_index_nav();
+			//var_dump($index_nav);exit;
+			$this->assign('index_nav',$index_nav);
+			$slides = sp_getslide(index_banner);
+
+			$commonweal_where['recommended'] = 1;
+	    	$commonweal_where['recommended_type'] = 41;
+	    	$c1 = sp_sql_post_where(180,'field:tid,post_title,post_excerpt,link_type,post_url,smeta;order:post_modified desc;',$commonweal_where);
+	    	$c1['smeta'] = json_decode($c1['smeta'],true);
+	    	$c2 = sp_sql_posts('cid:146,148,94;field:tid,post_title,post_excerpt,link_type,post_url,smeta;order:post_modified desc;',$commonweal_where);
+	    	$c3 = sp_sql_posts('cid:141,187;field:tid,post_title,post_excerpt,link_type,post_url,smeta;order:post_modified desc;',$commonweal_where);
+
+	    	$case_where['recommended'] = 1;
+	    	$case1 = sp_sql_post_where(174,'field:tid,post_title,smeta,post_extend,link_type,post_url,smeta;order:post_modified desc;',$case_where);
+	    	$case1['extend'] = json_decode($case1['post_extend'],true);
+			$case1['smeta']=json_decode($case1['smeta'],true);
+	    	$case2 = sp_sql_post_where(175,'field:tid,post_title,smeta,post_extend,link_type,post_url,smeta;order:post_modified desc;',$case_where);
+	    	$case2['extend'] = json_decode($case2['post_extend'],true);
+			$case2['smeta']=json_decode($case2['smeta'],true);
+	    	$case3 = sp_sql_post_where(178,'field:tid,post_title,smeta,post_extend,link_type,post_url,smeta;order:post_modified desc;',$case_where);
+	    	$case3['extend'] = json_decode($case3['post_extend'],true);
+			$case3['smeta']=json_decode($case3['smeta'],true);
+	    	$case4 = sp_sql_post_where(177,'field:tid,post_title,smeta,post_extend,link_type,post_url,smeta;order:post_modified desc;',$case_where);
+	    	$case4['extend'] = json_decode($case4['post_extend'],true);
+			$case4['smeta']=json_decode($case4['smeta'],true);
+	    	$case5 = sp_sql_post_where(176,'field:tid,post_title,smeta,post_extend,link_type,post_url,smeta;order:post_modified desc;',$case_where);
+	    	$case5['extend'] = json_decode($case5['post_extend'],true);
+			$case5['smeta']=json_decode($case5['smeta'],true);
+	    	$case6 = sp_sql_post_where(179,'field:tid,post_title,smeta,post_extend,link_type,post_url,smeta;order:post_modified desc;',$case_where);
+	    	$case6['extend'] = json_decode($case6['post_extend'],true);
+			$case6['smeta']=json_decode($case6['smeta'],true);
+
+	    	$this->assign('case1',$case1);
+	    	$this->assign('case2',$case2);
+	    	$this->assign('case3',$case3);
+	    	$this->assign('case4',$case4);
+	    	$this->assign('case5',$case5);
+	    	$this->assign('case6',$case6);
+
+	    	$links=sp_getlinks();
+	    	$this->assign('links',$links);
+		}
+
+		
+
+    	$doctor = sp_get_doctor();
+    	$i = 0;
+    	foreach ($doctor as $k => $v) {
+    		if($i >= 10){
+    			unset($doctor[$k]);
+    		}else{
+	    		if($v['recommended'] == 0){
+	    			unset($doctor[$k]);
+	    		}else{
+	    			$extend = json_decode($v['post_extend'],true);
+	    			$doctor[$k]['main_img'] = $extend['thumb'];
+	    			$doctor[$k]['index_img'] = $extend['thumb1'];
+	    			$doctor[$k]['experience'] = explode(",",$extend['post_extend5']);
+	    			$doctor[$k]['item'] = $extend['post_extend1'];
+	    			$i++;
+	    		}	
+    		}
+    	}
+    	$this->assign('doctor',$doctor);
+
+
+		$this->assign('slides',$slides);
+		$this->assign('c1',$c1);
+    	$this->assign('c2',$c2);
+    	$this->assign('c3',$c3);
+
+    	$this->display(":index");
+    }
+}
+
+

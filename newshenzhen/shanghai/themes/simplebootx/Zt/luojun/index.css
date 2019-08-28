@@ -1,0 +1,65 @@
+a:hover {
+	text-decoration: none;
+}
+.banner {
+	margin-top: 205px;
+}
+.text-indent {
+	text-indent: 2rem;
+}
+.num {
+	background: #254D7F;
+	font-size: 3.5rem;
+}
+.title-text {
+	color: #254d7f;
+    white-space: nowrap;
+}
+.title-text div {
+	font-size: 1.5rem;
+	color: #2b2c2d;
+}
+.content-text {
+	line-height: 2;
+}
+.content-1 .content-text {
+	color: #070707;
+}
+.content-2 {
+	background: #254D7F;
+}
+.content-2 .num, .content-4 .num {
+	background: #fff;
+	color: #254d7f;
+}
+.content-list li {
+	border-radius: 6rem;
+	border: 1px solid #fff;
+	cursor: pointer;
+}
+.content-3 {
+	background: url(imgs/content3-bg.jpg);
+}
+.active {
+	background: #286FC6 !important;
+	border-color: #286FC6 !important;
+}
+.doctor-name {
+	font-size: 3rem;
+	border-right: 2px solid #1B1B1B;
+}
+.swt-btn {
+	border-radius: .3rem;
+	background: #286FC6;
+	width: 48%;
+	font-size: 1.25rem;
+}
+.doctor-msg {
+	bottom: 1rem;
+}
+.content-4 {
+	background: #254D7F;
+}
+.content-5 .swt-btn {
+	width: 30%;
+}

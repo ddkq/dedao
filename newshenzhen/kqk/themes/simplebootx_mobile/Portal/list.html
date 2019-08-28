@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+	<tc_include file="Public:head" />
+	<link href="__TMPL__Public/css/article.css" rel="stylesheet" type="text/css">
+	<title>{$name}_{$site_name}</title>
+	<meta name="keywords" content="{$seo_keywords}"/>
+	<meta name="description" content="{$seo_description}" />
+	</head>
+	<body>
+		<tc_include file="Public:article_header" />
+
+		<div class="main_list">
+			<h3 class="term_title">{$name}</h3>
+			<ul class="lists">
+				<volist name="list['posts']" id="vo">	
+					<li class="flex">
+						<php>$smeta = json_decode($vo['smeta'],true);</php>
+						<div class="news-img-box"><a href="{:get_article_url($vo[tid],$vo[link_type],$vo[post_murl])}" target="_blank"><img src="{$smeta.thumb_phone}"></a></div>
+						<div class="news-tet-box">
+							<a href="{:get_article_url($vo[tid],$vo[link_type],$vo[post_murl])}" target="_blank"><p>{$vo.post_title}</p></a>
+							<a href="{:get_article_url($vo[tid],$vo[link_type],$vo[post_murl])}" target="_blank"><p class="time">时间：{:substr("$vo[post_modified]", 0, -9)}</p></a>
+						</div>
+					</li>
+				</volist>
+			</ul>
+			<ul class="page">{$list['page']}</ul>
+
+		</div>
+		<tc_include file="Public:footer" />
+	</body>
+
+</html>

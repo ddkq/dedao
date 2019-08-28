@@ -1,0 +1,27 @@
+/*终端页样式*/
+@font-face{font-family:Politica;src: url("politica.ttf");}
+
+.title{width:100%;line-height:50px;margin-bottom:25px;padding-bottom: 10px;border-bottom: 1px solid #ccc;position: relative;}
+.title h3 {font-size: 36px;color:#000;margin-left:50px;}
+
+.LeftTool {width: 100px;padding-right: 30px;text-align: center;float: left;font-size: 12px;color: gray;}
+.LeftTool .left-stick-wp {position: relative;}
+.LeftTool .through {position: relative;}
+.LeftTool .through span {display: inline-block;background: #fff;padding: 0 5px;}
+.LeftTool .through:after {content: "";display: block;width: 100%;height: 1px;background: #5a5959;position: absolute;top: 50%;left: 0;z-index: -1;}
+.LeftTool .md, .LeftTool .year {color: #000;font-family:Politica; text-align: center;}
+.LeftTool .year {font-size: 20px;}
+.LeftTool .md {font-size: 34px;line-height: 1.2; margin: 10px 0;}
+.LeftTool .time{font-size: 20px;color: #000;font-family:Politica;margin-bottom: 25px; letter-spacing: 2px;}
+.LeftTool p{font-size: 12px;}
+
+.LeftTool .share-title {margin-top: 100px;margin-bottom: 18px;}
+
+.content-article {width: 648px;font-size: 18px;float: right;}
+.content-article p{line-height: 2.2;margin-bottom: 20px;}
+
+.next{width: 748px;display: block;}
+.next a{color: #666666; font-size: 16px; margin: 25px 0 25px 0;}
+
+
+/*终端页样式*/

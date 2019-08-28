@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>寻找牙不齐、龅牙、 地包天、牙缝大の小哥哥/小姐姐_{$site_name}</title>
+	<tc_include file="Public:head" />
+	<link rel="stylesheet" href="__TMPL__Public/css/bootstrap4.min.css">
+	<link href="__TMPL__Zt/20181218/index.css" rel="stylesheet" type="text/css">
+	<script src="__TMPL__Public/js/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+
+	<section class=""><img src="__TMPL__Zt/20181218/imgs/1.jpg" alt=""></section>
+
+	<section class="container mt-4">
+		<form action="" class="mb-4">
+			<p class="mb-2">我的牙齿症状：</p>
+			<span class="d-inline-block w-30">
+				<input type="radio" class="mr-1" name="data[symptom]" value="牙齿不齐" id="radio-1" checked="checked">
+				<label for="radio-1">牙齿不齐</label>
+			</span>
+			<span class="d-inline-block w-30">
+				<input type="radio" class="mr-1" name="data[symptom]" value="牙缝大" id="radio-2">
+				<label for="radio-2">牙缝大</label>
+			</span>
+			<span class="d-inline-block w-30">
+				<input type="radio" class="mr-1" name="data[symptom]" value="龅（暴）牙" id="radio-3">
+				<label for="radio-3">龅（暴）牙</label>
+			</span>
+			<span class="d-inline-block w-30">
+				<input type="radio" class="mr-1" name="data[symptom]" value="地包天" id="radio-4">
+				<label for="radio-4">地包天</label>
+			</span>
+			<span class="d-inline-block w-30">
+				<input type="radio" class="mr-1" name="data[symptom]" value="虎牙" id="radio-5">
+				<label for="radio-5">虎牙</label>
+			</span>
+			<span class="d-inline-block">
+				<input type="radio" class="mr-1" name="data[symptom]" value="其他牙齿情况" id="radio-6">
+				<label for="radio-6">其他牙齿情况</label>
+			</span>
+			<p class="mb-2">年龄：</p>
+			<span class="d-inline-block w-30">
+				<input type="radio" class="mr-1" name="data[age]" value="18岁以下" id="radio-7" checked="checked">
+				<label for="radio-7">18岁以下</label>
+			</span>
+			<span class="d-inline-block w-30">
+				<input type="radio" class="mr-1" name="data[age]" value="18-25岁" id="radio-8">
+				<label for="radio-8">18-25岁</label>
+			</span>
+			<span class="d-inline-block w-30">
+				<input type="radio" class="mr-1" name="data[age]" value="26-35岁" id="radio-9">
+				<label for="radio-9">26-35岁</label>
+			</span>
+			<input type="text" class="w-100 pt-2 pb-2 pl-3 name" placeholder="姓名：" name="data[name]">
+			<input type="text" class="w-100 pt-2 pb-2 pl-3 mt-2 phone"  placeholder="电话：" name="data[phone]">
+			<input type="hidden" name="data[etc]" value="来源：微信" />
+			<input type="hidden" name="table_id" value="49" />
+			<input type="hidden" name="page" class="page" />
+			<input type="hidden" name="code" value="{$code = mt_rand(0,1000000)}">
+		</form>
+		<p class="text-center pt-2"><a href="javascript:;" class="text-center text-white w-75 submit-btn pt-2 pb-2 pr-5 pl-5">立即抢占名额</a></p>
+	</section>
+
+	<div class="mt-2 mb-4">
+		<img src="__TMPL__Zt/20181218/imgs/2.jpg" alt="">
+		<img src="__TMPL__Zt/20181218/imgs/3.jpg" alt="">
+		<img src="__TMPL__Zt/20181218/imgs/4.jpg" alt="">
+		<div class="container text-center mb-4">
+			<img src="__TMPL__Zt/20181218/imgs/gif.gif" alt="">
+		</div>
+		<img src="__TMPL__Zt/20181218/imgs/5.jpg" alt="">
+	</div>
+	
+	<div class="copy">
+		<p>CopyRight © 2017 成都青羊德道口腔医院 版权所有 
+			<br/> ICP备案号：<a href="http://www.miitbeian.gov.cn" target="_blank">蜀ICP备18017345号-1</a>
+			<br/> <a target="_blank" class="d-flex justify-content-center" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51010502010725"><img src="__TMPL__Public/images/ga-icon.png" style="float:left;" />川公网安备 51010502010725号</a>
+			广审号：（成青） 医广【2019】第03-12-510105020号
+		</p>
+	</div>
+	
+</body>
+<script>
+	$(function() {
+
+		$('.page').val(window.location.href);
+		$('.submit-btn').on('click', function() {
+			var name = $(".name").val();
+			var re1 = /^[\u4E00-\u9FA5]{1,6}$/; 
+			if(name == ''){
+				alert("姓名不能为空"); 
+				return false; 
+			}else if(name != ''){
+				if (!re1.test(name)){ 
+					alert("姓名格式不正确"); 
+					return false; 
+				}	
+			}
+			
+			var phone = $(".phone").val();
+			var re3 = /^((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+(\d{8})$/;
+			if(phone == ''){
+				alert("电话不能为空"); 
+				return false; 
+			}else if(phone != ''){
+				if (!re3.test(phone)){ 
+					alert("电话格式不正确"); 
+					return false; 
+				}
+			}
+			
+			var data = $('form').serializeArray();
+			$.post('/tables/tables/add_post',data,function(result){
+				//console.log(result);
+				alert(result.info);
+			});
+		});
+	})
+</script>
+</html>

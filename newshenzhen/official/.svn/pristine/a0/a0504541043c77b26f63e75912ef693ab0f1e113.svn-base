@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" href="css/base2.css">
+
+	<script type="application/javascript" src="js/jquery-2.1.1.min.js"></script>
+</head>
+<style>
+	p {font-size: 1rem;}
+	.team-list {justify-content: space-around;margin-top: 60px;flex-wrap: wrap;}
+	.team-list li {margin-bottom: 60px;}
+	.team-list li p {font-size: 1.3rem; text-align: center;}
+</style>
+<body>
+	<header>
+		<div class="black-bcg"></div>
+		<ul id="menu" class="met-nav">
+			<div class="nav-logo">
+				<a href="/" class="logo">
+					<img class="logo1" src="img/logo.png"/>
+				</a>
+			</div>
+			<div class="nav-box">
+				<ul>
+					<li class="menu-active"><a href="index.html"><b>首页</b></a></li>
+					<li><a href="about.html"><b>关于德道</b></a></li>
+					<li><a href="/"><b>全国连锁</b></a></li>
+					<li><a href="/"><b>德道资讯</b></a></li>
+					<li><a href="team.html"><b>医生团队</b></a></li>
+					<li><a href="recruit.html"><b>人才招聘</b></a></li>
+					<li><a href="/"><b>联系我们</b></a></li>
+					<li><a href="/"><b>在线咨询</b></a></li>
+					<div class="nav-side">
+						<hr>
+						<hr>
+						<hr>
+					</div>
+				</ul>
+			</div>
+			<div class="side-box">
+				<div class="side-cut">
+					<div class="side-shadow"></div>
+					<div class="side-nav">
+						<div class="side-close"><i class="fa fa-close"></i></div>
+						<div class="logo-2">
+							<img src="img/logo2.png" alt="">
+						</div>
+						<ul class="navlist">
+							<li class="nav-item1"><a href="index.html" title="首页" class="link active">首页</a></li>
+							<li class="nav-item1"><a href="about/" title="关于" class="link ">关于</a></li>
+							<li class="nav-item1"><a href="area/" title="应用场景" class="link ">应用场景</a></li>
+							<li class="nav-item1"><a href="cases/" title="案例" class="link ">案例</a></li>
+							<li class="nav-item1" id="sideMenu">
+								<a class=" link " href="javascript:void(0);" title="资讯" data-toggle="collapse">资讯<span class="nav-plus"></span></a>
+								<ul class="navlist2 collapse" id="2" style="display: none;">
+									<li><a href="news/news.php?lang=cn&amp;class2=4" class=" nav2list" title="公司动态">公司动态</a></li>
+									<li><a href="news/news.php?lang=cn&amp;class2=5" class=" nav2list" title="业界资讯">业界资讯</a></li>
+								</ul>
+							</li>
+							<li class="nav-item1"><a href="contact/" title="联系" class="link ">联系</a></li>
+							<div class="side-foot">
+								<div class="side-qrcode"><img src="img/1510208180.png" alt=""></div>
+								<div class="side-phone">
+									<p><a href="tel:400-800-6161">官方热线：400-800-6161</a></p>
+								</div>
+								<div class="side-text">COPYRIGHT 2016-2017 未来VR服务有限公司 版权所有</div>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<script>
+				$('a.link').on('click', function(){
+					$("ul.navlist2").slideToggle();
+				});
+
+			  	$('.nav-side').on('click', function() {
+			  		$('.side-box').css('right', '20%')
+			  		$('.navlist>li.nav-item1').css('opacity', 1)
+			  		$('.black-bcg').fadeIn();
+			  	})
+			  	$('.black-bcg').on('click', function() {
+			  		$('.black-bcg').fadeOut();
+			  		$('.side-box').css('right', '0')
+			  		$('.navlist>li.nav-item1').css('opacity', 0)
+			  	})
+				$('.side-close').on('click', function() {
+					$('.black-bcg').fadeOut();
+			  		$('.side-box').css('right', '0')
+			  		$('.navlist>li.nav-item1').css('opacity', 0)
+				})
+			  	$('.black-bcg').height(window.innerHeight)
+			</script>
+		</ul>
+	</header>
+
+	<section>
+		<div class="banner"><div class="bcg"></div></div>
+	</section>
+	
+	<section class="content content-width clear">
+		<ul class="left-nav">
+			<li><a href="about.html">关于我们</a></li>
+			<li><a href="javascript:;">公司动态</a></li>
+			<li><a href="javascript:;">工作在德道</a></li>
+			<li><a href="javascript:;">联系我们</a></li>
+			<li><a href="recruit.html" class="active">加入我们</a></li>
+		</ul>
+		<div class="right-content">
+			<section>
+				<h2 class="title">专家团队</h2>
+				<p>为打造集团灵魂与核心竞争力，不断吸引行业专业人才加入 ，集团专门成立了德道集团专家委员会。专家委员会汇聚了学术造诣高、学风端正、医德高尚、技术精湛的专业人员，组成了德道的精英力量。</p>
+				<ul class="flex team-list">
+					<li>
+						<p><img src="img/doctor.jpg" alt=""></p>
+						<p>周卫明</p>
+					</li>
+					<li>
+						<p><img src="img/doctor.jpg" alt=""></p>
+						<p>周卫明</p>
+					</li>
+					<li>
+						<p><img src="img/doctor.jpg" alt=""></p>
+						<p>周卫明</p>
+					</li>
+					<li>
+						<p><img src="img/doctor.jpg" alt=""></p>
+						<p>周卫明</p>
+					</li>
+				</ul>
+			</section>
+		</div>
+	</section>
+	<footer class="footer">
+		苏州美奥口腔门诊部有限公司 版权所有 ICP备案号： 苏ICP备13063843号-1
+	</footer>
+</body>
+</html>

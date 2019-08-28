@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>牙齿不齐脸型变化_{$site_name}</title>
+	<tc_include file="Public:head" />
+	<link rel="stylesheet" href="__TMPL__Public/css/bootstrap4.min.css">
+	<link href="__TMPL__Zt/face-change/index.css" rel="stylesheet" type="text/css">
+	<script src="__TMPL__Public/js/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+	<section class="position-relative">
+		<img src="__TMPL__Zt/face-change/imgs/1.jpg" alt="">
+	</section>
+	
+	<section class="container pt-3 pb-3 content-form">
+		<form action="">
+			<div>
+				<div><input type="text" name="data[symptom]" class="symptom w-100 pt-3 pl-3 pb-3" placeholder="我的症状:"></div>
+			</div>
+			<div class="mt-2">
+				<div><input type="text" name="data[name]" class="name w-100 pt-3 pl-3 pb-3" placeholder="姓名:"></div>
+			</div>
+			<div class="mt-2">
+				<div><input type="text" name="data[phone]" class="phone w-100 pt-3 pl-3 pb-3" placeholder="电话:"></div>
+			</div>
+			<div class="mt-2">
+				<div><input type="text" name="data[age]" class="age w-100 pt-3 pl-3 pb-3" placeholder="年龄:"></div>
+			</div>
+			<input type="hidden" name="table_id" value="45" />
+			<input type="hidden" name="page" class="page" />
+			<input type="hidden" name="code" value="{$code = mt_rand(0,1000000)}">
+		</form>
+		<p class="text-center mt-4"><a href="javascript:;" class="submit-btn d-block"><img src="__TMPL__Zt/face-change/imgs/2.jpg" alt=""></a></p>
+	</section>
+	
+</body>
+<script>
+	
+	$(function() {
+		
+		$('.page').val(window.location.href);
+		$('.submit-btn').on('click', function() {
+			var name = $(".name").val();
+			var re1 = /^[\u4E00-\u9FA5]{1,6}$/; 
+			if(name == ''){
+				alert("姓名不能为空"); 
+				return false; 
+			}else if(name != ''){
+				if (!re1.test(name)){ 
+					alert("姓名格式不正确"); 
+					return false; 
+				}	
+			}
+			
+			var phone = $(".phone").val();
+			var re2 = /^((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+(\d{8})$/;
+			if(phone == ''){
+				alert("电话不能为空"); 
+				return false; 
+			}else if(phone != ''){
+				if (!re2.test(phone)){ 
+					alert("电话格式不正确"); 
+					return false; 
+				}
+			}
+			
+			var symptom = $(".symptom").val();
+			if(symptom == ''){
+				alert("姓名不能为空"); 
+				return false; 
+			}
+			
+			var age = $(".age").val();
+			var re3 = /^[0-9]{1,2}$/;
+			if(age == ''){
+				alert("年龄不能为空"); 
+				return false; 
+			}else if(age != null){
+				if (!re3.test(age)){ 
+					alert("请输入正确的年龄"); 
+					return false; 
+				}
+			}
+			
+			
+			var data = $('form').serializeArray();
+			$.post('/tables/tables/add_post',data,function(result){
+				//console.log(result);
+				alert(result.info);
+			});
+		});
+	})
+</script>
+</html>

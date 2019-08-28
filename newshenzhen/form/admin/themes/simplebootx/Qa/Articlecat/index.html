@@ -1,0 +1,46 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="{:U('articlecat/index')}">{:L('ADMIN_ARTICLECAT_INDEX1')}</a></li>
+			<li><a href="{:U('articlecat/add')}">{:L('ADMIN_ARTICLECAT_ADD')}</a></li>
+			<li><a href="{:U('relationship/index')}">{:L(ADMIN_RELATIONSHIP)}</a></li>
+		</ul>
+		<form method="post" class="js-ajax-form" action="{:U('term/listorders')}">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th width="50">ID</th>
+						<th>{:L('NAME')}</th>
+						<th width="120">{:L('ACTIONS')}</th>
+					</tr>
+				</thead>
+				<tbody>
+					
+					<volist name="cat" id="vo">
+						<tr>
+							<td></td>
+							<td>{$vo.cat_name}</td>
+							<td></td>
+						</tr>
+						<php>$list = sp_cat_list($vo[cid])</php>
+						<foreach name="list" item="vo">
+							<tr>
+								<td>{$vo.cid}</td>
+								<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├─  {$vo.cat_name}</td>
+								<td>
+									<a href="{:U('articlecat/edit',array('id'=>$vo['cid']))}">{:L('EDIT')}</a>|
+									<a href="{:U('articlecat/delete',array('id'=>$vo['cid']))}" class="js-ajax-delete">{:L('DELETE')}</a>
+								</td>
+							<tr/>
+						</foreach>	
+					</volist>
+
+				</tbody>
+			</table>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

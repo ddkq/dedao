@@ -1,0 +1,87 @@
+a {
+	text-decoration: none;
+}
+.banner {
+	margin-top: 205px;
+}
+.title {
+	border-bottom: 3px solid #666;
+}
+.title:after {
+	content: '';
+	border-width: 20px;
+	border-color: #666 transparent transparent transparent;
+	border-style: solid;
+	display: inline-block;
+	position: absolute;
+}
+.title b {
+	color: #BA1313;
+}
+.title b:after, .title b:before, .name b:after, .name b:before {
+	content: '';
+	display: inline-block;
+	height: 4px;
+	width: 60px;
+	background-color: #BA1313;
+	position: absolute;
+	bottom: 22px;
+}
+.title b:after, .name b:after {
+	right: -85px;
+}
+.title b:before, .name b:before {
+	left: -85px;
+}
+.name b:after, .name b:before {
+    bottom: 13px;
+    height: 3px;
+    width: 45px;
+}
+.name b:after {
+	right: -70px;
+}
+.name b:before {
+	left: -70px;
+}
+.title-text {
+	font-size: 22px;
+	color: #666;
+}
+.swt-btn {
+	background: #C11920;
+	border-radius: 20px;
+	left: 53%;
+	font-size: 22px;
+    padding: 0 3.6%;
+    padding-top: 3px;
+    bottom: 25px;
+}
+.content-1-bcg {
+	background: url(imgs/content-1-bcg.jpg);
+	background-size: cover;
+}
+.white-block {
+	width: 100%;
+	height: 34%;
+	background: #fff;
+}
+.text-indent {
+	text-indent: 2rem;
+}
+.red {
+	color: #c11920;
+}
+.content-2-text, .content-4-text, .content-5-text {
+	font-size: 19px;
+}
+.content-3, .content-5 {
+	background: #F4F4F4;
+}
+.case-title {
+	background: #C11920;
+	border-radius: 20px;
+}
+.line {
+	border-bottom: 1px solid #878787;
+}

@@ -1,0 +1,136 @@
+<!--医生终端页-->
+<!DOCTYPE html>
+<html>
+	<tc_include file="Public:head" />
+	<link href="__TMPL__Public/css/article.css" rel="stylesheet" type="text/css">
+	<title>{$name}_{$site_name}</title>
+	<meta name="keywords" content="{$post_keywords}"/>
+	<meta name="description" content="{$post_excerpt}" />
+	</head>
+	<body>
+		<tc_include file="Public:article_header" />
+		
+		<div class="font_page">
+			<div class="font_page_nr media">
+				<div class="media-left">
+					<img src="{$smeta[thumb_phone]}" />
+				</div>
+				<div class="media-body">
+					<h3>{$name}<span>{$job}</span></h3>
+					<p>职务：{$duties}</p>
+					<p>科室：
+						<volist name="terms" id="vo">
+							{$vo.name}&nbsp;&nbsp;
+						</volist>
+					</p>
+					<p>职称：{$job}</p>	
+					<div class="swt">
+						<a href="/doctor/{$vo.id}.html">专家详情</a>
+						<a href="/swt/"  target="_blank">预约咨询</a>	
+					</div>
+				</div>
+				
+				<h4>坐诊时间</h4>
+				<table class="table table-bordered text-center">
+					<php>
+						foreach($working as $vo){
+							if($vo == 11){
+								$s11 = '<i class="fa fa-check"></i>';}if($vo == 12){
+									$s12 = '<i class="fa fa-check"></i>';}if($vo == 13){
+										$s13 = '<i class="fa fa-check"></i>';}
+							if($vo == 21){
+								$s21 = '<i class="fa fa-check"></i>';}if($vo == 22){
+									$s22 = '<i class="fa fa-check"></i>';}if($vo == 23){
+										$s23 = '<i class="fa fa-check"></i>';}
+							if($vo == 31){
+								$s31 = '<i class="fa fa-check"></i>';}if($vo == 32){
+									$s32 = '<i class="fa fa-check"></i>';}if($vo == 33){
+										$s33 = '<i class="fa fa-check"></i>';}
+							if($vo == 41){
+								$s41 = '<i class="fa fa-check"></i>';}if($vo == 42){
+									$s42 = '<i class="fa fa-check"></i>';}if($vo == 43){
+										$s43 = '<i class="fa fa-check"></i>';}
+							if($vo == 51){
+								$s51 = '<i class="fa fa-check"></i>';}if($vo == 52){
+									$s52 = '<i class="fa fa-check"></i>';}if($vo == 53){
+										$s53 = '<i class="fa fa-check"></i>';}
+							if($vo == 61){
+								$s61 = '<i class="fa fa-check"></i>';}if($vo == 62){
+									$s62 = '<i class="fa fa-check"></i>';}if($vo == 63){
+										$s63 = '<i class="fa fa-check"></i>';}
+							if($vo == 71){
+								$s71 = '<i class="fa fa-check"></i>';}if($vo == 72){
+									$s72 = '<i class="fa fa-check"></i>';}if($vo == 73){
+										$s73 = '<i class="fa fa-check"></i>';}
+						}
+					</php>
+					<thead>
+						<tr>
+							<th></th>
+							<th>周一</th>
+							<th>周二</th>
+							<th>周三</th>
+							<th>周四</th>
+							<th>周五</th>
+							<th>周六</th>
+							<th>周日</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">上午</th>
+							<td>{$s11}</td>
+							<td>{$s21}</td>
+							<td>{$s31}</td>
+							<td>{$s41}</td>
+							<td>{$s51}</td>
+							<td>{$s61}</td>
+							<td>{$s71}</td>
+						</tr>
+						<tr>
+							<th scope="row">中午</th>
+							<td>{$s12}</td>
+							<td>{$s22}</td>
+							<td>{$s32}</td>
+							<td>{$s42}</td>
+							<td>{$s52}</td>
+							<td>{$s62}</td>
+							<td>{$s72}</td>
+						</tr>
+						<tr>
+							<th scope="row">下午</th>
+							<td>{$s13}</td>
+							<td>{$s23}</td>
+							<td>{$s33}</td>
+							<td>{$s43}</td>
+							<td>{$s53}</td>
+							<td>{$s63}</td>
+							<td>{$s73}</td>
+						</tr>
+					</tbody>
+				</table>
+				
+			
+				<div class="font_content">
+					<h4>医师介绍</h4>
+					{$excerpt}
+					<h4>专业擅长</h4>
+					{$content}
+				</div>
+			</div>
+			
+			<ul class="article_btn clearfix">
+				<li class="col-xs-6">
+					<a href="/swt/"><i class="icon_01"></i>在线咨询<span>专家快速解答</span></a>
+				</li>
+				<li class="col-xs-6">
+					<a href="tel:4008006161"><i class="icon_02"></i>电话咨询<span>400-800-6161 / 0755-86522406</span></a>
+				</li>
+			</ul>
+
+		</div>
+
+		<tc_include file="Public:footer" />
+	</body>
+
+</html>

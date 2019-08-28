@@ -1,0 +1,187 @@
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>领取福袋_<?php echo ($site_name); ?></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="/public/images/favicon.ico" type="image/x-icon" />
+<link href="/themes/simplebootx_mobile/Public/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="/themes/simplebootx_mobile/Public/css/bootstrap4.min.css" rel="stylesheet" type="text/css">
+<link href="/themes/simplebootx_mobile/Public/css/font-awesome/4.7.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css">
+<link href="/themes/simplebootx_mobile/Public/css/base.css" rel="stylesheet" type="text/css">
+<script language="javascript" src="http://swt.szddkqyy.com/JS/LsJS.aspx?siteid=MTI57225838&lng=cn"></script>
+	<script src="/themes/simplebootx_mobile/Public/js/jquery-2.1.1.min.js"></script>
+	<script src="/themes/simplebootx_mobile/Public/js/swiper.min.js"></script>
+	<link rel="stylesheet" href="/themes/simplebootx_mobile/Public/css/bootstrap4.min.css">
+	<link rel="stylesheet" href="/themes/simplebootx_mobile/Public/css/swiper.min.css">
+	<link href="/themes/simplebootx_mobile/Zt/2019-01-17/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<section class="">
+		<img src="/themes/simplebootx_mobile/Zt/2019-01-17/imgs/banner.jpg" alt="">
+	</section>
+
+	<section class="content-1">
+		<img src="/themes/simplebootx_mobile/Zt/2019-01-17/imgs/content-1.jpg" alt="">
+	</section>
+
+	<section class="content-2">
+		<img src="/themes/simplebootx_mobile/Zt/2019-01-17/imgs/content-2.jpg" alt="">
+	</section>
+
+	<section class="content-3 text-center mt-4">
+		<div class="container">
+			<h3 class="content-title font-weight-bold position-relative pb-2 mb-4">开运福袋免费申领表</h3>
+			<form action="">
+				<p class="text-left form-title"><span class="red">*</span>我的牙齿状况：(可多选）</p>
+				<div class="d-flex symptom pl-2 pr-2 justify-content-between flex-wrap">
+					<div class="pt-1 pb-1 active">单颗缺牙</div>
+					<div class="pt-1 pb-1">多颗缺牙</div>
+					<div class="pt-1 pb-1 mt-3">半口缺牙</div>
+					<div class="pt-1 pb-1 mt-3">全口缺牙</div>
+					<div class="pt-1 pb-1 mt-3">烤瓷失败</div>
+					<div class="pt-1 pb-1 mt-3">牙齿松动</div>
+					<div class="pt-1 pb-1 mt-3">牙根坏死</div>
+					<div class="pt-1 pb-1 mt-3">其他症状</div>
+					<input type="hidden" name="data[symptom]" value="单颗缺牙">
+				</div>
+				<p class="text-left form-title mt-3"><span class="red">*</span>年龄：</p>
+				<div class="d-flex age pl-2 pr-2 justify-content-between flex-wrap">
+					<div class="pt-1 pb-1 active">20-30岁</div>
+					<div class="pt-1 pb-1">30-40岁</div>
+					<div class="pt-1 pb-1 mt-3">40-60岁</div>
+					<div class="pt-1 pb-1 mt-3">60岁以上</div>
+					<input type="hidden" name="data[age]" value="20-30岁">
+				</div>
+				<div class="form-input mt-3">
+					<input type="text" placeholder="输入您的姓名" class="w-100 pl-2 pt-2 pb-2 name" name="data[name]">
+				</div>
+				<div class="form-input mt-3">
+					<input type="text" placeholder="输入您常用的手机号码" class="w-100 pl-2 pt-2 pb-2 phone" name="data[phone]">
+				</div>
+				<div class="form-input mt-3">
+					<textarea rows="3" placeholder="请把问题留给我们，我们会提供让您满意的答案。" class="w-100 pl-2 pt-2 pb-2 etc" name="data[etc]"></textarea>
+				</div>
+				<input type="hidden" name="table_id" value="51" />
+				<input type="hidden" name="page" class="page" />
+				<input type="hidden" name="code" value="<?php echo ($code = mt_rand(0,1000000)); ?>">
+			</form>
+			<div class="submit-btn mt-3">
+				<a href="javascript:;" class="text-white d-block pt-2 pb-2">提交领取免费名额</a>
+			</div>
+			<h4 class="mt-3">抢免费福袋名额，每日限额领取</h4>
+			<p class="msg">——————累计已有<span>168人</span>领取了福袋——————</p>
+			<p class="newest mb-2">最新报名客户</p>
+			<div class="name-list pt-2 pb-2 mb-3">
+				<div class="swiper-container data-list swiper-no-swiping" style="height: 100px">
+					<div class="swiper-wrapper">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="content-4">
+		<img src="/themes/simplebootx_mobile/Zt/2019-01-17/imgs/content-4.jpg" alt="">
+	</section>
+
+	<section class="content-5 mt-4">
+		<img src="/themes/simplebootx_mobile/Zt/2019-01-17/imgs/content-5.jpg" alt="">
+	</section>
+
+	<section class="content-6">
+		<img src="/themes/simplebootx_mobile/Zt/2019-01-17/imgs/content-6.jpg" alt="">
+	</section>
+
+	<section class="content-7">
+		<img src="/themes/simplebootx_mobile/Zt/2019-01-17/imgs/content-7.jpg" alt="">
+	</section>
+	
+	<div class="copy">
+		<p>CopyRight © 2017 深圳德道口腔门诊部 版权所有 
+			<br/> ICP备案号：<a href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备18089183号</a>
+			<br/> <a target="_blank" class="d-flex justify-content-center" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502003611"><img src="/themes/simplebootx_mobile/Public/images/ga-icon.png" style="float:left;" />粤公网安备 44030502003611号</a>
+			广审号：粤（B）广[2019]第07-22-327号
+		</p>
+	</div>
+</body>
+</html>
+
+<script>
+	var mySwiper = new Swiper('.data-list',{
+	    autoplay: true,
+	    observer: true,
+	    loop: true,
+	    direction : 'vertical',
+	    height: 20,
+  	});
+
+	$.post('/api/form/formdata', {}, function(data) {
+		// console.log(data)
+		var html = '';
+		for(var i = 0; i < data.length; i ++) {
+			html += '<div class="swiper-slide d-flex justify-content-between">'+
+						'<span class="d-inline-block ml-3 mr-3 text-left" style="width: 30%;">'+ data[i].name +'</span>'+
+						'<span class="d-inline-block ml-3 mr-3 text-center" style="width: 30%;">'+ data[i].phone +'</span>'+
+						'<span class="d-inline-block ml-3 mr-3 text-right" style="width: 30%;">'+ data[i].time +'</span>'+
+					'</div>';
+		}
+		$('.name-list .swiper-wrapper').html(html);
+	});
+
+	$('.symptom div').on('click', function() {
+		if($(this).hasClass('active')) {
+			$(this).removeClass('active');
+		}
+		else {
+			$(this).addClass('active');
+		}
+	})
+	$('.age div').on('click', function() {
+		$(this).addClass('active').siblings('div').removeClass('active');
+		$('.age input').val($(this).text());
+	})
+
+	$('.page').val(window.location.href);
+	$('.submit-btn').on('click', function() {
+		var name = $(".name").val();
+		var re1 = /^[\u4E00-\u9FA5]{1,6}$/; 
+		if(name == ''){
+			alert("姓名不能为空"); 
+			return false; 
+		}else if(name != ''){
+			if (!re1.test(name)){ 
+				alert("姓名格式不正确"); 
+				return false; 
+			}	
+		}
+		
+		var phone = $(".phone").val();
+		var re3 = /^((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+(\d{8})$/;
+		if(phone == ''){
+			alert("电话不能为空"); 
+			return false; 
+		}else if(phone != ''){
+			if (!re3.test(phone)){ 
+				alert("电话格式不正确"); 
+				return false; 
+			}
+		}
+
+		var textArr = $('.symptom .active').text(function(inx, text) {
+			return text;
+		});
+		var text = '';
+		for(var i = 0; i < textArr.length; i ++) {
+			i == textArr.length - 1 ? text += textArr[i].innerText : text += textArr[i].innerText + ',';
+		}
+		$('.symptom input').val(text)
+
+		var data = $('form').serializeArray();
+		$.post('/tables/tables/add_post',data,function(result){
+			alert(result.info);
+		});
+	});
+</script>

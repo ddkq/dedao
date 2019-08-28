@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vr+种植牙时代{$site_name}</title>
+	<tc_include file="Public:head" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="stylesheet" href="__TMPL__Public/css/bootstrap4.min.css">
+	<link href="__TMPL__Zt/vr/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<tc_include file="Public:header" />
+
+	<section class="banner"><img src="__TMPL__Zt/vr/imgs/banner.jpg" alt="" class="img-fluid"></section>
+
+	<section class="content-box-1 mt-4">
+		<div class="container">
+			<h4 class="content-title pb-3 position-relative text-center font-weight-bold">据调查，75%的人患有牙科恐惧症</h4>
+			<div class="mt-3 mb-3"><img src="__TMPL__Zt/vr/imgs/content-1-img.jpg" alt=""></div>
+			<p class="text-indent">资料显示，75%的人有某种程度的牙科恐惧，高度牙科恐惧的患者中有51.2%的人经常拖延诊治。我国的调查显示，中青年患者牙科恐惧症的发生率比老年患者高。</p>
+			<div class="text-center"><a onclick="javascript:openJesongChatByGroup(16524,20125);" target="_blank" class="swt-btn text-white">如何摆脱牙科恐惧症，咨询专家</a></div>
+		</div>
+	</section>
+
+	<section class="content-box-2 mt-4 pt-4 pb-2">
+		<div class="container">
+			<h4 class="content-title pb-2 position-relative text-center font-weight-bold">“VR+种植时代”
+				<p class="mb-0 font-weight-normal mt-2">让种牙如同躺在沙滩椅上舒适</p>
+			</h4>
+			<p class="text-indent">VR，利用电脑模拟产生一个三度空间的虚拟世界，让使用者如同身历其境一般，可以及时、没有限制地观察三度空间内的事物，把人的意识代入一个虚拟的世界。</p>
+			<div class="p-2"><img src="__TMPL__Zt/vr/imgs/vr.png" alt=""></div>
+		</div>
+	</section>
+
+	<section class="mt-2"><a onclick="javascript:openJesongChatByGroup(16524,20125);" target="_blank"><img src="__TMPL__Zt/vr/imgs/swt.jpg" alt=""></a></section>
+
+	<section class="content-box-3 mt-4">
+		<div class="container">
+			<h4 class="content-title pb-2 position-relative text-center font-weight-bold">VR技术进入成都
+				<p class="mb-0 font-weight-normal mt-2">邀您一起探讨：VR技术在种植中的意义</p>
+			</h4>
+			<p class="text-indent">这个8月，德道口腔将在成都举办一场“探索VR技术在种植中的意义”的体验活动，率先在国内试行VR技术缓解口腔患者的“牙科恐惧症”，让成都提前进入“VR+种植时代”。</p>
+		</div>
+		<div class="position-relative">
+			<img src="__TMPL__Zt/vr/imgs/doctor-team.jpg" alt="">
+			<a onclick="javascript:openJesongChatByGroup(16524,20125);" target="_blank" class="swt-btn position-absolute text-white text-center">我要体验“VR+口腔”技术</a>
+		</div>
+	</section>
+
+	<section class="content-box-4 mt-4">
+		<div class="container">
+			<h4 class="content-title pb-2 position-relative text-center font-weight-bold">VR技术与AI+即刻用3.0相结合
+				<p class="mb-0 font-weight-normal mt-2">开启种牙新体验</p>
+			</h4>
+			<ul class="content-list d-flex flex-wrap mt-4">
+				<li class="w-50 p-2">
+					<div><img src="__TMPL__Zt/vr/imgs/content-4-list-01.png" alt=""></div>
+					<h5 class="text-center mt-2 position-relative mb-3 font-weight-bold">精准种植</h5>
+					<p class="mb-2">运用VR技术进行手术模拟、手术定位、手术导航，制定出准确、科学的手术方案。</p>
+				</li>
+				<li class="w-50 p-2">
+					<div><img src="__TMPL__Zt/vr/imgs/content-4-list-02.png" alt=""></div>
+					<h5 class="text-center mt-2 position-relative mb-3 font-weight-bold">创口小</h5>
+					<p class="mb-2">采用三维位置信息所指定方案，减少手术创面，为即刻种植和即刻负重创造了有利条件。</p>
+				</li>
+				<li class="w-50 p-2">
+					<div><img src="__TMPL__Zt/vr/imgs/content-4-list-03.png" alt=""></div>
+					<h5 class="text-center mt-2 position-relative mb-3 font-weight-bold">时间短</h5>
+					<p class="mb-0">实现对手术过程的模拟，缩短手术时间，快速恢复全口好牙。</p>
+				</li>
+				<li class="w-50 p-2">
+					<div><img src="__TMPL__Zt/vr/imgs/content-4-list-04.png" alt=""></div>
+					<h5 class="text-center mt-2 position-relative mb-3 font-weight-bold">舒适无痛</h5>
+					<p class="mb-0">实现微创无痛种植和即刻负重，无需翻瓣拆线，全部手术一次完成。</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="content-box-5 mt-4 pt-4 mb-3">
+		<div class="container">
+			<h4 class="content-title pb-3 position-relative text-center font-weight-bold">优先享VR科技成果
+				<p class="mb-0 font-weight-normal mt-2">忘却治疗恐惧</p>
+			</h4>
+		</div>
+		<div><a onclick="javascript:openJesongChatByGroup(16524,20125);"><img src="__TMPL__Zt/vr/imgs/content-5.jpg" alt=""></a></div>
+	</section>
+
+	<tc_include file="Public:footer" />
+</body>
+</html>

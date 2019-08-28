@@ -1,0 +1,282 @@
+.ai-content {
+    margin-top: 122px;
+}
+
+.tech-banner {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    text-align: center;
+    background: url(//aip.bdstatic.com/portal/dist/1528975020171/ai_images/technology/ocr/banner.jpg) no-repeat 50%;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.tech-banner-title {
+    padding-bottom: 24px;
+    font-size: 48px;
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+.tech-banner-info {
+    width: 500px;
+    margin: 0 auto;
+    padding-bottom: 24px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+}
+
+.tech-banner .tech-banner-btn-list a {
+    position: relative;
+    border: 1px solid #fff;
+    color: #fff;
+    z-index: 1;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+    margin: 0 15px;
+    font-size: 16px;
+    width: 112px;
+    height: 38px;
+    line-height: 38px;
+    display: inline-block;
+}
+
+.tech-catalog {
+    background-color: #f4f5f7;
+    font-size: 14px;
+    padding-bottom: 40px;
+}
+
+.ai-container {
+    display: block;
+    width: 1120px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.tech-catalog-title {
+    padding: 80px 0 50px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #333;
+}
+
+
+.tech-catalog-gallery {
+    font-size: 0;
+    font-family: empty;
+    margin: 0 -18px -35px;
+}
+
+.tech-prod-container {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 30%;
+    margin: 0 18px 35px;
+    overflow: hidden;
+    -webkit-transition: -webkit-transform .1s linear;
+    transition: -webkit-transform .1s linear;
+    -moz-transition: transform .1s linear,-moz-transform .1s linear;
+    transition: transform .1s linear;
+    transition: transform .1s linear,-webkit-transform .1s linear,-moz-transform .1s linear;
+    vertical-align: top;
+    background-color: #fff;
+    font-size: 0;
+    font-family: arial,tahoma,Hiragino Sans GB,Microsoft YaHei,sans-serif;
+}
+.tech-prod-item-img {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+.tech-prod-info {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    padding: 20px 30px;
+}
+.tech-prod-name {
+    padding-bottom: 14px;
+    font-size: 18px;
+    color: #333;
+}
+.tech-prod-intro {
+    font-size: 14px;
+    height: 52px;
+    line-height: 26px;
+    color: #999;
+    text-align: left;
+}
+.tech-prod-panel {
+    text-align: center;
+    font-size: 14px;
+    margin: 20px 0 10px;
+    color: #000;
+}
+.tech-prod-panel a {
+    color: #0073eb;
+    margin: 0 15px;
+}
+
+
+
+
+.tech-catalog-info {
+    width: 600px;
+    line-height: 26px;
+    padding-bottom: 44px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+}
+
+.tech-catalog-show {
+	overflow: hidden;
+    text-align: center;
+    height: 450px;
+    background: url(//aip.bdstatic.com/portal/dist/1528975020171/ai_images/technology/speech-asr/introduce.png) no-repeat;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.tech-catalog-show-txt {
+    width: 610px;
+    margin: 300px auto 0;
+    line-height: 26px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+
+.tech-scene {
+    padding-bottom: 80px;
+    background-color: #f4f5f7;
+}
+
+.tech-scene-heading {
+    padding: 80px 0 50px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #333;
+}
+.tech-scene-container {
+    font-size: 0;
+    margin: 0 -18px -36px;
+    font-family: empty;
+}
+.tech-scene-wrapper {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 18px;
+    margin-bottom: 36px;
+    vertical-align: top;
+    font-family: arial,tahoma,Hiragino Sans GB,Microsoft YaHei,sans-serif;
+    width: 50%;
+}
+
+.tech-scene-item {
+    padding: 30px 30px 0;
+    background-color: #fff;
+}
+
+.tech-scene-title {
+    padding-bottom: 24px;
+    font-size: 18px;
+    color: #333;
+}
+
+.tech-scene-detail {
+    padding-bottom: 24px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #999;
+}
+.tech-scene-line {
+    margin-top: -1px;
+    height: 1px;
+    border: 0;
+    background-color: #eee;
+}
+.tech-scene-cooperation {
+    padding: 25px 0;
+    font-size: 0;
+    color: #999;
+}
+.tech-scene-cooperation .cooperation-case {
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 20px;
+}
+.tech-feature-heading {
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #333;
+    padding: 80px 0 50px;
+    text-align: center;
+}
+.tech-feature-container {
+    width: 1120px;
+    margin: 0 -14px;
+    display: flex;
+    justify-content: space-between;
+}
+.tech-feature-item {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: top;
+    font-family: arial,tahoma,Hiragino Sans GB,Microsoft YaHei,sans-serif;
+    width: 210px;
+}
+
+.tech-feature-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.tech-feature-desc-title {
+    padding: 40px 0 24px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+.tech-feature-desc-info {
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.tech-guide {
+    padding: 94px 0 100px;
+    text-align: center;
+}
+
+.tech-guide a {
+    background-color: #0073eb;
+    color: #fff!important;
+    width: 212px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    display: inline-block;
+}

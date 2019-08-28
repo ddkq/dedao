@@ -1,0 +1,19 @@
+.chinese-add, .english-add, .tel, .e-mail {
+	font-size: .9rem;
+	color: #9a9a9a;
+}
+.english-add {
+	padding-bottom: .5rem;
+	border-bottom: 1px solid #e5e5e5;
+}
+.tel {
+	padding-top: .5rem;
+}
+.right-content li {
+	border-bottom: 1px dashed #e5e5e5;
+	padding-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+.right-content li:last-child {
+	border: none;
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{$post_title}_{$site_name}</title>
+	<meta name="keywords" content="{$post_keywords}"/>
+	<meta name="description" content="{$post_excerpt}" />
+	<link rel="shortcut icon" href="/public/images/favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/css/base.css" />
+	<link rel="stylesheet" type="text/css" href="__TMPL__Public/css/contact.css" />
+	<link rel="stylesheet" href="__TMPL__Public/css/swiper.min.css">
+	<link rel="stylesheet" href="__TMPL__Public/css/base2.css">
+
+	<script type="application/javascript" src="__TMPL__Public/js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=NRSdUGWelRPGWYobbVE3bm3kq3KLMGpl"></script>
+	<style type="text/css">
+		.allmap img {
+			max-width: inherit;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="black-bcg"></div>
+		<tc_include file="Public:nav" />
+	</header>
+
+	<section>
+		<div class="banner"><div class="bcg"></div></div>
+	</section>
+	
+	<section class="content content-width clear">
+		<ul class="left-nav">
+			<li><a href="about.html">关于我们</a></li>
+			<li><a href="/list/189.html">公司动态</a></li>
+			<li><a href="/careers.html">工作在德道</a></li>
+			<li><a href="/contact.html" class="active">联系我们</a></li>
+			<li><a href="/job/2.html">加入我们</a></li>
+		</ul>
+		<div class="right-content">
+			<section>
+				<h2 class="title">联系我们</h2>
+				
+			</section>
+			<section>
+				<div class="contact-item-wrap">
+					<div class="contact-item-title info">德道深圳总部：</div>
+					<div class="contact-item-desc">深圳市南山区南山街道桂庙路5号9楼整层</div>
+					<div class="contact-info">
+						<div>
+							<span>
+								<span><i class="icons about-email"></i>zenghuimin@dedaokq.com</span>
+								<span><i class="icons about-phone"></i>400-800-6161</span>
+							</span>
+						</div>
+					</div>
+					<div id="map1" class="allmap" style="width: 100%; height: 300px;"></div>
+				</div>
+			</section>
+			<div style="height: 50px;"></div>
+		</div>
+	</section>
+	<tc_include file="Public:footer" />
+</body>
+<script>
+	$(window).scroll(function() {
+		if($(window).scrollTop() >= 300) {
+			$('.left-nav').addClass('fixed')
+		}
+		else {
+			$('.left-nav').removeClass('fixed')
+		}
+	})
+
+	$(function(){
+		var map = new BMap.Map("map1");
+		var point  = new BMap.Point(113.933129,22.528875)
+		map.centerAndZoom(point, 19);
+		map.addOverlay(new BMap.Marker(point));
+		
+	});
+
+
+</script>
+</html>

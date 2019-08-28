@@ -1,0 +1,23 @@
+.f-13{
+	font-size: 1.1rem;
+}
+.blue{
+	background: #346dba;
+	border-radius:5px ;
+}
+.iuput-ltk{
+	border-radius: 8px;
+	border: 1px solid #000000;
+}
+.absolute-bottom{
+		bottom: 3%;
+}
+.w-80{
+	width: 80%;
+}
+.opacity-0{
+	opacity: 0;
+}
+.img1,.img2{
+	display: none;
+}

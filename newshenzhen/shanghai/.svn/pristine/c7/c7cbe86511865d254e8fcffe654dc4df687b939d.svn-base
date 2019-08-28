@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<tc_include file="Public:head" />
+	<link rel="stylesheet" href="__TMPL__Public/css/swiper.min.css">
+	<link href="__TMPL__Public/css/index.css" rel="stylesheet" type="text/css">
+	<meta content="{$site_seo_keywords}" name="keywords" />
+	<meta name="description" content="{$site_seo_description} " />
+	<script src="__TMPL__Public/js/swiper.min.js"></script>
+	<title>{$site_seo_title}</title>
+	</head>
+	<body>
+		<img src="__TMPL__Public/images/banner-temporary.jpg" />
+		
+
+		<div class="index_brand">
+			<h2>服务保障<span></span></h2>
+			<div id="brandTabBox" class="tabBox">
+				<div class="hd">
+					<ul class="clearfix">
+						<li class="col-xs-3"><a href="javascript:void(0);">全国连锁</a></li>
+						<li class="col-xs-3"><a href="javascript:void(0);">高端环境</a></li>
+						<li class="col-xs-3"><a href="javascript:void(0);">服务质量</a></li>
+						<li class="col-xs-3"><a href="javascript:void(0);">来院地址</a></li>
+					</ul>
+				</div>
+				<div class="bd">
+					<ul class=" clearfix">
+						<img src="__TMPL__Public/images/bdgy1.jpg" alt="">
+						<p class="brand-msg">经过多年发展，全面引进来自国外先进的齿科理念和高端齿科运营模式，共享全国数字化口腔大数据库，逐步发展成为国内的高端连锁品牌。</p>
+					</ul>
+					<ul class=" clearfix">
+						<img src="__TMPL__Public/images/bdjj2.jpg" alt="">
+						<p class="brand-msg">德道口腔作为具有影响力的齿科连锁机构，从机构环境上，尽可能的做到精益求精，提供更舒适的就医环境，更有VIP 尊享的顾客服务，让看牙成为一种享受！</p>
+					</ul>
+					<ul class=" clearfix">
+						<img src="__TMPL__Public/images/bdry3.jpg" alt="">
+						<p class="brand-msg">德道为顾客提供品质的服务，用心每一天。以精益求精的优良品质达成顾客的直接服务。同时全方位提供良好的间接服务。</p>
+					</ul>
+					<ul class=" clearfix address">
+						<img src="__TMPL__Public/images/bdhj4.jpg" alt="">
+						<div class="brand-msg">
+							<p><b>门诊时间：</b>09:00-18:00</p>
+							<p>
+								<b>医院地址：</b>成都市青羊区金凤路19号附1号
+								<a href="/contact.html" class="checkMap-btn">查看地图</a>
+							</p>
+						</div>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+    	<a href="tel:028-67696635" style="display:block"><img src="__TMPL__Public/images/index/index-phone.png" style="padding: 0 5% 5%;" /></a>
+		
+		<script type="text/javascript" src="__TMPL__Public/js/jquery-2.1.1.min.js" ></script>
+		<script type="text/javascript" src="__TMPL__Public/js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="__TMPL__Public/js/TouchSlide.1.1.js"></script>
+		<script type="text/javascript" src="__TMPL__Public/js/jquery.SuperSlide.2.1.1.js"></script>
+		<script type="text/javascript">
+			TouchSlide({slideCell:"#brandTabBox",effect:"leftLoop"});
+		</script>
+	</body>
+</html>

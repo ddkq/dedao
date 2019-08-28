@@ -1,0 +1,19 @@
+/*====通用学科组专家=====**/
+.xkz{width: 93.75%;margin: 0 auto 0.3rem;}
+.xkz .tit{margin-bottom: 0.2rem;width: 100%;}
+.xkz .tit img{width: 100%;height: auto;display: block;}
+.xkz .row1{margin-bottom: 0.5rem;}
+.xkz .row1 li{position: relative;}
+.xkz-info{position: absolute;left: 0;bottom: 8%; width: 100%; padding:3%; background: rgba(255,255,255,0.8);}
+.xkz-info .title{margin:0;padding:0 0 0.05rem 0;font-size: 0.24rem;color: #4cbbb4;text-align: left;}
+.xkz-info .intro{font-size: .7rem;color: #666;line-height: 1;}
+.xkz .hd{margin-bottom: 0.1rem;}
+.xkz .hd ul{font-size: 0;text-align: center;}
+.xkz .hd ul li{display: inline-block;width: 10px;height: 10px;border-radius: 100%;margin: 0 3px; background: #eee;}
+.xkz .hd ul li.on{background: #4cbbb4;}
+.xkz-btn li{float:left;font-size: 0;width: 30%;}
+.xkz-btn li.xkz-btn2{margin-right: 1.5%;float: right;}
+.xkz-btn li.xkz-btn3{float:right;width: 32%;}
+.xkz-btn li a{display: block;line-height: 1;font-size: .85rem;color:#fff;text-align: center;background: #717171;padding: .5rem 0;}
+.xkz-btn li.xkz-btn2 a{background: #fda233;}
+

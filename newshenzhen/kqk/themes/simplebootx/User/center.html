@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>个人中心_{$site_name}</title>
+<link href="__TMPL__Public/css/user.css" rel="stylesheet" type="text/css">
+<meta name="keywords" content="{$site_seo_keywords}" />
+<meta name="description" content="{$site_seo_description}">
+<tc_include file="Public:head" />
+<style>
+.control-label{
+	font-weight: bold;
+	float: left;
+	width: 70px;
+}
+</style>
+<body>
+<tc_include file="Public:user_header" />
+
+<div class="position">
+	<img src="/public/images/home.jpg">您现在的位置：<a href="/" target="_blank">主页</a> &gt; <font>个人中心</font>
+</div>
+
+<div class="content width1100 mt20 clear overflow">
+	<div class="right_box">
+      <div class="right_box_main">
+        <div class="member_box">
+        	<div class="member_con">
+               	<a href="{:U('profile/avatar')}" class="user_img">
+               		<if condition="empty($avatar)">
+			        	<img src="__TMPL__Public/assets/images/headicon_128.png" class="headicon"/>
+			        <else/>
+			            <img src="{:sp_get_user_avatar_url($avatar)}" class="headicon"/>
+			        </if>
+			    </a>
+			    <div class="user_info">
+				    <p>昵称:{$user_nicename|default='未填写'}</p>
+				    <php>$sexs=array("0"=>"保密","1"=>"男","2"=>"女");</php>
+				    <p>性别:{$sexs[$sex]}</p>
+				    <p>生日:{$birthday|default='未填写'}</p>
+				    <p>个人网址:{$user_url|default='未填写'}</p>
+				    <p>个性签名:{$signature|default='未填写'}</p>
+				    <p><a href="{:U('user/profile/edit')}" type="submit" class="w-btn">编辑</a></p>	
+			    </div>
+            </div>
+        </div>
+      </div>
+   </div>
+</div>
+
+
+<tc_include file="Public:footer" />
+
+</body>
+</html>

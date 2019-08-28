@@ -1,0 +1,11 @@
+@charset "utf-8";
+.kouqiang-live-4{width:130px;height:278px;background:url('bg.jpg') no-repeat;padding-top:173px;z-index: 20}
+.kouqiang-live-4 .bajs-live-popup-close{width:49px;height:16px;background:url('iocn.png') 0 0 no-repeat;cursor:pointer;position:absolute;right:0px;top:-17px;display:block;}
+.kouqiang-live-4 .bajs-live-popup-close:hover{opacity:0.8;filter:alpha(opacity=80);}
+.kouqiang-live-4 .liveLine{width:94px;height:53px;line-height:25px;text-align:center;font-size:20px;color:#000;background-color:#fff;border-radius:5px;margin:0 auto 7px;display:block;position:relative;}
+.kouqiang-live-4 .liveLine span{font-size:20px;color:#e60012;display:block;}
+.kouqiang-live-4 .liveLine small{font-size:18px;}
+
+.kouqiang-live-4 .liveBtn{width:99px;height:35px;text-align:center;line-height:34px;font-size:19px;color:#fff;font-family:'Microsoft Yahei';background:url('iocn.png') no-repeat;padding-left:20px;position:absolute;left:50%;margin-left:-60px;}
+.kouqiang-live-4 .liveBtn1{background-position:0 -21px;bottom:49px;}
+.kouqiang-live-4 .liveBtn2{background-position:0 -60px;bottom:8px;}
