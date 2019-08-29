@@ -1,5 +1,0 @@
-<?php
-return array (
-  'AWARD_ADMINAWARD_DEFAULT' => '抽奖管理',
-  'AWARD_ADMINAWARD_SET' => '抽奖配置',
-);

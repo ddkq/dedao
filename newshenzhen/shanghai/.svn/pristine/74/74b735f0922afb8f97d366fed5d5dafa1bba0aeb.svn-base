@@ -1,5 +1,0 @@
-<?php
-return array (
-  'ZT_ADMINZT_DEFULT' => '专题管理',
-  'ZT_ADMINZT_INDEX' => '专题管理',
-);

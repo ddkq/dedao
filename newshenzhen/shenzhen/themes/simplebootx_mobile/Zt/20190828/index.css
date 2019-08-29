@@ -1,0 +1,55 @@
+.banner {
+	margin-top: 120px;
+}
+
+.red{
+	color: #e60012;
+}
+
+.font-17{
+	font-size: 1.75rem;
+}
+.sport{
+	overflow: hidden;
+	height: 7rem;
+}
+.border-num{
+	background-color: #e60012;
+	color: #FFFFFF;
+	 width: 5rem;
+    height: 5rem;
+    font-size: 4rem;
+    font-weight: 900;
+    border-radius:8px ;
+}
+.w-10{
+	width: 10%;
+}
+.h-5{
+	height: 1px;
+	background: #000000;
+}
+form font{
+	width: 30%;
+	background-color: #e0e0e0;
+	font-size: .9rem;
+	color: #000;
+	text-align: center;
+}
+.active {
+	background-color: #d10101 !important;
+	color: #fff !important;
+}
+
+
+.submit-btn {
+	font-size: 1.2rem;
+	border-radius: 15px;
+	background-color: #d10101;
+	padding-left: 6rem;
+	padding-right: 6rem;
+}
+.fixed-btn{
+	max-width: 640px;
+	margin: 0 auto;
+}
